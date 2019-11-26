@@ -1,0 +1,18 @@
+on:
+  push:
+  schedule:
+  - cron: '12,27,42,57 * * * *'
+
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1.1.0
+      with:
+        fetch-depth: 1
+    - uses: actions/setup-python@v1
+      with:
+        python-version: '3.x'
+    - run: exec .github/cron.sh
+      env:
+        GITHUB_PERSONAL_ACCESS_TOKEN: ${{ secrets.GITHUB_PERSONAL_ACCESS_TOKEN }}
