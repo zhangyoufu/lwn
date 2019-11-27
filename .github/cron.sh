@@ -8,9 +8,9 @@ git worktree add -b state state origin/state
 
 .github/cron.py
 
-git config --global user.name 'GitHub Actions'
-git config --global user.email "$(whoami)@$(hostname --fqdn)"
-git config --global http.https://github.com/.extraheader "Authorization: Basic $(echo -n "dummy:${GITHUB_PERSONAL_ACCESS_TOKEN}" | base64 --wrap=0)"
+git config user.name 'GitHub Actions'
+git config user.email "$(whoami)@$(hostname --fqdn)"
+git config http.https://github.com/.extraheader "Authorization: Basic $(echo -n "dummy:${GITHUB_PERSONAL_ACCESS_TOKEN}" | base64 --wrap=0)"
 
 push_if_modified() {
 	pushd "$1" 2>/dev/null
