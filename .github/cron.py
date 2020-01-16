@@ -2,6 +2,7 @@
 from contextlib import contextmanager
 from dataclasses import dataclass
 import datetime
+import os
 import re
 import requests
 import sys
@@ -111,8 +112,9 @@ rss = f'''\
   xmlns="http://purl.org/rss/1.0/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:syn="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
 >
-  <channel rdf:about="https://zhangyoufu.github.io/lwn/rss.rdf">
+  <channel rdf:about="{os.environ['FEED_URL']}">
     <title>LWN.net</title>
     <link>https://lwn.net</link>
     <description>
@@ -122,6 +124,8 @@ rss = f'''\
     </description>
     <syn:updatePeriod>hourly</syn:updatePeriod>
     <syn:updateFrequency>6</syn:updateFrequency>
+    <atom:link rel="self" href="{os.environ['FEED_URL']}" />
+    <atom:link rel="hub" href="{os.environ['HUB_URL']}" />
     <items>
       <rdf:Seq>
 {linesep.join(f'        <rdf:li resource="https://lwn.net/Articles/{article.id}/rss" />' for article in publish)}

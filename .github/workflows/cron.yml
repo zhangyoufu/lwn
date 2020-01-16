@@ -16,3 +16,5 @@ jobs:
     - run: exec .github/cron.sh
       env:
         GITHUB_PERSONAL_ACCESS_TOKEN: ${{ secrets.GITHUB_PERSONAL_ACCESS_TOKEN }}
+        FEED_URL: ${{ secrets.FEED_URL }}
+        HUB_URL: ${{ secrets.WEBSUB_HUB_URL }}

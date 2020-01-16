@@ -1,0 +1,9 @@
+on: page_build
+
+jobs:
+  WebSub:
+    if: github.event.build.status == 'built'
+    runs-on: ubuntu-latest
+    steps:
+    - name: publish
+      run: curl --silent --show-error --data-urlencode hub.mode=publish --data-urlencode hub.url="${{ secrets.FEED_URL }}" "${{ secrets.WEBSUB_HUB_URL }}"
