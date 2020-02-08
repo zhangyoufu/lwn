@@ -7,14 +7,20 @@ jobs:
   cron:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1.1.0
-      with:
-        fetch-depth: 1
+    - uses: actions/checkout@v2
+    - name: set up worktrees
+      run: |
+        git fetch --no-tags --prune --depth=1 origin +refs/heads/*:refs/remotes/origin/*
+        git worktree add gh-pages gh-pages
+        git worktree add state state
     - uses: actions/setup-python@v1
       with:
         python-version: '3.x'
-    - run: exec .github/cron.sh
+    - run: pip3 install -r .github/requirements.txt
+    - run: .github/cron.py
       env:
-        GITHUB_PERSONAL_ACCESS_TOKEN: ${{ secrets.GITHUB_PERSONAL_ACCESS_TOKEN }}
         FEED_URL: ${{ secrets.FEED_URL }}
         HUB_URL: ${{ secrets.WEBSUB_HUB_URL }}
+    - run: .github/commit.sh
+      env:
+        GITHUB_PERSONAL_ACCESS_TOKEN: ${{ secrets.GITHUB_PERSONAL_ACCESS_TOKEN }}
