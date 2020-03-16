@@ -83,7 +83,7 @@ get_date(local)
 id_set = set(article.id for article in local)
 date_dict = {article.id: article.date for article in local}
 
-remote = load(http_get('https://lwn.net/headlines/rss').text)
+remote = load(http_get('https://lwn.net/headlines/rss').text.replace('/rss</link>', '/</link>'))
 remote = list(filter(lambda article: article.id not in id_set, remote))
 get_date(remote, ref=date_dict)
 
