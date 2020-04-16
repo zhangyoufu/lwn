@@ -18,6 +18,7 @@ jobs:
         python-version: '3.x'
     - run: pip3 install -r .github/requirements.txt
     - run: .github/cron.py
+      timeout-minutes: 5
       env:
         FEED_URL: ${{ secrets.FEED_URL }}
         HUB_URL: ${{ secrets.WEBSUB_HUB_URL }}
