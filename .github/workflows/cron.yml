@@ -8,20 +8,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: set up worktrees
+    - name: Set up worktrees
       run: |
         git fetch --no-tags --prune --depth=1 origin +refs/heads/*:refs/remotes/origin/*
         git worktree add gh-pages gh-pages
         git worktree add state state
-    - uses: actions/setup-python@v1
+    - uses: actions/setup-python@v2
       with:
         python-version: '3.x'
-    - run: pip3 install -r .github/requirements.txt
-    - run: .github/cron.py
-      timeout-minutes: 5
+    - name: Install dependencies
+      run: pip3 install -r requirements.txt
+    - name: Check LWN
       env:
         FEED_URL: ${{ secrets.FEED_URL }}
         HUB_URL: ${{ secrets.WEBSUB_HUB_URL }}
-    - run: .github/commit.sh
+      timeout-minutes: 5
+      run: ./cron.py
+    - name: Commit if dirty
       env:
         GITHUB_PERSONAL_ACCESS_TOKEN: ${{ secrets.GITHUB_PERSONAL_ACCESS_TOKEN }}
+      run: ./commit.sh
