@@ -1,0 +1,469 @@
+﻿    <item rdf:about="https://lwn.net/Articles/844539/rss">
+      <title>Finding real-world kernel subsystems</title>
+      <link>https://lwn.net/Articles/844539/</link>
+      <dc:date>2021-02-11T00:00:00+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      The kernel development community talks often about subsystems and subsystem
+maintainers, but it is less than entirely clear about what a &quot;subsystem&quot; is in
+the first place.  People wanting to understand how kernel development works
+could benefit from a clearer idea of what actually comprises a subsystem
+within the kernel.  In an attempt to better understand how kernel
+development works, Pia Eichinger and her colleagues spent a lot of time looking
+for the actual boundaries; Eichinger presented that work at the 2021
+linux.conf.au online gathering.
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/844102/rss">
+      <title>Tackling the monopoly problem</title>
+      <link>https://lwn.net/Articles/844102/</link>
+      <dc:date>2021-02-11T00:00:00+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      There was a time when people who were exploring computational technology
+saw it as the path toward decentralization and freedom worldwide.  What we
+have ended up with, instead, is a world that is increasingly centralized,
+subject to surveillance, and unfree.  How did that come to be?  In a keynote at the
+online 2021 linux.conf.au event, Cory Doctorow gave his view of this problem and
+named its source: monopoly.
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/843896/rss">
+      <title>Wayland support (and more) for Emacs</title>
+      <link>https://lwn.net/Articles/843896/</link>
+      <dc:date>2021-02-11T00:00:00+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      Jeffrey Walsh started off &lt;a
+href=&quot;https://linux.conf.au/schedule/presentation/48/&quot;&gt;his 2021
+linux.conf.au presentation&lt;/a&gt; with a 
+statement that, while 2020 was not the greatest year ever, there were still
+some
+good things that happened; one of those was the Emacs&amp;nbsp;27.1 release.
+This major update brought a number of welcome new features, but also
+led to &lt;a href=&quot;https://lwn.net/Articles/832311/&quot;&gt;yet another discussion on the future of
+Emacs&lt;/a&gt;.  With that starting point, Walsh launched into a fast-moving
+look at the history of Emacs, why users still care about it, what changes
+are coming, and (especially) what was involved in moving Emacs away from
+the X&amp;nbsp;window system and making it work with the Wayland compositor.
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/843417/rss">
+      <title>LWN.net Weekly Edition for January 28, 2021</title>
+      <link>https://lwn.net/Articles/843417/</link>
+      <dc:date>2021-02-04T00:00:00+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      The LWN.net Weekly Edition for January 28, 2021 is available.
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/844203/rss">
+      <title>A year of Python in Fedora</title>
+      <link>https://lwn.net/Articles/844203/</link>
+      <dc:date>2021-02-04T00:00:00+00:00</dc:date>
+      <dc:creator>jake</dc:creator>
+      <description>
+      Distribution developers do a lot of work to keep a language ecosystem
+working well within the distribution.  It is relatively thankless work that
+normally only becomes visible when there is a problem or complaint.  But
+Miro Hrončok recently put together a &lt;a
+href=&quot;https://communityblog.fedoraproject.org/fedora-loves-python-2020-report/&quot;&gt;look
+back&lt;/a&gt; at what the Fedora Python team did during 2020.  While it is,
+obviously, Fedora-specific, it provides something of a look inside at the
+kinds of things that distribution teams work on.
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/844016/rss">
+      <title>Elastic promises &quot;open&quot;—delivers proprietary</title>
+      <link>https://lwn.net/Articles/844016/</link>
+      <dc:date>2021-02-04T00:00:00+00:00</dc:date>
+      <dc:creator>jake</dc:creator>
+      <description>
+      Open-source software is famously able to be used by anyone for any purpose;
+those are some of the keystones of the &lt;a href=&quot;https://opensource.org/osd&quot;&gt;open
+source definition&lt;/a&gt;.
+But some companies that run open-source projects are increasingly unhappy
+that others are reaping some of the profits from those projects.
+ That has led to various
+efforts of &quot;license reform&quot; meant to try to capture those profits. So
+far, those efforts have just led to non-open-source licenses, thus projects
+that are no longer open source.  We are seeing
+that play out yet again with Elastic's mid-January &lt;a
+href=&quot;https://www.elastic.co/blog/licensing-change&quot;&gt;announcement&lt;/a&gt; that
+it was changing the license on some of its projects.
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/843607/rss">
+      <title>The endless browser wars</title>
+      <link>https://lwn.net/Articles/843607/</link>
+      <dc:date>2021-02-04T00:00:00+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      The term &quot;browser wars&quot; typically refers to Microsoft's attempts to
+dominate the World Wide Web with its Internet Explorer browser in the
+1990s.  That effort was thwarted by antitrust efforts and the rise of the
+free browser now known as Firefox;
+ever since, the web has been defined by free software.  Or so some may have
+thought.  In the 2020s, the browser wars continue with the growing
+dominance of Chrome and, it would seem, the imminent removal of Chromium
+from many Linux distributions.
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/843326/rss">
+      <title>Preserving the mobility of ZONE_MOVABLE</title>
+      <link>https://lwn.net/Articles/843326/</link>
+      <dc:date>2021-02-04T00:00:00+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      Memory fragmentation has long been a problem for Linux systems, to the
+point that, for years, finding even two physically contiguous pages was an
+uncertain affair.  That said, the situation has improved considerably in
+the last decade or so thanks to a number of changes implemented by the
+memory-management developers.  One of those changes is the creation of
+&quot;movable&quot;
+memory zones where pages can be relocated if need be.  All that work is for
+nothing, though, if somebody comes along and pins down a page in one of
+these movable zones.  &lt;a
+href=&quot;https://lwn.net/ml/linux-kernel/20210122033748.924330-1-pasha.tatashin@soleen.com/&quot;&gt;This
+patch set&lt;/a&gt; from Pavel Tatashin seeks to prevent that from happening, but
+may risk creating problems elsewhere.
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/843163/rss">
+      <title>Avoiding blocking file-name lookups</title>
+      <link>https://lwn.net/Articles/843163/</link>
+      <dc:date>2021-02-04T00:00:00+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      As a general rule, when one attempts to open a file with a system call like
+&lt;a
+href=&quot;https://man7.org/linux/man-pages/man2/openat2.2.html&quot;&gt;&lt;tt&gt;openat2()&lt;/tt&gt;&lt;/a&gt;,
+the expectation is that the call will not return until the job is done.
+But there are times where the desire to open the file is conditional on
+being able to open it immediately, without blocking.  Linux has never
+supported that mode well, but that may be about to change with &lt;a
+href=&quot;https://lwn.net/ml/linux-fsdevel/20201217161911.743222-1-axboe@kernel.dk/&quot;&gt;this
+patch set&lt;/a&gt; from Jens Axboe.
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/844749/rss">
+      <title>Security updates for Monday</title>
+      <link>https://lwn.net/Articles/844749/</link>
+      <dc:date>2021-02-01T15:39:58+00:00</dc:date>
+      <dc:creator>ris</dc:creator>
+      <description>
+      Security updates have been issued by &lt;b&gt;Arch Linux&lt;/b&gt; (home-assistant, libgcrypt, libvirt, and mutt), &lt;b&gt;Debian&lt;/b&gt; (ffmpeg, kernel, libonig, libsdl2, mariadb-10.1, and thunderbird), &lt;b&gt;Fedora&lt;/b&gt; (chromium, firefox, jasper, libebml, mingw-python3, netpbm, opensmtpd, thunderbird, and xen), &lt;b&gt;Gentoo&lt;/b&gt; (firefox and thunderbird), &lt;b&gt;Mageia&lt;/b&gt; (db53, dnsmasq, kernel, kernel-linus, and php-pear), &lt;b&gt;openSUSE&lt;/b&gt; (go1.14, go1.15, messagelib, nodejs8, segv_handler, and thunderbird), &lt;b&gt;Oracle&lt;/b&gt; (firefox, kernel, and thunderbird), &lt;b&gt;Red Hat&lt;/b&gt; (flatpak), &lt;b&gt;SUSE&lt;/b&gt; (firefox and rubygem-nokogiri), and &lt;b&gt;Ubuntu&lt;/b&gt; (mysql-5.7, mysql-8.0 and python-django).
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/844672/rss">
+      <title>Kernel prepatch 5.11-rc6</title>
+      <link>https://lwn.net/Articles/844672/</link>
+      <dc:date>2021-02-01T00:43:51+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      The &lt;a href=&quot;https://lwn.net/Articles/844671/&quot;&gt;5.11-rc6&lt;/a&gt; kernel prepatch is out for
+testing.  &quot;&lt;span&gt;Things look a little calmer than last week, and over-all very average
+for rc6. So - like always this late in the release schedule - I'd
+certainly have liked things to be even calmer, but nothing here really
+stands out.&lt;/span&gt;&quot;
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/844618/rss">
+      <title>Yet another set of stable kernel updates</title>
+      <link>https://lwn.net/Articles/844618/</link>
+      <dc:date>2021-01-31T00:10:47+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      The stable-kernel machine has produced another set of updates:
+&lt;a href=&quot;https://lwn.net/Articles/844619/&quot;&gt;5.10.12&lt;/a&gt;,
+&lt;a href=&quot;https://lwn.net/Articles/844620/&quot;&gt;5.4.94&lt;/a&gt;,
+&lt;a href=&quot;https://lwn.net/Articles/844621/&quot;&gt;4.19.172&lt;/a&gt;,
+&lt;a href=&quot;https://lwn.net/Articles/844622/&quot;&gt;4.14.218&lt;/a&gt;,
+&lt;a href=&quot;https://lwn.net/Articles/844623/&quot;&gt;4.9.254&lt;/a&gt;, and
+&lt;a href=&quot;https://lwn.net/Articles/844624/&quot;&gt;4.4.254&lt;/a&gt;.
+Each contains a relatively small set of important fixes.
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/844531/rss">
+      <title>Critical security problem in Libgcrypt 1.9.0</title>
+      <link>https://lwn.net/Articles/844531/</link>
+      <dc:date>2021-01-29T16:40:43+00:00</dc:date>
+      <dc:creator>jake</dc:creator>
+      <description>
+      The &lt;a href=&quot;https://gnupg.org/&quot;&gt;GNU Privacy Guard&lt;/a&gt; (GnuPG or GPG) project has announced a critical security bug in &lt;a href=&quot;https://gnupg.org/software/libgcrypt/index.html&quot;&gt;Libgcrypt&lt;/a&gt; version 1.9.0 released January&amp;nbsp;19.  &quot;&lt;span&gt;Libgcrypt is a general purpose library of cryptographic building blocks.
+It is originally based on code used by GnuPG.  It does not provide any
+implementation of OpenPGP or other protocols.  Thorough understanding of
+applied cryptography is required to use Libgcrypt.&lt;/span&gt;&quot;  Version 1.9.1 has been released to address the problem and all users of 1.9.0 should update immediately.  It is a heap buffer overflow, but no version of GnuPG uses the 1.9 series yet. &quot;&lt;span&gt;Exploiting this bug is simple and thus immediate action for 1.9.0 users
+is required.  A CVE-id has not yet been assigned.  We track this bug at
+&lt;a href=&quot;https://dev.gnupg.org/T5275&quot;&gt;https://dev.gnupg.org/T5275&lt;/a&gt;.  The 1.9.0 tarballs on our FTP server have
+been renamed so that scripts won&amp;#x27;t be able to get this version anymore.&lt;/span&gt;&quot;
+
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/844525/rss">
+      <title>Malcolm: Static analysis updates in GCC 11</title>
+      <link>https://lwn.net/Articles/844525/</link>
+      <dc:date>2021-01-29T15:51:22+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      David Malcolm &lt;a
+href=&quot;https://developers.redhat.com/blog/2021/01/28/static-analysis-updates-in-gcc-11/&quot;&gt;describes
+the progress in the GCC static analyzer&lt;/a&gt; for the upcoming GCC&amp;nbsp;11
+release.  &quot;&lt;span&gt;In GCC 10, I added the new &lt;tt&gt;-fanalyzer&lt;/tt&gt; option, a static
+analysis pass for identifying various problems at compile-time, rather than
+at runtime. The initial implementation was aimed at early adopters, who
+found a few bugs, including a security vulnerability: CVE-2020-1967. Bernd
+Edlinger, who discovered the issue, had to wade through many false
+positives accompanying the real issue. Other users also managed to get the
+analyzer to crash on their code.
+
+I’ve been rewriting the analyzer to address these issues in the next major release, GCC 11. In this article, I describe the steps I’m taking to reduce the number of false positives and make this static analysis tool more robust.&lt;/span&gt;&quot;
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/844521/rss">
+      <title>Security updates for Friday</title>
+      <link>https://lwn.net/Articles/844521/</link>
+      <dc:date>2021-01-29T14:42:57+00:00</dc:date>
+      <dc:creator>jake</dc:creator>
+      <description>
+      Security updates have been issued by &lt;b&gt;Arch Linux&lt;/b&gt; (dnsmasq, erlang, flatpak, go, gobby, gptfdisk, jenkins, kernel, linux-hardened, linux-lts, linux-zen, lldpd, openvswitch, podofo, virtualbox, and vlc), &lt;b&gt;Fedora&lt;/b&gt; (erlang, firefox, nss, and seamonkey), &lt;b&gt;Gentoo&lt;/b&gt; (imagemagick, nsd, and vlc), &lt;b&gt;openSUSE&lt;/b&gt; (chromium and python-autobahn), &lt;b&gt;Oracle&lt;/b&gt; (firefox and thunderbird), &lt;b&gt;Red Hat&lt;/b&gt; (thunderbird), &lt;b&gt;Scientific Linux&lt;/b&gt; (thunderbird), &lt;b&gt;SUSE&lt;/b&gt; (firefox, jackson-databind, and thunderbird), and &lt;b&gt;Ubuntu&lt;/b&gt; (libxstream-java).
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/844366/rss">
+      <title>Security updates for Thursday</title>
+      <link>https://lwn.net/Articles/844366/</link>
+      <dc:date>2021-01-28T14:44:53+00:00</dc:date>
+      <dc:creator>jake</dc:creator>
+      <description>
+      Security updates have been issued by &lt;b&gt;Debian&lt;/b&gt; (ansible, firefox-esr, and slurm-llnl), &lt;b&gt;Fedora&lt;/b&gt; (firefox, nss, php-pear, seamonkey, and thunderbird), &lt;b&gt;Gentoo&lt;/b&gt; (phpmyadmin and telegram-desktop), &lt;b&gt;openSUSE&lt;/b&gt; (chromium and python-autobahn), &lt;b&gt;Oracle&lt;/b&gt; (firefox and sudo), &lt;b&gt;Red Hat&lt;/b&gt; (firefox), &lt;b&gt;Scientific Linux&lt;/b&gt; (firefox), and &lt;b&gt;Ubuntu&lt;/b&gt; (ceph, kernel, linux, linux-lts-xenial, linux-aws, linux-aws-5.4, linux-azure, linux-gcp, linux-kvm, linux-oracle, linux-raspi, linux-aws, linux-kvm, linux-oracle, linux-raspi2, linux-snapdragon, linux-aws, linux-kvm, linux-raspi2, linux-snapdragon, and tcmu).
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/844257/rss">
+      <title>An unpleasant sudo vulnerability</title>
+      <link>https://lwn.net/Articles/844257/</link>
+      <dc:date>2021-01-28T00:15:19+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      It would appear that &quot;sudo&quot; has a buffer-overflow vulnerability that allows
+any local user to gain root privileges, whether or not they are in the
+&lt;tt&gt;sudoers&lt;/tt&gt; file.  It has been there since 2011.  See &lt;a
+href=&quot;https://lwn.net/ml/oss-security/20210126181453.GA4184@localhost.localdomain/&quot;&gt;this
+advisory&lt;/a&gt; for details, but perhaps run an update first.
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/842692/rss">
+      <title>LWN.net Weekly Edition for January 21, 2021</title>
+      <link>https://lwn.net/Articles/842692/</link>
+      <dc:date>2021-01-28T00:00:00+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      The LWN.net Weekly Edition for January 21, 2021 is available.
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/843172/rss">
+      <title>Installing Debian on modern hardware</title>
+      <link>https://lwn.net/Articles/843172/</link>
+      <dc:date>2021-01-28T00:00:00+00:00</dc:date>
+      <dc:creator>jake</dc:creator>
+      <description>
+      It is an unfortunate fact of life that non-free firmware blobs are required
+to use some hardware, such as network devices (WiFi in particular), audio
+peripherals, and video cards.  Beyond that, those blobs may even be
+required in order to install a Linux distribution, so an installation over
+the network may need to get  non-free firmware directly from the installation
+media.  That, as might be guessed, is a bit of a problem for distributions
+that are not willing to officially ship said firmware because of its
+non-free status, as a recent discussion in the Debian community shows.
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/842964/rss">
+      <title>An introduction to SciPy</title>
+      <link>https://lwn.net/Articles/842964/</link>
+      <dc:date>2021-01-28T00:00:00+00:00</dc:date>
+      <dc:creator>jake</dc:creator>
+      <description>
+      &lt;a href=&quot;http://www.scipy.org/&quot;&gt;SciPy&lt;/a&gt; is a collection of Python
+libraries for scientific and numerical computing. Nearly every serious user
+of Python for scientific research uses SciPy. Since Python is popular across
+all fields of science, and continues to be a prominent language in some
+areas of research, such as data science, SciPy has a large user
+base. On New Year's Eve, SciPy
+&lt;a
+href=&quot;https://mail.python.org/pipermail/scipy-dev/2020-December/024468.html&quot;&gt;announced
+version&amp;nbsp;1.6&lt;/a&gt; of the &lt;tt&gt;scipy&lt;/tt&gt; library, which is the central
+component in the SciPy stack.  That release gives us a good opportunity to delve
+into this software and give
+some examples of its use.
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/842842/rss">
+      <title>Resource limits in user namespaces</title>
+      <link>https://lwn.net/Articles/842842/</link>
+      <dc:date>2021-01-28T00:00:00+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      &lt;a href=&quot;https://lwn.net/Articles/532593/&quot;&gt;User namespaces&lt;/a&gt; provide a number of
+interesting challenges for the kernel.  They give a user the illusion of
+owning the system, but must still operate within the restrictions that
+apply outside of the namespace.  &lt;a
+href=&quot;https://man7.org/linux/man-pages/man3/vlimit.3.html&quot;&gt;Resource
+limits&lt;/a&gt; represent one type of 
+restriction that, it seems, is proving too restrictive for some users.  &lt;a
+href=&quot;https://lwn.net/ml/linux-kernel/cover.1610722473.git.gladkov.alexey@gmail.com/&quot;&gt;This
+patch set&lt;/a&gt; from Alexey Gladkov attempts to address the problem by way of
+a not-entirely-obvious approach.
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/842385/rss">
+      <title>Fast commits for ext4</title>
+      <link>https://lwn.net/Articles/842385/</link>
+      <dc:date>2021-01-28T00:00:00+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      The Linux 5.10 release included a &lt;a
+href=&quot;https://lwn.net/ml/linux-ext4/20201015203802.3597742-1-harshadshirwadkar@gmail.com/&quot;&gt;change&lt;/a&gt;
+that is expected to significantly increase the performance of the ext4
+filesystem; it goes by the name &quot;fast commits&quot; and introduces a new,
+lighter-weight journaling method. Let us look into how the feature works, who
+can benefit from it, and when its use may be appropriate.
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/842415/rss">
+      <title>MAINTAINERS truth and fiction</title>
+      <link>https://lwn.net/Articles/842415/</link>
+      <dc:date>2021-01-28T00:00:00+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      Since the release of the 5.5 kernel in January 2020, there have been almost
+87,000 patches from just short of 4,600 developers merged into the mainline
+repository.  Reviewing all of those patches would be a tall order for even
+the most prolific of kernel developers, so decisions on patch acceptance
+are delegated to a long list of subsystem maintainers, each of whom takes
+partial or full responsibility for a specific portion of the kernel.  These
+maintainers are documented in a file called, surprisingly, &lt;a
+href=&quot;https://elixir.bootlin.com/linux/latest/source/MAINTAINERS&quot;&gt;&lt;tt&gt;MAINTAINERS&lt;/tt&gt;&lt;/a&gt;.
+But the &lt;tt&gt;MAINTAINERS&lt;/tt&gt; file, too, must be maintained; how well does
+it reflect reality?
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/844185/rss">
+      <title>Three stable kernels</title>
+      <link>https://lwn.net/Articles/844185/</link>
+      <dc:date>2021-01-27T16:01:22+00:00</dc:date>
+      <dc:creator>ris</dc:creator>
+      <description>
+      Stable kernels &lt;a href=&quot;https://lwn.net/Articles/844187/&quot;&gt;5.10.11&lt;/a&gt;, &lt;a
+href=&quot;https://lwn.net/Articles/844188/&quot;&gt;5.4.93&lt;/a&gt;, and &lt;a
+href=&quot;https://lwn.net/Articles/844189/&quot;&gt;4.19.171&lt;/a&gt; have been released. They contain
+important fixes and users should upgrade.
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/844184/rss">
+      <title>Security updates for Wednesday</title>
+      <link>https://lwn.net/Articles/844184/</link>
+      <dc:date>2021-01-27T15:55:08+00:00</dc:date>
+      <dc:creator>ris</dc:creator>
+      <description>
+      Security updates have been issued by &lt;b&gt;Arch Linux&lt;/b&gt; (sudo), &lt;b&gt;CentOS&lt;/b&gt; (sudo), &lt;b&gt;Debian&lt;/b&gt; (sudo), &lt;b&gt;Fedora&lt;/b&gt; (kernel, php-pear, and sudo), &lt;b&gt;Gentoo&lt;/b&gt; (cacti, mutt, and sudo), &lt;b&gt;Mageia&lt;/b&gt; (sudo), &lt;b&gt;openSUSE&lt;/b&gt; (sudo), &lt;b&gt;Oracle&lt;/b&gt; (sudo), &lt;b&gt;Red Hat&lt;/b&gt; (sudo), &lt;b&gt;Scientific Linux&lt;/b&gt; (sudo), &lt;b&gt;Slackware&lt;/b&gt; (sudo), &lt;b&gt;SUSE&lt;/b&gt; (go1.14, go1.15, nodejs8, and sudo), and &lt;b&gt;Ubuntu&lt;/b&gt; (libsndfile and sudo).
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/844054/rss">
+      <title>Security updates for Tuesday</title>
+      <link>https://lwn.net/Articles/844054/</link>
+      <dc:date>2021-01-26T16:16:02+00:00</dc:date>
+      <dc:creator>ris</dc:creator>
+      <description>
+      Security updates have been issued by &lt;b&gt;CentOS&lt;/b&gt; (dnsmasq, net-snmp, and xstream), &lt;b&gt;Debian&lt;/b&gt; (mutt), &lt;b&gt;Gentoo&lt;/b&gt; (cfitsio, f2fs-tools, freeradius, libvirt, mutt, ncurses, openjpeg, PEAR-Archive_Tar, and qtwebengine), &lt;b&gt;openSUSE&lt;/b&gt; (chromium, mutt, stunnel, and virtualbox), &lt;b&gt;Red Hat&lt;/b&gt; (cryptsetup, gnome-settings-daemon, and net-snmp), &lt;b&gt;Scientific Linux&lt;/b&gt; (xstream), &lt;b&gt;SUSE&lt;/b&gt; (postgresql, postgresql12, postgresql13 and rubygem-nokogiri), and &lt;b&gt;Ubuntu&lt;/b&gt; (mutt).
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/844015/rss">
+      <title>Firefox 85 released</title>
+      <link>https://lwn.net/Articles/844015/</link>
+      <dc:date>2021-01-26T15:05:18+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      &lt;a href=&quot;https://www.mozilla.org/firefox/85.0/releasenotes/&quot;&gt;Version 85 of
+the Firefox browser&lt;/a&gt; has been released.  The headline change appears to
+be the isolation of internal caches to defeat the use of &quot;supercookies&quot; to
+track users; see &lt;a
+href=&quot;https://blog.mozilla.org/security/2021/01/26/supercookie-protections/&quot;&gt;this
+blog entry&lt;/a&gt; for details.  &quot;&lt;span&gt;In fact, there are many different
+caches trackers can abuse to build supercookies. Firefox 85 partitions all
+of the following caches by the top-level site being visited: HTTP cache,
+image cache, favicon cache, HSTS cache, OCSP cache, style sheet cache, font
+cache, DNS cache, HTTP Authentication cache, Alt-Svc cache, and TLS
+certificate cache.&lt;/span&gt;&quot;
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/843945/rss">
+      <title>pip 21.0 has now been released</title>
+      <link>https://lwn.net/Articles/843945/</link>
+      <dc:date>2021-01-25T22:31:07+00:00</dc:date>
+      <dc:creator>ris</dc:creator>
+      <description>
+      The Python Packaging Authority (PyPA) has announced the release of pip
+21.0. This version removes Python 2.7 and 3.5 support, and drops support
+for legacy cache entries from pip &amp;lt; 20.0.
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/843855/rss">
+      <title>Security updates for Monday</title>
+      <link>https://lwn.net/Articles/843855/</link>
+      <dc:date>2021-01-25T15:56:45+00:00</dc:date>
+      <dc:creator>ris</dc:creator>
+      <description>
+      Security updates have been issued by &lt;b&gt;Debian&lt;/b&gt; (crmsh, debian-security-support, flatpak, gst-plugins-bad1.0, openvswitch, python-bottle, salt, tomcat9, and vlc), &lt;b&gt;Fedora&lt;/b&gt; (chromium, python-pillow, sddm, and xen), &lt;b&gt;Gentoo&lt;/b&gt; (chromium, dnsmasq, flatpak, glibc, kdeconnect, openjdk, python, thunderbird, virtualbox, and wireshark), &lt;b&gt;Mageia&lt;/b&gt; (blosc, crmsh, glibc, perl-DBI, php-oojs-oojs-ui, python-pip, python-urllib3, and undertow), &lt;b&gt;openSUSE&lt;/b&gt; (gdk-pixbuf, hawk2, ImageMagick, opera, python-autobahn, viewvc, wavpack, and xstream), &lt;b&gt;Red Hat&lt;/b&gt; (dnsmasq), &lt;b&gt;Slackware&lt;/b&gt; (seamonkey), &lt;b&gt;SUSE&lt;/b&gt; (hawk2, ImageMagick, mutt, permissions, and stunnel), and &lt;b&gt;Ubuntu&lt;/b&gt; (pound).
+
+      
+      </description>
+    </item>
