@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.GITHUB_PERSONAL_ACCESS_TOKEN }}
     - name: Set up worktrees
       run: |
         git fetch --no-tags --prune --depth=1 origin +refs/heads/*:refs/remotes/origin/*
@@ -23,8 +25,10 @@ jobs:
         FEED_URL: ${{ secrets.FEED_URL }}
         HUB_URL: ${{ secrets.WEBSUB_HUB_URL }}
       timeout-minutes: 5
-      run: ./cron.py
+      run: ./check-lwn.py
     - name: Commit if dirty
-      env:
-        GITHUB_PERSONAL_ACCESS_TOKEN: ${{ secrets.GITHUB_PERSONAL_ACCESS_TOKEN }}
-      run: ./commit.sh
+      run: |-
+        git config --global user.name 'GitHub Actions'
+        git config --global user.email "$(whoami)@$(hostname --fqdn)"
+        ./git-commit.sh gh-pages
+        ./git-commit.sh state
