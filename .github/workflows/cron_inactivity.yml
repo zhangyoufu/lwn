@@ -1,6 +1,9 @@
 on:
   schedule:
   - cron: '16 19 * * *'
+defaults:
+  run:
+    shell: bash
 jobs:
   check:
     runs-on: ubuntu-latest
