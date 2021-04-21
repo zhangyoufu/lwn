@@ -11,7 +11,7 @@ jobs:
     - name: Check last activity
       id: check
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_PERSONAL_ACCESS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets._GITHUB_PERSONAL_ACCESS_TOKEN }}
       run: |-
         set -euo pipefail
         UPDATED_AT=$(curl -fsS -H 'Accept: application/vnd.github.v3+json' -H "Authorization: Bearer ${GITHUB_TOKEN}" "https://api.github.com/repos/$GITHUB_REPOSITORY" | jq -r .updated_at)
@@ -31,7 +31,7 @@ jobs:
     steps:
     - name: Refresh repository
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_PERSONAL_ACCESS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets._GITHUB_PERSONAL_ACCESS_TOKEN }}
       run: |-
         set -euo pipefail
         UPDATED_AT=$(curl -fsS -H 'Accept: application/vnd.github.v3+json' -H "Authorization: Bearer ${GITHUB_TOKEN}" -H 'Content-Type: application/json' --data-raw '{"has_wiki":false}' "https://api.github.com/repos/$GITHUB_REPOSITORY" | jq -r .updated_at)
