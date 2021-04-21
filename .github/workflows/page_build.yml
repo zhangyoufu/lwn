@@ -1,5 +1,4 @@
 on: page_build
-
 jobs:
   WebSub:
     if: github.event.build.status == 'built'

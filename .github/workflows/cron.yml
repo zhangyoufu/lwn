@@ -2,7 +2,7 @@ on:
   push:
   schedule:
   - cron: '12,27,42,57 * * * *'
-
+concurrency: cron
 jobs:
   cron:
     runs-on: ubuntu-latest
