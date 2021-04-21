@@ -39,12 +39,5 @@ jobs:
         	git commit --amend --reset-author --message "${2:-automatic commit}"
         	git push --force
         }
-        cd gh-pages
-        if dirty; then
-        	push
-        	curl -fsS -X POST -H 'Accept: application/vnd.github.v3+json' -H "Authorization: token ${GITHUB_TOKEN}" "https://api.github.com/repos/$GITHUB_REPOSITORY/pages/builds"
-        fi
-        cd ../state
-        if dirty; then
-        	push
-        fi
+        (cd gh-pages; if dirty; then push; fi)
+        (cd state; if dirty; then push; fi)
