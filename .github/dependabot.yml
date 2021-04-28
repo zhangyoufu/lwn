@@ -1,0 +1,16 @@
+version: 2
+updates:
+- package-ecosystem: github-actions
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "09:00"
+    timezone: Asia/Shanghai
+  open-pull-requests-limit: 99
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "09:00"
+    timezone: Asia/Shanghai
+  open-pull-requests-limit: 99
