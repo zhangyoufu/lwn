@@ -37,7 +37,8 @@ jobs:
         GITHUB_TOKEN: ${{ secrets._GITHUB_PERSONAL_ACCESS_TOKEN }}
       run: |-
         set -euo pipefail
-        UPDATED_AT=$(curl -fsS -H 'Accept: application/vnd.github.v3+json' -H "Authorization: token ${GITHUB_TOKEN}" -H 'Content-Type: application/json' --data-raw '{"has_wiki":false}' "https://api.github.com/repos/$GITHUB_REPOSITORY" | jq -r .updated_at)
+        curl -fsS -X PATCH -H 'Accept: application/vnd.github.v3+json' -H "Authorization: token ${GITHUB_TOKEN}" -H 'Content-Type: application/json' --data-raw '{"has_wiki":true}' "https://api.github.com/repos/$GITHUB_REPOSITORY" >/dev/null
+        UPDATED_AT=$(curl -fsS -X PATCH -H 'Accept: application/vnd.github.v3+json' -H "Authorization: token ${GITHUB_TOKEN}" -H 'Content-Type: application/json' --data-raw '{"has_wiki":false}' "https://api.github.com/repos/$GITHUB_REPOSITORY" | jq -r .updated_at)
         THRESHOLD=$(date --date="$UPDATED_AT + 3 minutes" +%s)
         NOW=$(date +%s)
         test "$NOW" -lt "$THRESHOLD"
