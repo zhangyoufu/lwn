@@ -18,7 +18,7 @@ jobs:
         git fetch --no-tags --prune --depth=1 origin +refs/heads/*:refs/remotes/origin/*
         git worktree add gh-pages gh-pages
         git worktree add state state
-    - uses: actions/setup-python@v3
+    - uses: actions/setup-python@v4
       with:
         python-version: '3.x'
     - name: Install dependencies
