@@ -10,7 +10,9 @@ jobs:
   cron:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write # to update state & gh-pages branch
+      pages: write    # to deploy to Pages
+      id-token: write # to verify the deployment originates from an appropriate source
     steps:
     - uses: actions/checkout@v3
     - name: Set up worktrees
@@ -41,5 +43,19 @@ jobs:
         	git commit --amend --reset-author --message "${2:-automatic commit}"
         	git push --force
         }
-        (cd gh-pages; if dirty; then push; fi)
+        (cd gh-pages; if dirty; then push; echo "DEPLOY=1" >> "${GITHUB_ENV}"; fi)
         (cd state; if dirty; then push; fi)
+    - uses: actions/configure-pages@v3
+      if: env.DEPLOY == '1'
+    - uses: actions/upload-pages-artifact@v2
+      if: env.DEPLOY == '1'
+      with:
+        path: gh-pages
+    - uses: actions/deploy-pages@v2
+      if: env.DEPLOY == '1'
+    - name: Notify WebSub Hub
+      if: env.DEPLOY == '1'
+      env:
+        FEED_URL: ${{ secrets.FEED_URL }}
+        HUB_URL: ${{ secrets.WEBSUB_HUB_URL }}
+      run: curl --silent --show-error --data-urlencode hub.mode=publish --data-urlencode hub.url="${FEED_URL}" "${HUB_URL}"
