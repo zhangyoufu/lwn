@@ -51,7 +51,7 @@ jobs:
       if: env.DEPLOY == '1'
       with:
         path: gh-pages
-    - uses: actions/deploy-pages@v3
+    - uses: actions/deploy-pages@v4
       if: env.DEPLOY == '1'
     - name: Notify WebSub Hub
       if: env.DEPLOY == '1'
