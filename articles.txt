@@ -1,0 +1,386 @@
+﻿    <item rdf:about="https://lwn.net/Articles/961086/">
+      <title>Another runc container breakout</title>
+      <link>https://lwn.net/Articles/961086/</link>
+      <dc:date>2024-02-22T00:00:00+00:00</dc:date>
+      <dc:creator>jzb</dc:creator>
+      <description>
+      &lt;p&gt;Once again, &lt;a
+href=&quot;https://github.com/opencontainers/runc&quot;&gt;runc&lt;/a&gt;&amp;mdash;a tool
+for spawning and running OCI containers&amp;mdash;is drawing attention due to a &lt;a
+href=&quot;https://lwn.net/ml/oss-security/20240131.201014-manual.rungs.vicious.preface-640Q4W5TLTW7@cyphar.com/&quot;&gt;high
+severity container breakout attack&lt;/a&gt;. This vulnerability is interesting for
+several reasons: its potential for widespread impact, the continued difficulty
+in actually &lt;em&gt;containing&lt;/em&gt; containers, the dangers of running containers
+as a privileged user, and the fact that this vulnerability is made possible
+in part by a response to &lt;a href=&quot;https://lwn.net/Articles/781013/&quot;&gt;a previous
+container breakout flaw in runc&lt;/a&gt;.&lt;/p&gt;
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/961003/">
+      <title>Gnuplot 6 comes with pie</title>
+      <link>https://lwn.net/Articles/961003/</link>
+      <dc:date>2024-02-22T00:00:00+00:00</dc:date>
+      <dc:creator>jake</dc:creator>
+      <description>
+      &lt;a href=&quot;http://gnuplot.info/&quot;&gt;Gnuplot&lt;/a&gt;&amp;nbsp;6.0 was &lt;a
+href=&quot;http://gnuplot.info/ReleaseNotes_6_0_0.html&quot;&gt;released&lt;/a&gt; in
+December&amp;nbsp;2023, bringing a host of significant improvements and new
+capabilities to the open-source graphing tool. Here we survey the major
+new features, including 
+filled contours in 3D, adaptive plotting resolution, watchpoints, clipping
+of surfaces, sector plots for making things like pie charts, and new
+syntax for conditionals in gnuplot's scripting language. In addition, there
+are
+detailed examples of the features described.
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/961121/">
+      <title>Pitchforks for RDSEED</title>
+      <link>https://lwn.net/Articles/961121/</link>
+      <dc:date>2024-02-22T00:00:00+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      The generation of random (or, at least, unpredictable) numbers is key to
+many security technologies.  For this reason, the provision of random data
+as a CPU feature has drawn a lot of attention over the years.  A proper
+hardware-based random-number generator can address the problems that make
+randomness hard to obtain in some systems, but only if the manufacturer can
+be trusted to not have compromised that generator in some way.  A recent
+discussion has brought to light a different problem, though: what happens
+if a hardware random-number generator can be simply driven into exhaustion?
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/960456/">
+      <title>LWN.net Weekly Edition for February 8, 2024</title>
+      <link>https://lwn.net/Articles/960456/</link>
+      <dc:date>2024-02-15T00:00:00+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      The LWN.net Weekly Edition for February 8, 2024 is available.
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/960913/">
+      <title>So you think you understand IP fragmentation?</title>
+      <link>https://lwn.net/Articles/960913/</link>
+      <dc:date>2024-02-15T00:00:00+00:00</dc:date>
+      <dc:creator>jake</dc:creator>
+      <description>
+      What is IP fragmentation, why is it important, and do people understand
+it? The answer to that last question is &quot;not as well as they think&quot;. This
+article will also answer the rest of those
+questions and introduce &lt;a
+href=&quot;https://valerieaurora.org/fragquiz.html&quot;&gt;fragquiz&lt;/a&gt;, a game that I
+wrote to allow players to guess how IP packets will behave when they are
+too large for the network. As evidence that IP fragmentation is not
+well-understood, a room full of networking experts played fragquiz and got
+a score that was
+nowhere close to perfect.  In addition, I will describe a new algorithm for
+fragmentation avoidance, which some colleagues and I
+developed, that helped motivate development of fragquiz.
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/960309/">
+      <title>GNU C Library version 2.39</title>
+      <link>https://lwn.net/Articles/960309/</link>
+      <dc:date>2024-02-15T00:00:00+00:00</dc:date>
+      <dc:creator>daroc</dc:creator>
+      <description>
+      &lt;p&gt;
+The GNU C Library (glibc)
+&lt;a href=&quot;https://sourceware.org/pipermail/libc-alpha/2024-January/154363.html&quot;&gt;
+released version 2.39&lt;/a&gt; on January 31, including
+several new features. Notable highlights include new functions for spawning
+child processes, support for shadow stacks on x86_64, new security features, and
+the removal of libcrypt. The glibc maintainers had also hoped to include
+improvements to &lt;tt&gt;qsort()&lt;/tt&gt;, which ended up not making it into this
+release. Glibc releases are made every six months.
+&lt;/p&gt;
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/960041/">
+      <title>The end of tasklets</title>
+      <link>https://lwn.net/Articles/960041/</link>
+      <dc:date>2024-02-15T00:00:00+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      A common problem in kernel development is controlling &lt;i&gt;when&lt;/i&gt; a
+specific task should be done.  Kernel code often executes in contexts where
+some actions (sleeping, for example, or calling into filesystems) are not
+possible.  Other actions, while possible, may prevent the kernel from
+taking care of a more important task in a timely manner.  The kernel
+community has developed a number of deferred-execution mechanisms designed
+to ensure that every task is handled at the right time.  One of those
+mechanisms, tasklets, has been eyed for removal for years; that removal
+might just happen in the near future.
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/959915/">
+      <title>Zig 2024 roadmap</title>
+      <link>https://lwn.net/Articles/959915/</link>
+      <dc:date>2024-02-15T00:00:00+00:00</dc:date>
+      <dc:creator>daroc</dc:creator>
+      <description>
+      &lt;p&gt;
+The &lt;a href=&quot;https://ziglang.org/&quot;&gt;Zig language&lt;/a&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=5eL_LcxwwHg&quot;&gt;2024 roadmap&lt;/a&gt;
+was presented in a talk last week on
+&lt;a href=&quot;https://zig.show/&quot;&gt;Zig Showtime&lt;/a&gt; (a show covering
+Zig news). Andrew Kelley, the benevolent dictator for life of the Zig project,
+presented his goals
+for the language, largely focusing on compiler performance and continuing
+progress toward stabilization for the language. He discussed details of his plan
+for incremental compilation, and addressed the sustainability of the project in
+terms of both code contributions and financial support.
+&lt;/p&gt;
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/960088/">
+      <title>The hard life of a virtual-filesystem developer</title>
+      <link>https://lwn.net/Articles/960088/</link>
+      <dc:date>2024-02-15T00:00:00+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      Filesystem development is not an easy task; the performance demands are
+typically high, and the consequences for mistakes usually involve lost data
+and irate users.  The implementation of a virtual (or &quot;pseudo&quot;) filesystem
+— a filesystem implemented within the kernel and lacking a normal backing
+store — can also be challenging, but for different reasons.  A series of
+conversations around the eventfs virtual filesystem has turned a spotlight
+on the difficulty of creating a virtual filesystem for Linux.
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/961871/">
+      <title>FreeBSD phasing out 32-bit platforms</title>
+      <link>https://lwn.net/Articles/961871/</link>
+      <dc:date>2024-02-12T19:27:17+00:00</dc:date>
+      <dc:creator>jzb</dc:creator>
+      <description>
+      &lt;p&gt;The FreeBSD Project &lt;a href=&quot;https://lists.freebsd.org/archives/freebsd-announce/2024-February/000117.html&quot;&gt;has announced that it intends to deprecate 32-bit platforms&lt;/a&gt; &quot;&lt;q&gt;over the next couple of major releases&lt;/q&gt;&quot;. 
+
+&lt;blockquote class=&quot;bq&quot;&gt;
+We anticipate FreeBSD 15.0 will not include the armv6, i386, and powerpc platforms, and FreeBSD 16.0 will not include armv7. Support for executing 32-bit binaries on 64-bit kernels will be retained through at least the lifetime of the stable/16 branch if not longer.
+&lt;/blockquote&gt;
+
+&lt;p&gt;The announcement notes that support for some 32-bit platforms &quot;&lt;q&gt;may be extended if there is both demand and commitment to increased developer resources&lt;/q&gt;&quot;. More details about the current plans for 32-bit platforms are available &lt;a href=&quot;https://www.freebsd.org/releases/14.0R/relnotes/&quot;&gt;in the FreeBSD 14.0-RELEASE Release Notes&lt;/a&gt;.&lt;/p&gt;
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/961842/">
+      <title>Security updates for Monday</title>
+      <link>https://lwn.net/Articles/961842/</link>
+      <dc:date>2024-02-12T14:42:38+00:00</dc:date>
+      <dc:creator>jake</dc:creator>
+      <description>
+      Security updates have been issued by &lt;b&gt;Debian&lt;/b&gt; (libgit2), &lt;b&gt;Fedora&lt;/b&gt; (chromium, firecracker, libkrun, openssh, python-nikola, runc, rust-event-manager, rust-kvm-bindings, rust-kvm-ioctls, rust-linux-loader, rust-userfaultfd, rust-versionize, rust-vhost, rust-vhost-user-backend, rust-virtio-queue, rust-vm-memory, rust-vm-superio, rust-vmm-sys-util, virtiofsd, webkitgtk, and wireshark), &lt;b&gt;Mageia&lt;/b&gt; (filezilla and xpdf), &lt;b&gt;Oracle&lt;/b&gt; (gimp), &lt;b&gt;Red Hat&lt;/b&gt; (libmaxminddb, linux-firmware, squid:4, and tcpdump), &lt;b&gt;Slackware&lt;/b&gt; (xpdf), &lt;b&gt;SUSE&lt;/b&gt; (cdi-apiserver-container, cdi-cloner-container, cdi- controller-container, cdi-importer-container, cdi-operator-container, cdi- uploadproxy-container, cdi-uploadserver-container, cont and suse-build-key), and &lt;b&gt;Ubuntu&lt;/b&gt; (python-glance-store and webkit2gtk).
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/961764/">
+      <title>Kernel prepatch 6.8-rc4</title>
+      <link>https://lwn.net/Articles/961764/</link>
+      <dc:date>2024-02-11T20:43:26+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      The &lt;a href=&quot;https://lwn.net/Articles/961763/&quot;&gt;6.8-rc4&lt;/a&gt; kernel prepatch is out for
+testing.  &quot;&lt;q&gt;Commit counts and contents look normal for this phase of the
+release, nothing here really stands out.&lt;/q&gt;&quot;
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/961653/">
+      <title>Introducing Fedora Atomic Desktops (Fedora Magazine)</title>
+      <link>https://lwn.net/Articles/961653/</link>
+      <dc:date>2024-02-09T22:19:34+00:00</dc:date>
+      <dc:creator>jzb</dc:creator>
+      <description>
+      Fedora Magazine has &lt;a href=&quot;https://fedoramagazine.org/introducing-fedora-atomic-desktops/&quot;&gt;announced the creation Fedora Atomic Desktops&lt;/a&gt;: a way of branding Fedora's growing set of rpm-ostree spins. Joseph Gayso wrote &quot;&lt;q&gt;we’ve seen more of our mainline Fedora Linux spins make the jump to offer a version that implements rpm-ostree. It’s reached the point where it can be hard to talk about all of them at the same time. Therefore we’ve introduced a new brand that will serve to simplify how we discuss rpm-ostree and how we name future atomic spins.&lt;/q&gt;&quot; LWN &lt;a href=&quot;https://lwn.net/Articles/954059/&quot;&gt;covered Project Bluefin&lt;/a&gt;, which is based on Fedora's rpm-ostree work, in December 2023.
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/961655/">
+      <title>DRM-CI: A GitLab-CI pipeline for Linux kernel testing (Collabora Blog)</title>
+      <link>https://lwn.net/Articles/961655/</link>
+      <dc:date>2024-02-09T22:15:56+00:00</dc:date>
+      <dc:creator>jake</dc:creator>
+      <description>
+      Over on the Collabora blog, Helen Koike &lt;a
+href=&quot;https://www.collabora.com/news-and-blog/blog/2024/02/08/drm-ci-a-gitlab-ci-pipeline-for-linux-kernel-testing/&quot;&gt;writes&lt;/a&gt;
+about the DRM-CI project for running automated continuous integration (CI)
+tests on multiple graphics devices in several different labs.  It uses the
+&lt;a href=&quot;https://gitlab.freedesktop.org/drm/igt-gpu-tools&quot;&gt;IGT GPU
+tools&lt;/a&gt; for testing, though there are plans to expand:
+&lt;blockquote class=&quot;bq&quot;&gt;
+The roadmap for DRM-CI includes enabling other devices, incorporating
+additional tests like kselftests, adding support for vgem driver, and
+implementing further automations. DRM-CI builds upon the groundwork laid by
+&lt;a href=&quot;https://gitlab.freedesktop.org/mesa/mesa/&quot;&gt;Mesa3D CI&lt;/a&gt;,
+including its GitLab YAML files and most of its setup, fostering 
+collaboration and mutual strengthening.
+&lt;p&gt;
+[...] Adapting the DRM-CI pipeline to other subsystems is feasible with a
+few modifications. The primary consideration is setting up dedicated
+GitLab-CI runners since Freedesktop's infrastructure is meant only for
+graphics. 
+&lt;p&gt;
+In light of this, our team is developing a versatile and user-friendly
+GitLab-CI pipeline. This new pipeline is envisioned to function as a
+flexible interface for kernel maintainers and developers that can be
+evolved to connect with different test environments that can also be hooked
+with CI systems such as KernelCI. This approach aims to simplify the
+integration process, making GitLab-CI more accessible and beneficial to a
+broader range of developers. 
+&lt;/blockquote&gt;
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/961545/">
+      <title>Rowley: What’s new in the Postgres 16 query planner / optimizer</title>
+      <link>https://lwn.net/Articles/961545/</link>
+      <dc:date>2024-02-09T14:57:14+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      David Rowley &lt;a
+href=&quot;https://www.citusdata.com/blog/2024/02/08/whats-new-in-postgres-16-query-planner-optimizer/&quot;&gt;looks
+deeply&lt;/a&gt; into the improvements coming to the query planner in
+PostgreSQL&amp;nbsp;16.
+&lt;p&gt;
+&lt;blockquote class=&quot;bq&quot;&gt;
+	For a long time now, PostgreSQL has been able to remove a &lt;tt&gt;LEFT JOIN&lt;/tt&gt;
+	where no column from the left joined table was required in the
+	query and the join could not possibly duplicate any rows.
+&lt;p&gt;
+	However, in versions prior to PostgreSQL 16, there was no support
+	for left join removals on partitioned tables. Why? Because the
+	proofs that the planner uses to determine if there’s any
+	possibility any inner-side row could duplicate any outer-side row
+	were not present for partitioned tables.
+&lt;p&gt;
+	The PostgreSQL 16 query planner now allows the LEFT JOIN removal
+	optimization with partitioned tables.
+&lt;/blockquote&gt;
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/961584/">
+      <title>Security updates for Friday</title>
+      <link>https://lwn.net/Articles/961584/</link>
+      <dc:date>2024-02-09T14:50:40+00:00</dc:date>
+      <dc:creator>jake</dc:creator>
+      <description>
+      Security updates have been issued by &lt;b&gt;Debian&lt;/b&gt; (webkit2gtk), &lt;b&gt;Fedora&lt;/b&gt; (atril, chromium, gnutls, python-aiohttp, and webkitgtk), &lt;b&gt;Gentoo&lt;/b&gt; (libxml2), &lt;b&gt;Mageia&lt;/b&gt; (gnutls, gpac, kernel, kernel-linus, microcode, pam, and postfix), &lt;b&gt;Red Hat&lt;/b&gt; (container-tools:2.0, container-tools:3.0, container-tools:4.0, container-tools:rhel8, gimp, libmaxminddb, python-pillow, runc, and unbound), &lt;b&gt;SUSE&lt;/b&gt; (cosign, netpbm, python, python-Pillow, python3, and python36), and &lt;b&gt;Ubuntu&lt;/b&gt; (libde265, linux-gcp, linux-gcp-5.4, and linux-intel-iotg).
+
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/961405/">
+      <title>Google announces 2024 season of docs</title>
+      <link>https://lwn.net/Articles/961405/</link>
+      <dc:date>2024-02-08T20:14:32+00:00</dc:date>
+      <dc:creator>daroc</dc:creator>
+      <description>
+      &lt;p&gt;
+On February 2, Google announced this year's 
+&lt;a href=&quot;https://opensource.googleblog.com/2024/02/announcing-google-season-of-docs-2024.html?m=1&quot;&gt;
+&quot;Season of Docs&quot;&lt;/a&gt;, a program complementing its Summer of Code program
+by providing funding to open source projects to hire technical writers to improve
+their documentation. Interested projects have until April 2 to apply.
+&lt;/p&gt;
+
+&lt;blockquote class=&quot;bq&quot;&gt;
+Google Season of Docs provides direct grants to open source projects to improve their documentation and gives professional technical writers an opportunity to gain experience in open source. Together we raise awareness of open source, of docs, and of technical writing.
+&lt;/blockquote&gt;
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/961414/">
+      <title>Brennan: What's Inside a Linux Kernel Core Dump</title>
+      <link>https://lwn.net/Articles/961414/</link>
+      <dc:date>2024-02-08T19:53:29+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      Stephen Brennan &lt;a
+href=&quot;https://blogs.oracle.com/linux/post/whats-inside-a-linux-kernel-core-dump&quot;&gt;describes
+kernel core dumps&lt;/a&gt; in excruciating detail.
+&lt;p&gt;
+&lt;blockquote class=&quot;bq&quot;&gt;
+	Kernel core dumps are complex. They are not simply copies of system
+	memory; they contain plenty of extra metadata which is critical to
+	understanding their contents. And like any other type of data, the
+	design of the file formats can enable lots of flexibility and
+	power. However, due to the broad variety of tools out there, the
+	diversity of dump formats is overwhelming, and the lack of
+	documentation or specifications compounds the problem.
+&lt;/blockquote&gt;
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/961359/">
+      <title>A new CEO for Mozilla</title>
+      <link>https://lwn.net/Articles/961359/</link>
+      <dc:date>2024-02-08T15:27:51+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      Mitchell Baker has &lt;a
+href=&quot;https://blog.mozilla.org/en/mozilla/a-new-chapter-for-mozilla-laura-chambers-expanded-role/&quot;&gt;announced&lt;/a&gt;
+that she is stepping down from the role of Mozilla CEO, effective
+immediately.  Laura Chambers will be the new CEO &quot;&lt;q&gt;for the remainder of
+the year&lt;/q&gt;&quot;.
+&lt;p&gt;
+&lt;blockquote class=&quot;bq&quot;&gt;
+	We’re at a critical juncture where public trust in institutions,
+	governments, and the fabric of the internet has reached
+	unprecedented lows. There’s a tectonic shift underway as everyone
+	battles to own the future of AI. It is Mozilla’s opportunity and
+	imperative to forge a better future. I’m excited about Laura’s
+	day-to-day involvement and the chance for Mozilla to achieve
+	more. Our power lies in the collective effort of people
+	contributing to something better and I’m eager for Mozilla to meet
+	the needs of this era more fully. 
+&lt;/blockquote&gt;
+      
+      </description>
+    </item>
+    <item rdf:about="https://lwn.net/Articles/961355/">
+      <title>Glibc becomes a CVE Numbering Authority</title>
+      <link>https://lwn.net/Articles/961355/</link>
+      <dc:date>2024-02-08T15:07:53+00:00</dc:date>
+      <dc:creator>corbet</dc:creator>
+      <description>
+      The GNU C Library project &lt;a
+href=&quot;https://lwn.net/ml/oss-security/ec94d28c-dbf4-4506-98e3-313c38ae15d5@redhat.com/&quot;&gt;has
+been accepted&lt;/a&gt; as a CVE Numbering Authority (CNA), meaning that the
+project is now in control of the CVE numbers assigned to its code.
+&lt;p&gt;
+&lt;blockquote class=&quot;bq&quot;&gt;
+	As a CNA the glibc security team will be working to improve the
+	quality and response time of security advisories and mitigations.
+&lt;p&gt;
+	Over the coming months, the glibc security team will define the
+	process for the CNA and establish best practices that can also be
+	used by the rest of the GNU Toolchain.
+&lt;/blockquote&gt;
+&lt;p&gt;
+See &lt;a href=&quot;https://lwn.net/Articles/945536/&quot;&gt;this article&lt;/a&gt; for some background on
+this change.
+      
+      </description>
+    </item>
