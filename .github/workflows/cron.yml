@@ -45,7 +45,7 @@ jobs:
         }
         (cd gh-pages; if dirty; then push; echo "DEPLOY=1" >> "${GITHUB_ENV}"; fi)
         (cd state; if dirty; then push; fi)
-    - uses: actions/configure-pages@v4
+    - uses: actions/configure-pages@v5
       if: env.DEPLOY == '1'
     - uses: actions/upload-pages-artifact@v3
       if: env.DEPLOY == '1'
