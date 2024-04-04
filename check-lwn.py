@@ -119,7 +119,7 @@ items = channel[i:]
 del channel[i:]
 
 ## add WebSub Hub URL
-ET.SubElement(channel, '{http://www.w3.org/2005/Atom}link', {'href': websub_hub_url})
+ET.SubElement(channel, '{http://www.w3.org/2005/Atom}link', {'href': websub_hub_url, 'rel': 'hub'})
 
 ## RSS_output = remote_free_articles + local_available_articles
 ## local_articles -= expired_local_articles
