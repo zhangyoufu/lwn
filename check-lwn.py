@@ -131,14 +131,14 @@ for item in items:
 	remote_article = Article(item)
 	article_id = remote_article.id_
 	if not remote_article.is_paid:
-		output.append(remote_article)
+		output.append((remote_article.pub_date, remote_article))
 		local_articles.pop(article_id, None)
 	else: # is_paid
 		local_article = local_articles.get(article_id, None)
 		if local_article is not None:
 			# known
 			if local_article.pub_date <= now:
-				output.append(local_article)
+				output.append((local_article.pub_date, local_article))
 			if local_article_expire <= local_article.pub_date:
 				del local_articles[article_id]
 		else:
@@ -146,10 +146,10 @@ for item in items:
 			local_articles[article_id] = remote_article
 
 ## sort output items by pub_date
-output.sort(key=lambda x: x.pub_date)
+output.sort()
 
 ## add output items into RSS skeleton
-for item in output:
+for _, item in output:
 	channel.append(item.xml)
 
 ## RSS output
