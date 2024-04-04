@@ -1,146 +1,163 @@
 #!/usr/bin/env python3
-from contextlib import contextmanager
-from dataclasses import dataclass
+import dataclasses
 import datetime
+import email.utils
+import json
 import os
+import pathlib
 import re
 import requests
-import sys
 import time
+import xml.etree.ElementTree as ET
 
-HTTP_RETRY_INTERVAL = 60
-STATE_FILENAME = 'state/articles.txt'
-RSS_FILENAME = 'gh-pages/rss.rdf'
+state_filename = 'state/articles.json'
+rss_filename = 'gh-pages/rss.xml'
+feed_url = os.environ.get('FEED_URL', 'https://zhangyoufu.github.io/lwn/rss.xml')
+websub_hub_url = os.environ.get('WEBSUB_HUB_URL', 'https://pubsubhubbub.appspot.com/')
 
-def http_get(url, expect=(200,), **kwargs):
+def http_get(url, expect=(200,), retry_count=3, retry_interval=15, **kwargs):
     print('GET', url)
     kwargs.setdefault('allow_redirects', False)
-    while 1:
+    for retry_idx in range(retry_count):
         try:
             rsp = requests.get(url, **kwargs)
-            if rsp.status_code not in expect:
-                raise RuntimeError
+            assert rsp.status_code in expect, f'unexpected HTTP response status code {rsp.status_code}'
             return rsp
         except Exception:
-            time.sleep(HTTP_RETRY_INTERVAL)
+            if retry_idx == retry_count - 1:
+                raise
+            time.sleep(retry_interval)
 
-month_idx = {k: v+1 for v,k in enumerate('January|February|March|April|May|June|July|August|September|October|November|December'.split('|'))}
+month_names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+month_idx = {s: i+1 for i, s in enumerate(month_names)}
 
-# TODO: verify whether the actual unlock time is 00:00 UTC
-def get_avail_date(article_id, date):
+# TODO: unsure whether the unlock time is 00:00 UTC
+def get_article_free_date(article_id: int, default: datetime.datetime) -> datetime.datetime:
     rsp = http_get(f'https://lwn.net/Articles/{article_id}/', expect=(200, 403))
     if rsp.status_code == 200:
-        return date
-    m = re.search(r'available on (?P<month>January|February|March|April|May|June|July|August|September|October|November|December) (?P<day>[1-9]|[12][0-9]|3[01]), (?P<year>\d{4,})', rsp.text)
-    return datetime.datetime(
-        year = int(m.group('year')),
-        month = month_idx[m.group('month')],
-        day = int(m.group('day')),
+        return default
+    m = re.search(r'available on (?P<month>'+'|'.join(month_names)+r') (?P<day>[1-9]|[12][0-9]|3[01]), (?P<year>\d{4,})', rsp.text)
+    result = datetime.datetime(
+        year=int(m.group('year')),
+        month=month_idx[m.group('month')],
+        day=int(m.group('day')),
         tzinfo = datetime.timezone.utc,
     )
+    print('available on', result)
+    return result
 
-def get_date(articles, ref={}):
-    for article in articles:
-        raw = article.raw
-        m = re.search(r'(?s)<title>(?P<dollar>\[\$\] )?.*?<dc:date>(?P<date>[^<]+)</dc:date>', raw)
-        dollar = m.group('dollar') is not None
-        date = datetime.datetime.fromisoformat(m.group('date'))
-        if dollar:
-            date = ref.get(article.id, None) or get_avail_date(article.id, date)
-            article.raw = ''.join((
-                raw[:m.start('dollar')],
-                raw[m.end('dollar'):m.start('date')],
-                date.isoformat(),
-                raw[m.end('date'):],
-            ))
-        article.date = date
-
-@dataclass(init=False)
+@dataclasses.dataclass
 class Article:
-    date: datetime.datetime
-    id: int
-    raw: str
+	xml: ET.Element
+	_pub_date_elem: ET.Element
+	_title_elem: ET.Element
+	id_: int
 
-# BUG: assume there is no multiple '[$] ' prefix in title
-def load(data):
-    articles = []
-    for m in re.finditer(r'(?ms)^\s*<item rdf:about="https://lwn\.net/Articles/(?P<article_id>\d+).*?</item>', data):
-        article = Article()
-        article.id = int(m.group('article_id'))
-        article.raw = m.group()
-        articles.append(article)
-    return articles
+	def __init__(self, xml: ET.Element) -> None:
+		self.xml = xml
+		self._pub_date_elem = xml.find('pubDate')
+		self._title_elem = self.xml.find('title')
+		self.id_ = int(re.fullmatch(r'https://lwn\.net/Articles/(\d+)/', xml.find('link').text).group(1))
 
-def load_from(filename):
-    try:
-        with open(filename, encoding='utf-8-sig') as f:
-            return load(f.read())
-    except FileNotFoundError:
-        return []
+	@property
+	def title(self) -> str:
+		return self._title_elem.text
 
-local = load_from(STATE_FILENAME)
-get_date(local)
-id_set = set(article.id for article in local)
-date_dict = {article.id: article.date for article in local}
+	@title.setter
+	def title(self, value: str) -> None:
+		self._title_elem.text = value
 
-remote = load(http_get('https://lwn.net/headlines/rss').text.replace('/rss</link>', '/</link>'))
-remote = list(filter(lambda article: article.id not in id_set, remote))
-get_date(remote, ref=date_dict)
+	@property
+	def pub_date(self) -> datetime.datetime:
+		return email.utils.parsedate_to_datetime(self._pub_date_elem.text)
 
-items = remote + local
-items = sorted(items, key=lambda article: article.date, reverse=True)
+	@pub_date.setter
+	def pub_date(self, value: datetime.datetime) -> None:
+		self._pub_date_elem.text = email.utils.format_datetime(value)
 
-now = datetime.datetime.now(tz=datetime.timezone.utc)
+	@property
+	def is_paid(self) -> bool:
+		return self.title.startswith('[$] ')
 
-count = 20
-local = []
-for article in items:
-    if article.date <= now:
-        # this article is freely available
-        if count <= 0:
-            # too many free articles, discard
-            continue
-        count -= 1
-    local.append(article)
+	def resolve(self) -> None:
+		title = self.title
+		if title.startswith('[$] '):
+			self.title = title[4:]
+			self.pub_date = get_article_free_date(self.id_, self.pub_date)
 
-publish = list(filter(lambda article: article.date < now, local))
+local_articles: dict[int, Article] = {}
 
-linesep = '\n'
-rss = f'''\
-<?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF
-  xmlns="http://purl.org/rss/1.0/"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:syn="http://purl.org/rss/1.0/modules/syndication/"
-  xmlns:dc="http://purl.org/dc/elements/1.1/"
-  xmlns:atom="http://www.w3.org/2005/Atom"
->
-  <channel rdf:about="{os.environ['FEED_URL']}">
-    <title>LWN.net</title>
-    <link>https://lwn.net</link>
-    <description>
-      LWN.net is a comprehensive source of news and opinions from
-      and about the Linux community. This is the main LWN.net feed,
-      listing all articles which are posted to the site front page.
-    </description>
-    <syn:updatePeriod>hourly</syn:updatePeriod>
-    <syn:updateFrequency>6</syn:updateFrequency>
-    <atom:link rel="self" href="{os.environ['FEED_URL']}" />
-    <atom:link rel="hub" href="{os.environ['HUB_URL']}" />
-    <items>
-      <rdf:Seq>
-{linesep.join(f'        <rdf:li resource="https://lwn.net/Articles/{article.id}/rss" />' for article in publish)}
-      </rdf:Seq>
-    </items>
-  </channel>
-{linesep.join(article.raw for article in publish)}
-</rdf:RDF>
-'''
+## load local state (if available)
+state_path = pathlib.Path(state_filename)
+if state_path.exists():
+	for item in json.loads(state_path.read_bytes()):
+		article = Article(ET.fromstring(item))
+		local_articles[article.id_] = article
 
-with open(STATE_FILENAME, 'w', encoding='utf-8-sig') as f:
-    f.write('\n'.join(article.raw for article in local))
-    f.truncate()
+## load remote RSS feed
+root = ET.fromstring(http_get('https://lwn.net/headlines/rss').text)
+rss = root
+assert rss.tag == 'rss'
+assert rss.get('version') == '2.0'
+assert len(rss) == 1
+channel = rss[0]
+assert channel.tag == 'channel'
 
-with open(RSS_FILENAME, 'w') as f:
-    f.write(rss)
-    f.truncate()
+## override feed URL
+feed_link = channel.find('{http://www.w3.org/2005/Atom}link')
+feed_link.set('href', feed_url)
+
+## extract feed items, leave the skeleton
+i = 0
+while i < len(channel) and channel[i].tag != 'item':
+	i += 1
+j = i + 1
+while j < len(channel) and channel[j].tag == 'item':
+	j += 1
+assert j == len(channel)
+items = channel[i:]
+del channel[i:]
+
+## add WebSub Hub URL
+ET.SubElement(channel, '{http://www.w3.org/2005/Atom}link', {'href': websub_hub_url})
+
+## RSS_output = remote_free_articles + local_available_articles
+## local_articles -= expired_local_articles
+## local_articles += remote_paid_articles_previously_unknown
+now = datetime.datetime.now(datetime.timezone.utc)
+local_article_expire = now + datetime.timedelta(days=3)
+output = []
+for item in items:
+	remote_article = Article(item)
+	article_id = remote_article.id_
+	if not remote_article.is_paid:
+		output.append(remote_article)
+		local_articles.pop(article_id, None)
+	else: # is_paid
+		local_article = local_articles.get(article_id, None)
+		if local_article is not None:
+			# known
+			if local_article.pub_date <= now:
+				output.append(local_article)
+			if local_article_expire <= local_article.pub_date:
+				del local_articles[article_id]
+		else:
+			remote_article.resolve()
+			local_articles[article_id] = remote_article
+
+## sort output items by pub_date
+output.sort(key=lambda x: x.pub_date)
+
+## add output items into RSS skeleton
+for item in output:
+	channel.append(item.xml)
+
+## RSS output
+ET.indent(root, space='\t')
+pathlib.Path(rss_filename).write_bytes(ET.tostring(root, encoding='utf-8'))
+
+## save state
+state_path.write_text(json.dumps([
+	ET.tostring(article.xml, encoding='unicode')
+	for article in local_articles.values()
+], ensure_ascii=False), encoding='utf-8-sig')

@@ -28,7 +28,7 @@ jobs:
     - name: Check LWN
       env:
         FEED_URL: ${{ secrets.FEED_URL }}
-        HUB_URL: ${{ secrets.WEBSUB_HUB_URL }}
+        WEBSUB_HUB_URL: ${{ secrets.WEBSUB_HUB_URL }}
       timeout-minutes: 5
       run: ./check-lwn.py
     - name: Commit if dirty
@@ -57,5 +57,5 @@ jobs:
       if: env.DEPLOY == '1'
       env:
         FEED_URL: ${{ secrets.FEED_URL }}
-        HUB_URL: ${{ secrets.WEBSUB_HUB_URL }}
-      run: curl --silent --show-error --data-urlencode hub.mode=publish --data-urlencode hub.url="${FEED_URL}" "${HUB_URL}"
+        WEBSUB_HUB_URL: ${{ secrets.WEBSUB_HUB_URL }}
+      run: curl --silent --show-error --data-urlencode hub.mode=publish --data-urlencode hub.url="${FEED_URL}" "${WEBSUB_HUB_URL}"
