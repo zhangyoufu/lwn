@@ -1,0 +1,202 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2005/Atom" version="2.0">
+	<channel>
+		<title>LWN.net</title>
+		<link>https://lwn.net</link>
+		<description> LWN.net is a comprehensive source of news and opinions from
+        and about the Linux community.  This is the main LWN.net feed,
+        listing all articles which are posted to the site front page.
+</description>
+		<language>en-us</language>
+		<pubDate>Tue, 02 Jul 2024 17:38:14 +0000</pubDate>
+		<lastBuildDate>Tue, 02 Jul 2024 17:38:14 +0000</lastBuildDate>
+		<docs>https://www.rssboard.org/rss-specification</docs>
+		<webMaster>lwn@lwn.net</webMaster>
+		<ns0:link href="https://zhangyoufu.github.io/lwn/rss.rdf" rel="self" type="application/rss+xml" />
+		<ns0:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
+		<item>
+			<title>Free Software Foundation adds three board members</title>
+			<link>https://lwn.net/Articles/979918/</link>
+			<guid>https://lwn.net/Articles/979918/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;The Free Software Foundation (FSF) has &lt;a
+href="https://www.fsf.org/news/fsf-adds-3-highly-qualified-board-members"&gt;announced&lt;/a&gt;
+the addition of three new members to its board: John Gilmore,
+Christina Haralanova, and Maria Chiara Pievatolo. This is part of FSF
+governance changes &lt;a
+href="https://www.fsf.org/about/staff-and-board/board/board-process-graph"&gt;announced&lt;/a&gt;
+in January 2023. The next step is a review of current board
+members:&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+These three new members of the FSF's board of directors are the first
+to be appointed since 2020, when Odile Bénassy joined. Given the
+importance of the FSF to the free software movement, and the
+importance of its board to ensure preservation of the software freedom
+definition, the board has not taken its task lightly. Next, the FSF
+will evaluate current board members with the FSF's associate members
+in August, after which the &lt;a
+href="https://www.fsf.org/news/fsf-board-frequently-asked-questions-faq#BoardvsVoting"&gt;voting
+members&lt;/a&gt; will review the feedback
+received and decide if each current board member should remain.
+&lt;/blockquote&gt;
+
+&lt;p&gt;More information on the process, and a short biography of each new
+board member, is available in the full announcement.&lt;/p&gt;</description>
+			<pubDate>Thu, 27 Jun 2024 18:04:48 +0000</pubDate>
+		</item>
+		<item>
+			<title>Mourning Daniel Bristot de Oliveira</title>
+			<link>https://lwn.net/Articles/979912/</link>
+			<guid>https://lwn.net/Articles/979912/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>The academic and the Linux real-time and scheduling community mourns the
+premature death of &lt;a href="https://bristot.me/about/"&gt;Daniel Bristot de
+Oliveira&lt;/a&gt;. Daniel died at the age of 37 on Monday, June 24, 2024.
+Juri Lelli, Tommaso Cucinotta, Steve Rostedt, Kate Stewart, and Thomas
+Gleixner have come together to share their thoughts on his life and what he
+has left behind
+</description>
+			<pubDate>Thu, 27 Jun 2024 18:14:42 +0000</pubDate>
+		</item>
+		<item>
+			<title>Highlights from the FreeBSD Developer Summit</title>
+			<link>https://lwn.net/Articles/979935/</link>
+			<guid>https://lwn.net/Articles/979935/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;The FreeBSD Foundation has published
+&lt;a
+href="https://freebsdfoundation.org/blog/highlights-from-the-freebsd-developer-summit-2024-innovations-and-future-directions/"&gt;a
+set of reports&lt;/a&gt; from the &lt;a
+href="https://freebsdfoundation.org/news-and-events/event-calendar/may-2024-freebsd-developer-summit/"&gt;May
+2024 FreeBSD Developer Summit&lt;/a&gt; held in Ottawa, Canada. The topics
+include FreeBSD Core Team updates, FreeBSD 15 release planning,
+Integration with Rust, and &lt;a
+href="https://freebsdfoundation.org/blog/2024-freebsd-developer-summit-oci-containers-on-freebsd/"&gt;OCI
+containers on FreeBSD&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+Doug Rabson began by providing an overview of the current state of
+FreeBSD support for OCI containers, noting that while FreeBSD has long
+supported containers through its jail and vnet features, the ecosystem
+around OCI containers requires further development. "FreeBSD has been
+able to do containers for a long time, but we need to align better
+with OCI standards to make our containers more compatible and easier
+to use," Rabson remarked​​.
+&lt;/blockquote&gt;</description>
+			<pubDate>Thu, 27 Jun 2024 20:08:36 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Friday</title>
+			<link>https://lwn.net/Articles/979999/</link>
+			<guid>https://lwn.net/Articles/979999/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (pki-core), &lt;b&gt;Debian&lt;/b&gt; (dlt-daemon and plasma-workspace), &lt;b&gt;Fedora&lt;/b&gt; (emacs and kernel), &lt;b&gt;Mageia&lt;/b&gt; (erofs-utils, libheif, libopenmpt, and wget), &lt;b&gt;Red Hat&lt;/b&gt; (pki-core and python3), &lt;b&gt;SUSE&lt;/b&gt; (frr), and &lt;b&gt;Ubuntu&lt;/b&gt; (fontforge, sqlite3, and squid3).
+</description>
+			<pubDate>Fri, 28 Jun 2024 12:53:04 +0000</pubDate>
+		</item>
+		<item>
+			<title>FSF Europe condemns Apple's DMA noncompliance</title>
+			<link>https://lwn.net/Articles/980003/</link>
+			<guid>https://lwn.net/Articles/980003/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>&lt;p&gt;
+The Free Software Foundation Europe has
+&lt;a href="https://fsfe.org/news/2024/news-20240627-01.en.html"&gt;
+submitted&lt;/a&gt; a joint position to the European Commission (EC), claiming that Apple
+has failed to comply with the EU's Digital Markets Act (DMA). This is the law
+that requires Apple to support alternative application stores on the devices it
+makes.
+&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+Apple's unfair behaviour against Free Software highlights the critical need to
+monitor the implementation of the DMA. The FSFE collaborated with F-Droid, the
+AppFair project, and other interoperability experts to scrutinize Apple's DMA
+compliance, and it's impact on Free Software. Since then, we coordinated several
+expert workshops with stakeholders,
+&lt;a href="https://fsfe.org/news/2024/news-20240318-02.en.html"&gt;
+discussed with regulators in FOSDEM&lt;/a&gt;, had
+&lt;a href="https://fsfe.org/news/nl/nl-202406.en.html#interoperability-apple"&gt;
+official meetings with the EC's DMA team&lt;/a&gt;, and submitted a
+&lt;a href="https://download.fsfe.org/device-neutrality/202404-FSFE-apple-report-EC.pdf"&gt;
+comprehensive position&lt;/a&gt;
+to the EC detailing several problematic elements in the Apple compliance that
+will harm the Free Software.
+&lt;/blockquote&gt;</description>
+			<pubDate>Fri, 28 Jun 2024 14:37:05 +0000</pubDate>
+		</item>
+		<item>
+			<title>Kernel prepatch 6.10-rc6</title>
+			<link>https://lwn.net/Articles/980175/</link>
+			<guid>https://lwn.net/Articles/980175/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Linus has released &lt;a href="https://lwn.net/Articles/980174/"&gt;6.10-rc6&lt;/a&gt; for testing.
+"&lt;q&gt;This release continues to be fairly calm, and rc6 looks pretty small.
+It's also entirely just random small fixes spread all over, with no bigger
+pattern.&lt;/q&gt;"</description>
+			<pubDate>Sun, 30 Jun 2024 22:38:34 +0000</pubDate>
+		</item>
+		<item>
+			<title>Serious vulnerability fixed with OpenSSH 9.8</title>
+			<link>https://lwn.net/Articles/980211/</link>
+			<guid>https://lwn.net/Articles/980211/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>&lt;a href="https://lwn.net/ml/all/d2ed9e542682bf82@cvs.openbsd.org"&gt;OpenSSH 9.8&lt;/a&gt; has been
+released, fixing an ugly vulnerability:
+&lt;p&gt;
+&lt;blockquote class="bq"&gt;
+	Successful exploitation has been demonstrated on 32-bit Linux/glibc
+	systems with ASLR. Under lab conditions, the attack requires on
+	average 6-8 hours of continuous connections up to the maximum the
+	server will accept. Exploitation on 64-bit systems is believed to
+	be possible but has not been demonstrated at this time. It's likely
+	that these attacks will be improved upon.
+&lt;p&gt;
+	Exploitation on non-glibc systems is conceivable but has not been
+	examined.
+&lt;/blockquote&gt;
+&lt;p&gt;
+There is &lt;a
+href="https://lwn.net/ml/all/4f270df5-2b24-979d-c03f-6d8f3b9d007d@mindrot.org"&gt;a
+configuration workaround&lt;/a&gt; for systems that cannot be updated, though it
+has its own problems.  See &lt;a
+href="https://lwn.net/ml/all/20240701083838.GA12787@localhost.localdomain"&gt;this Qualys
+advisory&lt;/a&gt; for more details.</description>
+			<pubDate>Mon, 01 Jul 2024 12:53:18 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Monday</title>
+			<link>https://lwn.net/Articles/980252/</link>
+			<guid>https://lwn.net/Articles/980252/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;Debian&lt;/b&gt; (dcmtk, edk2, emacs, glibc, gunicorn, libmojolicious-perl, openssh, org-mode, pdns-recursor, tryton-client, and tryton-server), &lt;b&gt;Fedora&lt;/b&gt; (freeipa, kitty, libreswan, mingw-gstreamer1, mingw-gstreamer1-plugins-bad-free, mingw-gstreamer1-plugins-base, mingw-gstreamer1-plugins-good, mingw-poppler, and mingw-python-urllib3), &lt;b&gt;Gentoo&lt;/b&gt; (cpio, cryptography, GNU Emacs, Org Mode, GStreamer, GStreamer Plugins, Liferea, Pixman, SDL_ttf, SSSD, and Zsh), &lt;b&gt;Oracle&lt;/b&gt; (pki-core), &lt;b&gt;Red Hat&lt;/b&gt; (httpd:2.4, libreswan, and pki-core), &lt;b&gt;SUSE&lt;/b&gt; (glib2 and kubevirt, virt-api-container, virt-controller-container, virt-exportproxy-container, virt-exportserver-container, virt-handler-container, virt-launcher-container, virt-libguestfs-t), and &lt;b&gt;Ubuntu&lt;/b&gt; (espeak-ng, libcdio, and openssh).
+</description>
+			<pubDate>Mon, 01 Jul 2024 12:56:30 +0000</pubDate>
+		</item>
+		<item>
+			<title>Scientific Linux 7 reaches end of life</title>
+			<link>https://lwn.net/Articles/980312/</link>
+			<guid>https://lwn.net/Articles/980312/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>While the end of support for CentOS 7, which happened on June&amp;nbsp;30, is
+significant, it is also worth taking a moment to reflect on the end of
+Scientific Linux&amp;nbsp;7, which has also just occurred.  Scientific Linux
+was once a popular RHEL rebuild supported by Fermilab, CERN, DESY, and ETH
+Zurich.  Development of Scientific Linux stopped with SL7, with the labs
+switching to CentOS thereafter, but the SL7 release was supported through
+to the bitter end.  Thanks are due to all who built and supported
+Scientific Linux; you provided a useful and stable platform for many years.
+</description>
+			<pubDate>Mon, 01 Jul 2024 21:02:46 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Tuesday</title>
+			<link>https://lwn.net/Articles/980393/</link>
+			<guid>https://lwn.net/Articles/980393/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (httpd:2.4/httpd), &lt;b&gt;Arch Linux&lt;/b&gt; (openssh), &lt;b&gt;Fedora&lt;/b&gt; (cups, emacs, and python-urllib3), &lt;b&gt;Gentoo&lt;/b&gt; (OpenSSH), &lt;b&gt;Mageia&lt;/b&gt; (ffmpeg, gdb, openssl, python-idna, and python-imageio), &lt;b&gt;Red Hat&lt;/b&gt; (golang and kernel), &lt;b&gt;SUSE&lt;/b&gt; (booth, libreoffice, openssl-1_1-livepatches, podman, python-arcomplete, python-Fabric, python-PyGithub, python- antlr4-python3-runtime, python-avro, python-chardet, python-distro, python- docker, python-fakeredis, python-fixedint, pyth, python-Js2Py, python310, python39, and squid), and &lt;b&gt;Ubuntu&lt;/b&gt; (cups and netplan.io).
+</description>
+			<pubDate>Tue, 02 Jul 2024 12:41:51 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
