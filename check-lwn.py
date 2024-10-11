@@ -31,12 +31,12 @@ def http_get(url, expect=(200,), retry_count=3, retry_interval=15, **kwargs):
 month_names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 month_idx = {s: i+1 for i, s in enumerate(month_names)}
 
-# TODO: unsure whether the unlock time is 00:00 UTC
 def get_article_free_date(article_id: int, default: datetime.datetime) -> datetime.datetime:
     rsp = http_get(f'https://lwn.net/Articles/{article_id}/', expect=(200, 403))
     if rsp.status_code == 200:
         return default
     m = re.search(r'available on (?P<month>'+'|'.join(month_names)+r') (?P<day>[1-9]|[12][0-9]|3[01]), (?P<year>\d{4,})', rsp.text)
+    # the unlock time is 00:00 UTC
     result = datetime.datetime(
         year=int(m.group('year')),
         month=month_idx[m.group('month')],
