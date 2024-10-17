@@ -1,0 +1,127 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2005/Atom" version="2.0">
+	<channel>
+		<title>LWN.net</title>
+		<link>https://lwn.net</link>
+		<description> LWN.net is a comprehensive source of news and opinions from
+        and about the Linux community.  This is the main LWN.net feed,
+        listing all articles which are posted to the site front page.
+</description>
+		<language>en-us</language>
+		<pubDate>Thu, 17 Oct 2024 22:21:54 +0000</pubDate>
+		<lastBuildDate>Thu, 17 Oct 2024 22:21:54 +0000</lastBuildDate>
+		<docs>https://www.rssboard.org/rss-specification</docs>
+		<webMaster>lwn@lwn.net</webMaster>
+		<ns0:link href="https://zhangyoufu.github.io/lwn/rss.rdf" rel="self" type="application/rss+xml" />
+		<ns0:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
+		<item>
+			<title>Inkscape 1.4 released</title>
+			<link>https://lwn.net/Articles/994098/</link>
+			<guid>https://lwn.net/Articles/994098/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a
+href="https://inkscape.org/news/2024/10/13/inkscape-launches-version-14-powerful-new-accessib/"&gt;Version
+1.4&lt;/a&gt; of the &lt;a href="https://inkscape.org/"&gt;Inkscape&lt;/a&gt;
+open-source vector-graphics editor has been released. Highlights of
+this release include a filter gallery, import for &lt;a href="https://en.wikipedia.org/wiki/Affinity_Designer"&gt;Affinity Designer&lt;/a&gt;
+files, internal links in exported PDFs, and more. See the &lt;a
+href="https://inkscape.org/doc/release_notes/1.4/Inkscape_1.4.html"&gt;release
+notes&lt;/a&gt; for all of the new features. LWN &lt;a
+href="https://lwn.net/Articles/991732/"&gt;previewed&lt;/a&gt; the 1.4 release
+in early October.&lt;/p&gt;</description>
+			<pubDate>Mon, 14 Oct 2024 18:19:01 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Tuesday</title>
+			<link>https://lwn.net/Articles/994268/</link>
+			<guid>https://lwn.net/Articles/994268/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (container-tools:rhel8, firefox, OpenIPMI, podman, and thunderbird), &lt;b&gt;Debian&lt;/b&gt; (libapache-mod-jk, php7.4, and webkit2gtk), &lt;b&gt;Fedora&lt;/b&gt; (edk2, koji, libgsf, rust-hyper-rustls, rust-reqwest, rust-rustls-native-certs, rust-rustls-native-certs0.7, rust-tonic, rust-tonic-build, rust-tonic-types, rust-tower, rust-tower-http, rust-tower-http0.5, and rust-tower0.4), &lt;b&gt;Mageia&lt;/b&gt; (firefox, firefox-l10n, and thunderbird), &lt;b&gt;Oracle&lt;/b&gt; (bind, container-tools:ol8, kernel, kernel-container, OpenIPMI, podman, and thunderbird), &lt;b&gt;Red Hat&lt;/b&gt; (container-tools:rhel8, containernetworking-plugins, podman, and skopeo), &lt;b&gt;SUSE&lt;/b&gt; (argocd-cli, bsdtar, keepalived, kernel, kyverno, libmozjs-115-0, libmozjs-128-0, libmozjs-78-0, OpenIPMI, opensc, php8, thunderbird, and xen), and &lt;b&gt;Ubuntu&lt;/b&gt; (configobj, haproxy, imagemagick, nginx, and postgresql-10, postgresql-9.3).
+</description>
+			<pubDate>Tue, 15 Oct 2024 13:43:08 +0000</pubDate>
+		</item>
+		<item>
+			<title>LibreSSL 4.0.0 released</title>
+			<link>https://lwn.net/Articles/994320/</link>
+			<guid>https://lwn.net/Articles/994320/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a href="https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-4.0.0-relnotes.txt"&gt;Version 4.0.0&lt;/a&gt; of the &lt;a
+href="https://www.libressl.org/"&gt;LibreSSL&lt;/a&gt; TLS/cryptography stack
+has been released. Changes include a cleanup of the MD4 and MD5
+implementations, removal of unused DSA methods, changes in libtls
+protocol parsing to ignore unsupported TLSv1.1 and TLSv1.0 protocols,
+and many more internal changes and bug fixes.&lt;/p&gt;
+</description>
+			<pubDate>Tue, 15 Oct 2024 16:47:41 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Wednesday</title>
+			<link>https://lwn.net/Articles/994436/</link>
+			<guid>https://lwn.net/Articles/994436/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (buildah, containernetworking-plugins, and skopeo), &lt;b&gt;Fedora&lt;/b&gt; (pdns-recursor and valkey), &lt;b&gt;Mageia&lt;/b&gt; (unbound), &lt;b&gt;Red Hat&lt;/b&gt; (fence-agents, firefox, java-11-openjdk, python-setuptools, python3-setuptools, resource-agents, and thunderbird), &lt;b&gt;SUSE&lt;/b&gt; (etcd-for-k8s, libsonivox3, rubygem-puma, and unbound), and &lt;b&gt;Ubuntu&lt;/b&gt; (apr, libarchive, linux, linux-aws, linux-aws-hwe, linux-azure-4.15, linux-gcp,
+ linux-gcp-4.15, linux-hwe, linux-kvm, linux-oracle, nano, and vim).
+</description>
+			<pubDate>Wed, 16 Oct 2024 13:24:40 +0000</pubDate>
+		</item>
+		<item>
+			<title>Forgejo 9.0 released</title>
+			<link>https://lwn.net/Articles/994515/</link>
+			<guid>https://lwn.net/Articles/994515/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>&lt;a href="https://forgejo.org/2024-10-release-v9-0/"&gt;Version 9.0&lt;/a&gt; of the
+Forgejo software forge system has been released.  Changes include a switch
+to the GPLv3 license, the beginning of a quota system, the removal of
+go-git support, and a lot of fixes.
+(LWN &lt;a href="https://lwn.net/Articles/963095/"&gt;looked at Forgejo&lt;/a&gt; in February).</description>
+			<pubDate>Wed, 16 Oct 2024 18:24:44 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Thursday</title>
+			<link>https://lwn.net/Articles/994630/</link>
+			<guid>https://lwn.net/Articles/994630/</guid>
+			<dc:creator>jake</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;Debian&lt;/b&gt; (python-cryptography), &lt;b&gt;Fedora&lt;/b&gt; (dnsdist and python-virtualenv), &lt;b&gt;Red Hat&lt;/b&gt; (java-1.8.0-openjdk, java-11-openjdk, java-17-openjdk, and java-21-openjdk), &lt;b&gt;Slackware&lt;/b&gt; (libssh2 and mozilla), &lt;b&gt;SUSE&lt;/b&gt; (haproxy, keepalived, libarchive, libnss_slurm2, php8, and python310-pytest-html), and &lt;b&gt;Ubuntu&lt;/b&gt; (linux, linux-aws, linux-aws-5.15, linux-gcp, linux-gcp-5.15, linux-gkeop,
+ linux-gkeop-5.15, linux-hwe-5.15, linux-ibm, linux-ibm-5.15,
+ linux-intel-iotg, linux-intel-iotg-5.15, linux-kvm, linux-lowlatency,
+ linux-lowlatency-hwe-5.15, linux-nvidia, linux-oracle, linux-oracle-5.15,
+ linux-raspi, linux-xilinx-zynqmp, linux, linux-aws, linux-aws-5.4, linux-bluefield, linux-gcp,
+ linux-gcp-5.4, linux-gkeop, linux-hwe-5.4, linux-ibm, linux-ibm-5.4,
+ linux-kvm, linux-oracle, linux-oracle-5.4, linux-raspi, linux-raspi-5.4,
+ linux-xilinx-zynqmp, and linux, linux-aws, linux-aws-6.8, linux-gcp, linux-gcp-6.8, linux-hwe-6.8,
+ linux-ibm, linux-lowlatency, linux-lowlatency-hwe-6.8, linux-nvidia,
+ linux-nvidia-6.8, linux-nvidia-lowlatency, linux-oem-6.8, linux-oracle,
+ linux-oracle-6.8, linux-raspi).
+</description>
+			<pubDate>Thu, 17 Oct 2024 15:01:22 +0000</pubDate>
+		</item>
+		<item>
+			<title>Five new stable kernels</title>
+			<link>https://lwn.net/Articles/994632/</link>
+			<guid>https://lwn.net/Articles/994632/</guid>
+			<dc:creator>jake</dc:creator>
+			<description>Greg Kroah-Hartman has announced the release of the &lt;a
+href="https://lwn.net/Articles/994633/"&gt;6.11.4&lt;/a&gt;, &lt;a
+href="https://lwn.net/Articles/994634/"&gt;6.6.57&lt;/a&gt;, &lt;a
+href="https://lwn.net/Articles/994635/"&gt;6.1.113&lt;/a&gt;, &lt;a
+href="https://lwn.net/Articles/994636/"&gt;5.15.168&lt;/a&gt;, and &lt;a
+href="https://lwn.net/Articles/994637/"&gt;5.10.227&lt;/a&gt; stable kernels.  As usual, this set
+of updates contains a long list of important fixes throughout the kernel
+tree.</description>
+			<pubDate>Thu, 17 Oct 2024 15:11:27 +0000</pubDate>
+		</item>
+		<item>
+			<title>Rust 1.82.0 released</title>
+			<link>https://lwn.net/Articles/994654/</link>
+			<guid>https://lwn.net/Articles/994654/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>&lt;a href="https://blog.rust-lang.org/2024/10/17/Rust-1.82.0.html"&gt;Version
+1.82.0&lt;/a&gt; of the Rust language has been released.  There are a lot of new
+features this time, including a &lt;tt&gt;cargo info&lt;/tt&gt; command, tier-1 support
+for 64-bit Apple Arm systems, a new native syntax (&lt;tt&gt;&amp;amp;raw&lt;/tt&gt;) to create
+raw pointers, changes to &lt;tt&gt;unsafe extern&lt;/tt&gt;, unsafe attributes,
+standardized rules around the handling of floating-point not-a-number
+values, and more.</description>
+			<pubDate>Thu, 17 Oct 2024 18:42:43 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
