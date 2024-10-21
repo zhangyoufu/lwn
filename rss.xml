@@ -1,0 +1,167 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2005/Atom" version="2.0">
+	<channel>
+		<title>LWN.net</title>
+		<link>https://lwn.net</link>
+		<description> LWN.net is a comprehensive source of news and opinions from
+        and about the Linux community.  This is the main LWN.net feed,
+        listing all articles which are posted to the site front page.
+</description>
+		<language>en-us</language>
+		<pubDate>Mon, 21 Oct 2024 19:00:17 +0000</pubDate>
+		<lastBuildDate>Mon, 21 Oct 2024 19:00:17 +0000</lastBuildDate>
+		<docs>https://www.rssboard.org/rss-specification</docs>
+		<webMaster>lwn@lwn.net</webMaster>
+		<ns0:link href="https://zhangyoufu.github.io/lwn/rss.rdf" rel="self" type="application/rss+xml" />
+		<ns0:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
+		<item>
+			<title>Forgejo 9.0 released</title>
+			<link>https://lwn.net/Articles/994515/</link>
+			<guid>https://lwn.net/Articles/994515/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>&lt;a href="https://forgejo.org/2024-10-release-v9-0/"&gt;Version 9.0&lt;/a&gt; of the
+Forgejo software forge system has been released.  Changes include a switch
+to the GPLv3 license, the beginning of a quota system, the removal of
+go-git support, and a lot of fixes.
+(LWN &lt;a href="https://lwn.net/Articles/963095/"&gt;looked at Forgejo&lt;/a&gt; in February).</description>
+			<pubDate>Wed, 16 Oct 2024 18:24:44 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Thursday</title>
+			<link>https://lwn.net/Articles/994630/</link>
+			<guid>https://lwn.net/Articles/994630/</guid>
+			<dc:creator>jake</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;Debian&lt;/b&gt; (python-cryptography), &lt;b&gt;Fedora&lt;/b&gt; (dnsdist and python-virtualenv), &lt;b&gt;Red Hat&lt;/b&gt; (java-1.8.0-openjdk, java-11-openjdk, java-17-openjdk, and java-21-openjdk), &lt;b&gt;Slackware&lt;/b&gt; (libssh2 and mozilla), &lt;b&gt;SUSE&lt;/b&gt; (haproxy, keepalived, libarchive, libnss_slurm2, php8, and python310-pytest-html), and &lt;b&gt;Ubuntu&lt;/b&gt; (linux, linux-aws, linux-aws-5.15, linux-gcp, linux-gcp-5.15, linux-gkeop,
+ linux-gkeop-5.15, linux-hwe-5.15, linux-ibm, linux-ibm-5.15,
+ linux-intel-iotg, linux-intel-iotg-5.15, linux-kvm, linux-lowlatency,
+ linux-lowlatency-hwe-5.15, linux-nvidia, linux-oracle, linux-oracle-5.15,
+ linux-raspi, linux-xilinx-zynqmp, linux, linux-aws, linux-aws-5.4, linux-bluefield, linux-gcp,
+ linux-gcp-5.4, linux-gkeop, linux-hwe-5.4, linux-ibm, linux-ibm-5.4,
+ linux-kvm, linux-oracle, linux-oracle-5.4, linux-raspi, linux-raspi-5.4,
+ linux-xilinx-zynqmp, and linux, linux-aws, linux-aws-6.8, linux-gcp, linux-gcp-6.8, linux-hwe-6.8,
+ linux-ibm, linux-lowlatency, linux-lowlatency-hwe-6.8, linux-nvidia,
+ linux-nvidia-6.8, linux-nvidia-lowlatency, linux-oem-6.8, linux-oracle,
+ linux-oracle-6.8, linux-raspi).
+</description>
+			<pubDate>Thu, 17 Oct 2024 15:01:22 +0000</pubDate>
+		</item>
+		<item>
+			<title>Five new stable kernels</title>
+			<link>https://lwn.net/Articles/994632/</link>
+			<guid>https://lwn.net/Articles/994632/</guid>
+			<dc:creator>jake</dc:creator>
+			<description>Greg Kroah-Hartman has announced the release of the &lt;a
+href="https://lwn.net/Articles/994633/"&gt;6.11.4&lt;/a&gt;, &lt;a
+href="https://lwn.net/Articles/994634/"&gt;6.6.57&lt;/a&gt;, &lt;a
+href="https://lwn.net/Articles/994635/"&gt;6.1.113&lt;/a&gt;, &lt;a
+href="https://lwn.net/Articles/994636/"&gt;5.15.168&lt;/a&gt;, and &lt;a
+href="https://lwn.net/Articles/994637/"&gt;5.10.227&lt;/a&gt; stable kernels.  As usual, this set
+of updates contains a long list of important fixes throughout the kernel
+tree.</description>
+			<pubDate>Thu, 17 Oct 2024 15:11:27 +0000</pubDate>
+		</item>
+		<item>
+			<title>Rust 1.82.0 released</title>
+			<link>https://lwn.net/Articles/994654/</link>
+			<guid>https://lwn.net/Articles/994654/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>&lt;a href="https://blog.rust-lang.org/2024/10/17/Rust-1.82.0.html"&gt;Version
+1.82.0&lt;/a&gt; of the Rust language has been released.  There are a lot of new
+features this time, including a &lt;tt&gt;cargo info&lt;/tt&gt; command, tier-1 support
+for 64-bit Apple Arm systems, a new native syntax (&lt;tt&gt;&amp;amp;raw&lt;/tt&gt;) to create
+raw pointers, changes to &lt;tt&gt;unsafe extern&lt;/tt&gt;, unsafe attributes,
+standardized rules around the handling of floating-point not-a-number
+values, and more.</description>
+			<pubDate>Thu, 17 Oct 2024 18:42:43 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Friday</title>
+			<link>https://lwn.net/Articles/994703/</link>
+			<guid>https://lwn.net/Articles/994703/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (java-1.8.0-openjdk, java-11-openjdk, java-17-openjdk, java-21-openjdk, and webkit2gtk3), &lt;b&gt;Debian&lt;/b&gt; (apache2), &lt;b&gt;Red Hat&lt;/b&gt; (expat), &lt;b&gt;SUSE&lt;/b&gt; (cups-filters, jetty-minimal, OpenIPMI, and python-starlette), and &lt;b&gt;Ubuntu&lt;/b&gt; (linux-azure, linux-azure, linux-azure-5.15, linux-azure, linux-azure-5.4, and oath-toolkit).
+</description>
+			<pubDate>Fri, 18 Oct 2024 13:25:32 +0000</pubDate>
+		</item>
+		<item>
+			<title>Kernel prepatch 6.12-rc4</title>
+			<link>https://lwn.net/Articles/994843/</link>
+			<guid>https://lwn.net/Articles/994843/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Linus has released &lt;a href="https://lwn.net/Articles/994842/"&gt;6.12-rc4&lt;/a&gt; for testing.
+"&lt;q&gt;I'm not happy with how big this is - it's probably far from the biggest
+rc4 ever, but it _is_ the biggest rc4 we've had in the 6.x series at least
+in number of commits.&lt;/q&gt;"</description>
+			<pubDate>Sun, 20 Oct 2024 22:48:07 +0000</pubDate>
+		</item>
+		<item>
+			<title>A vulnerability in the Guix build system</title>
+			<link>https://lwn.net/Articles/994865/</link>
+			<guid>https://lwn.net/Articles/994865/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>&lt;p&gt;
+The 
+&lt;a href="https://guix.gnu.org/"&gt;
+Guix&lt;/a&gt; project has
+&lt;a href="https://guix.gnu.org/blog/2024/build-user-takeover-vulnerability/"&gt;
+disclosed&lt;/a&gt; a security vulnerability in the build daemon that the distribution uses to build and install software locally. The vulnerability allows an existing unprivileged user to get access to a 
+&lt;a href="https://en.wikipedia.org/wiki/Setuid"&gt;
+setuid&lt;/a&gt; binary, and from there potentially interfere with any other software built or installed on the computer. The project recommends upgrading the guix daemon now, to avoid the issue.
+&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+This exploit requires the ability to start a derivation build and the
+ability to run arbitrary code with access to the store in the root PID
+namespace on the machine the build occurs on. As such, this represents
+an increased risk primarily to multi-user systems and systems using
+dedicated privilege-separation users for various daemons: without
+special sandboxing measures, any process of theirs can take advantage
+of this vulnerability.
+&lt;/blockquote&gt;</description>
+			<pubDate>Mon, 21 Oct 2024 13:40:34 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Monday</title>
+			<link>https://lwn.net/Articles/994941/</link>
+			<guid>https://lwn.net/Articles/994941/</guid>
+			<dc:creator>jake</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;Debian&lt;/b&gt; (asterisk, chromium, php-horde-mime-viewer, and php-horde-turba), &lt;b&gt;Fedora&lt;/b&gt; (apache-commons-io, buildah, chromium, containers-common, libarchive, libdigidocpp, oath-toolkit, podman, rust-hyper-rustls, rust-reqwest, rust-rustls-native-certs, rust-rustls-native-certs0.7, rust-tonic, rust-tonic-build, rust-tonic-types, rust-tower, rust-tower-http, rust-tower-http0.5, rust-tower0.4, thunderbird, and unbound), &lt;b&gt;SUSE&lt;/b&gt; (buildah, chromedriver, chromium, element-desktop, element-web, jetty-annotations, nodejs-electron, php7, php74, php8, podman, python3-virtualbox, qemu, thunderbird, and valkey), and &lt;b&gt;Ubuntu&lt;/b&gt; (amd64-microcode).
+</description>
+			<pubDate>Mon, 21 Oct 2024 14:16:43 +0000</pubDate>
+		</item>
+		<item>
+			<title>Bootc 1.1.0 released</title>
+			<link>https://lwn.net/Articles/994962/</link>
+			<guid>https://lwn.net/Articles/994962/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a href="https://github.com/containers/bootc/releases/tag/v1.1.0"&gt;Version 1.1.0&lt;/a&gt; of the &lt;a
+href="https://containers.github.io/bootc/"&gt;bootc&lt;/a&gt; utility for
+performing transactional, in-place operating system updates using &lt;a
+href="https://opencontainers.org/"&gt;Open Container Initative&lt;/a&gt; (OCI)
+images, has been released. This release "&lt;q&gt;officially stabilizes all
+APIs&lt;/q&gt;" for bootc and includes a number of bug fixes. LWN &lt;a
+href="https://lwn.net/Articles/979182/"&gt;covered bootc&lt;/a&gt; in June.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Mon, 21 Oct 2024 16:47:54 +0000</pubDate>
+		</item>
+		<item>
+			<title>A new kernel testing tree</title>
+			<link>https://lwn.net/Articles/994983/</link>
+			<guid>https://lwn.net/Articles/994983/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Sasha Levin has &lt;a href="https://lwn.net/ml/all/ZxZ8MStt4e8JXeJb@sashalap"&gt;announced&lt;/a&gt; a
+new tree that is intended to perform continuous-integration tests of pull
+requests aimed at the mainline.  The plan is for this tree to hold more
+finished work than sometimes ends up in linux-next; in a name that seems
+destined to create typographical confusion, it is called "linus-next".
+&lt;p&gt;
+&lt;blockquote class="bq"&gt;
+	The linus-next tree aims to provide a more stable and testable
+	integration point compared to linux-next, addressing the runtime
+	issues that make testing linux-next challenging and focusing on
+	code that's about to be pulled by Linus.
+&lt;/blockquote&gt;</description>
+			<pubDate>Mon, 21 Oct 2024 18:20:33 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
