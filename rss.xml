@@ -1,0 +1,213 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2005/Atom" version="2.0">
+	<channel>
+		<title>LWN.net</title>
+		<link>https://lwn.net</link>
+		<description> LWN.net is a comprehensive source of news and opinions from
+        and about the Linux community.  This is the main LWN.net feed,
+        listing all articles which are posted to the site front page.
+</description>
+		<language>en-us</language>
+		<pubDate>Fri, 25 Oct 2024 00:49:31 +0000</pubDate>
+		<lastBuildDate>Fri, 25 Oct 2024 00:49:31 +0000</lastBuildDate>
+		<docs>https://www.rssboard.org/rss-specification</docs>
+		<webMaster>lwn@lwn.net</webMaster>
+		<ns0:link href="https://zhangyoufu.github.io/lwn/rss.rdf" rel="self" type="application/rss+xml" />
+		<ns0:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
+		<item>
+			<title>A new kernel testing tree</title>
+			<link>https://lwn.net/Articles/994983/</link>
+			<guid>https://lwn.net/Articles/994983/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Sasha Levin has &lt;a href="https://lwn.net/ml/all/ZxZ8MStt4e8JXeJb@sashalap"&gt;announced&lt;/a&gt; a
+new tree that is intended to perform continuous-integration tests of pull
+requests aimed at the mainline.  The plan is for this tree to hold more
+finished work than sometimes ends up in linux-next; in a name that seems
+destined to create typographical confusion, it is called "linus-next".
+&lt;p&gt;
+&lt;blockquote class="bq"&gt;
+	The linus-next tree aims to provide a more stable and testable
+	integration point compared to linux-next, addressing the runtime
+	issues that make testing linux-next challenging and focusing on
+	code that's about to be pulled by Linus.
+&lt;/blockquote&gt;</description>
+			<pubDate>Mon, 21 Oct 2024 18:20:33 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Tuesday</title>
+			<link>https://lwn.net/Articles/995095/</link>
+			<guid>https://lwn.net/Articles/995095/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;Debian&lt;/b&gt; (ffmpeg, ghostscript, libsepol, openjdk-11, openjdk-17, perl, and python-sql), &lt;b&gt;Oracle&lt;/b&gt; (389-ds-base, buildah, containernetworking-plugins, edk2, httpd, java-1.8.0-openjdk, java-11-openjdk, java-17-openjdk, java-21-openjdk, kernel, python-setuptools, skopeo, and webkit2gtk3), &lt;b&gt;Red Hat&lt;/b&gt; (buildah), &lt;b&gt;Slackware&lt;/b&gt; (openssl), &lt;b&gt;SUSE&lt;/b&gt; (apache2, firefox, libopenssl-3-devel, podman, and python310-starlette), and &lt;b&gt;Ubuntu&lt;/b&gt; (cups-browsed, firefox, libgsf, and linux-gke).
+</description>
+			<pubDate>Tue, 22 Oct 2024 13:36:58 +0000</pubDate>
+		</item>
+		<item>
+			<title>OpenSSL 3.4.0 released</title>
+			<link>https://lwn.net/Articles/995098/</link>
+			<guid>https://lwn.net/Articles/995098/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Version 3.4.0 of the OpenSSL SSL/TLS library has been released.  It adds a
+number of new encryption algorithms, support for "&lt;q&gt;directly fetched
+composite signature algorithms such as RSA-SHA2-256&lt;/q&gt;", and more.  See &lt;a
+href="https://openssl-library.org/news/openssl-3.4-notes/index.html"&gt;the
+release notes&lt;/a&gt; for details.
+</description>
+			<pubDate>Tue, 22 Oct 2024 13:59:16 +0000</pubDate>
+		</item>
+		<item>
+			<title>Another five stable kernels</title>
+			<link>https://lwn.net/Articles/995130/</link>
+			<guid>https://lwn.net/Articles/995130/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>The
+&lt;a href="https://lwn.net/Articles/995131/"&gt;6.11.5&lt;/a&gt;,
+&lt;a href="https://lwn.net/Articles/995132/"&gt;6.6.58&lt;/a&gt;,
+&lt;a href="https://lwn.net/Articles/995133/"&gt;6.1.114&lt;/a&gt;,
+&lt;a href="https://lwn.net/Articles/995134/"&gt;5.15.169&lt;/a&gt;, and
+&lt;a href="https://lwn.net/Articles/995135/"&gt;5.10.228&lt;/a&gt;
+stable kernels have all been released; each contains another set of
+important fixes.</description>
+			<pubDate>Tue, 22 Oct 2024 14:52:01 +0000</pubDate>
+		</item>
+		<item>
+			<title>Introducing AlmaLinux OS Kitten (AlmaLinux Blog)</title>
+			<link>https://lwn.net/Articles/995140/</link>
+			<guid>https://lwn.net/Articles/995140/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;The &lt;a href="https://almalinux.org/"&gt;AlmaLinux project&lt;/a&gt; has &lt;a href="https://almalinux.org/blog/2024-10-22-introducing-almalinux-os-kitten/"&gt;introduced&lt;/a&gt; a new edition called "Kitten",
+which will serve as "&lt;q&gt;the direct upstream for AlmaLinux OS and is
+the primary point for the AlmaLinux community to engage and influence
+the future of AlmaLinux OS&lt;/q&gt;". Not intended for production use, the
+first release is based on CentOS&amp;nbsp;Stream&amp;nbsp;10 source, which
+will eventually be the basis for Red Hat Enterprise Linux (RHEL)
+10:&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+Because we anticipated many changes in 10, we wanted to get a head
+start on building AlmaLinux OS 10. Earlier this year we started
+setting up infrastructure and the build pipeline for AlmaLinux OS 10,
+and started testing using CentOS Stream 10's code. Based on this
+preparation work, we are excited to share that we have successfully
+built a preview of AlmaLinux OS 10 that we are calling AlmaLinux OS
+Kitten 10.
+&lt;/blockquote&gt;
+
+&lt;p&gt;The first Kitten release previews a number of ways that AlmaLinux will
+diverge from RHEL 10, including re-enabling frame pointers,
+including Simple Protocol for Independent Computing Environments
+(SPICE), and adding packages for Firefox and Thunderbird, which have
+been dropped from CentOS&amp;nbsp;Stream&amp;nbsp;10 in favor of Flatpak versions. New
+installation images for Kitten will be built quarterly. See the &lt;a
+href="https://wiki.almalinux.org/release-notes/kitten-10.html"&gt;release
+notes&lt;/a&gt; for download links, installation instructions, and more
+information.&lt;/p&gt;</description>
+			<pubDate>Tue, 22 Oct 2024 15:56:18 +0000</pubDate>
+		</item>
+		<item>
+			<title>Several Russian developers lose kernel maintainership status</title>
+			<link>https://lwn.net/Articles/995186/</link>
+			<guid>https://lwn.net/Articles/995186/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Perhaps one of the more surprising changes in the 6.12-rc4 development
+kernel was &lt;a href="https://git.kernel.org/linus/6e90b675cf94"&gt;the removal
+of several entries&lt;/a&gt; from the kernel's &lt;tt&gt;MAINTAINERS&lt;/tt&gt; file.  The &lt;a
+href="https://lore.kernel.org/all/2024101835-tiptop-blip-09ed@gregkh/"&gt;patch&lt;/a&gt;
+performing the removal was sent (by Greg Kroah-Hartman) only to the
+patches@lists.linux.dev mailing list; the change was included in &lt;a
+href="https://lwn.net/ml/linux-kernel/ZxUH2J0BL3FCV6Hr@kroah.com/"&gt;a char-misc drivers
+pull request&lt;/a&gt; with no particular mention.
+&lt;p&gt;
+The explanation for the removal is simply "&lt;q&gt;various compliance
+requirements&lt;/q&gt;".  Given that the developers involved all appear to be of
+Russian origin, it is not too hard to imagine what sort of compliance is
+involved here.  There has, however, been no public posting of the policy
+that required the removal of these entries.
+&lt;p&gt;
+&lt;b&gt;Update&lt;/b&gt;: Linus Torvalds has since &lt;a
+href="https://lwn.net/ml/all/CAHk-=whNGNVnYHHSXUAsWds_MoZ-iEgRMQMxZZ0z-jY4uHT+Gg@mail.gmail.com"&gt;publicly
+supported this action&lt;/a&gt; and said that it will not be reverted.
+
+&lt;p&gt;
+&lt;b&gt;Update 2&lt;/b&gt;: James Bottomley has &lt;a href="https://lwn.net/ml/all/7ee74c1b5b589619a13c6318c9fbd0d6ac7c334a.camel@HansenPartnership.com/"&gt;clarified&lt;/a&gt; the requirements:
+&lt;blockquote class="bq"&gt;
+If your company is on the U.S. OFAC SDN lists, subject to an OFAC
+   sanctions program, or owned/controlled by a company on the list, our
+   ability to collaborate with you will be subject to restrictions, and
+   you cannot be in the MAINTAINERS file.
+&lt;/blockquote&gt;</description>
+			<pubDate>Tue, 22 Oct 2024 22:12:57 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Wednesday</title>
+			<link>https://lwn.net/Articles/995293/</link>
+			<guid>https://lwn.net/Articles/995293/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;Debian&lt;/b&gt; (dmitry, libheif, and python-sql), &lt;b&gt;Fedora&lt;/b&gt; (suricata and wireshark), &lt;b&gt;SUSE&lt;/b&gt; (cargo-c, libeverest, protobuf, and qemu), and &lt;b&gt;Ubuntu&lt;/b&gt; (golang-1.22, libheif, unbound, and webkit2gtk).
+</description>
+			<pubDate>Wed, 23 Oct 2024 13:19:22 +0000</pubDate>
+		</item>
+		<item>
+			<title>Kadlčík: Copr Modularity, the End of an Era</title>
+			<link>https://lwn.net/Articles/995337/</link>
+			<guid>https://lwn.net/Articles/995337/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Jakub Kadlčík &lt;a
+href="https://frostyx.cz/posts/copr-modularity-the-end-of-an-era"&gt;announced
+on his blog&lt;/a&gt; that Fedora's &lt;a
+href="https://copr.fedorainfracloud.org/"&gt;Copr&lt;/a&gt; build system will
+be dropping support for building &lt;a
+href="https://docs.fedoraproject.org/en-US/modularity/core-concepts/module-stream/"&gt;modules&lt;/a&gt;
+(groups of RPM packages that are built, installed, and shipped
+together) soon:&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+The Fedora Modularity project never really took off, and building
+modules in Copr even less so. We've had only 14 builds in the last two
+years. It's not feasible to maintain the code for so few
+users. Modularity has also been &lt;a
+href="https://fedoraproject.org/wiki/Changes/RetireModularity"&gt;retired
+since Fedora 39&lt;/a&gt; and will die with RHEL 9.
+&lt;/blockquote&gt;
+
+&lt;p&gt;Modularity features in Copr are now deprecated, and it will not be
+possible to submit new module builds after April&amp;nbsp;2025. LWN &lt;a
+href="https://lwn.net/Articles/805180/"&gt;covered&lt;/a&gt; some of the
+problems with Fedora's &lt;a href="https://docs.pagure.org/modularity/"&gt;modularity initiative&lt;/a&gt; in 2019.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Wed, 23 Oct 2024 15:56:13 +0000</pubDate>
+		</item>
+		<item>
+			<title>Tor Browser 14.0 released</title>
+			<link>https://lwn.net/Articles/995353/</link>
+			<guid>https://lwn.net/Articles/995353/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a
+href="https://blog.torproject.org/new-release-tor-browser-140/"&gt;Version
+14.0&lt;/a&gt; of the privacy-focused &lt;a
+href="https://www.torproject.org/"&gt;Tor browser&lt;/a&gt; has been released. 
+
+&lt;blockquote class="bq"&gt;
+&lt;p&gt;This is our first stable release based on &lt;a
+href="https://www.mozilla.org/en-US/firefox/128.0esr/releasenotes/"&gt;Firefox
+ESR 128&lt;/a&gt;, incorporating a year's worth of changes shipped upstream
+in Firefox. As part of this process we've also completed our annual
+ESR transition audit, where we &lt;a
+href="https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues/?sort=updated_desc&amp;state=all&amp;search=Review%20Mozilla&amp;label_name%5B%5D=14.0%20stable&amp;first_page_size=20"&gt;reviewed and addressed over 200 Bugzilla issues&lt;/a&gt; for changes in Firefox that
+may negatively affect the privacy and security of Tor Browser
+users. Our final reports from this audit are now available in the &lt;a
+href="https://gitlab.torproject.org/tpo/applications/tor-browser-spec/-/tree/main/audits"&gt;tor-browser-spec
+repository&lt;/a&gt; on our Gitlab instance.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+			<pubDate>Wed, 23 Oct 2024 17:19:58 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Thursday</title>
+			<link>https://lwn.net/Articles/995550/</link>
+			<guid>https://lwn.net/Articles/995550/</guid>
+			<dc:creator>jake</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (grafana, NetworkManager-libreswan, python3.11, and python39:3.9 and python39-devel:3.9), &lt;b&gt;Fedora&lt;/b&gt; (dotnet6.0, koji, python-fastapi, python-openapi-core, python-platformio, python-starlette, rust-pyo3, rust-pyo3-build-config, rust-pyo3-ffi, rust-pyo3-macros, rust-pyo3-macros-backend, and yarnpkg), &lt;b&gt;Oracle&lt;/b&gt; (grafana, kernel, linux-firmware, NetworkManager-libreswan, and python3.11), &lt;b&gt;Slackware&lt;/b&gt; (php81), and &lt;b&gt;SUSE&lt;/b&gt; (apache2, buildah, cups-filters, go1.21-openssl, podman, postgresql16, python-pyOpenSSL, and webkit2gtk3).
+</description>
+			<pubDate>Thu, 24 Oct 2024 14:13:16 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
