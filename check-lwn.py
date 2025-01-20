@@ -158,7 +158,7 @@ def main() -> None:
 
     ## sort output items by pub_date ascending, then article_id ascending
     ## add output items into RSS skeleton
-    for _, item in rss_output.values().sort():
+    for _, item in sorted(list(rss_output.values())):
         channel.append(item.xml)
 
     ## RSS output
