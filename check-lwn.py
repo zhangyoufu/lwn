@@ -17,11 +17,6 @@ logger = logging.getLogger(__name__)
 session = requests.Session()
 session.cookies._policy.set_ok = lambda cookie, request: False
 
-state_filename = 'state/articles.json'
-rss_filename = 'gh-pages/rss.xml'
-feed_url = os.environ.get('FEED_URL', 'https://zhangyoufu.github.io/lwn/rss.xml')
-websub_hub_url = os.environ.get('WEBSUB_HUB_URL', 'https://pubsubhubbub.appspot.com/')
-
 def http_get(url, expect=(200,), retry_count=3, retry_interval=15, **kwargs):
     logger.info('GET %s', url)
     kwargs.setdefault('allow_redirects', False)
@@ -92,84 +87,94 @@ class Article:
 			self.title = title[4:]
 			self.pub_date = get_article_free_date(self.id, self.pub_date)
 
-logging.basicConfig(
-	stream=sys.stderr,
-	level=logging.INFO,
-)
+def main() -> None:
+	## init logging
+	logging.basicConfig(
+		stream=sys.stderr,
+		level=logging.INFO,
+	)
 
-local_articles: dict[int, Article] = {}
+	## conf
+	state_filename = 'state/articles.json'
+	rss_filename = 'gh-pages/rss.xml'
+	feed_url = os.environ.get('FEED_URL', 'https://zhangyoufu.github.io/lwn/rss.xml')
+	websub_hub_url = os.environ.get('WEBSUB_HUB_URL', 'https://pubsubhubbub.appspot.com/')
 
-## load local state (if available)
-state_path = pathlib.Path(state_filename)
-if state_path.exists():
-	for item in json.loads(state_path.read_bytes()):
-		article = Article(ET.fromstring(item))
-		local_articles[article.id] = article
+	## load local state (if available)
+	local_articles: dict[int, Article] = {}
+	state_path = pathlib.Path(state_filename)
+	if state_path.exists():
+		for item in json.loads(state_path.read_bytes()):
+			article = Article(ET.fromstring(item))
+			local_articles[article.id] = article
+	
+	## load remote RSS feed
+	root = ET.fromstring(http_get('https://lwn.net/headlines/rss').text)
+	rss = root
+	assert rss.tag == 'rss'
+	assert rss.get('version') == '2.0'
+	assert len(rss) == 1
+	channel = rss[0]
+	assert channel.tag == 'channel'
+	
+	## override feed URL
+	feed_link = channel.find('{http://www.w3.org/2005/Atom}link')
+	feed_link.set('href', feed_url)
+	
+	## extract feed items, leave the skeleton
+	i = 0
+	while i < len(channel) and channel[i].tag != 'item':
+		i += 1
+	j = i + 1
+	while j < len(channel) and channel[j].tag == 'item':
+		j += 1
+	assert j == len(channel)
+	items = channel[i:]
+	del channel[i:]
+	
+	## add WebSub Hub URL
+	ET.SubElement(channel, '{http://www.w3.org/2005/Atom}link', {'href': websub_hub_url, 'rel': 'hub'})
+	
+	## RSS_output = remote_free_articles + local_available_articles
+	## local_articles -= expired_local_articles
+	## local_articles += remote_paid_articles_previously_unknown
+	now = datetime.datetime.now(datetime.timezone.utc)
+	local_article_expire = now + datetime.timedelta(days=3)
+	output = []
+	for item in items:
+		remote_article = Article(item)
+		article_id = remote_article.id
+		if not remote_article.is_paid:
+			output.append((remote_article.pub_date, remote_article))
+			local_articles.pop(article_id, None)
+		else: # is_paid
+			local_article = local_articles.get(article_id, None)
+			if local_article is not None:
+				# known
+				if local_article.pub_date <= now:
+					output.append((local_article.pub_date, local_article))
+				if local_article_expire <= local_article.pub_date:
+					del local_articles[article_id]
+			else:
+				remote_article.resolve()
+				local_articles[article_id] = remote_article
+	
+	## sort output items by pub_date
+	output.sort()
+	
+	## add output items into RSS skeleton
+	for _, item in output:
+		channel.append(item.xml)
+	
+	## RSS output
+	ET.indent(root, space='\t')
+	pathlib.Path(rss_filename).write_bytes(ET.tostring(root, encoding='utf-8'))
+	
+	## save state
+	state_path.write_text(json.dumps([
+		ET.tostring(article.xml, encoding='unicode')
+		for article in local_articles.values()
+	], ensure_ascii=False), encoding='utf-8-sig')
 
-## load remote RSS feed
-root = ET.fromstring(http_get('https://lwn.net/headlines/rss').text)
-rss = root
-assert rss.tag == 'rss'
-assert rss.get('version') == '2.0'
-assert len(rss) == 1
-channel = rss[0]
-assert channel.tag == 'channel'
-
-## override feed URL
-feed_link = channel.find('{http://www.w3.org/2005/Atom}link')
-feed_link.set('href', feed_url)
-
-## extract feed items, leave the skeleton
-i = 0
-while i < len(channel) and channel[i].tag != 'item':
-	i += 1
-j = i + 1
-while j < len(channel) and channel[j].tag == 'item':
-	j += 1
-assert j == len(channel)
-items = channel[i:]
-del channel[i:]
-
-## add WebSub Hub URL
-ET.SubElement(channel, '{http://www.w3.org/2005/Atom}link', {'href': websub_hub_url, 'rel': 'hub'})
-
-## RSS_output = remote_free_articles + local_available_articles
-## local_articles -= expired_local_articles
-## local_articles += remote_paid_articles_previously_unknown
-now = datetime.datetime.now(datetime.timezone.utc)
-local_article_expire = now + datetime.timedelta(days=3)
-output = []
-for item in items:
-	remote_article = Article(item)
-	article_id = remote_article.id
-	if not remote_article.is_paid:
-		output.append((remote_article.pub_date, remote_article))
-		local_articles.pop(article_id, None)
-	else: # is_paid
-		local_article = local_articles.get(article_id, None)
-		if local_article is not None:
-			# known
-			if local_article.pub_date <= now:
-				output.append((local_article.pub_date, local_article))
-			if local_article_expire <= local_article.pub_date:
-				del local_articles[article_id]
-		else:
-			remote_article.resolve()
-			local_articles[article_id] = remote_article
-
-## sort output items by pub_date
-output.sort()
-
-## add output items into RSS skeleton
-for _, item in output:
-	channel.append(item.xml)
-
-## RSS output
-ET.indent(root, space='\t')
-pathlib.Path(rss_filename).write_bytes(ET.tostring(root, encoding='utf-8'))
-
-## save state
-state_path.write_text(json.dumps([
-	ET.tostring(article.xml, encoding='unicode')
-	for article in local_articles.values()
-], ensure_ascii=False), encoding='utf-8-sig')
+if __name__ == '__main__':
+	main()
