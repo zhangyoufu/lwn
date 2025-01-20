@@ -10,6 +10,9 @@ import requests
 import time
 import xml.etree.ElementTree as ET
 
+session = requests.Session()
+session.cookies._policy.set_ok = lambda cookie, request: False
+
 state_filename = 'state/articles.json'
 rss_filename = 'gh-pages/rss.xml'
 feed_url = os.environ.get('FEED_URL', 'https://zhangyoufu.github.io/lwn/rss.xml')
@@ -20,7 +23,7 @@ def http_get(url, expect=(200,), retry_count=3, retry_interval=15, **kwargs):
     kwargs.setdefault('allow_redirects', False)
     for retry_idx in range(retry_count):
         try:
-            rsp = requests.get(url, **kwargs)
+            rsp = session.get(url, **kwargs)
             assert rsp.status_code in expect, f'unexpected HTTP response status code {rsp.status_code}'
             return rsp
         except Exception:
