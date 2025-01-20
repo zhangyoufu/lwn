@@ -3,12 +3,16 @@ import dataclasses
 import datetime
 import email.utils
 import json
+import logging
 import os
 import pathlib
 import re
 import requests
+import sys
 import time
 import xml.etree.ElementTree as ET
+
+logger = logging.getLogger(__name__)
 
 session = requests.Session()
 session.cookies._policy.set_ok = lambda cookie, request: False
@@ -19,7 +23,7 @@ feed_url = os.environ.get('FEED_URL', 'https://zhangyoufu.github.io/lwn/rss.xml'
 websub_hub_url = os.environ.get('WEBSUB_HUB_URL', 'https://pubsubhubbub.appspot.com/')
 
 def http_get(url, expect=(200,), retry_count=3, retry_interval=15, **kwargs):
-    print('GET', url)
+    logger.info('GET %s', url)
     kwargs.setdefault('allow_redirects', False)
     for retry_idx in range(retry_count):
         try:
@@ -46,7 +50,7 @@ def get_article_free_date(article_id: int, default: datetime.datetime) -> dateti
         day=int(m.group('day')),
         tzinfo = datetime.timezone.utc,
     )
-    print('available on', result)
+    logger.info('article %d is available on %s', article_id, result)
     return result
 
 @dataclasses.dataclass
@@ -87,6 +91,11 @@ class Article:
 		if title.startswith('[$] '):
 			self.title = title[4:]
 			self.pub_date = get_article_free_date(self.id, self.pub_date)
+
+logging.basicConfig(
+	stream=sys.stderr,
+	level=logging.INFO,
+)
 
 local_articles: dict[int, Article] = {}
 
