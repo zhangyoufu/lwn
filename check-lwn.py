@@ -43,7 +43,7 @@ def get_article_free_date(article_id: int, default: datetime.datetime) -> dateti
         year=int(m.group('year')),
         month=month_idx[m.group('month')],
         day=int(m.group('day')),
-        tzinfo = datetime.timezone.utc,
+        tzinfo=datetime.timezone.utc,
     )
     logger.info('article %d is available on %s', article_id, result)
     return result
