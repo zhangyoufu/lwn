@@ -137,12 +137,12 @@ def main() -> None:
     for article_id in expired_article_ids:
         del local_articles[article_id]
 
-    output = []
+    rss_output = {}
 
     ## RSS_output += local_articles.filter(available)
     for article_id, local_article in local_articles.items():
         if local_article.pub_date <= now:
-            output.append((local_article.pub_date, local_article))
+            rss_output[article_id] = (local_article.pub_date, article_id, local_article)
 
     ## RSS_output += remote_articles.filter(available)
     ## local_articles += remote_articles.filter(under_paywall)
@@ -153,14 +153,12 @@ def main() -> None:
         if article_under_paywall:
             local_articles[article_id] = remote_article
         else:
-            output.append((remote_article.pub_date, remote_article))
+            rss_output[article_id] = (remote_article.pub_date, article_id, remote_article)
             local_articles.pop(article_id, None)
 
-    ## sort output items by pub_date
-    output.sort()
-
+    ## sort output items by pub_date ascending, then article_id ascending
     ## add output items into RSS skeleton
-    for _, item in output:
+    for _, item in rss_output.values().sort():
         channel.append(item.xml)
 
     ## RSS output
