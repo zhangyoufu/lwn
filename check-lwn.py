@@ -51,13 +51,13 @@ class Article:
 	xml: ET.Element
 	_pub_date_elem: ET.Element
 	_title_elem: ET.Element
-	id_: int
+	id: int
 
 	def __init__(self, xml: ET.Element) -> None:
 		self.xml = xml
 		self._pub_date_elem = xml.find('pubDate')
 		self._title_elem = self.xml.find('title')
-		self.id_ = int(re.fullmatch(r'https://lwn\.net/Articles/(\d+)/', xml.find('link').text).group(1))
+		self.id = int(re.fullmatch(r'https://lwn\.net/Articles/(\d+)/', xml.find('link').text).group(1))
 
 	@property
 	def title(self) -> str:
@@ -83,7 +83,7 @@ class Article:
 		title = self.title
 		if title.startswith('[$] '):
 			self.title = title[4:]
-			self.pub_date = get_article_free_date(self.id_, self.pub_date)
+			self.pub_date = get_article_free_date(self.id, self.pub_date)
 
 local_articles: dict[int, Article] = {}
 
@@ -92,7 +92,7 @@ state_path = pathlib.Path(state_filename)
 if state_path.exists():
 	for item in json.loads(state_path.read_bytes()):
 		article = Article(ET.fromstring(item))
-		local_articles[article.id_] = article
+		local_articles[article.id] = article
 
 ## load remote RSS feed
 root = ET.fromstring(http_get('https://lwn.net/headlines/rss').text)
@@ -129,7 +129,7 @@ local_article_expire = now + datetime.timedelta(days=3)
 output = []
 for item in items:
 	remote_article = Article(item)
-	article_id = remote_article.id_
+	article_id = remote_article.id
 	if not remote_article.is_paid:
 		output.append((remote_article.pub_date, remote_article))
 		local_articles.pop(article_id, None)
