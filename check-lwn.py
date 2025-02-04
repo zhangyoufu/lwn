@@ -60,6 +60,9 @@ class Article:
         self._pub_date_elem.text = email.utils.format_datetime(value)
 
     def check_paywall(self) -> bool:
+        title = self.title
+        if title.startswith('[$] '):
+            self.title = title[4:]
         rsp = http_get(f'https://lwn.net/Articles/{self.id}/', expect=(200, 403))
         if rsp.status_code == 200:
             return False
