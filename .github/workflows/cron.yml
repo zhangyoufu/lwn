@@ -47,7 +47,7 @@ jobs:
         (cd state; if dirty; then push; fi)
     - uses: actions/configure-pages@v5
       if: env.DEPLOY == '1'
-    - uses: actions/upload-pages-artifact@v3
+    - uses: actions/upload-pages-artifact@v4
       if: env.DEPLOY == '1'
       with:
         path: gh-pages
