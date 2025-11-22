@@ -60,7 +60,7 @@ jobs:
         WEBSUB_HUB_URL: ${{ secrets.WEBSUB_HUB_URL }}
       run: curl --silent --show-error --data-urlencode hub.mode=publish --data-urlencode hub.url="${FEED_URL}" "${WEBSUB_HUB_URL}"
     - name: Debug
-      if: runner.debug == '1'
+      if: failure() && runner.debug == '1'
       uses: zhangyoufu/action-debug@main
       with:
         credentials: ${{ secrets.DEBUG_CREDENTIAL }}
