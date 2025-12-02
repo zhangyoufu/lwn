@@ -14,14 +14,12 @@ jobs:
       pages: write    # to deploy to Pages
       id-token: write # to verify the deployment originates from an appropriate source
     steps:
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@033fa0dc0b82693d8986f1016a0ec2c5e7d9cbb1
     - name: Set up worktrees
       run: |-
         git fetch --no-tags --prune --depth=1 origin +refs/heads/*:refs/remotes/origin/*
         git worktree add gh-pages gh-pages
         git worktree add state state
-        GIT_DIR=$(git rev-parse --path-format=absolute --git-dir)
-        git config set --path includeIf.gitdir:"${GIT_DIR}/worktrees/*".path "$(git config get --path includeIf.gitdir:"${GIT_DIR}".path)"
     - uses: actions/setup-python@v6
       with:
         python-version: '3.x'
