@@ -14,7 +14,7 @@ jobs:
       pages: write    # to deploy to Pages
       id-token: write # to verify the deployment originates from an appropriate source
     steps:
-    - uses: actions/checkout@033fa0dc0b82693d8986f1016a0ec2c5e7d9cbb1
+    - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8
     - name: Set up worktrees
       run: |-
         git fetch --no-tags --prune --depth=1 origin +refs/heads/*:refs/remotes/origin/*
