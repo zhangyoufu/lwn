@@ -1,5 +1,11 @@
 on:
   push:
+    branches-ignore: dependabot/**
+  pull_request:
+    types:
+    - opened
+    - synchronize
+    - reopened
   workflow_dispatch:
   schedule:
   - cron: '12,27,42,57 * * * *'
@@ -53,9 +59,9 @@ jobs:
       with:
         path: gh-pages
     - uses: actions/deploy-pages@v5
-      if: env.DEPLOY == '1'
+      if: env.DEPLOY == '1' && github.ref == 'refs/heads/master'
     - name: Notify WebSub Hub
-      if: env.DEPLOY == '1'
+      if: env.DEPLOY == '1' && github.ref == 'refs/heads/master'
       env:
         FEED_URL: ${{ secrets.FEED_URL }}
         WEBSUB_HUB_URL: ${{ secrets.WEBSUB_HUB_URL }}
