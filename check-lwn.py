@@ -17,13 +17,18 @@ logger = logging.getLogger(__name__)
 session = requests.Session()
 session.cookies._policy.set_ok = lambda cookie, request: False
 
+@dataclasses.dataclass
+class UnexpectedHttpStatusCodeError(RuntimeError):
+    response: requests.Response
+
 def http_get(url, expect=(200,), retry_count=3, retry_interval=15, **kwargs):
     logger.info('GET %s', url)
     kwargs.setdefault('allow_redirects', False)
     for retry_idx in range(retry_count):
         try:
             rsp = session.get(url, **kwargs)
-            assert rsp.status_code in expect, f'unexpected HTTP response status code {rsp.status_code}'
+            if rsp.status_code not in expect:
+                raise UnexpectedHttpStatusCodeError(rsp)
             return rsp
         except Exception:
             if retry_idx == retry_count - 1:
@@ -103,7 +108,12 @@ def main() -> None:
             local_articles[article.id] = article
 
     ## load remote RSS feed
-    root = ET.fromstring(http_get('https://lwn.net/headlines/rss').text)
+    try:
+        root = ET.fromstring(http_get('https://lwn.net/headlines/rss').text)
+    except UnexpectedHttpStatusCodeError as e:
+        if 500 <= e.response.status_code < 600:
+            logger.error('HTTP %d, assume server failure and give up', e.response.status_code)
+            return
     rss = root
     assert rss.tag == 'rss'
     assert rss.get('version') == '2.0'
