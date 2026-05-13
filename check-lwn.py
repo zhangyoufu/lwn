@@ -142,19 +142,13 @@ def main() -> None:
     now = datetime.datetime.now(datetime.timezone.utc)
 
     ## local_articles -= expired_local_articles
-    expire_dt = now + datetime.timedelta(days=3)
-    expired_article_ids = []
-    for article_id, local_article in local_articles.items():
-        if local_article.pub_date >= expire_dt:
-            expired_article_ids.append(article_id)
-    for article_id in expired_article_ids:
-        del local_articles[article_id]
-
-    rss_output = {}
-
     ## RSS_output += local_articles.filter(available)
-    for article_id, local_article in local_articles.items():
-        if local_article.pub_date <= now:
+    expire_dt = now - datetime.timedelta(days=3)
+    rss_output = {}
+    for article_id, local_article in list(local_articles.items()):
+        if local_article.pub_date < expire_dt:
+            del local_articles[article_id]
+        elif local_article.pub_date <= now:
             rss_output[article_id] = (local_article.pub_date, article_id, local_article)
 
     ## RSS_output += remote_articles.filter(available)
@@ -167,11 +161,10 @@ def main() -> None:
             local_articles[article_id] = remote_article
         else:
             rss_output[article_id] = (remote_article.pub_date, article_id, remote_article)
-            local_articles.pop(article_id, None)
 
-    ## sort output items by pub_date ascending, then article_id ascending
+    ## sort output items by pub_date descending, then article_id descending
     ## add output items into RSS skeleton
-    for _, _, item in sorted(list(rss_output.values())):
+    for _, _, item in sorted(list(rss_output.values()), reverse=True):
         channel.append(item.xml)
 
     ## RSS output
