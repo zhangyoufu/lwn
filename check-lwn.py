@@ -140,27 +140,35 @@ def main() -> None:
     ET.SubElement(channel, '{http://www.w3.org/2005/Atom}link', {'href': websub_hub_url, 'rel': 'hub'})
 
     now = datetime.datetime.now(datetime.timezone.utc)
-
-    ## local_articles -= expired_local_articles
-    ## RSS_output += local_articles.filter(available)
-    expire_dt = now - datetime.timedelta(days=3)
     rss_output = {}
-    for article_id, local_article in list(local_articles.items()):
-        if local_article.pub_date < expire_dt:
-            del local_articles[article_id]
-        elif local_article.pub_date <= now:
-            rss_output[article_id] = (local_article.pub_date, article_id, local_article)
 
     ## RSS_output += remote_articles.filter(available)
     ## local_articles += remote_articles.filter(under_paywall)
+    ## local_articles -= remote_articles.filter(not under_paywall)
+    ## sometimes, whether an article is under paywall may change
+    ## we prioritize remote state over local
     for item in remote_article_xml_list:
         remote_article = Article(item)
         article_id = remote_article.id
-        article_under_paywall = remote_article.check_paywall()
+        article_under_paywall = remote_article.check_paywall() # article.pub_date updated according to paywall
         if article_under_paywall:
             local_articles[article_id] = remote_article
         else:
             rss_output[article_id] = (remote_article.pub_date, article_id, remote_article)
+            local_articles.pop(article_id, None)
+
+    ## local_articles -= local_articles.filter(expired)
+    ## RSS_output += local_articles.filter(available)
+    ## remote RSS keep articles for 3 or 4 days
+    ## paywall lasts 1 week
+    ## we keep articles previously under paywall for an extra 3 days
+    ## (unless they are moved out of paywall earlier than expected)
+    expire = now - datetime.timedelta(days=3)
+    for article_id, local_article in list(local_articles.items()):
+        if local_article.pub_date < expire:
+            del local_articles[article_id]
+        elif local_article.pub_date <= now:
+            rss_output[article_id] = (local_article.pub_date, article_id, local_article)
 
     ## sort output items by pub_date descending, then article_id descending
     ## add output items into RSS skeleton
