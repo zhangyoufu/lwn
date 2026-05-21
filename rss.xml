@@ -1,0 +1,270 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2005/Atom" version="2.0">
+	<channel>
+		<title>LWN.net</title>
+		<link>https://lwn.net</link>
+		<description> LWN.net is a comprehensive source of news and opinions from
+        and about the Linux community.  This is the main LWN.net feed,
+        listing all articles which are posted to the site front page.
+</description>
+		<language>en-us</language>
+		<pubDate>Thu, 21 May 2026 08:06:59 +0000</pubDate>
+		<lastBuildDate>Thu, 21 May 2026 08:06:59 +0000</lastBuildDate>
+		<docs>https://www.rssboard.org/rss-specification</docs>
+		<webMaster>lwn@lwn.net</webMaster>
+		<ns0:link href="https://zhangyoufu.github.io/lwn/rss.rdf" rel="self" type="application/rss+xml" />
+		<ns0:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
+		<item>
+			<title>Managing pages outside of the direct map</title>
+			<link>https://lwn.net/Articles/1072367/</link>
+			<guid>https://lwn.net/Articles/1072367/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>When Brendan Jackman &lt;a
+href="https://lwn.net/ml/linux-mm/20260219175113.618562-1-jackmanb@google.com/"&gt;proposed&lt;/a&gt;
+a session for the 2026 &lt;a
+href="https://events.linuxfoundation.org/lsfmmbpf/"&gt;Linux Storage,
+Filesystem, Memory Management, and BPF Summit&lt;/a&gt;, his topic was "&lt;q&gt;a
+pagetable library for the kernel&lt;/q&gt;".  During the actual
+memory-management-track session, though, he stated that the idea had
+"&lt;q&gt;fizzled&lt;/q&gt;" and he was going to cover related topics instead.  What
+resulted was a session on ways to efficiently manage pages that are not
+present in the kernel's direct map.
+</description>
+			<pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Revisiting mshare</title>
+			<link>https://lwn.net/Articles/1072333/</link>
+			<guid>https://lwn.net/Articles/1072333/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Linux can share memory between processes, but each process (almost always)
+has its own set of page tables.  In situations where vast numbers of
+processes are sharing a memory region, the combined size of the page
+tables can exceed that of the shared memory itself.  There has, thus, long
+been an interest in enabling unrelated processes to share page tables
+referring to shared memory.  Anthony Yznaga is the latest developer to try
+to push this idea (known as "mshare") forward; he described the status of
+that work in a memory-management-track discussion at the 2026 &lt;a
+href="https://events.linuxfoundation.org/lsfmmbpf/"&gt;Linux Storage,
+Filesystem, Memory Management, and BPF Summit&lt;/a&gt; (LSFMM+BPF).
+</description>
+			<pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Using dma-bufs for read and write operations</title>
+			<link>https://lwn.net/Articles/1072317/</link>
+			<guid>https://lwn.net/Articles/1072317/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>The kernel's &lt;a
+href="https://docs.kernel.org/driver-api/dma-buf.html"&gt;dma-buf
+subsystem&lt;/a&gt; provides a way for drivers to share memory buffers, usually
+in order to support efficient device-to-device &lt;span class="nobreak"&gt;I/O&lt;/span&gt;.  At the 2026 &lt;a
+href="https://events.linuxfoundation.org/lsfmmbpf/"&gt;Linux Storage,
+Filesystem, Memory Management, and BPF Summit&lt;/a&gt;, Pavel Begunkov, assisted
+by Kanchan Joshi, led a joint session of the storage and memory-management
+tracks to explore ways to make the use of dma-bufs more efficient yet, and
+to make them available for read and write operations initiated by user
+space.
+</description>
+			<pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Friction in Fedora over AI developer desktop initiative</title>
+			<link>https://lwn.net/Articles/1071949/</link>
+			<guid>https://lwn.net/Articles/1071949/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;A push by Red Hat employees to create a Fedora "AI Developer
+Desktop" with support for out-of-tree kernel drivers and AI toolkits
+has been met with objections from some long-time members of the Fedora
+community. After more than a month of sometimes heated discussion, the
+&lt;a href="https://docs.fedoraproject.org/en-US/council/"&gt;Fedora
+Council&lt;/a&gt; had &lt;a
+href="https://forge.fedoraproject.org/council/tickets/issues/562#issuecomment-697648"&gt;voted&lt;/a&gt;
+to approve the initiative; however, a last-minute change to vote against the
+proposal by council member Justin Wheeler has (at least temporarily)
+sent it back to the drawing board.&lt;/p&gt;
+</description>
+			<pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Scaling transparent huge pages to 1GB</title>
+			<link>https://lwn.net/Articles/1071716/</link>
+			<guid>https://lwn.net/Articles/1071716/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>As a general rule, when developers talk about huge pages, they are
+referring to PMD-level pages that are 1MB or 2MB in size, depending on the
+CPU architecture.  Most CPUs can support other huge-page sizes, though.  On
+x86 systems, PUD-level huge pages hold 1GB of data.  Providing such large
+pages transparently to processes has generally not been considered as
+either feasible or desirable, but Usama Arif is trying to change that
+assessment.  At the 2026 &lt;a
+href="https://events.linuxfoundation.org/lsfmmbpf/"&gt;Linux Storage,
+Filesystem, Memory Management, and BPF Summit&lt;/a&gt;, he led a session in the
+memory-management track on how to make transparent huge pages (THPs) truly
+huge.
+</description>
+			<pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>LWN.net Weekly Edition for May 14, 2026</title>
+			<link>https://lwn.net/Articles/1071535/</link>
+			<guid>https://lwn.net/Articles/1071535/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Inside this week's LWN.net Weekly Edition:
+        &lt;p&gt;
+        &lt;ul&gt;
+&lt;li&gt; &lt;a href="https://lwn.net/Articles/1071535/"&gt;Front&lt;/a&gt;: Fedora AI; Forgejo &amp;quot;carrot&amp;quot; disclosure; memory-management maintainership; huge THPs; mshare; 64KB base pages; DAMON; direct map.
+            &lt;li&gt; &lt;a href="https://lwn.net/Articles/1071537/"&gt;Briefs&lt;/a&gt;: Dirty Frag; Fragnesia; Mythos and curl; killswitch; Debian reproducible builds; KDE investment; Quotes ...
+            &lt;li&gt; &lt;a href="https://lwn.net/Articles/1071538/"&gt;Announcements&lt;/a&gt;: Newsletters, conferences, security updates, patches, and more.
+            &lt;/ul&gt;
+
+        </description>
+			<pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Providing 64KB base pages with 4KB kernels, two different ways</title>
+			<link>https://lwn.net/Articles/1071484/</link>
+			<guid>https://lwn.net/Articles/1071484/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Some CPU architectures are able to run with a number of different base-page
+sizes; using a larger size can often result in better performance at the
+cost of increased memory use.  Other architectures are more limited.  At
+the 2026 &lt;a href="https://events.linuxfoundation.org/lsfmmbpf/"&gt;Linux
+Storage, Filesystem, Memory Management, and BPF Summit&lt;/a&gt;, two sessions in
+the memory-management track explored options for letting processes run with
+64KB page sizes when the underlying kernel does not.  The first was focused
+on letting each process have its own page size, while the second concerned
+bringing 64KB pages to x86 systems.
+</description>
+			<pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Wednesday</title>
+			<link>https://lwn.net/Articles/1073713/</link>
+			<guid>https://lwn.net/Articles/1073713/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (kernel, libpng, nginx, nginx:1.24, ruby, and ruby:3.3), &lt;b&gt;Debian&lt;/b&gt; (gnutls28 and linux-6.1), &lt;b&gt;Fedora&lt;/b&gt; (dnsmasq, kernel, keylime-agent-rust, perl-Net-CIDR-Lite, python-pysam, python-urllib3, rust-cargo-vendor-filterer, rust-ingredients, rust-oo7-cli, rust-rpki, rust-sevctl, and rust-tealdeer), &lt;b&gt;Mageia&lt;/b&gt; (bind), &lt;b&gt;Oracle&lt;/b&gt; (bind, giflib, gimp:2.8, kernel, libpng, rsync, ruby, and vim), &lt;b&gt;Slackware&lt;/b&gt; (haveged and mozilla), &lt;b&gt;SUSE&lt;/b&gt; (cockpit, dnsmasq, erlang26, freeipmi, git-bug, glibc, GraphicsMagick, haveged, ImageMagick, iproute2, kernel, openssh, perl-CryptX, perl-HTTP-Tiny, postgresql14, postgresql15, postgresql16, python-Pillow, rsync, tiff, and traefik), and &lt;b&gt;Ubuntu&lt;/b&gt; (Highlight.js, linux, linux-aws, linux-aws-5.15, linux-aws-fips, linux-fips, linux-gcp,
+ linux-gcp-fips, linux-gke, linux-gkeop, linux-hwe-5.15, linux-ibm,
+ linux-ibm-5.15, linux-intel-iotg, linux-intel-iotg-5.15, linux-kvm,
+ linux-nvidia, linux-nvidia-tegra, linux-nvidia-tegra-5.15, linux-oracle,
+ linux-raspi, linux-realtime, linux, linux-aws, linux-aws-fips, linux-bluefield, linux-fips, linux-gcp,
+ linux-gcp-5.4, linux-gcp-fips, linux-ibm, linux-ibm-5.4, linux-kvm,
+ linux-oracle, linux-oracle-5.4, linux-xilinx-zynqmp, linux, linux-aws, linux-aws-fips, linux-fips, linux-gcp-4.15,
+ linux-gcp-fips, linux-kvm, linux-oracle, linux, linux-aws, linux-aws-fips, linux-gcp, linux-gcp-fips, linux-gke,
+ linux-gkeop, linux-ibm, linux-ibm-6.8, linux-lowlatency,
+ linux-lowlatency-hwe-6.8, linux-raspi, linux-raspi-realtime,
+ linux-realtime, linux-realtime-6.8, linux, linux-aws, linux-hwe-6.17, linux-oem-6.17, linux-oracle,
+ linux-raspi, linux-realtime, linux-realtime-6.17, and smarty3).
+</description>
+			<pubDate>Wed, 20 May 2026 13:04:17 +0000</pubDate>
+		</item>
+		<item>
+			<title>Firefox 151.0 released</title>
+			<link>https://lwn.net/Articles/1073579/</link>
+			<guid>https://lwn.net/Articles/1073579/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>&lt;a
+href="https://www.firefox.com/en-US/firefox/151.0/releasenotes/"&gt;Version
+151.0&lt;/a&gt; of the Firefox browser has been released.  Significant changes
+include the ability to clear and restart a private-browsing session, better
+fingerprinting protection, control over the apparent location when using the
+Firefox VPN, and more.</description>
+			<pubDate>Tue, 19 May 2026 16:10:38 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Tuesday</title>
+			<link>https://lwn.net/Articles/1073542/</link>
+			<guid>https://lwn.net/Articles/1073542/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (libpng and nginx), &lt;b&gt;Debian&lt;/b&gt; (erlang, netatalk, and nginx), &lt;b&gt;Fedora&lt;/b&gt; (mod_md and SDL2_image), &lt;b&gt;Mageia&lt;/b&gt; (perl-libwww-perl, perl-HTTP-Message, perl-WWW-Mechanize-Cached, perl-File-XDG, perl-Path-Tiny, perl-YAML-Syck, postgresql15, and rclone), &lt;b&gt;SUSE&lt;/b&gt; (agama, alloy, cacti, cloud-init, dnsmasq, emacs, firefox, glibc, go1.25, go1.26, google-cloud-sap-agent, google-guest-agent, ibus-rime, librime, imagemagick, kernel, libsndfile, nginx, ongres-scram, ongres-stringprep, plexus-testing,, openexr, openssh, PackageKit, perl-Text-CSV_XS, php-composer2, php8, postgresql16, postgresql18, python-lxml, python-python-multipart, python3, python311-urllib3, rmt-server, rsync, tiff, tree-sitter, util-linux, and xen), and &lt;b&gt;Ubuntu&lt;/b&gt; (linux, linux-aws, linux-aws-5.4, linux-aws-fips, linux-azure, linux-azure-5.4, linux-azure-fips, linux-bluefield, linux-fips, linux-gcp, linux-gcp-5.4, linux-gcp-fips, linux-hwe-5.4, linux-ibm, linux-ibm-5.4, linux-iot, linux-kvm, linux-oracle, linux-oracle-5.4, linux-xilinx-zynqmp, linux, linux-aws, linux-kvm, linux-lts-xenial, linux-nvidia-tegra, linux-nvidia-tegra-5.15, linux-raspi, and linux-xilinx-zynqmp).
+</description>
+			<pubDate>Tue, 19 May 2026 13:24:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>pgBackRest will continue</title>
+			<link>https://lwn.net/Articles/1073470/</link>
+			<guid>https://lwn.net/Articles/1073470/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;In April, David Steele, maintainer of the popular &lt;a
+href="https://pgbackrest.org/"&gt;pgBackRest&lt;/a&gt; backup and restore project for
+PostgreSQL, announced that he had &lt;a
+href="https://github.com/pgbackrest/pgbackrest#notice-of-obsolescence"&gt;archived
+the project&lt;/a&gt; and it would no longer be maintained due to lack of
+sponsorship. On May&amp;#160;18, he &lt;a
+href="https://pgbackrest.org/news.html#will-continue"&gt;announced&lt;/a&gt;
+that a number of sponsors have stepped forward to ensure its continued
+development:&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+&lt;p&gt;Over the last few weeks, a coalition of sponsors has come together
+to fund ongoing development. Their support means the project is no
+longer reliant on a single sponsor, giving pgBackRest the stability it
+needs for the long term.&lt;/p&gt;
+
+&lt;p&gt;[...]  I'm looking forward to getting back to work. There are
+features and optimizations in the pipeline that I'm excited to share
+in upcoming releases. Thank you to our sponsors for making this
+possible, and thank you to the community for your patience and support
+during this transition.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Thanks to Paul Wise for the tip.&lt;/p&gt;</description>
+			<pubDate>Tue, 19 May 2026 12:05:42 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Monday</title>
+			<link>https://lwn.net/Articles/1073356/</link>
+			<guid>https://lwn.net/Articles/1073356/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (freerdp, gimp:2.8, jq, kernel, and rsync), &lt;b&gt;Debian&lt;/b&gt; (chromium, ffmpeg, firewalld, kernel, nginx, openjpeg2, openssh, php7.4, and redis), &lt;b&gt;Fedora&lt;/b&gt; (apptainer, chromium, coturn, dnsmasq, firefox, kernel, libgit2_1.8, libmetal, nginx, nginx-mod-brotli, nginx-mod-fancyindex, nginx-mod-headers-more, nginx-mod-js-challenge, nginx-mod-modsecurity, nginx-mod-naxsi, nginx-mod-vts, open-amp, perl-Net-CIDR-Lite, pgbouncer, pypy, python-jupytext, python-uv-build, rsync, rust-astral-tokio-tar, uriparser, uv, valkey, and yelp), &lt;b&gt;Mageia&lt;/b&gt; (dpkg, firefox, thunderbird, golang, haproxy, and samba), &lt;b&gt;Slackware&lt;/b&gt; (dnsmasq and kernel), and &lt;b&gt;SUSE&lt;/b&gt; (apache-commons-configuration2, apache2, apptainer, chromedriver, cups-filters, curl, dnsmasq, expat, ffmpeg-4, ffmpeg-7, firebird, firewalld, flux2-cli, glibc, go1.25, go1.26, gosec, grub2, ImageMagick, java-11-openj9, java-17-openj9, java-1_8_0-openj9, java-1_8_0-openjdk, java-21-openj9, java-25-openj9, kdenlive, kernel, kernel-devel, keylime-config, krb5, libIex-3_4-33, mozjs115, mozjs78, nginx, openssh, openvswitch, ovmf, PackageKit, perl-Crypt-URandom, perl-CryptX, perl-libwww-perl, perl-Net-CIDR-Lite, perl-Text-CSV_XS, podman, postgresql17, postgresql18, python-pyOpenSSL, python310, rsync, sed, tekton-cli, valkey, xen, and zypper-docker).
+</description>
+			<pubDate>Mon, 18 May 2026 12:59:35 +0000</pubDate>
+		</item>
+		<item>
+			<title>Kernel prepatch 7.1-rc4</title>
+			<link>https://lwn.net/Articles/1073193/</link>
+			<guid>https://lwn.net/Articles/1073193/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>The &lt;a href="https://lwn.net/Articles/1073192/"&gt;7.1-rc4&lt;/a&gt; kernel prepatch is out for
+testing.
+&lt;p&gt;
+&lt;blockquote class="bq"&gt;
+	Some of the documentation updates might be worth highlighting: the
+	continued flood of AI reports has basically made the security list
+	almost entirely unmanageable, with enormous duplication due to
+	different people finding the same things with the same
+	tools. People spend all their time just forwarding things to the
+	right people or saying "that was already fixed a week/month ago"
+	and pointing to the public discussion.
+&lt;p&gt;
+	Which is all entirely pointless churn, and we're making it clear
+	that AI detected bugs are pretty much by definition not secret, and
+	treating them on some private list is a waste of time for everybody
+	involved - and only makes that duplication worse because the
+	reporters can't even see each other's reports.
+&lt;/blockquote&gt;
+&lt;p&gt;
+(He is referring to &lt;a href="https://lwn.net/ml/all/87lddksslx.fsf@trenco.lwn.net/"&gt;this
+pull request&lt;/a&gt; with patches from Willy Tarreau defining &lt;a
+href="https://lwn.net/ml/all/20260509094755.2838-3-w@1wt.eu/"&gt;what constitutes a security
+bug&lt;/a&gt; and &lt;a href="https://lwn.net/ml/all/20260509094755.2838-4-w@1wt.eu/"&gt;responsible
+ways to use AI to find bugs&lt;/a&gt;).</description>
+			<pubDate>Sun, 17 May 2026 21:39:26 +0000</pubDate>
+		</item>
+		<item>
+			<title>RIP Peter G. Neumann</title>
+			<link>https://lwn.net/Articles/1073186/</link>
+			<guid>https://lwn.net/Articles/1073186/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>We have &lt;a
+href="https://lwn.net/ml/all/CAEoi9W7rpLzdJzYJ3-F0KVJo-wQXa7UawUYtUoUUYy36m5e_3Q@mail.gmail.com"&gt;received
+word&lt;/a&gt; that Peter G. Neumann, who, among many other things, ran the &lt;a
+href="https://catless.ncl.ac.uk/Risks/"&gt;RISKS Digest&lt;/a&gt; for decades, has
+passed away.  He will be much missed.
+&lt;p&gt;
+&lt;b&gt;Update&lt;/b&gt;: the New York Times has published &lt;a
+href="https://www.nytimes.com/2026/05/17/obituaries/peter-g-neumann-dead.html"&gt;an
+obituary&lt;/a&gt; of Dr. Neumann.</description>
+			<pubDate>Sun, 17 May 2026 19:36:06 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
