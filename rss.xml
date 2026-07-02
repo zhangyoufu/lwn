@@ -1,0 +1,353 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2005/Atom" version="2.0">
+	<channel>
+		<title>LWN.net</title>
+		<link>https://lwn.net</link>
+		<description> LWN.net is a comprehensive source of news and opinions from
+        and about the Linux community.  This is the main LWN.net feed,
+        listing all articles which are posted to the site front page.
+</description>
+		<language>en-us</language>
+		<pubDate>Thu, 02 Jul 2026 14:27:16 +0000</pubDate>
+		<lastBuildDate>Thu, 02 Jul 2026 14:27:16 +0000</lastBuildDate>
+		<docs>https://www.rssboard.org/rss-specification</docs>
+		<webMaster>lwn@lwn.net</webMaster>
+		<ns0:link href="https://zhangyoufu.github.io/lwn/rss.rdf" rel="self" type="application/rss+xml" />
+		<ns0:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
+		<item>
+			<title>Security updates for Thursday</title>
+			<link>https://lwn.net/Articles/1080956/</link>
+			<guid>https://lwn.net/Articles/1080956/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (giflib, kernel, mariadb:10.11, mod_http2, php, rrdtool, ruby, ruby:3.3, and ruby:4.0), &lt;b&gt;Debian&lt;/b&gt; (jq and node-lodash), &lt;b&gt;Fedora&lt;/b&gt; (caddy, hut, ipp-usb, kernel, opkssh, rclone, thunderbird, and transmission), &lt;b&gt;SUSE&lt;/b&gt; (389-ds, 7zip, alsa, amazon-ecs-init, avahi, cadvisor, cosign, cups, dnsdist, docker, dracut, firefox, firewalld, giflib, glib-networking, glycin-loaders, google-cloud-sap-agent, google-guest-agent, gsasl, hauler, helm, ImageMagick, kernel, keylime, krb5, libaom, libexif, libgcrypt, libnfs, libssh2_org, loupe, lrzip, mutt, ncurses, nodejs22, openCryptoki, openssh, openssl-3, pacemaker, perl-Config-IniFiles, perl-CSS-Minifier-XS, perl-DBI, perl-JavaScript-Minifier-XS, perl-libwww-perl, postfix, python-click, python-idna, python-Markdown, python-joblib, python-handy-archives, python-apache-libcloud, python-WebOb, python-PyGithub, python-soupsieve, python-pip, python-pytest-html, python-python-dotenv, python-python-multipart, python-starlette, python-tornado6, python-zeroconf, python311, python311-jupyter-server, rpcbind, sed, sg3_utils, tar, tiff, and util-linux), and &lt;b&gt;Ubuntu&lt;/b&gt; (kernel, linux, linux-aws, linux-aws-5.15, linux-aws-fips, linux-azure, linux-azure-5.15, linux-azure-fde-5.15, linux-fips, linux-gcp, linux-gcp-fips, linux-gke, linux-gkeop, linux-hwe-5.15, linux-ibm, linux-ibm-5.15, linux-intel-iot-realtime, linux-intel-iotg, linux-kvm, linux-lowlatency, linux-lowlatency-hwe-5.15, linux-nvidia, linux-nvidia-tegra, linux-nvidia-tegra-5.15, linux-nvidia-tegra-igx, linux-oracle, linux-realtime, linux, linux-aws, linux-aws-fips, linux-gcp, linux-gcp-fips, linux-ibm, linux-nvidia, linux-nvidia-6.8, linux-oracle, linux-realtime, linux-realtime-6.8, linux-oem-6.17, and linux-oem-7.0).
+</description>
+			<pubDate>Thu, 02 Jul 2026 13:17:54 +0000</pubDate>
+		</item>
+		<item>
+			<title>Fedora: 2FA, or not 2FA, that is the question</title>
+			<link>https://lwn.net/Articles/1078964/</link>
+			<guid>https://lwn.net/Articles/1078964/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Compromised accounts are one of the most common ways that attackers
+can sneak malware into the open-source supply chain. One way to
+reduce account compromise is for projects to require two-factor
+authentication (2FA) or multi-factor authentication (MFA), but that is
+easier said than done. However, Fedora is currently discussing putting
+2FA requirements in place soon, following an &lt;a
+href="https://lwn.net/Articles/1077035/"&gt;an alleged account
+compromise&lt;/a&gt; that led to an AI agent causing a number of problems
+for the project. After some discussion, Fedora will begin by requiring
+packagers in the "&lt;a
+href="https://docs.fedoraproject.org/en-US/fesco/Provenpackager_policy/"&gt;provenpackager&lt;/a&gt;"
+group to enable 2FA within the next three months or so.&lt;/p&gt;
+</description>
+			<pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Reports from OSPM 2026, day two</title>
+			<link>https://lwn.net/Articles/1078696/</link>
+			<guid>https://lwn.net/Articles/1078696/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>The &lt;a href="https://retis.santannapisa.it/ospm-summit/"&gt;Power Management
+and Scheduling in the Linux Kernel Summit&lt;/a&gt;, which still goes by the
+historical acronym OSPM, was held in Cambridge, UK, in mid-April.  As has
+become traditional, the presenters at that event have since written
+summaries of their sessions, and this work has kindly been made available
+to LWN for publication.  The second day's sessions covered a wide range of
+topics, including device frequency scaling, using time-slice duration for
+CPU selection, scheduling domains on multi-cluster Arm systems, the LAVD
+scheduler, and more.
+</description>
+			<pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>A helper library for BPF arenas</title>
+			<link>https://lwn.net/Articles/1078526/</link>
+			<guid>https://lwn.net/Articles/1078526/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>&lt;p&gt;
+&lt;a href="https://lwn.net/Articles/961941/"&gt;
+BPF arenas&lt;/a&gt; are areas of memory (potentially shared with user space)
+where programs have free reign to build their
+own data structures, unburdened by the verifier's bounds checks. Many of those
+data structures are potentially usable in multiple programs. Emil Tsalapatis
+brought his work on libarena, a library containing generic utilities for use in
+BPF arenas, to the 2026
+&lt;a href="https://events.linuxfoundation.org/lsfmmbpf/"&gt;
+Linux Storage, Filesystem, Memory-Management, and BPF
+Summit&lt;/a&gt;. Although the library is already available as part of the kernel, it
+is still in its early stages and he has more work planned.
+&lt;/p&gt;
+</description>
+			<pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>LWN.net Weekly Edition for June 25, 2026</title>
+			<link>https://lwn.net/Articles/1078380/</link>
+			<guid>https://lwn.net/Articles/1078380/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Inside this week's LWN.net Weekly Edition:
+        &lt;p&gt;
+        &lt;ul&gt;
+&lt;li&gt; &lt;a href="https://lwn.net/Articles/1078380/"&gt;Front&lt;/a&gt;: Free-threaded Python; AUR attacks; Fedora 2FA; 7.2 merge window; BPF arenas; BPF coroutines; BPF JIT; RMR and BRMR; OSPM.
+            &lt;li&gt; &lt;a href="https://lwn.net/Articles/1078382/"&gt;Briefs&lt;/a&gt;: Tor deprecations; GIMP 0.54.1 flatpak; Mastodon 4.6; Systemd v261; Xfce on Wayland; Quotes; ...
+            &lt;li&gt; &lt;a href="https://lwn.net/Articles/1078383/"&gt;Announcements&lt;/a&gt;: Newsletters, conferences, security updates, patches, and more.
+            &lt;/ul&gt;
+
+        </description>
+			<pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Free-threaded Python: past, present, and future</title>
+			<link>https://lwn.net/Articles/1078367/</link>
+			<guid>https://lwn.net/Articles/1078367/</guid>
+			<dc:creator>jake</dc:creator>
+			<description>Probably the biggest change for Python over the last five years or so is
+the advent of the "free-threaded" version of the language, which removes the
+global interpreter lock (GIL) and allows multiple threads to run in
+parallel in the interpreter.  At &lt;a href="https://us.pycon.org/2026/"&gt;PyCon
+US 2026&lt;/a&gt;, held in Long Beach, California in mid-May, longtime CPython
+core developer (and current steering council member) Thomas Wouters gave a
+talk about the feature.  He looked at the motivation behind the GIL-removal
+efforts, some history,
+the current status of the free-threaded interpreter, and provided a
+prediction on where it all leads.
+</description>
+			<pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>The first half of the 7.2 merge window</title>
+			<link>https://lwn.net/Articles/1078068/</link>
+			<guid>https://lwn.net/Articles/1078068/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>The 7.2 merge window started with the &lt;a
+href="https://lwn.net/ml/all/CAHk-=wi4BF4bMhZNZ1tqs+FFV4OuZRe3ZqdWB+LxRLmRweUzQw@mail.gmail.com/"&gt;7.1
+kernel release&lt;/a&gt; on June&amp;#160;14.  As of this writing, just over 7,000
+non-merge changesets have been pulled into the mainline for the next kernel
+release.  Many of the core subsystems have been pulled at this point,
+meaning that most of the changes that can be expected in 7.2 have now come
+into focus.
+</description>
+			<pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Reports from OSPM 2026, day one</title>
+			<link>https://lwn.net/Articles/1077759/</link>
+			<guid>https://lwn.net/Articles/1077759/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>The &lt;a href="https://retis.santannapisa.it/ospm-summit/"&gt;Power Management
+and Scheduling in the Linux Kernel Summit&lt;/a&gt;, which still goes by the
+historical acronym OSPM, was held in Cambridge, UK, in mid-April.  As has
+become traditional, the presenters at that event have since written
+summaries of their sessions, and this work has kindly been made available
+to LWN for publication.  The first day's sessions covered a wide range of
+topics, including idle-state selection, user-space schedulers with
+sched_ext, lock-holder preemption, and much more.
+</description>
+			<pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>KASAN for JIT-compiled BPF code</title>
+			<link>https://lwn.net/Articles/1077740/</link>
+			<guid>https://lwn.net/Articles/1077740/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>&lt;p&gt;
+Alexis Lothoré has been working to add support for the kernel's memory-access
+checker,
+&lt;a href="https://docs.kernel.org/dev-tools/kasan.html"&gt;
+KASAN&lt;/a&gt;, to just-in-time-compiled BPF code. He spoke about that work at
+the 2026
+&lt;a href="https://events.linuxfoundation.org/lsfmmbpf/"&gt;
+Linux Storage, Filesystem, Memory-Management, and BPF Summit&lt;/a&gt;.
+KASAN support is needed, he said, to help catch bugs in the BPF just-in-time (JIT)
+compiler. KASAN is a great tool for catching memory-management problems in the
+kernel, but only in code that can be monitored by it.
+&lt;/p&gt;
+</description>
+			<pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>AURpocalypse now: a look at the recent AUR attacks</title>
+			<link>https://lwn.net/Articles/1077619/</link>
+			<guid>https://lwn.net/Articles/1077619/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;The &lt;a href="https://aur.archlinux.org/"&gt;Arch User Repository&lt;/a&gt; (AUR) has
+been subjected to a sustained attack recently. The attacker, or attackers, have
+spun up a series of new accounts then used them to adopt orphaned
+packages and push malicious updates that would install malware on users' systems.
+It is unclear how many users were compromised in the attack, but the maintainers
+were playing Whac-A-Mole for several days to respond to each newly compromised
+package. The project has &lt;a
+href="https://lists.archlinux.org/archives/list/aur-general@lists.archlinux.org/thread/4JRS73YVTE7JUYHHE3ZDUIHXYHXZ3YQQ/"&gt;turned
+off the AUR's new-user registration&lt;/a&gt;, for now, but it is unclear what its  
+long-term response will be or if the AUR can be secured without major changes to
+its existing collaboration model.&lt;/p&gt;
+</description>
+			<pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Suspending and resuming BPF programs</title>
+			<link>https://lwn.net/Articles/1076210/</link>
+			<guid>https://lwn.net/Articles/1076210/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>&lt;p&gt;
+BPF programs can be used to extend many aspects the Linux kernel, but
+BPF programs must run to completion in the same context that they began.
+Kumar Kartikeya Dwivedi is working on changing that by
+allowing BPF programs to be expressed as coroutines. He spoke about his work at
+the 2026
+&lt;a href="https://events.linuxfoundation.org/lsfmmbpf/"&gt;
+Linux Storage, Filesystem, Memory-Management and BPF Summit&lt;/a&gt;. While
+still experimental, the change promises to make long-running BPF tasks
+significantly easier to write.
+&lt;/p&gt;
+</description>
+			<pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Single-hop block replication with RMR and BRMR</title>
+			<link>https://lwn.net/Articles/1074291/</link>
+			<guid>https://lwn.net/Articles/1074291/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>&lt;p&gt;
+How can cloud providers efficiently supply durable virtual block devices? Remote
+Direct Memory Access (RDMA) provides a way for servers in a cluster to share
+chunks of memory, but there still needs to be a protocol that operates on top of
+RDMA to provide the guarantees expected of a block device. The kernel's RDMA transport
+library (RTRS) provides a way to send messages via RDMA. I
+&lt;a href="https://lwn.net/images/2026/RMR_BRMR.pdf"&gt;presented&lt;/a&gt; about two
+new components built on top of RTRS at the 2026
+&lt;a href="https://events.linuxfoundation.org/lsfmmbpf/"&gt;Linux
+Storage, Filesystem, Memory Management and BPF Summit&lt;/a&gt;: Reliable Multicast
+over RTRS (RMR) and Block device over RMR (BRMR). These modules, which I
+am working on with Jia Li, could be a way for cloud providers to
+expose durable block devices with as little overhead as possible. To accomplish
+that, however, we need some discussion and feedback from the community before
+sending the modules upstream.
+&lt;/p&gt;
+</description>
+			<pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Wednesday</title>
+			<link>https://lwn.net/Articles/1080689/</link>
+			<guid>https://lwn.net/Articles/1080689/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (coreutils, galera and mariadb11.8, giflib, git-lfs, glibc, httpd, kernel, mariadb10.11, mod_md, perl-Archive-Tar, perl-IO-Compress, perl:5.32, rrdtool, ruby, ruby4.0, and thunderbird), &lt;b&gt;Debian&lt;/b&gt; (debian-security-support, librabbitmq, and nginx), &lt;b&gt;Fedora&lt;/b&gt; (chromium, collectd, maradns, python-django-haystack, python-jupytext, varnish, varnish-modules, and vmod-querystring), &lt;b&gt;Oracle&lt;/b&gt; (firefox, git-lfs, kernel, nginx:1.24, openssl, perl-Archive-Tar, perl-IO-Compress, and uek-kernel), &lt;b&gt;Red Hat&lt;/b&gt; (container-tools:rhel8), &lt;b&gt;SUSE&lt;/b&gt; (7zip, apache2, buildah, cifs-utils, curl, docker, exiv2-0_26, libonnxruntime1, libsoup, nodejs22, opensc, pacemaker, perl-Config-IniFiles, podman, sg3_utils, socat, tar, tracker, and xdg-desktop-portal), and &lt;b&gt;Ubuntu&lt;/b&gt; (curl, hplip, libgd-perl, libssh2, libyang, ruby2.7, ruby3.0, ruby3.2, ruby3.3, and tar).
+</description>
+			<pubDate>Wed, 01 Jul 2026 13:15:44 +0000</pubDate>
+		</item>
+		<item>
+			<title>Creative Commons founders' fireside chat (Creative Commons blog)</title>
+			<link>https://lwn.net/Articles/1080518/</link>
+			<guid>https://lwn.net/Articles/1080518/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Dee Harris has published a &lt;a
+href="https://creativecommons.org/2026/06/30/inside-the-cc-founders-fireside-chat/"&gt;summary&lt;/a&gt;
+of the recent "fireside chat" featuring Creative Commons founders Hal
+Abelson, Lawrence (Larry) Lessig, Molly Van Houweling, and Glenn Otis
+Brown. The chat was to mark the &lt;a
+href="https://creativecommons.org/25th-anniversary/"&gt;25th anniversary
+of Creative Commons&lt;/a&gt; and included a look back at its history as
+well as a look at the landscape today:&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+Twenty-five years ago, a small group of people made a bet. They
+believed that if you gave creators a simple set of tools and licenses
+in language that a lawyer, a machine, and a human could all read,
+millions of people might choose to share their work with the world
+instead of locking it down.
+&lt;/blockquote&gt;
+
+&lt;p&gt;The &lt;a href="https://www.youtube.com/watch?v=OOHUhSEdkB0"&gt;video&lt;/a&gt;
+of the chat is available on YouTube.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Tue, 30 Jun 2026 17:53:49 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Tuesday</title>
+			<link>https://lwn.net/Articles/1080439/</link>
+			<guid>https://lwn.net/Articles/1080439/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (git-lfs, perl-Archive-Tar, perl-IO-Compress, python3.12-urllib3, and runc), &lt;b&gt;Debian&lt;/b&gt; (sogo), &lt;b&gt;Fedora&lt;/b&gt; (perl-DBI and perl-Socket), &lt;b&gt;Oracle&lt;/b&gt; (firefox, freerdp, git-lfs, libsoup, libxml2, mod_md, mysql, perl-Archive-Tar, perl-IO-Compress, python, python3.12-urllib3, rsync, thunderbird, tomcat, xorg-x11-server, and xorg-x11-server-Xwayland), &lt;b&gt;SUSE&lt;/b&gt; (389-ds, 7zip, alsa, amazon-ecs-init, amazon-ssm-agent, ansible-core, apache2, atril, avahi, bind, bitcoin, capnproto, chromedriver, chromium, cosign, distribution, dnsdist, docker, dovecot24, dracut, firefox, firewalld, freeipmi, freerdp, giflib, gimp, gleam, glib-networking, glibc, glycin-loaders, golang-github-prometheus-alertmanager, google-cloud-sap-agent, google-guest-agent, graphite2, gsasl, hamlib, helm, himmelblau, ignition, imagemagick, istioctl, jackson-databind, jq, jupyter-jupyterlab-templates, keylime, krb5, ldns, libaom, libcaca, libgcrypt, libheif, libinput, libjxl, libnfs, libslirp-devel, libsolv, libzypp, zypper, libssh2_org, libvncserver, libyang, lldpd, logback, loupe, mbedtls, mbedtls-2, mcphost, mozjs128, mutt, nano, nginx, ocaml, ofono, openCryptoki, opencryptoki, opensc, openssh, openssl-3, papers, perl-compress-raw-zlib, perl-config-inifiles, perl-cpanel-json-xs, perl-crypt-passwdmd5, perl-DBI, perl-dbi, perl-html-parser, perl-http-daemon, perl-libwww-perl, perl-protocol-http2, postfix, postgresql14, postgresql15, postgresql16, python-aiohttp, python-biopython, python-click, python-ecdsa, python-idna, python-markdown, python-joblib,, python-paramiko, python-pdm, python-pip, python-py7zr, python-pydata-sphinx-theme, python-pyjwt, python-python-multipart, python-starlette, python-tornado6, python311-jupyter-ydoc, rpcbind, sed, sg3_utils, sqlite3, strongswan, tar, thunderbird, tomcat, tomcat10, tomcat11, trivy, unbound, util-linux, warewulf4, webkit2gtk3, xar, xwayland, yt-dlp, and zypper, libzypp, libsolv), and &lt;b&gt;Ubuntu&lt;/b&gt; (libheif, nss, qemu, roundcube, and sqlite3).
+</description>
+			<pubDate>Tue, 30 Jun 2026 13:03:36 +0000</pubDate>
+		</item>
+		<item>
+			<title>Git 2.55.0 released</title>
+			<link>https://lwn.net/Articles/1080188/</link>
+			<guid>https://lwn.net/Articles/1080188/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Git maintainer Junio Hamano has &lt;a
+href="https://lwn.net/ml/all/xmqqv7b1w9vr.fsf%40gitster.g/"&gt;announced&lt;/a&gt;
+Git&amp;#160;2.55.0, which has non-merge commits from 100 people; 33 of
+those are first-time contributors to the project. LWN &lt;a
+href="https://lwn.net/Articles/1079596/"&gt;recently covered&lt;/a&gt; some of
+the noteworthy changes in 2.55, including new features for the
+experimental "&lt;tt&gt;git history&lt;/tt&gt;" command, addition of the Git &lt;a
+href="https://www.man7.org/linux/man-pages/man1/git-fsmonitor--daemon.1.html"&gt;fsmonitor&lt;/a&gt;
+daemon for Linux systems, and more.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Mon, 29 Jun 2026 20:22:59 +0000</pubDate>
+		</item>
+		<item>
+			<title>Open source maintainership in the age of AI (Kubernetes blog)</title>
+			<link>https://lwn.net/Articles/1080144/</link>
+			<guid>https://lwn.net/Articles/1080144/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;The Kubernetes project has published a &lt;a
+href="https://kubernetes.io/blog/2026/06/26/open-source-maintainership-in-the-age-of-ai/"&gt;blog
+post&lt;/a&gt; explaining its &lt;a
+href="https://www.kubernetes.dev/docs/guide/pull-requests/#ai-guidance"&gt;AI
+policy&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+&lt;p&gt;The main problem is that AI has made generating code fast but there
+has been very little improvement in maintaining code bases. In this
+post, we will highlight the ways the Kubernetes community is adapting
+to the world of AI assisted coding.&lt;/p&gt;
+
+&lt;p&gt;The first step of this journey was to develop an AI policy. This
+seems mundane and bureaucratic but there were many PRs that derailed
+into discussions around AI usage. The AI policy helps steer the
+conversation around the project's stance on AI and provides a clear
+signal to contributors on how to use these tools responsibly.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Of note, the project requires disclosure when AI tools have been
+used to assist in the creation of a contribution but &lt;em&gt;forbids&lt;/em&gt; the use
+of listing AI as a co-author or including "assisted-by" or
+"co-developed" trailers to attribute work to an LLM tool.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Mon, 29 Jun 2026 15:01:17 +0000</pubDate>
+		</item>
+		<item>
+			<title>Mageia 10 released</title>
+			<link>https://lwn.net/Articles/1080143/</link>
+			<guid>https://lwn.net/Articles/1080143/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a href="https://www.mageia.org/en/10/"&gt;Mageia 10&lt;/a&gt; has been
+released with the 6.18 Linux kernel, DNF&amp;#160;5.4.0, RPM&amp;#160;4.20.1,
+and an increase in hardware requirements for x86&amp;#160;32-bit systems; users now
+need a CPU with SSE2 features. See the &lt;a
+href="https://wiki.mageia.org/en/Mageia_10_Release_Notes"&gt;release
+notes&lt;/a&gt; for a full list of updates, and the &lt;a
+href="https://wiki.mageia.org/en/Mageia_10_Errata"&gt;errata page&lt;/a&gt;
+for known problems.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Mon, 29 Jun 2026 14:50:50 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Monday</title>
+			<link>https://lwn.net/Articles/1080075/</link>
+			<guid>https://lwn.net/Articles/1080075/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (containernetworking-plugins, golang, kernel, libpng, libpng15, nginx, opencryptoki, perl-IO-Compress, thunderbird, and tigervnc), &lt;b&gt;Debian&lt;/b&gt; (chromium, gdcm, incus, libhtml-parser-perl, lxd, openvpn, tor, and xorg-server), &lt;b&gt;Fedora&lt;/b&gt; (chromium, docker-buildkit, docker-buildx, dotnet10.0, dotnet8.0, dotnet9.0, krita, ldns, libssh2, liferea, lighttpd, mariadb10.11, mariadb11.8, moby-engine, nginx, nginx-mod-brotli, nginx-mod-fancyindex, nginx-mod-headers-more, nginx-mod-js-challenge, nginx-mod-modsecurity, nginx-mod-naxsi, nginx-mod-vts, openbao, pacemaker, pgadmin4, podman-tui, prometheus-podman-exporter, python-jupyter-server, python-mistune, python-postorius, python-pydantic-settings, python3-docs, python3.14, thunderbird, tigervnc, tinyproxy, and util-linux), &lt;b&gt;Mageia&lt;/b&gt; (krb5), &lt;b&gt;Oracle&lt;/b&gt; (.NET 10.0, .NET 8.0, .NET 9.0, bind, dracut, fence-agents, firefox, frr, frr10, glib2, glibc, gnutls, golang, kernel, libpng, libpng15, libreoffice, libxml2, libxslt, mod_http2, mysql:8.4, nginx:1.26, openssl, php:8.3, podman, postgresql-jdbc, python3.14, redis, rsync, thunderbird, tomcat, valkey, and vim), &lt;b&gt;Red Hat&lt;/b&gt; (osbuild-composer), and &lt;b&gt;SUSE&lt;/b&gt; (agama-web-ui, asn1c, assimp, assimp-devel, aws-iam-authenticator, calibre, clamav, corepack24, dovecot22, exiv2, frr, giflib, glances-common, google-osconfig-agent, GraphicsMagick, gvim, haproxy, hydra, ImageMagick, jupyter-nbclassic, kernel, libsoup, libsoup2, libssh2-1, nano, NetworkManager-applet-openvpn, nodejs22, openbabel, opensc, openssl-3, pacemaker, python, python-base, python-doc, python311-pdm, python311-py7zr, python311-pypdf, python36, tar, trivy, util-linux, xen, and xtrabackup).
+</description>
+			<pubDate>Mon, 29 Jun 2026 13:16:41 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
