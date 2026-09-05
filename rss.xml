@@ -1,0 +1,281 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2005/Atom" version="2.0">
+	<channel>
+		<title>LWN.net</title>
+		<link>https://lwn.net</link>
+		<description> LWN.net is a comprehensive source of news and opinions from
+        and about the Linux community.  This is the main LWN.net feed,
+        listing all articles which are posted to the site front page.
+</description>
+		<language>en-us</language>
+		<pubDate>Sat, 05 Sep 2026 19:52:09 +0000</pubDate>
+		<lastBuildDate>Sat, 05 Sep 2026 19:52:09 +0000</lastBuildDate>
+		<docs>https://www.rssboard.org/rss-specification</docs>
+		<webMaster>lwn@lwn.net</webMaster>
+		<ns0:link href="https://zhangyoufu.github.io/lwn/rss.rdf" rel="self" type="application/rss+xml" />
+		<ns0:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
+		<item>
+			<title>Grml 2026.09 released</title>
+			<link>https://lwn.net/Articles/1092660/</link>
+			<guid>https://lwn.net/Articles/1092660/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a href="https://grml.org/changelogs/README-grml-2026.09/"&gt;Version
+2026.09&lt;/a&gt;, &lt;a href="https://grml.org/faq/#releasename"&gt;code-named&lt;/a&gt;
+"Hättiwaritätti", of the Debian-based Grml live Linux distribution for system
+administrators has been released. It is based on packages from the upcoming
+Debian&amp;#160;14 ("forky") release. Notable changes include an update to the Linux
+7.1.8 kernel, support for booting from exfat-formatted USB devices, and an
+update to GNU&amp;#160;Screen&amp;#160;5.0.1.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Fri, 04 Sep 2026 13:30:13 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Friday</title>
+			<link>https://lwn.net/Articles/1092659/</link>
+			<guid>https://lwn.net/Articles/1092659/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;Debian&lt;/b&gt; (chromium, firefox-esr, and pcre2), &lt;b&gt;Fedora&lt;/b&gt; (cockpit, expat, freeipa, kbd, kernel, mrtg, python-pip, and valkey), &lt;b&gt;Mageia&lt;/b&gt; (libopenmpt and python-gitpython), &lt;b&gt;Oracle&lt;/b&gt; (dbus-broker, freerdp, gegl, gegl04, gimp:2.8, go-fdo-client, go-fdo-server, golang-github-openprinting-ipp-usb, grafana, gzip, image-builder, iperf3, kernel, libssh, libxml2, microcode_ctl, nodejs:22, nodejs:24, openssl-fips-provider, pam, php:7.4, php:8.2, tar, and wget), &lt;b&gt;SUSE&lt;/b&gt; (apache2-mod_auth_openidc, apptainer, busybox, cpio, cups-filters, curl, dracut, ffmpeg, file-roller, glibc, grafana, kubevirt, virt-pr-helper-container, lcms2, libtree-sitter0_26, libvirt, postgresql14, postgresql15, postgresql16, postgresql18, suseconnect-ng, terraform-provider-susepubliccloud, and yast2-users), and &lt;b&gt;Ubuntu&lt;/b&gt; (FFmpeg, gnupg2, librabbitmq, libssh2, openssh, and spice-vdagent).
+</description>
+			<pubDate>Fri, 04 Sep 2026 13:18:27 +0000</pubDate>
+		</item>
+		<item>
+			<title>Audacity 4.0 released</title>
+			<link>https://lwn.net/Articles/1092439/</link>
+			<guid>https://lwn.net/Articles/1092439/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a
+href="https://github.com/audacity/audacity/releases/tag/Audacity-4.0.0"&gt;Version
+4.0&lt;/a&gt; of the Audacity audio editor has been released. Notable changes in this
+release include a rewritten interface using Qt, ability to save user-interface
+layouts as "Workspaces", improvements in working with audio clips, and a new
+&lt;tt&gt;.aup4&lt;/tt&gt; project format.&lt;/p&gt;
+
+&lt;p&gt;The release is not fully feature-compatible with the Audacity&amp;#160;3.x
+series; see the &lt;a
+href="https://github.com/audacity/audacity/releases/tag/Audacity-4.0.0#:~:text=Compatibility%20notes"&gt;compatibility
+notes&lt;/a&gt; for a list of missing features.&lt;/p&gt;</description>
+			<pubDate>Thu, 03 Sep 2026 13:58:06 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Thursday</title>
+			<link>https://lwn.net/Articles/1092419/</link>
+			<guid>https://lwn.net/Articles/1092419/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (freerdp, go-fdo-server, golang-github-openprinting-ipp-usb, kernel, kernel-rt, nodejs:24, perl-DBI, and php), &lt;b&gt;Debian&lt;/b&gt; (firefox-esr, libapache2-mod-auth-openidc, and libass), &lt;b&gt;Fedora&lt;/b&gt; (dracut, exiv2, firefox, freerdp, gvfs, mingw-expat, mingw-gstreamer1, mingw-gstreamer1-plugins-bad-free, mingw-gstreamer1-plugins-base, mingw-gstreamer1-plugins-good, mingw-openexr, nss, proftpd, and syncthing), &lt;b&gt;Mageia&lt;/b&gt; (apr-util, bubblewrap, libalsa2, libarchive, perl-Net-OAuth, perl-Text-CSV_XS, perl-XML-Bare, and perl-YAML-Syck), &lt;b&gt;Oracle&lt;/b&gt; (freerdp, gimp, golang, iperf3, nginx:1.24, nodejs:22, nodejs:24, pipewire, wget, xmlrpc-c, and xorg-x11-server-Xwayland), &lt;b&gt;SUSE&lt;/b&gt; (apache2-mod_auth_openidc, apptainer, apr-util, bzip2, c-ares, cosign, dhcpcd, dovecot22, emacs, erlang, gegl, gopass, gzip, httpcomponents-client, incus, kernel-devel, libgpg-error, libsoup2, mozillafirefox, mozilla-nss, mozilla-nspr,, MozillaFirefox, mozilla-nss, mozilla-nspr, rust-cbindgen, nodejs20, orthanc, orthanc-authorization, orthanc-postgresql,, postgresql14, python-cryptography, python-msgpack, quagga, snpguest, snphost, texlive, tuxguitar, udisks2, vim, wget, and yast2-users), and &lt;b&gt;Ubuntu&lt;/b&gt; (apr-util, biosig, linux, linux-aws, linux-azure, linux-azure-fips, linux-fips,
+ linux-hwe-5.4, linux-ibm, linux-ibm-5.4, linux-iot, linux-kvm,
+ linux-oracle, linux-raspi, linux-raspi-5.4, linux-xilinx-zynqmp, linux-aws-5.15, linux-gcp-5.15, linux-oracle-5.4, sssd, and tika).
+</description>
+			<pubDate>Thu, 03 Sep 2026 13:07:14 +0000</pubDate>
+		</item>
+		<item>
+			<title>Old-school calendaring at the command line with Remind</title>
+			<link>https://lwn.net/Articles/1090376/</link>
+			<guid>https://lwn.net/Articles/1090376/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a href="https://dianne.skoll.ca/projects/remind/"&gt;Remind&lt;/a&gt; is a
+command-line calendar and alarm program, with an optional Tk-based graphical
+interface, for Linux and Unix-like operating systems. It has its own scripting
+language that allows users to create reminders that are difficult (if not
+impossible) to specify in other calendaring programs. It is wholly unsuitable for use in
+corporate environments that require calendar sharing and exchanging meeting
+invitations; however, it may be precisely the calendaring tool for users who
+prefer the command line and fast, flexible tools that can help keep track of
+messy schedules.&lt;/p&gt;
+</description>
+			<pubDate>Thu, 03 Sep 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>LWN.net Weekly Edition for August 27, 2026</title>
+			<link>https://lwn.net/Articles/1089643/</link>
+			<guid>https://lwn.net/Articles/1089643/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Inside this week's LWN.net Weekly Edition:
+        &lt;p&gt;
+        &lt;ul&gt;
+&lt;li&gt; &lt;a href="https://lwn.net/Articles/1089643/"&gt;Front&lt;/a&gt;: AGPL violations; OpenMDW license; quantum computing and encryption; 7.3 merge window; Remind; Quickshell.
+            &lt;li&gt; &lt;a href="https://lwn.net/Articles/1089645/"&gt;Briefs&lt;/a&gt;: arrayref; RIP Steve French; Armbian 26.8; Vanilla OS 3; Emacs 31.1; KDE Gear 26.08; LibreOffice 26.8; RPM 6.1.0; Quotes; ...
+            &lt;li&gt; &lt;a href="https://lwn.net/Articles/1089646/"&gt;Announcements&lt;/a&gt;: Newsletters, conferences, security updates, patches, and more.
+            &lt;/ul&gt;
+
+        </description>
+			<pubDate>Thu, 03 Sep 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>An ongoing 3D-printer AGPL violation</title>
+			<link>https://lwn.net/Articles/1089390/</link>
+			<guid>https://lwn.net/Articles/1089390/</guid>
+			<dc:creator>jake</dc:creator>
+			<description>At &lt;a href="https://2026.fossy.ca/"&gt;FOSSY 2026&lt;/a&gt;, several people from the
+&lt;a href="https://sfconservancy.org/"&gt;Software Freedom Conservancy&lt;/a&gt; (SFC),
+which organizes the conference, gave a presentation about an &lt;a href="https://sfconservancy.org/news/2026/may/18/bambu-studio-3d-printer-agpl-violation-response/"&gt;ongoing
+violation&lt;/a&gt; of the &lt;a
+href="https://www.gnu.org/licenses/agpl-3.0.en.html"&gt;Affero General Public
+License version 3&lt;/a&gt; (AGPLv3).  Bradley Kühn, Karen Sandler, and Denver
+Gingerich spoke about different aspects of the violation, which is in
+regard to 3D-printer software from Bambu Lab, and what is being
+done to try to provide users with alternatives.  One aspect that is
+particularly interesting is that the circumvention that the company is
+employing is precisely what the AGPL was written to prevent.
+</description>
+			<pubDate>Thu, 03 Sep 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Considering the OpenMDW license</title>
+			<link>https://lwn.net/Articles/1089251/</link>
+			<guid>https://lwn.net/Articles/1089251/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>The open-source world has been struggling for a few years now to understand
+how to approach large language models (LLMs) and the licensing applied to
+them.  What constitutes "freedom" with respect to a black box filled with
+numerical weights?  The process taken by the Open Source Initiative (OSI)
+in the &lt;a href="https://lwn.net/Articles/995159/"&gt;development&lt;/a&gt; of its &lt;a
+href="https://opensource.org/ai/open-source-ai-definition"&gt;Open Source AI
+Definition&lt;/a&gt; was controversial at best, as was its output.  Now, the
+Linux Foundation's Mike Dolan has &lt;a
+href="https://lwn.net/ml/all/CAFV=PSG=bsLTemzjyCKYYz9j=rX9dcNo6=2T6htbxTRgervMrA@mail.gmail.com"&gt;brought
+a new license to the OSI&lt;/a&gt; for approval.  It is called the OpenMDW ("Open
+Model, Data, and Weights"), and it aims to clarify licensing for the
+distribution of LLMs and related materials, but consensus is proving hard
+to find for this license as well.
+</description>
+			<pubDate>Thu, 03 Sep 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>The beginning of the 7.3 merge window</title>
+			<link>https://lwn.net/Articles/1089244/</link>
+			<guid>https://lwn.net/Articles/1089244/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>As of this writing, 2,346 non-merge changesets have been pulled into the
+mainline repository for the 7.3 kernel release.  That, clearly, is a mere
+down payment on the flood that is to come.  Even so, those early pulls
+brought in some noteworthy changes, including (but not limited to) a
+significant reworking of how group scheduling works on multiprocessor
+systems.
+</description>
+			<pubDate>Thu, 03 Sep 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>How to be safe from quantum computing</title>
+			<link>https://lwn.net/Articles/1088305/</link>
+			<guid>https://lwn.net/Articles/1088305/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>&lt;p&gt;
+Practical quantum computers have been ten years away for the last several
+decades. Now, however, it's beginning to look as though they will be
+possible in just a few years. Recent
+&lt;a href="https://lwn.net/Articles/1066156/"&gt;
+research with obfuscated results&lt;/a&gt; demonstrated much lower memory requirements to factor
+&lt;a href="https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm"&gt;
+ECDSA&lt;/a&gt; keys on a quantum computer, with
+&lt;a href="https://www.ecdsa.fail/"&gt;
+work by other researchers in the open&lt;/a&gt; more than halving memory use compared
+to the state of the art in 2023.
+At the same time, computer
+manufacturers are
+&lt;a href="https://abit.ee/en/processors/ibm-quantum-processor-nighthawk-ibm-miami-quantum-computing-qubits-coherence-heron-r3-quantum-advant-en"&gt;
+boasting&lt;/a&gt; quantum processors that retain viable superpositions over longer periods.
+Given how slowly software updates filter out to stable systems, it's worth
+looking at what configuration changes and protocol updates are needed to be safe
+from quantum computers now.
+&lt;/p&gt;
+</description>
+			<pubDate>Thu, 03 Sep 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>A look at the Quickshell desktop-component toolkit</title>
+			<link>https://lwn.net/Articles/1083090/</link>
+			<guid>https://lwn.net/Articles/1083090/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a href="https://quickshell.org/"&gt;Quickshell&lt;/a&gt; is a toolkit for
+building desktop components, such as toolbars or menus. It uses &lt;a
+href="https://doc.qt.io/qt-6/qmlreference.html"&gt;QML&lt;/a&gt;, which is a declarative language
+for designing GUI applications. Quickshell helps developers create graphical tools
+for common desktop use cases with a focus on ease of development. It offers a
+convenient method for writing user interfaces and has been adopted by a number
+of projects, such as &lt;a
+href="https://github.com/caelestia-dots/shell#caelestia-shell"&gt;caelestia-shell&lt;/a&gt; and &lt;a href="https://danklinux.com/"&gt;DankMaterialShell&lt;/a&gt;, that
+provide desktop environments for minimal window managers like &lt;a
+href="https://swaywm.org/"&gt;Sway&lt;/a&gt; and &lt;a
+href="https://niri-wm.github.io/niri/"&gt;niri&lt;/a&gt;.&lt;/p&gt;
+</description>
+			<pubDate>Thu, 03 Sep 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Incus 7.4 released</title>
+			<link>https://lwn.net/Articles/1092229/</link>
+			<guid>https://lwn.net/Articles/1092229/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a
+href="https://discuss.linuxcontainers.org/t/incus-7-4-has-been-released/27169"&gt;Version
+7.4&lt;/a&gt; of the Incus container and virtual-machine management system has been
+released. Notable changes in this release include UEFI Secure Boot key
+management, "near-live" migration of containers between Incus instances, as well
+as &lt;span class="nobreak"&gt;burst I/O&lt;/span&gt; limits for disk and network
+devices.&lt;/p&gt;</description>
+			<pubDate>Wed, 02 Sep 2026 15:03:21 +0000</pubDate>
+		</item>
+		<item>
+			<title>Eight stable kernels for Wednesday</title>
+			<link>https://lwn.net/Articles/1092151/</link>
+			<guid>https://lwn.net/Articles/1092151/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Greg Kroah-Hartman has announced the &lt;a href="https://lwn.net/Articles/1092153/"&gt;7.2.3&lt;/a&gt;,
+&lt;a href="https://lwn.net/Articles/1092154/"&gt;7.1.13&lt;/a&gt;, &lt;a
+href="https://lwn.net/Articles/1092156/"&gt;6.18.49&lt;/a&gt;, &lt;a
+href="https://lwn.net/Articles/1092157/"&gt;6.12.108&lt;/a&gt;, &lt;a
+href="https://lwn.net/Articles/1092158/"&gt;6.6.156&lt;/a&gt;, &lt;a href="https://lwn.net/Articles/1092159/"&gt;6.1.187&lt;/a&gt;,
+&lt;a href="https://lwn.net/Articles/1092160/"&gt;5.15.220&lt;/a&gt;, and &lt;a
+href="https://lwn.net/Articles/1092161/"&gt;5.10.269&lt;/a&gt; stable kernels. Each contains a number of
+important fixes throughout the tree. Users are advised to upgrade.&lt;/p&gt;
+
+&lt;p&gt;Note that 7.1.13 is the last of the 7.1 updates&lt;/p&gt;</description>
+			<pubDate>Wed, 02 Sep 2026 13:28:26 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Wednesday</title>
+			<link>https://lwn.net/Articles/1092149/</link>
+			<guid>https://lwn.net/Articles/1092149/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (dbus-broker, freerdp, gegl, gegl04, gimp, gimp:2.8, glib2, grafana, gzip, iperf3, libssh, nodejs22, nodejs24, nodejs:22, nodejs:24, php:7.4, php:8.2, pipewire, ruby:3.3, ruby:4.0, tar, wget, and xmlrpc-c), &lt;b&gt;Debian&lt;/b&gt; (cyrus-imapd, keystone, and lemonldap-ng), &lt;b&gt;Fedora&lt;/b&gt; (bubblewrap, cockpit, emacs, gdk-pixbuf2, openssl, openvkl, python-linkify-it-py, python-llm, and rkcommon), &lt;b&gt;Gentoo&lt;/b&gt; (Chromium, Google Chrome, Microsoft Edge, Opera, Vivaldi), &lt;b&gt;Oracle&lt;/b&gt; (glib2, gzip, mingw-sqlite, nodejs22, xorg-x11-server, and xorg-x11-server-Xwayland), &lt;b&gt;Red Hat&lt;/b&gt; (go-toolset:rhel8, golang, and grafana), &lt;b&gt;Slackware&lt;/b&gt; (pcre2), &lt;b&gt;SUSE&lt;/b&gt; (apache2-mod_auth_openidc, busybox, cups-filters, java-17-openj9, java-1_8_0-openj9, libapr-util1, libgcrypt, python-sqlparse, python3-sqlparse, python313-uv, terraform-provider-aws, terraform-provider-azurerm, terraform-provider-external, terraform-provider-google, terraform-provider-helm, terraform-provider-kubernetes, terraform-provid, ucode-intel, wicked, and yast2-auth-client), and &lt;b&gt;Ubuntu&lt;/b&gt; (libevent, libgcrypt20, ncurses, opencryptoki, pam, pyasn1, rust-sudo-rs, and ubuntu-advantage-tools).
+</description>
+			<pubDate>Wed, 02 Sep 2026 13:16:54 +0000</pubDate>
+		</item>
+		<item>
+			<title>A note on subscription prices from LWN</title>
+			<link>https://lwn.net/Articles/1090585/</link>
+			<guid>https://lwn.net/Articles/1090585/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>The online publication industry, as a whole, is struggling, with challenges
+coming from multiple directions.  Thanks to the support of all of you, our
+readers, LWN would appear to be doing better than most.  But the world has
+changed around us and, in particular, prices have changed considerably.  By
+now, you probably know where this is going: subscription prices at LWN will
+be increasing as of September&amp;#160;15.
+</description>
+			<pubDate>Tue, 01 Sep 2026 18:17:35 +0000</pubDate>
+		</item>
+		<item>
+			<title>Firefox 155 released</title>
+			<link>https://lwn.net/Articles/1091926/</link>
+			<guid>https://lwn.net/Articles/1091926/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a href="https://www.firefox.com/en-US/firefox/155.0/releasenotes/"&gt;Version
+155&lt;/a&gt; of the Firefox web browser has been released. Notable changes include a
+count in the address bar of how many ad trackers Firefox has blocked, container
+reordering, and ensuring that &lt;tt&gt;mailto:&lt;/tt&gt; links are only opened by explicit
+user actions. There is also a change of the domain used for "captive portals"
+(such as the ones used to sign into hotel WiFI): Firefox now uses
+"firefox-portal-detection.com" instead of "detectportal.firefox.com", which may
+require a change in network allow lists.&lt;/p&gt;
+
+&lt;p&gt;The release also includes a number of &lt;a
+href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/155"&gt;changes
+that may impact web developers&lt;/a&gt;, as well as a number of bug fixes and &lt;a
+href="https://www.mozilla.org/en-US/security/advisories/mfsa2026-82/"&gt;security
+fixes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Tue, 01 Sep 2026 14:03:56 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
