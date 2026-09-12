@@ -1,0 +1,351 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2005/Atom" version="2.0">
+	<channel>
+		<title>LWN.net</title>
+		<link>https://lwn.net</link>
+		<description> LWN.net is a comprehensive source of news and opinions from
+        and about the Linux community.  This is the main LWN.net feed,
+        listing all articles which are posted to the site front page.
+</description>
+		<language>en-us</language>
+		<pubDate>Sat, 12 Sep 2026 17:07:54 +0000</pubDate>
+		<lastBuildDate>Sat, 12 Sep 2026 17:07:54 +0000</lastBuildDate>
+		<docs>https://www.rssboard.org/rss-specification</docs>
+		<webMaster>lwn@lwn.net</webMaster>
+		<ns0:link href="https://zhangyoufu.github.io/lwn/rss.rdf" rel="self" type="application/rss+xml" />
+		<ns0:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
+		<item>
+			<title>EuroPython 2026 videos published</title>
+			<link>https://lwn.net/Articles/1093825/</link>
+			<guid>https://lwn.net/Articles/1093825/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;All of the videos from the &lt;a
+href="https://ep2026.europython.eu/"&gt;EuroPython&amp;#160;2026&lt;/a&gt; conference, held
+in Kraków, Poland from July&amp;#160;13 through July&amp;#160;19, are &lt;a
+href="https://www.youtube.com/watch?v=9ZuZfG8_jH8&amp;list=PLd3Y9yzyC5Uo"&gt;now
+online&lt;/a&gt; along with a &lt;a
+href="https://blog.europython.eu/europython-2026-videos-published/"&gt;recap&lt;/a&gt; of
+the event from conference organizers.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Fri, 11 Sep 2026 15:08:45 +0000</pubDate>
+		</item>
+		<item>
+			<title>Two stable kernel updates for Friday</title>
+			<link>https://lwn.net/Articles/1093766/</link>
+			<guid>https://lwn.net/Articles/1093766/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Greg Kroah-Hartman has announced the release of the &lt;a
+href="https://lwn.net/Articles/1093767/"&gt;7.2.5&lt;/a&gt; and &lt;a href="https://lwn.net/Articles/1093768/"&gt;6.18.51&lt;/a&gt;
+stable kernels. There are more than 550 patches in each with fixes throughout
+the tree; users are advised to upgrade.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Fri, 11 Sep 2026 13:27:35 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Friday</title>
+			<link>https://lwn.net/Articles/1093765/</link>
+			<guid>https://lwn.net/Articles/1093765/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (apr-util and qt6-qt5compat), &lt;b&gt;Debian&lt;/b&gt; (libevent and ruby-rack), &lt;b&gt;Fedora&lt;/b&gt; (bluez, corosync, curl, dokuwiki, grpcurl, libevent, and rest), &lt;b&gt;Oracle&lt;/b&gt; (gstreamer1-plugins-bad-free, perl-DBI, python-urllib3, qt5-qtbase, qt6-qt5compat, and thunderbird), &lt;b&gt;Red Hat&lt;/b&gt; (osbuild-composer), &lt;b&gt;SUSE&lt;/b&gt; (azure-storage-azcopy, chromedriver, corosync, ggml-devel, helm, kernel, libmariadb-devel, libzypp, zypper, opensc, php7, tomcat10, and waylyrics), and &lt;b&gt;Ubuntu&lt;/b&gt; (apache2, beets, glibc, kissfft, libebml, linux-nvidia-6.17, php8.1, php8.3, php8.5, and python2.7, python3.4, python3.5, python3.6, python3.7, python3.8, python3.9, python3.10, python3.11, python3.12, python3.14).
+</description>
+			<pubDate>Fri, 11 Sep 2026 13:14:32 +0000</pubDate>
+		</item>
+		<item>
+			<title>Forgejo 16.0.4 and 15.0.8 address critical security vulnerability</title>
+			<link>https://lwn.net/Articles/1093671/</link>
+			<guid>https://lwn.net/Articles/1093671/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;The &lt;a href="https://forgejo.org/"&gt;Forgejo&lt;/a&gt; software-forge project has &lt;a
+href="https://floss.social/@forgejo/117246761534398489"&gt;announced&lt;/a&gt; the
+release of versions &lt;a
+href="https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md"&gt;16.0.4&lt;/a&gt;
+and &lt;a
+href="https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/15.0.8.md"&gt;15.0.8&lt;/a&gt;,
+which fixes two security vulnerabilities. One is a critical flaw that would
+allow remote-code execution (RCE):&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+When generating a new repository from a template repository, Forgejo clones the
+template repository, removes the &lt;tt&gt;.git&lt;/tt&gt; folder, performs variable template
+expansion on files listed in &lt;tt&gt;.forgejo/template&lt;/tt&gt;, and initializes a new git
+repository. During this process, variable template expansion could be misused in
+order to create a new &lt;tt&gt;.git&lt;/tt&gt; folder, which git would adopt and incorporate during
+its initialization of a new git repository. A malicious template repository
+could be used to read arbitrary data from the Forgejo host, and to execute
+arbitrary processes on the Forgejo host, as a remote code execution attack. To
+address this issue, after variable expansion is completed, any existing &lt;tt&gt;.git&lt;/tt&gt;
+folder is removed from the directory before the git repository is initialized.
+&lt;/blockquote&gt;
+
+&lt;p&gt;The project recommends upgrading to the latest version as soon as
+possible.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Thu, 10 Sep 2026 20:05:50 +0000</pubDate>
+		</item>
+		<item>
+			<title>Julia 1.13 released</title>
+			<link>https://lwn.net/Articles/1093567/</link>
+			<guid>https://lwn.net/Articles/1093567/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a
+href="https://julialang.org/blog/2026/09/julia-1.13-highlights/index.html"&gt;Version
+1.13&lt;/a&gt; of the &lt;a href="https://julialang.org/"&gt;Julia programming language&lt;/a&gt;
+has been released. Highlights include faster precompilation of packages,
+improvements to Julia's REPL, and &lt;a
+href="https://github.com/JuliaLang/juliaup#juliaup---julia-version-manager"&gt;Juliaup&lt;/a&gt;,
+a graphical interface for the Julia version manager. A full list of changes can
+be found in the &lt;a
+href="https://github.com/JuliaLang/julia/blob/release-1.13/NEWS.md"&gt;release
+notes&lt;/a&gt;. LWN &lt;a href="https://lwn.net/Articles/1044280/"&gt;covered Julia
+1.12&lt;/a&gt; in November 2025.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Thu, 10 Sep 2026 13:23:50 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Thursday</title>
+			<link>https://lwn.net/Articles/1093566/</link>
+			<guid>https://lwn.net/Articles/1093566/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (389-ds-base, ansible-core, buildah, expat, glib2, gpsd, gpsd-minimal, gzip, kernel, kernel-rt, opentelemetry-collector, osbuild-composer, perl-DBI, python-lxml, python3.12-lxml, qt5-qtbase, thunderbird, valkey, vim, and xz), &lt;b&gt;Debian&lt;/b&gt; (pyasn1), &lt;b&gt;Fedora&lt;/b&gt; (darktable, freeipa, freerdp2, gdk-pixbuf2, GitPython, libsoup3, openssl, perl-Net-DNS, rust-ppmd-rust, samba, and valkey), &lt;b&gt;Mageia&lt;/b&gt; (ceph, firefox, nss, perl-DBI, thunderbird, and wget), &lt;b&gt;Oracle&lt;/b&gt; (389-ds-base, buildah, expat, git-lfs, glib2, glibc, gpsd, gpsd-minimal, grafana-pcp, kernel, libssh, nginx, perl-GD, python3.14-cryptography, redis:7, skopeo, thunderbird, valkey, xmlrpc-c, and xz), &lt;b&gt;Slackware&lt;/b&gt; (xz), &lt;b&gt;SUSE&lt;/b&gt; (bzip2, cpio, curl, dracut, fuse-overlayfs, golang-github-vpenso-prometheus_slurm_exporter, helm, java-1_8_0-ibm, kbfs, kernel, kernel-devel, libopenslide-devel, libsoup, libssh2_org, libusb-1_0, libvirt, libzypp, zypper, mcphost, multipath-tools, NetworkManager, opensc, openssl-3, perl-Net-DNS, python-aiohttp, python-Authlib, python-pip, python-sqlparse, python313-dnspython, python313-idna, rpcbind, sssd, strongswan, systemd, tomcat11, ucode-intel, and wget), and &lt;b&gt;Ubuntu&lt;/b&gt; (dotnet8, dotnet10, ffmpeg, flatpak, netty, and perl).
+</description>
+			<pubDate>Thu, 10 Sep 2026 13:14:35 +0000</pubDate>
+		</item>
+		<item>
+			<title>Governing GNOMEs: how the project's technical decision-making is evolving</title>
+			<link>https://lwn.net/Articles/1091619/</link>
+			<guid>https://lwn.net/Articles/1091619/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Emmanuele Bassi kicked off a project to improve GNOME's technical governance
+with a &lt;a href="https://lwn.net/Articles/1034684/"&gt;presentation about his
+ideas&lt;/a&gt; (&lt;a href="https://www.youtube.com/watch?v=n3SviPlMyhM"&gt;video&lt;/a&gt;) at
+&lt;a href="https://events.gnome.org/event/259/"&gt;GUADEC&amp;#160;2025&lt;/a&gt;. His nudging
+has led the project to, slowly, work on creating more formal structures for
+technical governance. It is adopting a teams structure and looking toward
+creating a steering committee, as well as bootstrapping a Request for Comments
+(RFC) process. If adopted, GNOME would require RFCs for design, user experience,
+architectural, and other changes that carry a major impact on the project.&lt;/p&gt;
+</description>
+			<pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>LWN.net Weekly Edition for September 3, 2026</title>
+			<link>https://lwn.net/Articles/1090824/</link>
+			<guid>https://lwn.net/Articles/1090824/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Inside this week's LWN.net Weekly Edition:
+        &lt;p&gt;
+        &lt;ul&gt;
+&lt;li&gt; &lt;a href="https://lwn.net/Articles/1090824/"&gt;Front&lt;/a&gt;: Python JIT; rnull block driver; steal time; GNOME governance; 7.3 merge window; LUKS.
+            &lt;li&gt; &lt;a href="https://lwn.net/Articles/1090826/"&gt;Briefs&lt;/a&gt;: Kernel infrastructure; Debian AI; Dolphin 26.08; Firefox 155; Incus 7.4; OpenShot 4.0; Quotes; ...
+            &lt;li&gt; &lt;a href="https://lwn.net/Articles/1090827/"&gt;Announcements&lt;/a&gt;: Newsletters, conferences, security updates, patches, and more.
+            &lt;/ul&gt;
+
+        </description>
+			<pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Securely suspending LUKS-encrypted disks</title>
+			<link>https://lwn.net/Articles/1090568/</link>
+			<guid>https://lwn.net/Articles/1090568/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>&lt;p&gt;
+When a laptop is asleep, its memory is not unreadable. The right
+tooling can attach to the computer's memory bus and read out its contents, and
+&lt;a href="https://en.wikipedia.org/wiki/Cold_boot_attack"&gt;
+cold-boot attacks&lt;/a&gt; can theoretically read values from memory for a short time
+after the computer loses power. That
+is really an unavoidable fact about the hardware, but some users would still
+like to ensure that, even if this happens, their long-term encryption keys, such as
+the key for full-disk encryption, remain unreadable. In June&amp;#160;2026, Ingo
+Blechschmidt
+&lt;a href="https://mathstodon.xyz/@iblech/116769502749142438"&gt;
+discovered&lt;/a&gt; that Linux kernel versions after 6.9 (released in
+May&amp;#160;2024)
+were not erasing disk-encryption keys when a laptop was put to sleep, even
+when configured to do so. He quickly identified a potential fix, which has been
+merged, but it was not a comprehensive solution.
+&lt;/p&gt;
+</description>
+			<pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>A pause for the Python JIT</title>
+			<link>https://lwn.net/Articles/1090385/</link>
+			<guid>https://lwn.net/Articles/1090385/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;In 2024 the &lt;a
+href="https://www.python.org/downloads/release/python-3130/"&gt;Python&amp;#160;3.13&lt;/a&gt;
+release added an &lt;a
+href="https://docs.python.org/3.13/whatsnew/3.13.html#an-experimental-just-in-time-jit-compiler"&gt;experimental
+just-in-time (JIT) compiler&lt;/a&gt; to optimize the way that CPython executes Python
+code. Since then, work has proceeded on the JIT, albeit perhaps less formally
+than some might like. In June, Python's &lt;a
+href="https://peps.python.org/pep-0013/#the-steering-council"&gt;steering
+council&lt;/a&gt; (SC) put out an &lt;a
+href="https://discuss.python.org/t/an-announcement-from-the-steering-council-regarding-the-jit-project/107638"&gt;announcement&lt;/a&gt;
+that no new development on the JIT land (with the exception of bug and security
+fixes) in Python's main branch, until it accepts a &lt;a
+href="https://peps.python.org/pep-0001"&gt;Python Enhancement Proposal&lt;/a&gt; (PEP)
+that would make the case for the JIT as a supported part of CPython. That has
+led to the creation of &lt;a
+href="https://peps.python.org/pep-0836/"&gt;PEP&amp;#160;836&lt;/a&gt; ("JIT Go Brrr: The
+Path to a Supported JIT Compiler for CPython"), which is currently under
+discussion. As it stands, it seems likely that work on JIT will continue, but
+when that will happen is less certain.&lt;/p&gt;
+</description>
+			<pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Using steal time to moderate CPU demands</title>
+			<link>https://lwn.net/Articles/1090381/</link>
+			<guid>https://lwn.net/Articles/1090381/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Virtualization can increase CPU utilization by allowing a large number of
+virtual CPUs to share a smaller number of physical CPUs.  The amount of CPU
+time that is actually available does not change, though, so heavy activity
+on too many virtual CPUs can lead to contention and significant performance
+loss.  The &lt;a
+href="https://lwn.net/ml/all/20260825103855.721013-1-sshegde@linux.ibm.com"&gt;steal governor
+patch series&lt;/a&gt; from Shrikanth Hegde is an attempt to address that problem
+with a mechanism that allows virtual machines to voluntarily reduce the
+number of virtual CPUs they use when contention is high.
+</description>
+			<pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>The "rnull" Rust block driver</title>
+			<link>https://lwn.net/Articles/1090378/</link>
+			<guid>https://lwn.net/Articles/1090378/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>&lt;p&gt;
+The
+&lt;a href="https://www.kernel.org/doc/html/latest/block/null_blk.html"&gt;null block
+driver&lt;/a&gt; (&lt;tt&gt;null_blk&lt;/tt&gt;)
+is a small driver that is mostly useful for benchmarking block-layer
+implementations. It accepts all requests and marks them complete as quickly as
+possible, doing as little work as possible. In June&amp;#160;2026, Andreas Hindborg shared
+&lt;a href="https://lwn.net/ml/all/20260609-rnull-v6-19-rc5-send-v2-0-82c7404542e2@kernel.org/"&gt;
+a patch set&lt;/a&gt; implementing the same functionality in Rust, in order to show
+that a simple block driver is now possible to write using the kernel's
+Rust APIs and to enable comparisons between the C and Rust
+implementations.
+A minimal version of the "rnull" driver is already present in the mainline
+kernel, but Hindborg's patch set brings it up to feature parity with the C
+version.
+&lt;/p&gt;
+</description>
+			<pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>The rest of the 7.3 merge window</title>
+			<link>https://lwn.net/Articles/1089791/</link>
+			<guid>https://lwn.net/Articles/1089791/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>By the time Linus Torvalds &lt;a
+href="https://lwn.net/ml/all/CAHk-=wjpN3XkKU+JX6zoh_bzJXr1aPYN4FY14UX0z7yCidosPQ@mail.gmail.com/"&gt;released
+7.3-rc1&lt;/a&gt; and closed the merge window for this release, 15,267 non-merge
+changesets had been pulled into the mainline repository.  That is the
+second-highest commit count for an -rc1 release in the kernel's history;
+only the 6.7-rc1 release, which included nearly 3,000 commits of bcachefs
+history, had more.  About 13,000 of those commits entered the mainline
+after &lt;a href="https://lwn.net/Articles/1089244/"&gt;the first 7.3 merge-window summary&lt;/a&gt;
+was written so, needless to say, there are a lot of changes to cover.
+</description>
+			<pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>A decade of Rustls</title>
+			<link>https://lwn.net/Articles/1093391/</link>
+			<guid>https://lwn.net/Articles/1093391/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Joe Birr-Pixton has written &lt;a
+href="https://rustls.dev/blog/2026-09-08-a-decade-of-rustls/"&gt;a blog post&lt;/a&gt;
+reflecting on a decade of the Rustls TLS-library project and looking ahead to
+the upcoming&amp;#160;0.24 release and an eventual&amp;#160;1.0 release.&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+&lt;p&gt;Rustls began with &lt;a
+href="https://github.com/rustls/rustls/commit/4460bbe15b4df1f6e6efea4f9f06fbd0fb278077"&gt;a
+first commit&lt;/a&gt; on May&amp;#160;2,&amp;#160;2016. Progress was quick: a month later, on June&amp;#160;5,
+it could interoperate with most sites on the web. The first release,&amp;#160;0.1.0,
+followed on August&amp;#160;27,&amp;#160;2016 – less than four months after the first commit.&lt;/p&gt;
+
+&lt;p&gt;[...] From the&amp;#160;0.1.0 release, the project moved through a long series of
+releases over the following eight years, building out functionality, hardening
+and refining the API. That sequence of release lines culminated in&amp;#160;0.23,
+released on February&amp;#160;29,&amp;#160;2024.&lt;/p&gt;
+
+&lt;p&gt;The&amp;#160;0.23 release line has been a stable one: in the time since, it has
+seen&amp;#160;43 non-breaking releases. That stability didn't come with
+stagnation. The&amp;#160;0.23 line delivered a wide range of important features,
+including a FIPS-certified cryptography option, certificate compression,
+Encrypted ClientHello, post-quantum cryptography, and performance
+improvements.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+			<pubDate>Wed, 09 Sep 2026 18:11:54 +0000</pubDate>
+		</item>
+		<item>
+			<title>LibreOffice Base survey results</title>
+			<link>https://lwn.net/Articles/1093388/</link>
+			<guid>https://lwn.net/Articles/1093388/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Heiko Tietze has &lt;a
+href="https://design.blog.documentfoundation.org/2026/09/03/results-from-the-survey-about-libreoffice-base/"&gt;published
+a blog post&lt;/a&gt; summarizing the results of a &lt;a
+href="https://design.blog.documentfoundation.org/2026/07/30/please-participate-in-a-survey-about-libreoffice-base/"&gt;recent
+survey&lt;/a&gt; about the use of LibreOffice's database application, Base. 455 people
+participated in the survey, including more than 330 who use Base on Linux, with
+use cases ranging from maintaining records of personal media such as CDs or DVDs
+to use enterprise-resource planning (ERP) and finance. Of course, users had many
+ideas how to improve the application:&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+&lt;p&gt;The majority asks for improvements to the user interface with less
+clutter and a more attractive design. The workflow and user experience should
+become either simplified or more powerful, depending on the expertise and the
+scenario. For example, an elaborate search function is something that
+many people expect. [...]&lt;/p&gt;
+
+&lt;p&gt;Almost the same number of answers requests bug fixes, improvements to
+stability, and better performance. Issues with queries, forms, and reports were
+mentioned equally often. In this regard, many replies suggest to remove the Java
+dependencies.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Wed, 09 Sep 2026 17:07:42 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Wednesday</title>
+			<link>https://lwn.net/Articles/1093342/</link>
+			<guid>https://lwn.net/Articles/1093342/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (expat, glib2, microcode_ctl, mrtg, pam, redis, thunderbird, and valkey), &lt;b&gt;Debian&lt;/b&gt; (fort-validator, gst-plugins-base1.0, kernel, and slurm-wlm), &lt;b&gt;Fedora&lt;/b&gt; (complyctl, libevent, openvpn, and tar), &lt;b&gt;Mageia&lt;/b&gt; (dovecot and spice-vdagent), &lt;b&gt;Red Hat&lt;/b&gt; (ignition, opentelemetry-collector, and osbuild-composer), &lt;b&gt;SUSE&lt;/b&gt; (amazon-ssm-agent, aws-nitro-enclaves-cli, bzip2, cadvisor, chromium, curl, distribution-registry, emacs, freeciv, fuse-overlayfs, gh, google-guest-agent, GraphicsMagick, hauler, insighttoolkit-devel, java-17-openjdk, libidn, libusb-1_0, libvirt, libvncserver, libzypp, zypper, lkl, lxd, multipath-tools, NetworkManager, perl-Net-DNS, perl-URI, python, python-authlib, python-sqlparse, python-tornado, python3, rpcbind, supergfxctl, systemd, terraform-provider-null, ucode-intel, wget, wireshark, and xen), and &lt;b&gt;Ubuntu&lt;/b&gt; (curl, ffmpeg, glibc, hsqldb1.8.0, imagemagick, perl, and vim).
+</description>
+			<pubDate>Wed, 09 Sep 2026 13:04:46 +0000</pubDate>
+		</item>
+		<item>
+			<title>Jellyfin 12.0 released</title>
+			<link>https://lwn.net/Articles/1093145/</link>
+			<guid>https://lwn.net/Articles/1093145/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a href="https://jellyfin.org/posts/jellyfin-release-12.0/"&gt;Version 12&lt;/a&gt; of
+the &lt;a href="https://jellyfin.org/"&gt;Jellyfin&lt;/a&gt; media-management system has
+been released. Notable changes include &lt;a
+href="https://jellyfin.org/posts/jellyfin-release-12.0/#tuning-the-new-database"&gt;database
+performance improvements&lt;/a&gt;, &lt;a
+href="https://jellyfin.org/posts/jellyfin-release-12.0/#transcoding-and-media-handling"&gt;an
+upgrade to FFmpeg&amp;#160;8.1 for media transcoding&lt;/a&gt;, as well as &lt;a
+href="https://jellyfin.org/posts/jellyfin-release-12.0/#books-and-comics-properly-this-time"&gt;better
+handling of book and comic media&lt;/a&gt;. See the release notes for the &lt;a
+href="https://github.com/jellyfin/jellyfin-web/releases/tag/v12.0"&gt;web
+client&lt;/a&gt; and &lt;a
+href="https://github.com/jellyfin/jellyfin/releases/tag/v12.0"&gt;server&lt;/a&gt; for a
+full list of changes.&lt;/p&gt;</description>
+			<pubDate>Tue, 08 Sep 2026 13:20:02 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
