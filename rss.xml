@@ -1,0 +1,221 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2005/Atom" version="2.0">
+	<channel>
+		<title>LWN.net</title>
+		<link>https://lwn.net</link>
+		<description> LWN.net is a comprehensive source of news and opinions from
+        and about the Linux community.  This is the main LWN.net feed,
+        listing all articles which are posted to the site front page.
+</description>
+		<language>en-us</language>
+		<pubDate>Wed, 16 Sep 2026 00:32:50 +0000</pubDate>
+		<lastBuildDate>Wed, 16 Sep 2026 00:32:50 +0000</lastBuildDate>
+		<docs>https://www.rssboard.org/rss-specification</docs>
+		<webMaster>lwn@lwn.net</webMaster>
+		<ns0:link href="https://zhangyoufu.github.io/lwn/rss.rdf" rel="self" type="application/rss+xml" />
+		<ns0:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
+		<item>
+			<title>Vondra: PostgreSQL development activity</title>
+			<link>https://lwn.net/Articles/1094470/</link>
+			<guid>https://lwn.net/Articles/1094470/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;PostgreSQL contributor Tomas Vondra has &lt;a
+href="https://vondra.me/posts/postgres-development-activity/"&gt;published a blog
+post&lt;/a&gt; looking at development activity in the project, with data from the late
+1990s to today.&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+&lt;p&gt;We're doing ~50 commits per week, give or take. In ~2010 we were doing maybe
+25/week, and the trend seems to be a slow and consistent growth. The monthly
+average makes the trend a bit easier to spot. Which is good, although there's a
+lot of other important details (size of commits, are they new features or fixes,
+...).&lt;/p&gt;
+
+&lt;p&gt;It however nicely aligns with the number of active committers, which also
+grew ~2x between 2010 and today. So maybe that's working as expected.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+			<pubDate>Tue, 15 Sep 2026 13:20:30 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Tuesday</title>
+			<link>https://lwn.net/Articles/1094469/</link>
+			<guid>https://lwn.net/Articles/1094469/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;Debian&lt;/b&gt; (network-manager-l2tp and urwid), &lt;b&gt;Fedora&lt;/b&gt; (perl-Dancer2, perl-Data-Entropy, perl-DBI, perl-Protocol-HTTP2, podman-tui, rust-lru, and rust-lru0.16), &lt;b&gt;Mageia&lt;/b&gt; (bzip2, cups-filters, libcupsfilters, libssh2, perl-Authen-SASL, perl-HTML-FormFu, tar, unzip, and zip), &lt;b&gt;Red Hat&lt;/b&gt; (grafana and image-builder), &lt;b&gt;SUSE&lt;/b&gt; (389-ds, acl, attr, apache2-mod_auth_openidc, apr-util, aws-nitro-enclaves-cli, bzip2, c-ares, clamav, cpio, curl, dhcpcd, dovecot23, dovecot24, dracut, emacs, fuse-overlayfs, go1.25-openssl, go1.26-openssl, google-cloud-sap-agent, google-osconfig-agent, govulncheck-vulndb, gstreamer-devtools, gzip, helm, java-17-openjdk, java-21-openjdk, java-25-openjdk, jq, libBasicUsageEnvironment2, libgpg-error, libidn, librest, libusb-1_0, libvirt, LibVNCServer, libzypp, zypper, lkl, mcphost, MozillaFirefox, mozilla-nspr, mozilla-nss, rust-cbindgen, MozillaFirefox, mozilla-nss, mozilla-nspr, rust-cbindgen, MozillaFirefox, MozillaFirefox-branding-SLE, mozilla-nspr, mozilla-nss, rust-cbindgen, msgpack-c, multipath-tools, NetworkManager, openexr, openssl-3, perl-Protocol-HTTP2, perl-URI, php-composer2, postgresql14, postgresql15, postgresql16, postgresql17, postgresql18, python-aiohttp, python-cryptography, python-h2, python-ruff, python-sqlparse, python311, python312, python39.SUSE_SLE-15-SP3_Update, rav1e, rpcbind, sssd, systemd, tomcat, tomcat11, ucode-intel, udisks2, vim, and wicked2nm), and &lt;b&gt;Ubuntu&lt;/b&gt; (cgit, dracut, freeciv, konsole, libinput, linux-azure, linux-nvidia-7.0, nginx, vips, and yelp).
+</description>
+			<pubDate>Tue, 15 Sep 2026 13:10:46 +0000</pubDate>
+		</item>
+		<item>
+			<title>GNU Core Utilities 9.12 released</title>
+			<link>https://lwn.net/Articles/1094312/</link>
+			<guid>https://lwn.net/Articles/1094312/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Pádraig Brady has &lt;a
+href="https://lists.gnu.org/archive/html/coreutils-announce/2026-09/msg00000.html"&gt;announced&lt;/a&gt;
+GNU Core Utilities (coreutils) version 9.12. "&lt;q&gt;There have been 288 commits by
+16 people in the 21 weeks since 9.11&lt;/q&gt;". New features include an &lt;tt&gt;-A&lt;/tt&gt;
+option for &lt;a
+href="https://man7.org/linux/man-pages/man1/uname.1.html"&gt;&lt;tt&gt;uname&lt;/tt&gt;&lt;/a&gt;
+which labels all output, as well as adding awareness of the &lt;a
+href="https://docs.kernel.org/filesystems/failfs.html"&gt;failfs&lt;/a&gt; and &lt;a href="https://lwn.net/Articles/1062163/"&gt;nullfs&lt;/a&gt; filesystem types to &lt;a
+href="https://www.man7.org/linux/man-pages/man1/stat.1.html"&gt;&lt;tt&gt;stat&lt;/tt&gt;&lt;/a&gt;
+and &lt;a
+href="https://www.man7.org/linux/man-pages/man1/tail.1.html"&gt;&lt;tt&gt;tail&lt;/tt&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There are many bug fixes in this release as well, including one for a bug "&lt;q&gt;present
+in 'the beginning'&lt;/q&gt;" that caused some utilities to fail when traversing
+hierarchies if files are being removed in parallel.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Mon, 14 Sep 2026 19:53:59 +0000</pubDate>
+		</item>
+		<item>
+			<title>Emacs arbitrary code execution flaw</title>
+			<link>https://lwn.net/Articles/1094224/</link>
+			<guid>https://lwn.net/Articles/1094224/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Sean Whitton has &lt;a
+href="https://lwn.net/ml/all/87tsnskt3e.fsf%40athena.silentflame.com/"&gt;announced&lt;/a&gt;
+that the original fix for an arbitrary code execution flaw in Emacs (&lt;a
+href="https://nvd.nist.gov/vuln/detail/cve-2024-53920"&gt;CVE-2024-53920&lt;/a&gt;) was
+incomplete. Bas Alberts discovered that viewing or editing untrusted files in
+modes other than Emacs's Lisp mode can also result in arbitrary code
+execution.&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+&lt;p&gt;This problem affects all Emacs versions affected by CVE-2024-53920.
+This means Emacs 24 and newer, and possibly also older versions.&lt;/p&gt;
+
+&lt;p&gt;A minimal fix, attached, is queued up for release with Emacs 31.2.
+We (the Emacs upstream maintainers) don't expect to backport the fix to
+older Emacs releases ourselves.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;LWN &lt;a href="https://lwn.net/Articles/1002046/"&gt;covered&lt;/a&gt; the original
+vulnerability in December 2024.&lt;/p&gt;</description>
+			<pubDate>Mon, 14 Sep 2026 15:20:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Monday</title>
+			<link>https://lwn.net/Articles/1094211/</link>
+			<guid>https://lwn.net/Articles/1094211/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (389-ds-base, apr-util, coreutils, freerdp, git-lfs, glib2, gstreamer1-plugins-base, kernel, libkcapi, nginx, nodejs:22, nodejs:24, osbuild-composer, perl-YAML-Syck, postgresql16-postgis, ruby, ruby4.0, ruby:3.3, and vim), &lt;b&gt;Debian&lt;/b&gt; (jbig2dec, kamailio, nginx, spip, and xorg-server), &lt;b&gt;Fedora&lt;/b&gt; (baresip, bind, bluez, bubblewrap, chirp, chromium, cockpit, composer, corosync, darktable, dokuwiki, elixir, exiv2, expat, firefox, freerdp, freerdp2, gdk-pixbuf2, gegl04, golang-x-perf, grpcurl, kernel, kernel-headers, libevent, libmongocrypt, libpcap, libre, libsoup3, memcached, mingw-expat, mingw-openexr, mongo-c-driver, mrtg, nagios-plugins, nsd, nss, openssl, openvpn, PackageKit, pdns-recursor, perl-Net-OAuth, perl-XML-Bare, php-pecl-mongodb2, python-asteval, python-pip, rclone, rest, rust-hickory-net, rust-hickory-proto, rust-hickory-resolver, rust-ppmd-rust, rust-webbrowser, srt, syncthing, tar, tkimg, and valkey), &lt;b&gt;Gentoo&lt;/b&gt; (Chromium, Google Chrome, Microsoft Edge, Opera, Vivaldi and Ruby), &lt;b&gt;Mageia&lt;/b&gt; (bind, ffmpeg, glibc, java-17-openjdk, java-21-openjdk, librabbitmq, perl-Catalyst-Plugin-Static-Simple, perl-Imager, tor, and xz), &lt;b&gt;Oracle&lt;/b&gt; (389-ds:1.4, ansible-core, apr-util, coreutils, freerdp, git-lfs, glib2, gstreamer1-plugins-base, gzip, httpd:2.4, image-builder, java-21-openjdk, kernel, mrtg, nginx, osbuild-composer, perl-DBI, postgresql16-postgis, python-lxml, python3.12-lxml, redis:6, and vim), &lt;b&gt;SUSE&lt;/b&gt; (389-ds, ansible-core, ansible-creator, azure-storage-azcopy, cargo-audit, chromedriver, chromium, clamav, containerized-data-importer1.65, containerized-data-importer1.66, curl, dracut, ffmpeg-4, google-guest-agent, google-osconfig-agent, helm, java-1_8_0-ibm, jupyter-nbconvert, kernel, libpng16, libusb-1_0, libvirt, multipath-tools, NetworkManager, opensc, openssl-3, perl-Authen-SASL, perl-HTML-FormHandler, perl-Mojolicious, perl-Protocol-HTTP2, python-jwcrypto, python-sqlparse, python-tornado6, python313-geopy, python313-modelscope, python313-modelscope-hub, python313-pypdf, python315, rpcbind, sshamble, strongswan, tomcat, ucode-intel, and wget), and &lt;b&gt;Ubuntu&lt;/b&gt; (civetweb, ffmpeg, and urwid).
+</description>
+			<pubDate>Mon, 14 Sep 2026 13:18:14 +0000</pubDate>
+		</item>
+		<item>
+			<title>More than 9,000 patches total in the seven stable kernels for Monday</title>
+			<link>https://lwn.net/Articles/1093985/</link>
+			<guid>https://lwn.net/Articles/1093985/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Greg Kroah-Hartman has announced the &lt;a href="https://lwn.net/Articles/1093986/"&gt;7.2.6&lt;/a&gt;,
+&lt;a href="https://lwn.net/Articles/1093987/"&gt;6.18.52&lt;/a&gt;, &lt;a
+href="https://lwn.net/Articles/1093988/"&gt;6.12.110&lt;/a&gt;, &lt;a
+href="https://lwn.net/Articles/1093989/"&gt;6.6.157&lt;/a&gt;, &lt;a href="https://lwn.net/Articles/1093990/"&gt;6.1.188&lt;/a&gt;,
+&lt;a href="https://lwn.net/Articles/1093991/"&gt;5.15.221&lt;/a&gt;, &lt;a
+href="https://lwn.net/Articles/1093992/"&gt;5.10.270&lt;/a&gt; stable kernels.&lt;/p&gt;
+
+&lt;p&gt;&lt;a
+href="https://social.kernel.org/notice/BAKK4RpFGJmm95B3o0"&gt;According to
+Kroah-Hartman&lt;/a&gt;, this batch may set a record for the number of patches with
+more than 9,000 in total between them. There are more than &lt;a
+href="https://lwn.net/ml/linux-kernel/20260912065648.999753832@linuxfoundation.org/"&gt;1,800
+patches&lt;/a&gt; in 7.2.6 alone. Users of these kernels are, of course, advised to
+upgrade.&lt;/p&gt;</description>
+			<pubDate>Mon, 14 Sep 2026 13:00:07 +0000</pubDate>
+		</item>
+		<item>
+			<title>Reminder: subscription price change coming</title>
+			<link>https://lwn.net/Articles/1093929/</link>
+			<guid>https://lwn.net/Articles/1093929/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Just a reminder that prices for LWN subscriptions will increase after
+September&amp;#160;15.  Until then, the older rate still applies.  See &lt;a
+href="https://lwn.net/Articles/1090585/"&gt;this article&lt;/a&gt; for details on this change.
+Thanks, yet again, to all of our subscribers for your support — that is
+what keeps LWN going.</description>
+			<pubDate>Sun, 13 Sep 2026 22:34:53 +0000</pubDate>
+		</item>
+		<item>
+			<title>Kernel prepatch 7.3-rc3</title>
+			<link>https://lwn.net/Articles/1093962/</link>
+			<guid>https://lwn.net/Articles/1093962/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>The &lt;a href="https://lwn.net/Articles/1093961/"&gt;7.3-rc3&lt;/a&gt; kernel prepatch is out for
+testing.  Linus said: "&lt;q&gt;Another fairly large rc release, and again one
+with a bigger filesystem footprint that we usually see.&lt;/q&gt;"</description>
+			<pubDate>Sun, 13 Sep 2026 22:32:53 +0000</pubDate>
+		</item>
+		<item>
+			<title>EuroPython 2026 videos published</title>
+			<link>https://lwn.net/Articles/1093825/</link>
+			<guid>https://lwn.net/Articles/1093825/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;All of the videos from the &lt;a
+href="https://ep2026.europython.eu/"&gt;EuroPython&amp;#160;2026&lt;/a&gt; conference, held
+in Kraków, Poland from July&amp;#160;13 through July&amp;#160;19, are &lt;a
+href="https://www.youtube.com/watch?v=9ZuZfG8_jH8&amp;list=PLd3Y9yzyC5Uo"&gt;now
+online&lt;/a&gt; along with a &lt;a
+href="https://blog.europython.eu/europython-2026-videos-published/"&gt;recap&lt;/a&gt; of
+the event from conference organizers.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Fri, 11 Sep 2026 15:08:45 +0000</pubDate>
+		</item>
+		<item>
+			<title>Two stable kernel updates for Friday</title>
+			<link>https://lwn.net/Articles/1093766/</link>
+			<guid>https://lwn.net/Articles/1093766/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Greg Kroah-Hartman has announced the release of the &lt;a
+href="https://lwn.net/Articles/1093767/"&gt;7.2.5&lt;/a&gt; and &lt;a href="https://lwn.net/Articles/1093768/"&gt;6.18.51&lt;/a&gt;
+stable kernels. There are more than 550 patches in each with fixes throughout
+the tree; users are advised to upgrade.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Fri, 11 Sep 2026 13:27:35 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Friday</title>
+			<link>https://lwn.net/Articles/1093765/</link>
+			<guid>https://lwn.net/Articles/1093765/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (apr-util and qt6-qt5compat), &lt;b&gt;Debian&lt;/b&gt; (libevent and ruby-rack), &lt;b&gt;Fedora&lt;/b&gt; (bluez, corosync, curl, dokuwiki, grpcurl, libevent, and rest), &lt;b&gt;Oracle&lt;/b&gt; (gstreamer1-plugins-bad-free, perl-DBI, python-urllib3, qt5-qtbase, qt6-qt5compat, and thunderbird), &lt;b&gt;Red Hat&lt;/b&gt; (osbuild-composer), &lt;b&gt;SUSE&lt;/b&gt; (azure-storage-azcopy, chromedriver, corosync, ggml-devel, helm, kernel, libmariadb-devel, libzypp, zypper, opensc, php7, tomcat10, and waylyrics), and &lt;b&gt;Ubuntu&lt;/b&gt; (apache2, beets, glibc, kissfft, libebml, linux-nvidia-6.17, php8.1, php8.3, php8.5, and python2.7, python3.4, python3.5, python3.6, python3.7, python3.8, python3.9, python3.10, python3.11, python3.12, python3.14).
+</description>
+			<pubDate>Fri, 11 Sep 2026 13:14:32 +0000</pubDate>
+		</item>
+		<item>
+			<title>Forgejo 16.0.4 and 15.0.8 address critical security vulnerability</title>
+			<link>https://lwn.net/Articles/1093671/</link>
+			<guid>https://lwn.net/Articles/1093671/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;The &lt;a href="https://forgejo.org/"&gt;Forgejo&lt;/a&gt; software-forge project has &lt;a
+href="https://floss.social/@forgejo/117246761534398489"&gt;announced&lt;/a&gt; the
+release of versions &lt;a
+href="https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md"&gt;16.0.4&lt;/a&gt;
+and &lt;a
+href="https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/15.0.8.md"&gt;15.0.8&lt;/a&gt;,
+which fixes two security vulnerabilities. One is a critical flaw that would
+allow remote-code execution (RCE):&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+When generating a new repository from a template repository, Forgejo clones the
+template repository, removes the &lt;tt&gt;.git&lt;/tt&gt; folder, performs variable template
+expansion on files listed in &lt;tt&gt;.forgejo/template&lt;/tt&gt;, and initializes a new git
+repository. During this process, variable template expansion could be misused in
+order to create a new &lt;tt&gt;.git&lt;/tt&gt; folder, which git would adopt and incorporate during
+its initialization of a new git repository. A malicious template repository
+could be used to read arbitrary data from the Forgejo host, and to execute
+arbitrary processes on the Forgejo host, as a remote code execution attack. To
+address this issue, after variable expansion is completed, any existing &lt;tt&gt;.git&lt;/tt&gt;
+folder is removed from the directory before the git repository is initialized.
+&lt;/blockquote&gt;
+
+&lt;p&gt;The project recommends upgrading to the latest version as soon as
+possible.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Thu, 10 Sep 2026 20:05:50 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
