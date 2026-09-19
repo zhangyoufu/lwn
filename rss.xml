@@ -1,0 +1,282 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2005/Atom" version="2.0">
+	<channel>
+		<title>LWN.net</title>
+		<link>https://lwn.net</link>
+		<description> LWN.net is a comprehensive source of news and opinions from
+        and about the Linux community.  This is the main LWN.net feed,
+        listing all articles which are posted to the site front page.
+</description>
+		<language>en-us</language>
+		<pubDate>Sat, 19 Sep 2026 18:45:10 +0000</pubDate>
+		<lastBuildDate>Sat, 19 Sep 2026 18:45:10 +0000</lastBuildDate>
+		<docs>https://www.rssboard.org/rss-specification</docs>
+		<webMaster>lwn@lwn.net</webMaster>
+		<ns0:link href="https://zhangyoufu.github.io/lwn/rss.rdf" rel="self" type="application/rss+xml" />
+		<ns0:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
+		<item>
+			<title>Systemtap 5.6 released</title>
+			<link>https://lwn.net/Articles/1095220/</link>
+			<guid>https://lwn.net/Articles/1095220/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Version 5.6 of the Systemtap tracing tool has been released.
+&lt;p&gt;
+&lt;blockquote class="bq"&gt;
+	BPF LSM hooks and XDP packet-processing probes for the --bpf
+	runtime, BTF-based kernel.tracepoint probes, statement execution
+	tracing, a new @enumname() operator, richer runtime error context,
+	dyninst hardware watchpoints, modern systemd service templates, and
+	broad Linux 7.2 runtime/tapset compatibility work.  Multithreaded
+	speedups throughout.
+&lt;/blockquote&gt;
+</description>
+			<pubDate>Fri, 18 Sep 2026 12:58:42 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Friday</title>
+			<link>https://lwn.net/Articles/1095219/</link>
+			<guid>https://lwn.net/Articles/1095219/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (.NET 10.0, coreutils, kernel, libevent, libsoup3, microcode_ctl, perl-Net-DNS, postgresql18, postgresql:16, postgresql:18, tomcat, and unbound), &lt;b&gt;Debian&lt;/b&gt; (bind9, chromium, libapache2-mod-auth-openidc, nginx, xz-utils, and zip), &lt;b&gt;Fedora&lt;/b&gt; (chromium, freeipmi, GitPython, gnatcoll, nodejs-undici, parted, python-django5, and sblim-cmpi-base), &lt;b&gt;Mageia&lt;/b&gt; (imagemagick and python-starlette), &lt;b&gt;Oracle&lt;/b&gt; (.NET 10.0, .NET 8.0, .NET 9.0, coreutils, corosync, firewalld, kernel, libevent, libsoup, microcode_ctl, nginx:1.24, perl, perl:5.32, postgresql:16, postgresql:18, redis, rsync, rsyslog, tesseract, and unbound), &lt;b&gt;Red Hat&lt;/b&gt; (vim), &lt;b&gt;SUSE&lt;/b&gt; (alsa, chirp, chromium, cjose, cups, discount, firefox, gh, glibc, gvfs, jq, kernel, libcjose-devel, libmbedcrypto7, libpcap, mbedtls-2, netcdf, nodejs18, openai-codex, openvpn, pcre2, perl-net-dns, sngrep, tiff, and znc), and &lt;b&gt;Ubuntu&lt;/b&gt; (bison, bubblewrap, and gst-plugins-good1.0).
+</description>
+			<pubDate>Fri, 18 Sep 2026 12:52:10 +0000</pubDate>
+		</item>
+		<item>
+			<title>GNOME 51 released</title>
+			<link>https://lwn.net/Articles/1094963/</link>
+			<guid>https://lwn.net/Articles/1094963/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>&lt;a href="https://release.gnome.org/51/"&gt;Version 51&lt;/a&gt; of the GNOME desktop
+environment has been released.  The list of changes includes a number of
+performance improvements, offline data and better transit information in
+the Maps application, a new interface for the file previewer, and more.</description>
+			<pubDate>Thu, 17 Sep 2026 13:08:12 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Thursday</title>
+			<link>https://lwn.net/Articles/1094962/</link>
+			<guid>https://lwn.net/Articles/1094962/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (.NET 10.0, .NET 8.0, .NET 9.0, corosync, firewalld, kernel, kernel-rt, libevent, libsoup, microcode_ctl, nginx:1.26, python-lxml, rsyslog, tesseract, and unbound), &lt;b&gt;Debian&lt;/b&gt; (firefox-esr, mkvtoolnix, thunderbird, and tor), &lt;b&gt;Fedora&lt;/b&gt; (open62541, php-pecl-mongodb2, python-django6, python-jwcrypto, and roundcubemail), &lt;b&gt;Mageia&lt;/b&gt; (aom, cockpit, libgd, packagekit, and python-h2), &lt;b&gt;Red Hat&lt;/b&gt; (corosync, delve, git-lfs, grafana-pcp, gstreamer1-plugins-base, libvirt, opentelemetry-collector, and rhc-worker-playbook), &lt;b&gt;Slackware&lt;/b&gt; (mozilla-firefox and mozilla-thunderbird), &lt;b&gt;SUSE&lt;/b&gt; (acl, attr, alloy, ansible-core, clamav, containerized-data-importer, corosync, cups, distribution, glibc, google-cloud-sap-agent, govulncheck-vulndb, gvfs, helm, jq, kbd, kubernetes1.34-apiserver, kubernetes1.35-apiserver, lcms2, libcupsfilters, liblzmasdk26, libzypp, zypper, mistral-vibe, opensc, openvpn, pcre2, python-jwcrypto, tomcat, tomcat10, and tomcat11), and &lt;b&gt;Ubuntu&lt;/b&gt; (guix, libheif, perl, python-cryptography, sqlite3, and valkey).
+</description>
+			<pubDate>Thu, 17 Sep 2026 12:48:01 +0000</pubDate>
+		</item>
+		<item>
+			<title>Typst makes big strides</title>
+			<link>https://lwn.net/Articles/1092993/</link>
+			<guid>https://lwn.net/Articles/1092993/</guid>
+			<dc:creator>jake</dc:creator>
+			<description>&lt;a href="https://typst.app"&gt;Typst&lt;/a&gt; is a system for typesetting documents
+into various formats: PDF, SVG, PNG, and, in progress, HTML. It is adept at
+handling technical material, and is often considered to be an eventual &lt;a
+href="https://www.latex-project.org/"&gt;LaTeX&lt;/a&gt; replacement. We last  &lt;a href="https://lwn.net/Articles/1037577/"&gt;looked
+in on Typst&lt;/a&gt; a year ago, when it had reached version 0.13.  A new version,
+0.15, was &lt;a href="https://typst.app/blog/2026/typst-0.15/"&gt;released&lt;/a&gt; in
+June with lots of  &lt;a href="https://typst.app/docs/changelog/0.15.0/"&gt;new features&lt;/a&gt;, including support for variable fonts,
+MathML, multiple bibliographies, and more. Typst is free, Apache-2.0-licensed software, programmed in Rust.
+</description>
+			<pubDate>Thu, 17 Sep 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Fixing the TCMalloc regression with RSEQ operations</title>
+			<link>https://lwn.net/Articles/1092555/</link>
+			<guid>https://lwn.net/Articles/1092555/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>The &lt;a href="https://lwn.net/Articles/697979/"&gt;restartable sequences&lt;/a&gt; feature is one of
+the stranger corners of the kernel's user-space interface; it provides a
+way for user space to carry out simple lockless operations and be informed
+if it is preempted over the course of an operation (and must, thus,
+restart).  Work merged in the 6.19 release to &lt;a
+href="https://lwn.net/Articles/1033955/"&gt;improve the performance of restartable
+sequences&lt;/a&gt; broke the &lt;a
+href="https://github.com/google/tcmalloc#tcmalloc"&gt;TCMalloc allocator&lt;/a&gt;,
+which was relying on an undocumented (and unintended) kernel behavior.
+Now, Olivier Dion is &lt;a
+href="https://lwn.net/ml/all/20260828153349.8061-1-odion@efficios.com"&gt;proposing an
+addition&lt;/a&gt; to the restartable-sequences API that will bring TCMalloc back
+into the fold; it does not make the restartable-sequences API any less
+strange, though.
+</description>
+			<pubDate>Thu, 17 Sep 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>CERN's migration path from CentOS Linux to Debian</title>
+			<link>https://lwn.net/Articles/1092512/</link>
+			<guid>https://lwn.net/Articles/1092512/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;The European Laboratory for Particle Physics, usually just called &lt;a
+href="https://home.cern/"&gt;CERN&lt;/a&gt;, is not only the &lt;a
+href="https://home.cern/science/computing/the-birth-of-the-web/"&gt;birthplace of
+the World Wide Web&lt;/a&gt;, it is home to the &lt;a
+href="https://en.wikipedia.org/wiki/Large_Hadron_Collider"&gt;Large Hadron
+Collider&lt;/a&gt; (LHC), the world's largest and highest-energy &lt;a
+href="https://en.wikipedia.org/wiki/Particle_accelerator"&gt;particle
+accelerator&lt;/a&gt;. As such, its computing environment is both truly unique and of
+great interest to people outside of CERN who hope to find lessons applicable to
+their own computing needs. The upcoming migration of some of CERN's systems from
+CentOS&amp;#160;Linux to Debian, which was the topic of a talk at the recent &lt;a
+href="https://ch2026.mini.debconf.org/"&gt;MiniDebConf&amp;#160;Winterthur&amp;#160;2026&lt;/a&gt;,
+is of particular interest.&lt;/p&gt;
+</description>
+			<pubDate>Thu, 17 Sep 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>LWN.net Weekly Edition for September 10, 2026</title>
+			<link>https://lwn.net/Articles/1092273/</link>
+			<guid>https://lwn.net/Articles/1092273/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Inside this week's LWN.net Weekly Edition:
+        &lt;p&gt;
+        &lt;ul&gt;
+&lt;li&gt; &lt;a href="https://lwn.net/Articles/1092273/"&gt;Front&lt;/a&gt;: Rust's never type; Debian and CERN; memory tiering; testing multithreaded Python; fixing TCMalloc; Typst.
+            &lt;li&gt; &lt;a href="https://lwn.net/Articles/1092275/"&gt;Briefs&lt;/a&gt;: Rustls; Asahi Linux; Buildroot 2026.08; Grml 2026.09; Audacity 4.0; Jellyfin 12.0; LibreOffice Base; Quotes; ...
+            &lt;li&gt; &lt;a href="https://lwn.net/Articles/1092276/"&gt;Announcements&lt;/a&gt;: Newsletters, conferences, security updates, patches, and more.
+            &lt;/ul&gt;
+
+        </description>
+			<pubDate>Thu, 17 Sep 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Recent work in memory tiering</title>
+			<link>https://lwn.net/Articles/1092001/</link>
+			<guid>https://lwn.net/Articles/1092001/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Tiered-memory systems are built with multiple types of memory, each of
+which has different performance characteristics.  In addition to the usual
+DRAM, a tiered system might also provide faster high-bandwidth memory or
+slower CXL memory.  On these systems, the placement of memory allocations
+has a significant effect on the performance that a workload will obtain.
+While work on tiered-memory improvements has been ongoing for years, it
+feels like the pace has slowed a bit recently.  Even so, there are a few
+efforts underway, but they are facing questions about whether the tiering
+design makes sense.
+</description>
+			<pubDate>Thu, 17 Sep 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Stabilizing Rust's never type</title>
+			<link>https://lwn.net/Articles/1091015/</link>
+			<guid>https://lwn.net/Articles/1091015/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>&lt;p&gt;
+A function's return type is supposed to indicate the kind of data that it
+produces. 
+Rust's "never" type, which is
+&lt;a href="https://doc.rust-lang.org/stable/std/primitive.never.html"&gt;
+denoted by an exclamation mark&lt;/a&gt; ("&lt;tt&gt;!&lt;/tt&gt;"), is the type the language uses to mark
+a function that never returns and other places where a value can never occur. For
+a long time, the never type was used internally by the compiler, but was
+considered an unstable feature. On
+&lt;a href="https://github.com/rust-lang/rust/pull/155499"&gt;
+August&amp;#160;24&lt;/a&gt;, after more than two years of work,
+Rust-compiler-contributor "waffle" finally managed to stabilize the type. It
+took so long, in part, because it involved a small breaking
+change to previous Rust editions, which the compiler maintainers needed to
+ensure did not impact much real code.
+&lt;/p&gt;
+</description>
+			<pubDate>Thu, 17 Sep 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Deterministic testing for multithreaded Python</title>
+			<link>https://lwn.net/Articles/1090579/</link>
+			<guid>https://lwn.net/Articles/1090579/</guid>
+			<dc:creator>jake</dc:creator>
+			<description>Python's support for multithreaded programs has improved considerably over
+the last few years with the advent of the &lt;a
+href="https://lwn.net/Articles/1078367/"&gt;"free-threaded" version of the language&lt;/a&gt;.  But
+testing multithreaded programs is notoriously difficult, because the
+underlying host system determines the thread-execution ordering, which adds
+an element of non-determinism.  At PyCon US, Larry Hastings gave a talk (&lt;a
+href="https://www.youtube.com/watch?v=S3LUpx0hzkw&amp;t=96s"&gt;YouTube video&lt;/a&gt;)
+about his &lt;a href="https://pypi.org/project/blanket/"&gt;blanket&lt;/a&gt; project,
+which is meant to provide mechanisms for deterministic testing of
+multithreaded Python code.
+</description>
+			<pubDate>Thu, 17 Sep 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Fedora 45 beta drags the Linux console into the 21st century (Register)</title>
+			<link>https://lwn.net/Articles/1094762/</link>
+			<guid>https://lwn.net/Articles/1094762/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>The Register &lt;a
+href="https://www.theregister.com/software/2026/09/16/fedora-45-beta-drags-the-linux-console-into-the-21st-century/5296873"&gt;looks
+forward&lt;/a&gt; to the upcoming Fedora&amp;#160;45 release.
+&lt;p&gt;
+&lt;blockquote class="bq"&gt;
+	The biggest surprise is that Linux's legacy in-kernel console – the
+	text-mode interface normally hidden beneath the GUI – has been
+	replaced with a software-controlled alternative.
+	The replacement is &lt;a
+	href="https://github.com/kmscon/kmscon#kmscon"&gt;kmscon&lt;/a&gt;, a
+	userspace terminal emulator that has been in development for more
+	than a decade.
+&lt;/blockquote&gt;</description>
+			<pubDate>Wed, 16 Sep 2026 16:24:46 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Wednesday</title>
+			<link>https://lwn.net/Articles/1094720/</link>
+			<guid>https://lwn.net/Articles/1094720/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (kernel, kernel-rt, libkcapi, nginx, nginx:1.24, openssl, osbuild-composer, perl, perl:5.32, python-tornado, rsync, and rust), &lt;b&gt;Debian&lt;/b&gt; (cjose and nginx), &lt;b&gt;Fedora&lt;/b&gt; (environment-modules, erlang, GitPython, knot, perl-Authen-SASL, python-configargparse, ruby, rubygems, and sblim-sfcb), &lt;b&gt;Oracle&lt;/b&gt; (firefox, git-lfs, gstreamer1-plugins-base, kernel, libkcapi, nginx, nginx:1.26, openssl, osbuild-composer, perl, perl-YAML-Syck, postgresql18, python-tornado, and rust), &lt;b&gt;Red Hat&lt;/b&gt; (fence-agents, git-lfs, microcode_ctl, osbuild-composer, podman, python-pyasn1, and resource-agents), &lt;b&gt;SUSE&lt;/b&gt; (389-ds, ant, bson-devel, chirp-20260911, docker, gimp, google-cloud-sap-agent, hauler, kernel, kimi-code, libpcap, python-GitPython, python310, syncthing, yast2-samba-client, and zstd-jni), and &lt;b&gt;Ubuntu&lt;/b&gt; (aom, imagemagick, kitty, openssh, phpseclib, policykit-1, python-sql, python-webob, shibboleth-sp, simplesamlphp, snapcast, srt, and suricata-update).
+</description>
+			<pubDate>Wed, 16 Sep 2026 13:40:53 +0000</pubDate>
+		</item>
+		<item>
+			<title>Vondra: PostgreSQL development activity</title>
+			<link>https://lwn.net/Articles/1094470/</link>
+			<guid>https://lwn.net/Articles/1094470/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;PostgreSQL contributor Tomas Vondra has &lt;a
+href="https://vondra.me/posts/postgres-development-activity/"&gt;published a blog
+post&lt;/a&gt; looking at development activity in the project, with data from the late
+1990s to today.&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+&lt;p&gt;We're doing ~50 commits per week, give or take. In ~2010 we were doing maybe
+25/week, and the trend seems to be a slow and consistent growth. The monthly
+average makes the trend a bit easier to spot. Which is good, although there's a
+lot of other important details (size of commits, are they new features or fixes,
+...).&lt;/p&gt;
+
+&lt;p&gt;It however nicely aligns with the number of active committers, which also
+grew ~2x between 2010 and today. So maybe that's working as expected.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+			<pubDate>Tue, 15 Sep 2026 13:20:30 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Tuesday</title>
+			<link>https://lwn.net/Articles/1094469/</link>
+			<guid>https://lwn.net/Articles/1094469/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;Debian&lt;/b&gt; (network-manager-l2tp and urwid), &lt;b&gt;Fedora&lt;/b&gt; (perl-Dancer2, perl-Data-Entropy, perl-DBI, perl-Protocol-HTTP2, podman-tui, rust-lru, and rust-lru0.16), &lt;b&gt;Mageia&lt;/b&gt; (bzip2, cups-filters, libcupsfilters, libssh2, perl-Authen-SASL, perl-HTML-FormFu, tar, unzip, and zip), &lt;b&gt;Red Hat&lt;/b&gt; (grafana and image-builder), &lt;b&gt;SUSE&lt;/b&gt; (389-ds, acl, attr, apache2-mod_auth_openidc, apr-util, aws-nitro-enclaves-cli, bzip2, c-ares, clamav, cpio, curl, dhcpcd, dovecot23, dovecot24, dracut, emacs, fuse-overlayfs, go1.25-openssl, go1.26-openssl, google-cloud-sap-agent, google-osconfig-agent, govulncheck-vulndb, gstreamer-devtools, gzip, helm, java-17-openjdk, java-21-openjdk, java-25-openjdk, jq, libBasicUsageEnvironment2, libgpg-error, libidn, librest, libusb-1_0, libvirt, LibVNCServer, libzypp, zypper, lkl, mcphost, MozillaFirefox, mozilla-nspr, mozilla-nss, rust-cbindgen, MozillaFirefox, mozilla-nss, mozilla-nspr, rust-cbindgen, MozillaFirefox, MozillaFirefox-branding-SLE, mozilla-nspr, mozilla-nss, rust-cbindgen, msgpack-c, multipath-tools, NetworkManager, openexr, openssl-3, perl-Protocol-HTTP2, perl-URI, php-composer2, postgresql14, postgresql15, postgresql16, postgresql17, postgresql18, python-aiohttp, python-cryptography, python-h2, python-ruff, python-sqlparse, python311, python312, python39.SUSE_SLE-15-SP3_Update, rav1e, rpcbind, sssd, systemd, tomcat, tomcat11, ucode-intel, udisks2, vim, and wicked2nm), and &lt;b&gt;Ubuntu&lt;/b&gt; (cgit, dracut, freeciv, konsole, libinput, linux-azure, linux-nvidia-7.0, nginx, vips, and yelp).
+</description>
+			<pubDate>Tue, 15 Sep 2026 13:10:46 +0000</pubDate>
+		</item>
+		<item>
+			<title>GNU Core Utilities 9.12 released</title>
+			<link>https://lwn.net/Articles/1094312/</link>
+			<guid>https://lwn.net/Articles/1094312/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Pádraig Brady has &lt;a
+href="https://lists.gnu.org/archive/html/coreutils-announce/2026-09/msg00000.html"&gt;announced&lt;/a&gt;
+GNU Core Utilities (coreutils) version 9.12. "&lt;q&gt;There have been 288 commits by
+16 people in the 21 weeks since 9.11&lt;/q&gt;". New features include an &lt;tt&gt;-A&lt;/tt&gt;
+option for &lt;a
+href="https://man7.org/linux/man-pages/man1/uname.1.html"&gt;&lt;tt&gt;uname&lt;/tt&gt;&lt;/a&gt;
+which labels all output, as well as adding awareness of the &lt;a
+href="https://docs.kernel.org/filesystems/failfs.html"&gt;failfs&lt;/a&gt; and &lt;a href="https://lwn.net/Articles/1062163/"&gt;nullfs&lt;/a&gt; filesystem types to &lt;a
+href="https://www.man7.org/linux/man-pages/man1/stat.1.html"&gt;&lt;tt&gt;stat&lt;/tt&gt;&lt;/a&gt;
+and &lt;a
+href="https://www.man7.org/linux/man-pages/man1/tail.1.html"&gt;&lt;tt&gt;tail&lt;/tt&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There are many bug fixes in this release as well, including one for a bug "&lt;q&gt;present
+in 'the beginning'&lt;/q&gt;" that caused some utilities to fail when traversing
+hierarchies if files are being removed in parallel.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Mon, 14 Sep 2026 19:53:59 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
