@@ -1,0 +1,277 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2005/Atom" version="2.0">
+	<channel>
+		<title>LWN.net</title>
+		<link>https://lwn.net</link>
+		<description> LWN.net is a comprehensive source of news and opinions from
+        and about the Linux community.  This is the main LWN.net feed,
+        listing all articles which are posted to the site front page.
+</description>
+		<language>en-us</language>
+		<pubDate>Sat, 03 Oct 2026 19:46:39 +0000</pubDate>
+		<lastBuildDate>Sat, 03 Oct 2026 19:46:39 +0000</lastBuildDate>
+		<docs>https://www.rssboard.org/rss-specification</docs>
+		<webMaster>lwn@lwn.net</webMaster>
+		<ns0:link href="https://zhangyoufu.github.io/lwn/rss.rdf" rel="self" type="application/rss+xml" />
+		<ns0:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
+		<item>
+			<title>Zig 0.17 released</title>
+			<link>https://lwn.net/Articles/1098412/</link>
+			<guid>https://lwn.net/Articles/1098412/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a href="https://ziglang.org/download/0.17.0/release-notes.html"&gt;Version
+0.17&lt;/a&gt; of the Zig programming language has been released.&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+&lt;p&gt;This release features &lt;strong&gt;5 months of work&lt;/strong&gt;: changes from
+&lt;strong&gt;206 different contributors&lt;/strong&gt;, spread among &lt;strong&gt;925
+commits&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Originally predicted to be shorter, this release cycle ended up [being]
+substantial, with the &lt;a
+href="https://ziglang.org/download/0.17.0/release-notes.html#Build-System"&gt;Build
+System&lt;/a&gt; reworked, including the introduction of the &lt;a
+href="https://ziglang.org/download/0.17.0/release-notes.html#Build-Server-Protocol"&gt;Build
+Server Protocol&lt;/a&gt;, and the &lt;a
+href="https://ziglang.org/download/0.17.0/release-notes.html#ELF"&gt;ELF Linker&lt;/a&gt;
+enhanced to the point where we expect &lt;a
+href="https://ziglang.org/download/0.17.0/release-notes.html#Incremental-Compilation"&gt;Incremental
+Compilation&lt;/a&gt; to work for everyone on x86_64-linux.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;LWN &lt;a href="https://lwn.net/Articles/1046084/"&gt;last covered&lt;/a&gt; Zig in
+December 2025.&lt;/p&gt;</description>
+			<pubDate>Sat, 03 Oct 2026 11:31:18 +0000</pubDate>
+		</item>
+		<item>
+			<title>Seven stable kernels for Saturday</title>
+			<link>https://lwn.net/Articles/1098404/</link>
+			<guid>https://lwn.net/Articles/1098404/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Greg Kroah-Hartman has announced the release of the &lt;a
+href="https://lwn.net/Articles/1098405/"&gt;7.2.9&lt;/a&gt;, &lt;a href="https://lwn.net/Articles/1098406/"&gt;6.18.55&lt;/a&gt;,
+&lt;a href="https://lwn.net/Articles/1098407/"&gt;6.12.112&lt;/a&gt;, &lt;a
+href="https://lwn.net/Articles/1098408/"&gt;6.6.158&lt;/a&gt;, &lt;a href="https://lwn.net/Articles/1098409/"&gt;6.1.189&lt;/a&gt;,
+&lt;a href="https://lwn.net/Articles/1098410/"&gt;5.15.222&lt;/a&gt;, and &lt;a
+href="https://lwn.net/Articles/1098411/"&gt;5.10.271&lt;/a&gt; stable kernels. Each contains a large
+number of important fixes throughout the tree; users are advised to upgrade.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Sat, 03 Oct 2026 11:21:42 +0000</pubDate>
+		</item>
+		<item>
+			<title>Linux Test Project suite stable release for September 2026</title>
+			<link>https://lwn.net/Articles/1098313/</link>
+			<guid>https://lwn.net/Articles/1098313/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;The &lt;a
+href="https://github.com/linux-test-project/ltp#linux-test-project"&gt;Linux Test
+Project&lt;/a&gt; has &lt;a
+href="https://lwn.net/ml/all/ar4TexudzfhsKBwT%40yuki.lan/"&gt;announced&lt;/a&gt; its
+latest stable release for September&amp;#160;2026. There have been&amp;#160;382 patches
+from&amp;#160;41 authors since the &lt;a
+href="https://lwn.net/ml/all/ahmZ_HcEEuyPzPFq%40yuki.lan/"&gt;May&amp;#160;2026
+release&lt;/a&gt;. See the announcement for a list of new tests, changes, and
+more.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Fri, 02 Oct 2026 13:40:28 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Friday</title>
+			<link>https://lwn.net/Articles/1098312/</link>
+			<guid>https://lwn.net/Articles/1098312/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (dogtag-pki, expat, freerdp, gawk, gdb, ghostscript, gvfs, kernel, kernel-rt, libpcap, openssh, pki-core, rsync, thunderbird, and webkit2gtk3), &lt;b&gt;Debian&lt;/b&gt; (chromium, firefox-esr, libio-compress-perl, libpng1.6, nodejs, open-iscsi, redis, thunderbird, and webkit2gtk), &lt;b&gt;Fedora&lt;/b&gt; (sos), &lt;b&gt;Mageia&lt;/b&gt; (libgcrypt, python-tornado, python-urwid, python-wcwidth, and wireshark), &lt;b&gt;Oracle&lt;/b&gt; (corosync, dogtag-pki, expat, firefox, freerdp, gawk, glib2, ipa, kernel, libXfont2, nodejs:24, openssh, osbuild-composer, perl-DBI, pki-core, postgresql:12, python-cryptography, resteasy, ruby, ruby4.0, ruby:3.3, ruby:4.0, thunderbird, and xmlrpc-c), &lt;b&gt;Red Hat&lt;/b&gt; (skopeo), &lt;b&gt;SUSE&lt;/b&gt; (chromium, emacs, glib2, glibc, gnome-shell, helm3, ImageMagick, imagemagick, kernel-devel, libtcnative-1-0, libtcnative-1-0, libtcnative-2-0, tomcat, tomcat10,, libtcnative-2-0, libX11, libX11-6, libXi-devel, libXpm-devel, libXtst-devel, mistral-vibe, openssl-3, perl-DBI, perl-Protocol-HTTP2, php-composer2, php8, python, rpcbind, sccache, and valkey), and &lt;b&gt;Ubuntu&lt;/b&gt; (kf6-kcoreaddons, libxpm, linux, linux-aws, linux-fips, linux-kvm, linux-lts-xenial, linux-fips, linux-gke, linux-raspi-5.4, and openssl).
+</description>
+			<pubDate>Fri, 02 Oct 2026 13:21:27 +0000</pubDate>
+		</item>
+		<item>
+			<title>Rust 1.99.0 released</title>
+			<link>https://lwn.net/Articles/1098068/</link>
+			<guid>https://lwn.net/Articles/1098068/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>&lt;a href="https://blog.rust-lang.org/2026/10/01/Rust-1.99.0/"&gt;Version
+1.99.0&lt;/a&gt; of the Rust language has been released.  Changes this time
+include support for &lt;tt&gt;extern "C"&lt;/tt&gt; variadic functions, the
+establishment of functions for obtaining the size and alignment of raw
+pointers, a number of stabilized APIs, and more.</description>
+			<pubDate>Thu, 01 Oct 2026 13:25:17 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Thursday</title>
+			<link>https://lwn.net/Articles/1098067/</link>
+			<guid>https://lwn.net/Articles/1098067/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (corosync, gawk, gdb, nodejs24, and thunderbird), &lt;b&gt;Debian&lt;/b&gt; (expat, firefox-esr, libsmpp34, mkvtoolnix, network-manager-l2tp, pgextwlist, python-django, ruby-oj, and tor), &lt;b&gt;Fedora&lt;/b&gt; (apptainer, ckermit, ffmpeg, freerdp, librabbitmq, openbao, php, python-cssselect2, python-uv-build, ruff, rust-libcst, rust-libcst_derive, rust-salsa, rust-salsa-macro-rules, rust-salsa-macros, sos, ty, uv, weasyprint, and xdg-dbus-proxy), &lt;b&gt;Mageia&lt;/b&gt; (python-pillow), &lt;b&gt;Red Hat&lt;/b&gt; (acl, glib2, go-toolset:rhel8, golang, libxml2, mingw-sqlite, nodejs-nodemon, nodejs22, nodejs24, nodejs:22, nodejs:24, sqlite, tesseract, and vim), &lt;b&gt;Slackware&lt;/b&gt; (libpng and mozilla-thunderbird), &lt;b&gt;SUSE&lt;/b&gt; (alloy, chromedriver, emacs, gdb, gimp, gpsd, jawn, libpoppler-cpp3, libtesseract5, multipath-tools, netty, ntfs-3g_ntfsprogs, pcapplusplus-devel, pi-coding-agent, python-PyYAML, python-tornado, python-tornado6, python311, python313, and wicked2nm), and &lt;b&gt;Ubuntu&lt;/b&gt; (designate, gst-plugins-bad1.0, gvfs, imagemagick, kdenlive, mlt, keystone, libauthen-sasl-perl, linux-aws, linux-aws-6.8, linux-nvidia-tegra, linux-nvidia-tegra-igx, linux-oracle-7.0, opensbi, openvpn, and python-django).
+</description>
+			<pubDate>Thu, 01 Oct 2026 13:12:52 +0000</pubDate>
+		</item>
+		<item>
+			<title>Compiling the kernel with gccrs</title>
+			<link>https://lwn.net/Articles/1095553/</link>
+			<guid>https://lwn.net/Articles/1095553/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>&lt;p&gt;
+Pierre-Emmanuel Patry and Arthur Cohen gave a talk at
+&lt;a href="https://rustconf.com/"&gt;
+RustConf&amp;#160;2026&lt;/a&gt; on the
+status of the Rust frontend for GCC (gccrs), with a particular eye toward the
+goal of
+&lt;a href="https://lwn.net/Articles/1083202/"&gt;
+compiling the Linux kernel&lt;/a&gt;. Patry gave a follow-up talk for a more
+kernel-focused audience at
+&lt;a href="https://kangrejos.com/"&gt;
+Kangrejos&lt;/a&gt; the next week, which Cohen could not attend. The
+&lt;a href="https://rust-gcc.github.io/"&gt;
+gccrs project&lt;/a&gt; is
+making good progress overall, but it will still be some time until the compiler
+is usable.
+&lt;/p&gt;
+</description>
+			<pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Ideas on modernizing the open-source desktop</title>
+			<link>https://lwn.net/Articles/1095425/</link>
+			<guid>https://lwn.net/Articles/1095425/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Scott Jenson has been working on user interfaces (UIs) and user experience (UX)
+for many years at Apple, Google, and other companies. Now, he's trying to convince
+open-source projects to experiment more and drive the desktop beyond the age-old "&lt;a
+href="https://en.wikipedia.org/wiki/WIMP_(computing)"&gt;windows, icons, menus,
+pointer&lt;/a&gt;" (WIMP) model. At &lt;a
+href="https://akademy.kde.org/2026/"&gt;Akademy&amp;#160;2026&lt;/a&gt;, KDE's annual developer
+conference, he shared his complaints and ideas in a talk aimed
+at convincing those in attendance to take the lead on desktop design.&lt;/p&gt;
+</description>
+			<pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>LWN.net Weekly Edition for September 24, 2026</title>
+			<link>https://lwn.net/Articles/1094840/</link>
+			<guid>https://lwn.net/Articles/1094840/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Inside this week's LWN.net Weekly Edition:
+        &lt;p&gt;
+        &lt;ul&gt;
+&lt;li&gt; &lt;a href="https://lwn.net/Articles/1094840/"&gt;Front&lt;/a&gt;: Git 2.56; gccrs; NetBSD and compat_linux; io_uring; Desktop UX.
+            &lt;li&gt; &lt;a href="https://lwn.net/Articles/1094842/"&gt;Briefs&lt;/a&gt;: WordPress vulnerability; Radicle vulnerability; Systemtap 5.6; GNOME 51; Systemd v262; Quotes; ...
+            &lt;li&gt; &lt;a href="https://lwn.net/Articles/1094843/"&gt;Announcements&lt;/a&gt;: Newsletters, conferences, security updates, patches, and more.
+            &lt;/ul&gt;
+
+        </description>
+			<pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Looking forward to Git 2.56 â€” and 3.0</title>
+			<link>https://lwn.net/Articles/1094575/</link>
+			<guid>https://lwn.net/Articles/1094575/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>The &lt;a href="https://git-scm.com/"&gt;Git&lt;/a&gt; source-code management system is
+at the core of development processes worldwide, so changes, especially
+incompatible changes, are of great interest to the developers involved.
+The Git 2.56 release, which can be expected around the end of September, is
+currently available in &lt;a
+href="https://lwn.net/ml/all/xmqqh5jpvzxo.fsf@gitster.g"&gt;release-candidate&lt;/a&gt; form.  It
+is not the most earth-shaking of releases, but the one that follows, which
+might be the long-awaited Git 3.0, may well be.
+</description>
+			<pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Testing compat_linux on NetBSD with the Linux Test Project</title>
+			<link>https://lwn.net/Articles/1094310/</link>
+			<guid>https://lwn.net/Articles/1094310/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a href="https://netbsd.org/"&gt;NetBSD&lt;/a&gt; has long had support for
+running Linux binaries via its kernel-level &lt;a
+href="https://man.netbsd.org/compat_linux.8"&gt;&lt;tt&gt;compat_linux&lt;/tt&gt;&lt;/a&gt;
+feature, but test coverage for it was less complete than some might
+hope. In order to provide better testing for &lt;tt&gt;compat_linux&lt;/tt&gt;,
+Google Summer of Code (GSoC) participant Henrique Brito opted to work
+on enabling the &lt;a
+href="https://linux-test-project.readthedocs.io/en/latest/"&gt;Linux Test
+Project (LTP)&lt;/a&gt; test suite to compile and run on NetBSD. At &lt;a
+href="https://2026.eurobsdcon.org/"&gt;EuroBSDCon&amp;#160;2026&lt;/a&gt;, Brito's
+mentor, Stephen Borrill, provided a report on the project, and the
+status of LTP on NetBSD. The work has already resulted in some minor
+fixes, and a good list of additional problems to solve.&lt;/p&gt;
+</description>
+			<pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Thread-identity switcheroo for io_uring</title>
+			<link>https://lwn.net/Articles/1094303/</link>
+			<guid>https://lwn.net/Articles/1094303/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>The &lt;a
+href="https://man7.org/linux/man-pages/man7/io_uring.7.html"&gt;io_uring
+subsystem&lt;/a&gt; is all about asynchronous execution; applications count on it
+to not block — unless explicitly requested to.  Within io_uring, maintaining
+the "never blocks" guarantee has sometimes been a challenge, given that
+many paths in the kernel were never designed for asynchronous execution.
+This problem has been worked around, but at a significant cost to
+performance.  Now, io_uring maintainer Jens Axboe has posted &lt;a
+href="https://lwn.net/ml/all/20260911154148.644489-1-axboe@kernel.dk"&gt;an RFC patch set&lt;/a&gt;
+with a somewhat radical (and potentially scary) solution to the problem.
+</description>
+			<pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Kernel Recipes videos posted</title>
+			<link>https://lwn.net/Articles/1097802/</link>
+			<guid>https://lwn.net/Articles/1097802/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>&lt;a href="https://www.youtube.com/playlist?list=PLEVVgAZOU9P8"&gt;The full set
+of videos&lt;/a&gt; from the recently concluded &lt;a
+href="https://kernel-recipes.org/en/2026/"&gt;Kernel Recipes&lt;/a&gt; conference
+has been posted.  Also noteworthy are the associated caricature drawings,
+by Frank Tizzoni, of &lt;a
+href="https://kernel-recipes.org/en/2026/attendees-sketches/"&gt;attendees&lt;/a&gt;
+and &lt;a href="https://kernel-recipes.org/en/2026/speakers-sketches/"&gt;the
+speakers&lt;/a&gt;.</description>
+			<pubDate>Wed, 30 Sep 2026 15:24:51 +0000</pubDate>
+		</item>
+		<item>
+			<title>Reports from the 2026 Python Language Summit</title>
+			<link>https://lwn.net/Articles/1097761/</link>
+			<guid>https://lwn.net/Articles/1097761/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>The 2026 Python Language Summit was held on July 14 in Kraków, Poland;
+there is now &lt;a
+href="https://pyfound.blogspot.com/2026/09/python-language-summit-2026.html"&gt;a
+series of reports&lt;/a&gt; available on the topics that were discussed there.
+They include the memory buffer protocol, garbage collection, free-threaded
+Python, and "Spicycrab".</description>
+			<pubDate>Wed, 30 Sep 2026 14:32:36 +0000</pubDate>
+		</item>
+		<item>
+			<title>The Linux Foundation Technical Advisory Board 2026 election approaches</title>
+			<link>https://lwn.net/Articles/1097758/</link>
+			<guid>https://lwn.net/Articles/1097758/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>The election for members of the Linux Foundation Technical Advisory Board
+will be held electronically after the close of the upcoming &lt;a
+href="https://lpc.events/"&gt;Linux Plumbers Conference&lt;/a&gt;.  The &lt;a
+href="https://lwn.net/ml/all/a7f69e8d-1140-44b5-baf8-bacb8c30c01a@kernel.org"&gt;call for
+candidates&lt;/a&gt; is open, with a nomination deadline of October&amp;#160;7.
+There are five seats to fill this time, including the one vacated by the
+unfortunate passing of Dan Williams.
+&lt;p&gt;
+Serving on the TAB is a good way to help the kernel-development community.
+Please see &lt;a href="https://lwn.net/Articles/1049035/"&gt;this article from last year&lt;/a&gt; for
+an overview of what the TAB does and why membership is rewarding, then
+consider putting in your nomination.</description>
+			<pubDate>Wed, 30 Sep 2026 13:55:20 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Wednesday</title>
+			<link>https://lwn.net/Articles/1097753/</link>
+			<guid>https://lwn.net/Articles/1097753/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (389-ds:1.4, container-tools:rhel8, go-toolset:rhel8, grafana, httpd:2.4, nodejs:22, postgresql:12, and postgresql:15), &lt;b&gt;Debian&lt;/b&gt; (libwebsockets, openssl, and pcre2), &lt;b&gt;Fedora&lt;/b&gt; (adwaita-icon-theme, cinnamon, dconf, epiphany, flatpak-builder, gcr, gdm, gjs, glib-networking, glib2, gnome-backgrounds, gnome-calendar, gnome-characters, gnome-chess, gnome-clocks, gnome-connections, gnome-console, gnome-contacts, gnome-control-center, gnome-desktop3, gnome-initial-setup, gnome-keyring, gnome-kiosk, gnome-maps, gnome-remote-desktop, gnome-settings-daemon, gnome-shell, gnome-shell-extensions, gnome-system-monitor, gnome-text-editor, gnome-user-docs, gnote, gnucash, gnucash-docs, gsettings-desktop-schemas, gtk4, hplip, libadwaita, libdex, libsecret, libshumate, libxmp, mingw-llvm, mutter, nautilus, parted, perl-Imager, quadrapassel, rootlesskit, rygel, shotwell, sngrep, sushi, sysprof, tecla, thunderbird, xdg-desktop-portal-gnome, and xdotool), &lt;b&gt;Red Hat&lt;/b&gt; (buildah, container-tools:rhel8, containernetworking-plugins, delve, git-lfs, grafana, grafana-pcp, host-metering, ignition, image-builder, osbuild-composer, podman, rhc, rhc-worker-playbook, runc, skopeo, yggdrasil, and yggdrasil-worker-package-manager), &lt;b&gt;Slackware&lt;/b&gt; (mozilla-firefox), &lt;b&gt;SUSE&lt;/b&gt; (389-ds, amazon-cloudwatch-agent, cjose, corosync, cosign, cups, distribution-registry, expat, firefox, flatpak, glib2, google-osconfig-agent, goose, helm, ImageMagick, jackson-annotations, jackson-bom, jackson-core, jackson- databind, jackson-dataformat-xml, jackson-dataformats-binary, jackson-modules- base, jackson-core, jackson-databind, jackson-dataformat-csv, jsoup, re2j, kbd, kernel, kubectl-cnpg, libpcap, libsoup, libtpms, libX11, libXrender, netty, netty-tcnative, pcre2, perl-Authen-SASL, perl-DBI, python-pymongo, python310, python311, swtpm, terraform-provider-susepubliccloud, and util-linux), and &lt;b&gt;Ubuntu&lt;/b&gt; (atril, booth, c-ares, catdoc, dracut, emacs, erlang, freeipmi, libdbi-perl, libheif, linux, linux-aws, linux-azure, linux-fips, linux-gcp, linux-gcp-5.4, linux-gcp-fips, linux-hwe-5.4, linux-iot, linux-kvm, linux-oracle, linux-oracle-5.4, linux-raspi, linux-xilinx-zynqmp, linux, linux-nvidia, linux-aws-fips, linux-aws-fips, linux-azure-fips, linux-fips, linux-bluefield, linux-fips, linux-nvidia-tegra-5.15, openssl, openssl, openssl1.0, pdfminer, php-phpseclib, and plasma-workspace).
+</description>
+			<pubDate>Wed, 30 Sep 2026 13:20:42 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
