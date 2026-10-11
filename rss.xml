@@ -1,0 +1,127 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2005/Atom" version="2.0">
+	<channel>
+		<title>LWN.net</title>
+		<link>https://lwn.net</link>
+		<description> LWN.net is a comprehensive source of news and opinions from
+        and about the Linux community.  This is the main LWN.net feed,
+        listing all articles which are posted to the site front page.
+</description>
+		<language>en-us</language>
+		<pubDate>Sat, 10 Oct 2026 23:43:47 +0000</pubDate>
+		<lastBuildDate>Sat, 10 Oct 2026 23:43:47 +0000</lastBuildDate>
+		<docs>https://www.rssboard.org/rss-specification</docs>
+		<webMaster>lwn@lwn.net</webMaster>
+		<ns0:link href="https://zhangyoufu.github.io/lwn/rss.rdf" rel="self" type="application/rss+xml" />
+		<ns0:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
+		<item>
+			<title>Python 3.15 released</title>
+			<link>https://lwn.net/Articles/1099602/</link>
+			<guid>https://lwn.net/Articles/1099602/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a href="https://www.python.org/downloads/release/python-3150/"&gt;Version
+3.15&lt;/a&gt; of the Python programming language has been released. Notable changes
+in this release include the addition of the &lt;tt&gt;sentinel&lt;/tt&gt; and &lt;a
+href="https://lwn.net/Articles/1047238/"&gt;&lt;tt&gt;frozendict&lt;/tt&gt;&lt;/a&gt; built-in types,
+the use of UTF-8 encoding by default, &lt;a
+href="https://docs.python.org/3.15/library/site.html#site-start-files"&gt;package
+start-up configuration files&lt;/a&gt;, as well as improvements in the &lt;a
+href="https://docs.python.org/3/whatsnew/3.15.html#whatsnew315-jit"&gt;experimental
+JIT compiler&lt;/a&gt;. See the "&lt;a
+href="https://docs.python.org/3/whatsnew/3.15.html"&gt;What's new in Python
+3.15&lt;/a&gt;" article for an in-depth look at new features in this release, and the
+&lt;a
+href="https://docs.python.org/3/whatsnew/changelog.html#changelog"&gt;changelog&lt;/a&gt;
+for a full list of changes.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Fri, 09 Oct 2026 17:15:44 +0000</pubDate>
+		</item>
+		<item>
+			<title>Let's Encrypt moving to 64-day certificate lifetimes in 2027</title>
+			<link>https://lwn.net/Articles/1099588/</link>
+			<guid>https://lwn.net/Articles/1099588/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a href="https://letsencrypt.org/2026/10/07/64-day-certs.html"&gt;Let's
+Encrypt&lt;/a&gt;, the nonprofit that provides free TLS certificates for millions of
+sites, has &lt;a
+href="https://letsencrypt.org/2026/10/07/64-day-certs.html"&gt;announced&lt;/a&gt; that
+it will be moving to certificates with 64-day lifetimes on February&amp;#160;10,
+2027:&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+&lt;p&gt;This means that any certificate we issue or renew on and after that date will
+have a 64 day validity period, and we expect the last 90-day certificate to
+expire on May 11, 2027. We will not revoke valid certificates as a part of this
+process.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is the second stage of Let's Encrypt's plan, &lt;a
+href="https://letsencrypt.org/2025/12/02/from-90-to-45"&gt;announced in 2025&lt;/a&gt;,
+to move to 45-day certificate lifetimes as required by the the &lt;a
+href="https://cabforum.org/working-groups/server/baseline-requirements/requirements/"&gt;CA/Browser
+Forum Baseline Requirements&lt;/a&gt;. In 2028, Let's Encrypt will switch to 45-day certificates.&lt;/p&gt;</description>
+			<pubDate>Fri, 09 Oct 2026 14:02:44 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Friday</title>
+			<link>https://lwn.net/Articles/1099587/</link>
+			<guid>https://lwn.net/Articles/1099587/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (bind, bind9.16, freerdp, glibc, kbd, mod_auth_openidc, openssl, perl-DBI, python3.12, python3.14, and tftp), &lt;b&gt;Debian&lt;/b&gt; (rails and twitter-bootstrap3), &lt;b&gt;Fedora&lt;/b&gt; (barman, cockpit, hcloud, libmodsecurity, nginx-mod-modsecurity, perl-DBI, sudo, and xorg-x11-server-Xwayland), &lt;b&gt;Mageia&lt;/b&gt; (libxfont2), &lt;b&gt;Oracle&lt;/b&gt; (bind9.18, firefox, kernel, nodejs24, perl-DBI, and vim), &lt;b&gt;Red Hat&lt;/b&gt; (kernel, libreswan, opentelemetry-collector, osbuild-composer, rhc, and runc), &lt;b&gt;SUSE&lt;/b&gt; (alloy, amazon-ecs-init, bind, busybox, distribution, emacs, ghostscript, glibc, GraphicsMagick, hauler, helm, helm3, jackson-annotations, jackson-core, jackson-databind, kernel, libpoppler-cpp3, libxtst, logback, nvidia-open-driver-G07-signed, perl-DBI, php-composer2, pi-coding-agent, portprotonqt, pvetui, python-hpack, python313-GitPython, and wpa_supplicant), and &lt;b&gt;Ubuntu&lt;/b&gt; (apache2, bluez, libarchive, libde265, libgit2, libpng1.6, libxml2, linux, linux-aws, linux-aws-6.8, linux-aws-fips, linux-fips, linux-realtime, linux-realtime-6.8, linux-aws-7.0, linux-azure, linux-azure-6.8, linux-azure-fde, linux-azure-fde-6.8, linux-azure-fips, linux-azure-7.0, linux-azure-fde-7.0, linux-gcp, linux-gcp-6.8, linux-gcp-fips, linux-gcp-7.0, linux-hwe-7.0, linux-oracle-7.0, linux-gke, linux-gkeop, linux-ibm, linux-lowlatency, linux-lowlatency-hwe-6.8, linux-nvidia, linux-nvidia-6.8, linux-nvidia-lowlatency, linux-oracle, linux-ibm-6.8, linux-nvidia, and linux-oem-6.17).
+</description>
+			<pubDate>Fri, 09 Oct 2026 13:08:14 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Thursday</title>
+			<link>https://lwn.net/Articles/1099388/</link>
+			<guid>https://lwn.net/Articles/1099388/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (bind, firefox, freerdp, ghostscript, glibc, kernel, kernel-rt, perl-DBI, python3.12, rust-rpm-sequoia, rust-sequoia-sq, rust-sequoia-sqv, and vim), &lt;b&gt;Debian&lt;/b&gt; (gst-plugins-base1.0, python3.11, and xz-utils), &lt;b&gt;Fedora&lt;/b&gt; (7zip, chromium, curl, docker-buildx, kernel, Lmod, and sos), &lt;b&gt;Mageia&lt;/b&gt; (tesseract), &lt;b&gt;Oracle&lt;/b&gt; (dovecot, firefox, freerdp, gd, ghostscript, kernel, librabbitmq, perl-DBI, python3.12, rust-rpm-sequoia, rust-sequoia-sqv, sg3_utils, vim, and virtuoso-opensource), &lt;b&gt;Slackware&lt;/b&gt; (xorg-server), &lt;b&gt;SUSE&lt;/b&gt; (aliyun-cli, busybox, cadvisor, chromedriver, chromium, crane, distribution-registry, fetchmail, fio, ghostscript, golang-github-prometheus-alertmanager, google-osconfig-agent, govulncheck-vulndb, libsoup, libXtst, openexr, prometheus-blackbox_exporter, python-fsspec, rpcbind, rsyslog, rustup, wireshark, wpa_supplicant, and zcode), and &lt;b&gt;Ubuntu&lt;/b&gt; (erlang, golang-golang-x-net, gst-plugins-ugly1.0, lxml, poppler, and sudo).
+</description>
+			<pubDate>Thu, 08 Oct 2026 13:11:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>A new Raspberry Pi Desktop release is finally available for x86-64</title>
+			<link>https://lwn.net/Articles/1099206/</link>
+			<guid>https://lwn.net/Articles/1099206/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Simon Long has &lt;a
+href="https://www.raspberrypi.com/news/raspberry-pi-desktop-now-available-for-pc-and-mac/"&gt;announced&lt;/a&gt;
+a long-awaited release of Raspberry Pi OS, based on &lt;a
+href="https://www.debian.org/releases/trixie/"&gt;Debian&amp;#160;13 ("trixie")&lt;/a&gt;,
+for x86-64 systems.&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+&lt;p&gt;We managed to find the time to update the Desktop for the Buster and Bullseye
+releases of Debian, but then we all just got too busy with other things, and,
+while we left the Bullseye version on the website for anyone who wanted it, we
+simply didn't have time to release any newer versions. But people kept on asking
+for it – we get two or three emails every week asking when the PC Desktop will
+be updated, and we haven't had an answer, because we honestly didn't know when
+we might get a chance to do it. We've continually tried to allocate time to be
+able to work on this, but it hasn't been easy. [...]&lt;/p&gt;
+
+&lt;p&gt;Earlier this year, we (or rather Serge) finally got the latest version of the
+Desktop running on top of a Debian Trixie image. It's now based on 64-bit Debian
+(the amd64 architecture) rather than the older 32-bit version, as Debian itself
+has stopped supporting 32-bit for PC architectures. This shouldn't be a major
+problem – most PCs made in the last 15 years or so will quite happily run the
+64-bit version of Debian, as will most Intel-based Macs. (Debian support for
+Apple Silicon is still experimental, so unfortunately those of you with the
+latest and greatest shiny fruit products will not be able to run this.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Wed, 07 Oct 2026 13:26:25 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Wednesday</title>
+			<link>https://lwn.net/Articles/1099202/</link>
+			<guid>https://lwn.net/Articles/1099202/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (bind, dovecot, freerdp, kernel, mariadb-connector-c, mod_auth_openidc, nodejs22, nodejs:22, sudo, and vim), &lt;b&gt;Debian&lt;/b&gt; (node-shell-quote, puma, rails, ruby-jwt, and suricata-update), &lt;b&gt;Fedora&lt;/b&gt; (chromium, cockpit, flocq, freerdp, gappalib-coq, golang-x-mod, httpd, janus, libical, musescore, python3-docs, python3.14, python3.15, rocq, rocq-stdlib, tesseract, why3, and zenon), &lt;b&gt;Mageia&lt;/b&gt; (srt and tor), &lt;b&gt;Oracle&lt;/b&gt; (freerdp, kernel, libpcap, mariadb-connector-c, nodejs22, sudo, and vim), &lt;b&gt;Red Hat&lt;/b&gt; (expat and grafana), &lt;b&gt;Slackware&lt;/b&gt; (openssh), &lt;b&gt;SUSE&lt;/b&gt; (chromium, docker-stable, firefox, jupyter-jupyterlab, libtcnative-1-0, tomcat, tomcat10, libtcnative-1-0, tomcat11, openexr, python310, python313-azure-storage-queue, python313-langchain-anthropic, python313-sglang, python313-Werkzeug, and valkey), and &lt;b&gt;Ubuntu&lt;/b&gt; (fluidsynth, freerdp3, freetype, golang-1.18, golang-1.21, golang-1.24, gst-plugins-good1.0, libsoup2.4, libsoup3, libwebsockets, linux, linux-aws, linux-gcp, linux-gke, linux-ibm, linux-oracle, linux-realtime, linux-azure, linux-azure-fde, linux-nvidia-tegra, linux-oem-7.0, redis, sg3-utils, tesseract, and u-boot).
+</description>
+			<pubDate>Wed, 07 Oct 2026 13:08:53 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
