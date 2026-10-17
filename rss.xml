@@ -1,0 +1,366 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2005/Atom" version="2.0">
+	<channel>
+		<title>LWN.net</title>
+		<link>https://lwn.net</link>
+		<description> LWN.net is a comprehensive source of news and opinions from
+        and about the Linux community.  This is the main LWN.net feed,
+        listing all articles which are posted to the site front page.
+</description>
+		<language>en-us</language>
+		<pubDate>Sat, 17 Oct 2026 21:51:02 +0000</pubDate>
+		<lastBuildDate>Sat, 17 Oct 2026 21:51:02 +0000</lastBuildDate>
+		<docs>https://www.rssboard.org/rss-specification</docs>
+		<webMaster>lwn@lwn.net</webMaster>
+		<ns0:link href="https://zhangyoufu.github.io/lwn/rss.rdf" rel="self" type="application/rss+xml" />
+		<ns0:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
+		<item>
+			<title>Introducing GNOME OS Preview</title>
+			<link>https://lwn.net/Articles/1101057/</link>
+			<guid>https://lwn.net/Articles/1101057/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;The &lt;a href="https://gnome.org/"&gt;GNOME Project&lt;/a&gt; has provided &lt;a
+href="https://os.gnome.org/"&gt;GNOME&amp;#160;OS&lt;/a&gt; for some time; until now, the
+project only provided a "Nightly" edition that was built from the latest commits
+and was aimed solely at GNOME developers. Adrian Vovk has now &lt;a
+href="https://blogs.gnome.org/adrianvovk/2026/10/16/gnome-os-preview/"&gt;announced&lt;/a&gt;
+the release of GNOME&amp;#160;OS&amp;#160;Preview, which is intended for a non-developer 
+audience:&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+&lt;p&gt;GNOME OS Preview is the current GNOME OS Nightly, but without the "nightly"
+aspect. Instead, it's built from the latest stable GNOME release (GNOME 51.1, at
+the time of writing). GNOME OS Preview lives in the same branches on GitLab as
+the stable org.gnome.Platform Flatpak runtimes.&lt;/p&gt;
+
+&lt;p&gt;GNOME OS Preview is only a few weeks old, so it has only seen limited
+real-life testing so far. We therefore expect people will uncover some issues
+initially. That said, Preview is significantly more stable than Nightly, which
+dozens of people have been daily driving without major issues for over a
+year. Thus, we're feeling confident that Preview is going to be reliable enough
+for daily use by non-developer enthusiasts.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;While Preview is meant for non-developers, it is not considered complete or
+stable for the broader public. There are a number of features, listed in Vovk's
+post, that need to be implemented before the project is ready to declare
+GNOME&amp;#160;OS "&lt;q&gt;ready for prime time&lt;/q&gt;". Adventurous users, who might not
+mind having to reinstall the OS once a stable version is declared, can
+download and start using GNOME&amp;#160;OS&amp;#160;Preview today.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Fri, 16 Oct 2026 19:05:57 +0000</pubDate>
+		</item>
+		<item>
+			<title>Results from the 2026 TAB election</title>
+			<link>https://lwn.net/Articles/1101020/</link>
+			<guid>https://lwn.net/Articles/1101020/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>The &lt;a
+href="https://lwn.net/ml/all/9fae8567-0943-47e2-a04d-4e75e1c0cb6d@kernel.org"&gt;results&lt;/a&gt;
+from the 2026 election for members of the Linux Foundation Technical
+Advisory Board (TAB) have been announced.  Kees Cook, Dave Hansen, Miguel
+Ojeda, and Shuah Khan have all been re-elected, and Laurent Pinchart will
+be joining the board.</description>
+			<pubDate>Fri, 16 Oct 2026 14:09:20 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Friday</title>
+			<link>https://lwn.net/Articles/1101015/</link>
+			<guid>https://lwn.net/Articles/1101015/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (ghostscript, grafana, hplip, libsoup3, lrzsz, rpcbind, and wireshark), &lt;b&gt;Debian&lt;/b&gt; (chromium, cifs-utils, expat, gst-plugins-bad1.0, gst-plugins-good1.0, jpeg-xl, mutt, and spip), &lt;b&gt;Mageia&lt;/b&gt; (gpsd, libx11, and roundcubemail), &lt;b&gt;Oracle&lt;/b&gt; (389-ds-base, compat-libtiff3, environment-modules, ghostscript, grafana, gstreamer1-plugins-bad-free, gstreamer1-plugins-base, gstreamer1-plugins-good, hplip, idm:DL1, kernel, kernel-uek, libsoup, libsoup3, lrzsz, rpcbind, and wireshark), &lt;b&gt;Red Hat&lt;/b&gt; (gd), &lt;b&gt;SUSE&lt;/b&gt; (alloy, amazon-ecs-init, bind, busybox, chromium, distribution, govulncheck-vulndb, iperf, jackson-annotations, jackson-core, jackson-databind, kernel, libXtst, mutt, openssh, php8, python313-python-multipart, python313-python-rapidjson, python313-python3-saml, python313-pywbem, python313-redis, python313-reportlab, python313-requests, python313-rope, python313-rpyc, python313-rsa, qemu, swtpm, the Java stack, and wpa_supplicant), and &lt;b&gt;Ubuntu&lt;/b&gt; (golang-1.23, linux-azure, and rabbitmq-server).
+</description>
+			<pubDate>Fri, 16 Oct 2026 13:17:44 +0000</pubDate>
+		</item>
+		<item>
+			<title>KDE releases documentary</title>
+			<link>https://lwn.net/Articles/1100787/</link>
+			<guid>https://lwn.net/Articles/1100787/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;As part of &lt;a href="https://kde.org/fundraisers/yearend2026/"&gt;KDE's 30th
+anniversary celebration&lt;/a&gt;, the project has released &lt;em&gt;The KDE Documentary
+&amp;mdash; A Story of Free Software Underdogs&lt;/em&gt; (&lt;a
+href="https://www.youtube.com/watch?v=1Vyzla9mx4g"&gt;YouTube video&lt;/a&gt;):&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+&lt;p&gt;The story starts in 1996, when Matthias Ettrich, a student at the University
+of TÃ¼bingen, posted to a Usenet group asking for programmers to help build a
+desktop for Linux. What followed became KDE, one of the largest free software
+communities in the world. KDE made Linux usable as a desktop for people who
+weren't system administrators, giving it a complete, consistent graphical
+environment at a time when there was none.&lt;/p&gt;
+
+&lt;p&gt;The film covers the highs and lows of three decades of KDE: the Qt licensing
+fight and the rivalry with GNOME; the success of KHTML, the browser engine that
+became the basis of Apple's WebKit and Google's Chrome; and the contentious
+release of KDE 4 and the rebuild that followed.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+			<pubDate>Thu, 15 Oct 2026 13:24:31 +0000</pubDate>
+		</item>
+		<item>
+			<title>Ubuntu 26.10 released</title>
+			<link>https://lwn.net/Articles/1100786/</link>
+			<guid>https://lwn.net/Articles/1100786/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Canonical has &lt;a
+href="https://ubuntu.com/blog/canonical-releases-ubuntu-26-10-stonking-stingray"&gt;announced
+the release&lt;/a&gt; of Ubuntu&amp;#160;26.10 ("Stonking Stingray"):&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+&lt;p&gt;Ubuntu 26.10 advances enterprise security features, completes the rollout of
+the Rust-based &lt;tt&gt;uutils coreutils&lt;/tt&gt;, and strengthens integrations for user
+authentication using Microsoft Entra ID.&lt;/p&gt;
+
+&lt;p&gt;[...] Ubuntu 26.10 also ships with GNOME 51, bringing a smoother, more
+responsive desktop, better display handling, improved accessibility, and
+refinements across core applications. In addition, the Ubuntu App Center now
+provides a more consistent experience for managing snaps and debs.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;See the &lt;a
+href="https://documentation.ubuntu.com/release-notes/26.10/"&gt;release notes&lt;/a&gt;
+for a list of new features as well as &lt;a
+href="https://documentation.ubuntu.com/release-notes/26.10/#backwards-incompatible-changes"&gt;incompatible
+changes&lt;/a&gt; between 26.10 and prior Ubuntu releases.&lt;/p&gt;</description>
+			<pubDate>Thu, 15 Oct 2026 13:19:23 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Thursday</title>
+			<link>https://lwn.net/Articles/1100785/</link>
+			<guid>https://lwn.net/Articles/1100785/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (environment-modules, flatpak-builder, kernel, kernel-rt, librabbitmq, libreoffice, libsoup, mod_auth_openidc:2.3, nodejs:22, nodejs:24, OpenEXR, opentelemetry-collector, pki-core:10.6, postgresql:12, python-tornado, python36:3.6, ruby:3.3, tftp, and xorg-x11-server), &lt;b&gt;Debian&lt;/b&gt; (buildstream, firefox-esr, mariadb, and sogo), &lt;b&gt;Fedora&lt;/b&gt; (exim, freerdp, python3-docs, and python3.14), &lt;b&gt;Mageia&lt;/b&gt; (drakx-installer-images, kernel, kmod-nvidia-current-wopengpu, kmod-virtualbox), &lt;b&gt;Oracle&lt;/b&gt; (curl, emacs, environment-modules, flatpak, flatpak-builder, gd, hplip, kbd, kernel, librabbitmq, libreoffice, libxml2, microcode_ctl, mod_auth_openidc:2.3, nodejs:22, OpenEXR, pcre2, perl-DBI, python-tornado, rsyslog, tftp, thunderbird, and xorg-x11-server), &lt;b&gt;Red Hat&lt;/b&gt; (compat-libtiff3, firefox, ghostscript, idm:DL1, ipa, kernel, kernel-rt, libtiff, lrzsz, and mariadb-connector-c), &lt;b&gt;Slackware&lt;/b&gt; (libarchive), &lt;b&gt;SUSE&lt;/b&gt; (amazon-cloudwatch-agent, bind, container-suseconnect, containerd, glibc, google-osconfig-agent, helm, kernel, python312, python313-oletools, python313-openpyxl, python313-orjson, python313-paramiko, python313-pipreqs, python313-py, python313-pycryptodome, python313-pycryptodomex, python313-pydrive2, python313-python-engineio, webkit2gtk3, and xorg-x11-server), and &lt;b&gt;Ubuntu&lt;/b&gt; (apache2, bind9, bluez, curl, openssh, python-urllib3, and u-boot).
+</description>
+			<pubDate>Thu, 15 Oct 2026 13:09:44 +0000</pubDate>
+		</item>
+		<item>
+			<title>Seven stable kernels for Thursday with fix for critical vulnerability</title>
+			<link>https://lwn.net/Articles/1100611/</link>
+			<guid>https://lwn.net/Articles/1100611/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Greg Kroah-Hartman has announced the release of the &lt;a
+href="https://lwn.net/Articles/1100616/"&gt;7.2.11&lt;/a&gt;, &lt;a href="https://lwn.net/Articles/1100617/"&gt;6.18.57&lt;/a&gt;,
+&lt;a href="https://lwn.net/Articles/1100618/"&gt;6.12.113&lt;/a&gt;, &lt;a
+href="https://lwn.net/Articles/1100619/"&gt;6.6.159&lt;/a&gt;, &lt;a href="https://lwn.net/Articles/1100620/"&gt;6.1.190&lt;/a&gt;,
+&lt;a href="https://lwn.net/Articles/1100621/"&gt;5.15.223&lt;/a&gt;, and &lt;a
+href="https://lwn.net/Articles/1100622/"&gt;5.10.272&lt;/a&gt; stable kernels. This series includes,
+among other things, a &lt;a
+href="https://lwn.net/ml/all/2026101533-CVE-2026-99999-beee%40gregkh/"&gt;fix for a
+critical vulnerability&lt;/a&gt; (&lt;a
+href="https://www.cve.org/CVERecord/?id=CVE-2026-99999"&gt;CVE-2026-99999&lt;/a&gt;). The
+flaw in &lt;a
+href="https://www.kernel.org/doc/html/latest/networking/checksum-offloads.html"&gt;&lt;tt&gt;skb_checksum_help()&lt;/tt&gt;&lt;/a&gt;
+would allow an IPv4 packet with bad checksum metadata to "&lt;q&gt;corrupt the network
+header and cause a bunch of mischief&lt;/q&gt;" in the words of patch author Michael
+S. Tsirkin. As usual, all users are advised to upgrade.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Thu, 15 Oct 2026 13:01:31 +0000</pubDate>
+		</item>
+		<item>
+			<title>LWN.net Weekly Edition for October 8, 2026</title>
+			<link>https://lwn.net/Articles/1097859/</link>
+			<guid>https://lwn.net/Articles/1097859/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Inside this week's LWN.net Weekly Edition:
+        &lt;p&gt;
+        &lt;ul&gt;
+&lt;li&gt; &lt;a href="https://lwn.net/Articles/1097859/"&gt;Front&lt;/a&gt;: Kernel bugs; Gentoo's Chromium package; Rust smart pointers; Sashiko; Charon; LAVD scheduler; Python random-number modules.
+            &lt;li&gt; &lt;a href="https://lwn.net/Articles/1097861/"&gt;Briefs&lt;/a&gt;: OpenSSH 10.6; RustConf recordings; Rust 1.99.0; Picard 3.0; Zig 0.17; Quotes; ...
+            &lt;li&gt; &lt;a href="https://lwn.net/Articles/1097862/"&gt;Announcements&lt;/a&gt;: Newsletters, conferences, security updates, patches, and more.
+            &lt;/ul&gt;
+
+        </description>
+			<pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Last rites for Gentoo's Chromium package</title>
+			<link>https://lwn.net/Articles/1097760/</link>
+			<guid>https://lwn.net/Articles/1097760/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a href="https://www.chromium.org/Home/"&gt;Chromium&lt;/a&gt;, the open-source
+upstream project for Google's Chrome web browser, is the browser of choice for
+many Linux users. It has also gained a reputation as being &lt;a
+href="https://lwn.net/Articles/619158/"&gt;difficult for Linux distributions to
+package and build&lt;/a&gt;: Chromium has a complex build system, the project bundles
+many of its dependencies, and it has frequent releases. All of that, plus user
+complaints, has led the maintainers of the &lt;a
+href="https://packages.gentoo.org/packages/www-client/chromium"&gt;Gentoo Chromium
+package&lt;/a&gt; to give up on trying to maintain the package.&lt;/p&gt;
+</description>
+			<pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Python's two modules for random numbers</title>
+			<link>https://lwn.net/Articles/1097468/</link>
+			<guid>https://lwn.net/Articles/1097468/</guid>
+			<dc:creator>jake</dc:creator>
+			<description>Python's &lt;a
+href="https://docs.python.org/3/library/random.html"&gt;&lt;tt&gt;random&lt;/tt&gt;&lt;/a&gt;
+and &lt;a
+href="https://docs.python.org/3/library/secrets.html"&gt;&lt;tt&gt;secrets&lt;/tt&gt;&lt;/a&gt;
+modules both include utilities for obtaining random values, but only one of them is suitable for generating passwords and security tokens.
+For much of Python's history, &lt;tt&gt;random&lt;/tt&gt; was used for passwords and tokens anyway, despite documentation that called it unsuitable for cryptography.
+In 2015, Python's core team debated whether to fix that misuse by making &lt;tt&gt;random&lt;/tt&gt; secure by default.
+Instead, in 2016, Python 3.6 added a second module: &lt;tt&gt;secrets&lt;/tt&gt;.  The
+&lt;tt&gt;random&lt;/tt&gt; module is still misused at times, so it is instructive
+to look into how the random-number modules should be used.
+</description>
+			<pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Evolving the LAVD scheduler from gaming to servers</title>
+			<link>https://lwn.net/Articles/1097209/</link>
+			<guid>https://lwn.net/Articles/1097209/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>The &lt;a href="https://lwn.net/Articles/922405/"&gt;extensible scheduler class&lt;/a&gt;, which
+enables the creation of custom CPU schedulers with BPF, has led to a burst
+of innovation in this area; &lt;a
+href="https://github.com/sched-ext/scx/tree/main/scheds/rust/scx_lavd#scx_lavd"&gt;the
+LAVD scheduler&lt;/a&gt; has, perhaps, been one of the most noteworthy schedulers
+to emerge.  Though it was originally &lt;a href="https://lwn.net/Articles/1051430/"&gt;designed
+for gaming applications&lt;/a&gt;, the LAVD scheduler has since grown to serve
+other types of workloads as well.  At the 2026 edition of &lt;a
+href="https://kernel-recipes.org/en/2026/"&gt;Kernel Recipes&lt;/a&gt;, Changwoo Min
+and Gavin Guo presented an overview of this scheduler and how it has
+evolved over time.
+</description>
+			<pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Analyzing Rust programs with Charon</title>
+			<link>https://lwn.net/Articles/1097198/</link>
+			<guid>https://lwn.net/Articles/1097198/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>&lt;p&gt;
+Nadrieril is a long-time Rust contributor, and the maintainer of the rustc
+pattern-matching infrastructure. During his involvement with Rust, he has
+noticed a problem with the usability of the language: it is difficult to
+automatically extract information from a Rust crate for use with other tooling.
+&lt;a href="https://github.com/AeneasVerif/charon#charon"&gt;
+The Charon project&lt;/a&gt; aims to fix that by providing a stable API for accessing
+internal information from the Rust compiler.
+&lt;/p&gt;
+</description>
+			<pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>An update on the Sashiko patch-review system</title>
+			<link>https://lwn.net/Articles/1096963/</link>
+			<guid>https://lwn.net/Articles/1096963/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Patch review has long been one of the limiting constraints for the kernel
+project (and most others); there just aren't enough people to properly
+review all of the code that is submitted for inclusion.  The Sashiko
+system, which uses a large language model (LLM) to generate reviews
+automatically, offers the prospect of some relief, and has already become
+an important part of the kernel's development process.  At the 2026 edition
+of &lt;a href="https://kernel-recipes.org/en/2026/"&gt;Kernel Recipes&lt;/a&gt;, Roman
+Gushchin, the maintainer of Sashiko, provided an overview of how
+the system works and what is being done to improve it.
+</description>
+			<pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Coping with the onslaught of kernel security bugs</title>
+			<link>https://lwn.net/Articles/1096908/</link>
+			<guid>https://lwn.net/Articles/1096908/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>By now it is no secret that large language models (LLMs) have made it easy
+for people to identify security bugs, and that has resulted in a flood of
+bug reports to almost every free-software project, including the kernel.
+At the 2026 edition of &lt;a href="https://kernel-recipes.org/en/2026/"&gt;Kernel
+Recipes&lt;/a&gt;, Greg Kroah-Hartman took the stage to talk about how the
+kernel's security team is handling this deluge.  His core message was
+"&lt;q&gt;don't panic&lt;/q&gt;".
+</description>
+			<pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Beyond the &amp;</title>
+			<link>https://lwn.net/Articles/1096028/</link>
+			<guid>https://lwn.net/Articles/1096028/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>&lt;p&gt;
+Rust has a number of kinds of smart pointers, both in the standard
+library and defined by users. Still, some operations that are possible with
+built-in references are not possible to perform with user-defined smart
+pointers. Tyler Mandry, lead of the Rust project's
+&lt;a href="https://rust-lang.org/governance/teams/#team-lang"&gt;
+language team&lt;/a&gt;, spoke at
+&lt;a href="https://rustconf.com/"&gt;
+RustConf 2026&lt;/a&gt; about the lengthy effort to change that, and make smart pointers
+just as flexible as built-in references.
+&lt;/p&gt;
+</description>
+			<pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Linus Torvalds's first LLM-assisted patch series</title>
+			<link>https://lwn.net/Articles/1100449/</link>
+			<guid>https://lwn.net/Articles/1100449/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>At the recently concluded &lt;a href="https://lwn.net/Articles/1099594/"&gt;Maintainers
+Summit&lt;/a&gt;, Linus Torvalds said that he had been using a large language
+model to work on a patch series addressing a longstanding problem; he has
+now &lt;a
+href="https://lwn.net/ml/all/CAHk-=wjLjgfwgSZ1RDk4YdNFcV0ntosMO5AmBoHD76Zb3HFY7Q@mail.gmail.com"&gt;posted
+that series for review&lt;/a&gt;.
+&lt;p&gt;
+&lt;blockquote class="bq"&gt;
+	The fairly short series of ten patches basically enhances folio
+	lookup by noticing when folios are hot, and setting a "delay
+	releasing this folio until after a RCU period", and then using that
+	RCU delay it does not just the folio lookup itself under RCU (which
+	we've done forever), but also the actual folio data accesses
+	themselves under RCU. No refcount taking needed for the fastpath
+	where we can just read the data from the folio entirely in an
+	RCU-protected region when the user copy doesn't cause page faults.
+&lt;/blockquote&gt;
+&lt;p&gt;
+The end result is an order-of-magnitude speedup for a &lt;tt&gt;read()&lt;/tt&gt;-heavy
+benchmark.  Review has already &lt;a
+href="https://lwn.net/ml/all/as6vBoWQGglxXxb0@thinkstation"&gt;identified a race
+condition&lt;/a&gt; in the code, though, so further work will be needed.</description>
+			<pubDate>Wed, 14 Oct 2026 13:50:29 +0000</pubDate>
+		</item>
+		<item>
+			<title>KDE Plasma 6.8 released</title>
+			<link>https://lwn.net/Articles/1100429/</link>
+			<guid>https://lwn.net/Articles/1100429/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a href="https://kde.org/announcements/plasma/6/6.8.0/"&gt;Version 6.8&lt;/a&gt; of
+the &lt;a href="https://kde.org/plasma-desktop/"&gt;KDE Plasma desktop&lt;/a&gt; has been
+released. The The KDE project has timed the release to coincide with the 30th
+anniversary of Matthias Ettrich's &lt;a
+href="https://kde.org/announcements/announcement/"&gt;email announcing&lt;/a&gt; the
+project:&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+Unix popularity grows thanks to the free variants, mostly Linux. But still a
+consistent, nice looking free desktop-environment is missing. There are several
+nice either free or low-priced applications available, so that Linux/X11 would
+almost fit everybody needs if we could offer a real GUI.
+&lt;/blockquote&gt;
+
+&lt;p&gt;Notable changes include accessibility improvements, inclusion
+of the &lt;a href="https://github.com/KDE/kup#kup-backup-system"&gt;Kup&lt;/a&gt; backup
+tool as part of Plasma, as well as the ability to include system audio and
+microphone input in &lt;a href="https://apps.kde.org/spectacle/"&gt;Spectacle&lt;/a&gt;
+screen recordings. Plasma 6.8 also drops support for Plasma X11 sessions, as was &lt;a
+href="https://blogs.kde.org/2025/11/26/going-all-in-on-a-wayland-future/"&gt;announced&lt;/a&gt;
+in November 2025. X11 applications are still supported via XWayland, and KDE
+applications will continue to support X11 "&lt;q&gt;for the foreseeable
+future&lt;/q&gt;".&lt;/p&gt;
+
+&lt;p&gt;See the &lt;a
+href="https://community.kde.org/Plasma/Plasma_6#Plasma_6.8"&gt;KDE wiki&lt;/a&gt; for a
+list of major user-facing changes, and the &lt;a
+href="https://kde.org/announcements/changelogs/plasma/6/6.7.5-6.8.0/"&gt;changelog&lt;/a&gt;
+for all changes since Plasma&amp;#160;6.7.5.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Wed, 14 Oct 2026 13:41:09 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
