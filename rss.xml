@@ -1,0 +1,376 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2005/Atom" version="2.0">
+	<channel>
+		<title>LWN.net</title>
+		<link>https://lwn.net</link>
+		<description> LWN.net is a comprehensive source of news and opinions from
+        and about the Linux community.  This is the main LWN.net feed,
+        listing all articles which are posted to the site front page.
+</description>
+		<language>en-us</language>
+		<pubDate>Sat, 24 Oct 2026 16:56:53 +0000</pubDate>
+		<lastBuildDate>Sat, 24 Oct 2026 16:56:53 +0000</lastBuildDate>
+		<docs>https://www.rssboard.org/rss-specification</docs>
+		<webMaster>lwn@lwn.net</webMaster>
+		<ns0:link href="https://zhangyoufu.github.io/lwn/rss.rdf" rel="self" type="application/rss+xml" />
+		<ns0:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
+		<item>
+			<title>Security updates for Friday</title>
+			<link>https://lwn.net/Articles/1102546/</link>
+			<guid>https://lwn.net/Articles/1102546/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (buildah, expat, grafana, grafana-pcp, httpd, iperf3, openssh, php, php8.4, php:7.4, php:8.2, and php:8.3), &lt;b&gt;Debian&lt;/b&gt; (aide, chromium, clamav, erlang, linux-6.12, roundcube, unbound, and webkit2gtk), &lt;b&gt;Fedora&lt;/b&gt; (bind9-next, ca-certificates, clevis-pin-trustee, golang-x-mobile, knot-resolver, maradns, ntpsec, php, socat, and vlc), &lt;b&gt;Mageia&lt;/b&gt; (golang, jq, msgpack, open-isns, perl-Mozilla-CA, roundcubemail, and sudo), &lt;b&gt;Oracle&lt;/b&gt; (.NET 10.0, .NET 8.0, .NET 9.0, cockpit-files, cockpit-machines, fetchmail, glycin-loaders, golang, jackson-core, librsvg2, mariadb11.8, openexr, openssh, php, php8.4, php:7.4, php:8.2, php:8.3, postgresql:16, qt5-qtbase, rust-sequoia-sq, and xorg-x11-server-Xwayland), &lt;b&gt;Red Hat&lt;/b&gt; (ca-certificates and opentelemetry-collector), &lt;b&gt;SUSE&lt;/b&gt; (aliyun-cli, amazon-ecs-init, bcel, coreutils, cups-filters, cyrus-sasl, distribution, expat, firefox, go1.26, go1.26-openssl, go1.27, guava, mutt, nvidia-open-driver-G07-signed, p11-kit, php74, php8, podman, python-soupsieve, python313-datamodel-code-generator, python313-Django5, thunderbird, and webkit2gtk3), and &lt;b&gt;Ubuntu&lt;/b&gt; (openvpn, python-tornado, and zlib).
+</description>
+			<pubDate>Fri, 23 Oct 2026 13:02:03 +0000</pubDate>
+		</item>
+		<item>
+			<title>KeePassXC 2.8.0 released</title>
+			<link>https://lwn.net/Articles/1102270/</link>
+			<guid>https://lwn.net/Articles/1102270/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a href="https://keepassxc.org/blog/2026-10-21-2.8.0-released/"&gt;Version
+2.8.0&lt;/a&gt; of the &lt;a href="https://keepassxc.org/"&gt;KeePassXC&lt;/a&gt; password-management application has been
+released.&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+The new release brings a lot of long-awaited new features, many bugfixes, and
+several security updates. Among the major features are the migration from Qt5 to
+Qt6, Auto-Type on Wayland (Linux), configurable keyboard shortcuts, remote
+database synchronization with external tools, quick unlock with password on
+macOS, and quick unlock via Polkit on Linux. Version 2.8.0 is also the first
+version for which we ship native ARM64 builds for Windows and an experimental
+AArch64 (i.e., ARM64) AppImage for Linux.
+&lt;/blockquote&gt;
+
+&lt;p&gt;See the &lt;a
+href="https://github.com/keepassxreboot/keepassxc/releases/tag/2.8.0"&gt;changelog&lt;/a&gt;
+for a full list of new features, major changes, and bug fixes.&lt;/p&gt;</description>
+			<pubDate>Thu, 22 Oct 2026 13:34:37 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Thursday</title>
+			<link>https://lwn.net/Articles/1102265/</link>
+			<guid>https://lwn.net/Articles/1102265/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (.NET 10.0, .NET 8.0, .NET 9.0, cockpit-files, cockpit-machines, fetchmail, glycin-loaders, go-toolset:rhel8, golang, hostapd, jackson-core, kernel, kernel-rt, librsvg2, lrzsz, mariadb11.8, openexr, openssh, openssl, perl-DBI:1.641, python-urllib3, python3.12-urllib3, qt5-qtbase, rust-sequoia-sq, and xorg-x11-server-Xwayland), &lt;b&gt;Arch Linux&lt;/b&gt; (php and php-legacy), &lt;b&gt;Debian&lt;/b&gt; (bind9, firefox-esr, nginx, php8.2, and php8.4), &lt;b&gt;Fedora&lt;/b&gt; (ca-certificates, dolphin, gnome-shell-extension-gsconnect, libdigidocpp, linux-firmware, nicotine+, perl-ExtUtils-Typemaps-Default, php, python-cairosvg, qdigidoc, rust-rustls-webpki, rust-webpki-root-certs, and rust-webpki-roots), &lt;b&gt;Gentoo&lt;/b&gt; (PHP), &lt;b&gt;Mageia&lt;/b&gt; (php8.5, php8.4), &lt;b&gt;Oracle&lt;/b&gt; (perl-URI), &lt;b&gt;Red Hat&lt;/b&gt; (go-toolset:rhel8, golang, grafana-pcp, kernel, kernel-rt, nodejs-nodemon, nodejs22, nodejs24, nodejs:22, nodejs:24, rhc, and sudo), &lt;b&gt;Slackware&lt;/b&gt; (php), &lt;b&gt;SUSE&lt;/b&gt; (aliyun-cli, bouncycastle, buildah, ca-certificates-mozilla, chromedriver, cifs-utils, cyrus-sasl, docker, firefox, gimp, git-bug, GraphicsMagick, libheif, libpng16, libraw, libsoup-2_4-1, mutt, onefetch, openexr, openssh, openssl-certs, php7, php8, poppler, python-hpack, python310, python313-Django4, qemu, rootlesskit, tiff, xwayland, and yt-dlp), and &lt;b&gt;Ubuntu&lt;/b&gt; (c-ares, ghostscript, libsoup3, libxs-parse-keyword-perl, nss, php5, php7.0, php7.2, php7.4, php8.1, php8.3, php8.5, poppler, pyjwt, u-boot, and unbound).
+</description>
+			<pubDate>Thu, 22 Oct 2026 13:09:09 +0000</pubDate>
+		</item>
+		<item>
+			<title>The 2026 Maintainers Summit</title>
+			<link>https://lwn.net/Articles/1099594/</link>
+			<guid>https://lwn.net/Articles/1099594/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>The Maintainers Summit is a one-day, invitation-only gathering of about 30
+kernel developers; it is held once each year to discuss policy-related issues
+that are not always amenable to resolution via email.  The 2026 event was
+scheduled for October&amp;#160;8 in Prague, Czechia.  Unsurprisingly, the discussion
+there was dominated by large language models (LLMs) and their effect on the
+development community, but some time was also found to talk about security
+bugs and long-term succession planning.
+</description>
+			<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>KDE Linux at two</title>
+			<link>https://lwn.net/Articles/1099486/</link>
+			<guid>https://lwn.net/Articles/1099486/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a href="https://linux.kde.org/"&gt;KDE&amp;#160;Linux&lt;/a&gt;, the KDE Project's second
+stab at creating its own distribution, was first introduced as "Project Banana"
+at the &lt;a href="https://akademy.kde.org/2024/"&gt;Akademy conference in 2024&lt;/a&gt; by
+Harald Sitter. Nate Graham &lt;a
+href="https://pointieststick.com/2025/09/06/announcing-the-alpha-release-of-kde-linux/"&gt;announced&lt;/a&gt;
+the first alpha-quality release during &lt;a
+href="https://akademy.kde.org/2025/"&gt;Akademy&amp;#160;2025&lt;/a&gt;. Graham and Sitter
+paired up at &lt;a href="https://akademy.kde.org/2026/"&gt;Akademy&amp;#160;2026&lt;/a&gt; to 
+provide an update on its progress, lay out plans for refining the distribution to
+address user feedback, and discuss some of the problems that still need to be
+dealt with. KDE Linux is still not-quite-ready for prime time, but Graham hopes
+that it will be suitable for widespread use soon&amp;mdash;for an undefined value of
+"soon".&lt;/p&gt;
+</description>
+			<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Collaborating with out-of-tree tracers</title>
+			<link>https://lwn.net/Articles/1099300/</link>
+			<guid>https://lwn.net/Articles/1099300/</guid>
+			<dc:creator>jake</dc:creator>
+			<description>&lt;a href="https://lttng.org/"&gt;LTTng&lt;/a&gt; creator Mathieu Desnoyers seems a
+bit trapped in something of a &lt;a
+href="https://dictionary.cambridge.org/dictionary/english/catch-22"&gt;catch-22&lt;/a&gt;.
+At the 2026 &lt;a href="https://lpc.events/"&gt;Linux Plumbers Conference&lt;/a&gt;
+(LPC), he led a discussion on the problem he is having in trying to
+collaborate with other tracing projects (e.g. &lt;a
+href="https://docs.kernel.org/trace/ftrace.html"&gt;ftrace&lt;/a&gt;, &lt;a
+href="https://perfwiki.github.io/main/"&gt;perf&lt;/a&gt;) in the kernel.  The
+feedback he has gotten, both over the years and more recently, does not
+show a path that would allow him to contribute the 21-year-old
+GPLv2-licensed LTTng tracing framework, or, incrementally, features from
+it, to the mainline kernel.
+</description>
+			<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>LWN.net Weekly Edition for October 15, 2026</title>
+			<link>https://lwn.net/Articles/1099247/</link>
+			<guid>https://lwn.net/Articles/1099247/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Inside this week's LWN.net Weekly Edition:
+        &lt;p&gt;
+        &lt;ul&gt;
+&lt;li&gt; &lt;a href="https://lwn.net/Articles/1099247/"&gt;Front&lt;/a&gt;: 2026 Maintainers Summit; Rust goals; GCC and LLMs; GCC CFI; systemd; C types in Rust; LTTng; Swap showdown; KDE Linux.
+            &lt;li&gt; &lt;a href="https://lwn.net/Articles/1099249/"&gt;Briefs&lt;/a&gt;: 64-day certificates; Nix and Lix security; Asterinas 0.19.0; LineageOS 24; KDE 6.8; Python 3.15; Quotes; ...
+            &lt;li&gt; &lt;a href="https://lwn.net/Articles/1099250/"&gt;Announcements&lt;/a&gt;: Newsletters, conferences, security updates, patches, and more.
+            &lt;/ul&gt;
+
+        </description>
+			<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>The state of systemd: 2026 edition</title>
+			<link>https://lwn.net/Articles/1099024/</link>
+			<guid>https://lwn.net/Articles/1099024/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;At the 2026 &lt;a href="https://all-systems-go.io/"&gt;All Systems Go!&lt;/a&gt;
+conference, systemd maintainers Luca Boccassi and Zbigniew Jędrzejewski-Szmek
+delivered the traditional "state of the project" session with an overview of the
+systemd project's accomplishments in the past year. That was followed by a
+maintainer round table where Boccassi, Jędrzejewski-Szmek, Daan De&amp;#160;Meyer, and
+project leader Lennart Poettering fielded questions about systemd's size,
+health, and if it might replace Kubernetes. (It will not.)&lt;/p&gt;
+</description>
+			<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Owning C types from Rust code</title>
+			<link>https://lwn.net/Articles/1099015/</link>
+			<guid>https://lwn.net/Articles/1099015/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>&lt;p&gt;
+Rust's system of ownership and borrowed references is convenient when it can
+correctly model a program's needs. The
+&lt;a href="https://rust-for-linux.com/"&gt;
+Rust for Linux project&lt;/a&gt; has worked to
+provide adapters between Rust's semantics and the existing C code
+in the kernel. At Kangrejos 2026, Andreas Hindborg spoke about a
+&lt;a href="https://lwn.net/ml/all/20260910-unique-ref-v21-0-e83257373062@kernel.org/"&gt;
+patch
+series&lt;/a&gt; implementing the next such adaptor: an &lt;tt&gt;Ownable&lt;/tt&gt; trait for
+representing objects that are allocated in C code, but which Rust code is responsible
+for cleaning up (if not necessarily deallocating) when it is done with them.
+He hoped to finally reach a consensus on the patch series, after months of
+discussion on the mailing list.
+&lt;/p&gt;
+</description>
+			<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>GCC development with large-language models</title>
+			<link>https://lwn.net/Articles/1098672/</link>
+			<guid>https://lwn.net/Articles/1098672/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>After much deliberation, the GCC project recently came up with &lt;a
+href="https://gcc.gnu.org/ai-policy.html"&gt;a policy on the use of large
+language models&lt;/a&gt; for development of the compiler suite.  It is somewhat
+restrictive, but still leaves room for LLMs in the development process.  At
+the 2026 &lt;a href="https://gnu-tools-cauldron.org/"&gt;GNU Tools Cauldron&lt;/a&gt;,
+Jeff Law and Kyrill Tkachov discussed how these tools have been useful for
+them.
+</description>
+			<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Adding kernel control-flow-integrity checking to GCC</title>
+			<link>https://lwn.net/Articles/1098670/</link>
+			<guid>https://lwn.net/Articles/1098670/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>While many developers are struggling to keep up with the flood of
+vulnerability reports, others are still focused on preventing those reports
+from happening in the first place.  Control-flow integrity (CFI) is the
+term for preventing (or at least detecting) exploits that divert the flow
+of control from its intended paths.  At the 2026 &lt;a
+href="https://gnu-tools-cauldron.org/"&gt;GNU Tools Cauldron&lt;/a&gt;, Kees Cook
+presented his changes to the GCC compiler suite to support forward-edge CFI
+for the kernel.
+</description>
+			<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>An update on Rust's project goals</title>
+			<link>https://lwn.net/Articles/1098617/</link>
+			<guid>https://lwn.net/Articles/1098617/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>&lt;p&gt;
+Tomáš Šedovič is a program manager at the Rust Foundation. He co-leads the
+&lt;a href="https://rust-lang.org/governance/teams/#team-goals"&gt;
+goals team&lt;/a&gt;, which helps
+organize the Rust project's
+&lt;a href="https://goals.rust-lang.org/2026/goals.html"&gt;
+overall goals&lt;/a&gt;, including making sure that the people
+who have agreed to work on one have the support they need.
+At Kangrejos 2026, he provided an overview of the Rust project's goal processes
+aimed at ensuring that the Rust for Linux developers were aware of how the
+project organizes, tracks, and amends goals.
+The
+&lt;a href="https://rust-for-linux.com/"&gt;
+Rust for Linux project&lt;/a&gt;
+has inspired several current project goals, so he thought that getting an inside
+view of the process might be helpful.
+&lt;/p&gt;
+</description>
+			<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>The [vx]swap showdown</title>
+			<link>https://lwn.net/Articles/1098399/</link>
+			<guid>https://lwn.net/Articles/1098399/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>The kernel's swap layer has undergone &lt;a href="https://lwn.net/Articles/1057102/"&gt;some
+significant changes&lt;/a&gt; over the course of the last year and a number of
+longstanding problems have been addressed.  One problem that has &lt;i&gt;not&lt;/i&gt;
+yet been solved in the mainline is the direct tie between slots in the swap
+cache and space in persistent swap files, which can cause highly
+inefficient resource use.  There are two competing solutions for this
+problem, neither of which has, as yet, reached readiness for merging; a
+lengthy discussion on possible paths forward shows ongoing disagreement
+over the best path forward.
+</description>
+			<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Today's PHP Security Release, and How We're Strengthening PHP Security (PHP Foundation)</title>
+			<link>https://lwn.net/Articles/1102060/</link>
+			<guid>https://lwn.net/Articles/1102060/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>The PHP Foundation has put out &lt;a
+href="https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/"&gt;a
+blog entry&lt;/a&gt; explaining how the vulnerabilities disclosed today came
+about and why they took so long to fix.
+&lt;p&gt;
+&lt;blockquote class="bq"&gt;
+	To fix the OOM problem, the PHP security team developed several
+	competing approaches, but each came with its own trade-offs:
+	backward compatibility breaks, new denial-of-service potential, or
+	requiring changes to many third-party extensions which seemed
+	impossible to coordinate. The PHP security team, operating on
+	consensus, struggled to choose between these and feared the
+	repercussions of shipping the wrong choice. Combined with the lack
+	of a known path to remote code execution and the small team of core
+	developers with the necessary deep knowledge of the engine occupied
+	with many responsibilities, this decision process caused work on a
+	fix to stall and restart repeatedly over months. We won't pretend
+	otherwise: the delay was a structural failure, caused by both the
+	security team's decision process and its lack of resources.
+&lt;/blockquote&gt;</description>
+			<pubDate>Wed, 21 Oct 2026 20:20:34 +0000</pubDate>
+		</item>
+		<item>
+			<title>More vulnerabilities in widely deployed software</title>
+			<link>https://lwn.net/Articles/1102044/</link>
+			<guid>https://lwn.net/Articles/1102044/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>&lt;p&gt;
+The Node.js project has
+&lt;a
+href="https://nodejs.org/en/blog/vulnerability/october-2026-security-releases"&gt;released
+a number of security updates&lt;/a&gt; to fix, among other vulnerabilities, a
+remote-code-execution bug affecting programs that use Brotli compression. And,
+in case any programmers who use compiled languages thought they could relax, the
+&lt;a href="https://musl.libc.org/"&gt;musl libc project&lt;/a&gt; has also announced a
+new vulnerability: an
+&lt;a
+href="https://lwn.net/ml/all/20261021154307.GA4413%40brightrain.aerifal.cx/"&gt;out-of-bounds
+write&lt;/a&gt; that could potentially lead to remote code execution, although that
+has not been demonstrated.
+&lt;/p&gt;</description>
+			<pubDate>Wed, 21 Oct 2026 17:09:24 +0000</pubDate>
+		</item>
+		<item>
+			<title>Upstreaming Tyr: Rust, DRM, and the Linux Kernel (Collabora)</title>
+			<link>https://lwn.net/Articles/1102024/</link>
+			<guid>https://lwn.net/Articles/1102024/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>The Collabora blog &lt;a
+href="https://www.collabora.com/news-and-blog/blog/2026/10/21/upstreaming-tyr-rust-drm-and-the-linux-kernel/"&gt;provides
+an update on Tyr&lt;/a&gt;, a driver for Arm Mali GPUs.
+&lt;p&gt;
+&lt;blockquote class="bq"&gt;
+	One of our biggest challenges has been developing Tyr while the
+	Rust kernel abstractions and driver interfaces are also being
+	developed. As the driver interfaces are naturally revised and
+	improved, we have rewritten Tyr several times to adapt to the
+	larger Rust ecosystem. This not only makes progress much slower
+	than it would be with a mature API, but also stalls progress for
+	capabilities, such as job scheduling, while the abstraction is
+	properly designed, reviewed, tested, and merged upstream.
+&lt;p&gt;
+	But working in this evolving environment is also precisely where
+	Tyr is able to provide the most value. As a user of these new Rust
+	abstractions, Tyr helps to expose their requirements and
+	limitations. 
+&lt;/blockquote&gt;</description>
+			<pubDate>Wed, 21 Oct 2026 14:58:56 +0000</pubDate>
+		</item>
+		<item>
+			<title>PHP patches released for two critical RCEs</title>
+			<link>https://lwn.net/Articles/1102014/</link>
+			<guid>https://lwn.net/Articles/1102014/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;The PHP project has &lt;a
+href="https://www.php.net/archive/2026.php#2026-10-21-5"&gt;published&lt;/a&gt; PHP
+versions &lt;a href="https://www.php.net/archive/2026.php#2026-10-21-4"&gt;8.5.12&lt;/a&gt;,
+&lt;a href="https://www.php.net/archive/2026.php#2026-10-21-3"&gt;8.4.27&lt;/a&gt;, &lt;a
+href="https://www.php.net/archive/2026.php#2026-10-21-2"&gt;8.3.36&lt;/a&gt; and &lt;a
+href="https://www.php.net/archive/2026.php#2026-10-21-1"&gt;8.2.35&lt;/a&gt; to address
+two critical vulnerabilities that could allow unauthenticated remote code
+execution.&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+&lt;strong&gt;Who is at risk:&lt;/strong&gt; all PHP installations serving web requests,
+including PHP-FPM, Apache with mod_php, php-cgi, FrankenPHP and LiteSpeed. We
+consider the risk highest for mod_php, with a demonstrated exploit where an
+unauthenticated request can trigger the attack before any application code
+runs.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The vulnerabilities:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul class="spacylist"&gt;
+&lt;li&gt;&lt;strong&gt;RCE via OOM corruption&lt;/strong&gt;, CVE-2026-109618 (&lt;a href="https://github.com/php/php-src/security/advisories/GHSA-w8hw-w9fx-j79w"&gt;GHSA-w8hw-w9fx-j79w&lt;/a&gt;): out-of-memory
+handling can interrupt PHP while internal request data is only partially initialized. Request cleanup may then treat the invalid data as valid.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RCE via stale global state&lt;/strong&gt;, CVE-2026-109619 (&lt;a href="https://github.com/php/php-src/security/advisories/GHSA-6wmf-4rv5-p3rp"&gt;GHSA-6wmf-4rv5-p3rp&lt;/a&gt;): request-owned
+internal state can survive after its backing memory has been freed. A later
+request handled by the same worker may use that stale state before normal
+initialization resets it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;PHP versions older than 8.1 will not receive updates from the project, though
+the project has provided some patches for &lt;a
+href="https://github.com/php/php-src/tree/PHP-7.4-CVE-2026-109618-109619"&gt;PHP
+7.4&lt;/a&gt;, &lt;a
+href="https://github.com/php/php-src/tree/PHP-8.0-CVE-2026-109618-109619"&gt;PHP
+8.0&lt;/a&gt;, and &lt;a
+href="https://github.com/php/php-src/tree/PHP-8.1-CVE-2026-109618-109619"&gt;PHP
+8.1&lt;/a&gt; to assist in creating backports. According to the
+announcement, Linux distributions and vendors received patches in advance, so
+updated packages should be coming soon.&lt;/P&gt;</description>
+			<pubDate>Wed, 21 Oct 2026 13:53:18 +0000</pubDate>
+		</item>
+		<item>
+			<title>Four stable kernels for Wednesday</title>
+			<link>https://lwn.net/Articles/1101758/</link>
+			<guid>https://lwn.net/Articles/1101758/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Greg Kroah-Hartman has announced the release of the &lt;a
+href="https://lwn.net/Articles/1101759/"&gt;7.2.12&lt;/a&gt;,
+&lt;a href="https://lwn.net/Articles/1101760/"&gt;6.18.58&lt;/a&gt;,
+&lt;a href="https://lwn.net/Articles/1101761/"&gt;6.12.114&lt;/a&gt;, and 
+&lt;a href="https://lwn.net/Articles/1101762/"&gt;6.6.160&lt;/a&gt; stable kernels. Each contains a number
+of important fixes; users are advised to upgrade.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Wed, 21 Oct 2026 13:24:25 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
