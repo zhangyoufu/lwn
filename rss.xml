@@ -1,0 +1,415 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2005/Atom" version="2.0">
+	<channel>
+		<title>LWN.net</title>
+		<link>https://lwn.net</link>
+		<description> LWN.net is a comprehensive source of news and opinions from
+        and about the Linux community.  This is the main LWN.net feed,
+        listing all articles which are posted to the site front page.
+</description>
+		<language>en-us</language>
+		<pubDate>Sat, 31 Oct 2026 19:52:20 +0000</pubDate>
+		<lastBuildDate>Sat, 31 Oct 2026 19:52:20 +0000</lastBuildDate>
+		<docs>https://www.rssboard.org/rss-specification</docs>
+		<webMaster>lwn@lwn.net</webMaster>
+		<ns0:link href="https://zhangyoufu.github.io/lwn/rss.rdf" rel="self" type="application/rss+xml" />
+		<ns0:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
+		<item>
+			<title>How We Could Have Backdoored Bash (Hacktron blog)</title>
+			<link>https://lwn.net/Articles/1104262/</link>
+			<guid>https://lwn.net/Articles/1104262/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>The Hacktron blog &lt;a
+href="https://www.hacktron.ai/blog/hacking-gnu-savannah"&gt;documents&lt;/a&gt; how
+the group was able to compromise the GNU Savannah forge and could have
+pushed malware into any of the projects hosted there.
+&lt;p&gt;
+&lt;blockquote class="bq"&gt;
+	Using Hacktron, we found that an email address like
+	&lt;tt&gt;`touch${IFS}/tmp/savane-rce-proof`@attacker.example&lt;/tt&gt; gave any
+	registered user code execution on its backend. From there, we made
+	our account a superuser, impersonated Bash's maintainer, and
+	confirmed we could add an SSH key with push access to the upstream
+	Bash repository. An unpatched kernel gave us root access and access
+	to a GNU backup server. We reported it to the FSF on May 11, 2026.
+&lt;/blockquote&gt;</description>
+			<pubDate>Sat, 31 Oct 2026 14:00:42 +0000</pubDate>
+		</item>
+		<item>
+			<title>Haas: Postgres 19 is late, and it's AI's fault</title>
+			<link>https://lwn.net/Articles/1104210/</link>
+			<guid>https://lwn.net/Articles/1104210/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>PostgreSQL developer Robert Haas &lt;a
+href="https://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html"&gt;writes
+about the struggles&lt;/a&gt; the project has encountered in putting together its
+next release.
+&lt;p&gt;
+&lt;blockquote class="bq"&gt;
+	In the end, I don't think that the delay in shipping PostgreSQL 19
+	is particularly concerning. It is not a long delay in the grand
+	scheme of things, and it emerges directly from the project's
+	concern for quality.
+&lt;p&gt;
+	The long-term picture is less clear and in some ways more
+	troubling: given that we have forty years of bugs that humans were
+	unable to find but LLMs are quite capable of discovering, how are
+	we ever going to catch up, and how will PostgreSQL continue to
+	innovate? Right now, I'm not sure. What I do know is that I, and
+	many others, are working really hard to figure it out.
+&lt;/blockquote&gt;
+&lt;p&gt;
+LWN &lt;a href="https://lwn.net/Articles/1092003/"&gt;looked at the PostgreSQL 19 release&lt;/a&gt;
+and its challenges in September.</description>
+			<pubDate>Fri, 30 Oct 2026 16:52:59 +0000</pubDate>
+		</item>
+		<item>
+			<title>Remote code execution on Linux systems with multipath TCP</title>
+			<link>https://lwn.net/Articles/1104192/</link>
+			<guid>https://lwn.net/Articles/1104192/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>&lt;p&gt;
+On October 27, LLM provider Anthropic
+&lt;a
+href="https://www.anthropic.com/research/discovering-vulnerabilities-with-claude"&gt;reported
+on&lt;/a&gt; a
+&lt;a href="https://nvd.nist.gov/vuln/detail/cve-2026-98432"&gt;
+remotely exploitable use-after-free bug&lt;/a&gt; affecting systems with
+multipath TCP listeners open. The bug works by triggering a response to a
+retransmitted SYN packet at the same moment that the TCP connection is
+established in another thread, causing the first thread to access the
+connection's options structure after the second thread has freed it. The first
+thread can then disclose kernel memory or cause a buffer overflow, writing an
+attacker-controlled payload. The fix was
+&lt;a
+href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=e3f33b0a1d89d738e2b913dab519226eaf76e15b"&gt;
+to only free the structure after an RCU grace period&lt;/a&gt;.
+On October 29, the Go security team
+&lt;a
+href="https://lwn.net/ml/all/bdb0066d-471b-4689-bb85-bfcb08774706@oracle.com/"&gt;advised
+that all programs written in Go use multipath TCP by default&lt;/a&gt;, so many
+systems may be unknowingly vulnerable. And, of course, there is always the
+possibility of related bugs in other sections of the TCP stack. Users may be
+wise to update to a patched kernel as soon as one becomes available for their
+distribution.
+&lt;/p&gt;</description>
+			<pubDate>Fri, 30 Oct 2026 15:45:27 +0000</pubDate>
+		</item>
+		<item>
+			<title>Eight more stable kernel updates</title>
+			<link>https://lwn.net/Articles/1104177/</link>
+			<guid>https://lwn.net/Articles/1104177/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>&lt;p&gt;
+Greg Kroah-Hartman has announced the release of the &lt;a
+href="https://lwn.net/Articles/1104178/"&gt;7.3.1&lt;/a&gt;,
+&lt;a href="https://lwn.net/Articles/1104179/"&gt;7.2.14&lt;/a&gt;,
+&lt;a href="https://lwn.net/Articles/1104180/"&gt;6.18.60&lt;/a&gt;,
+&lt;a href="https://lwn.net/Articles/1104181/"&gt;6.12.115&lt;/a&gt;,
+&lt;a href="https://lwn.net/Articles/1104182/"&gt;6.6.161&lt;/a&gt;,
+&lt;a href="https://lwn.net/Articles/1104183/"&gt;6.1.191&lt;/a&gt;,
+&lt;a href="https://lwn.net/Articles/1104184/"&gt;5.15.224&lt;/a&gt;, and
+&lt;a href="https://lwn.net/Articles/1104185/"&gt;5.10.273&lt;/a&gt; stable kernels. As usual, he advises
+all users to update—advice that seems especially wise given the
+increased number of security-relevant bug fixes that the kernel is seeing these days.
+[Edit: the 7.2.15 stable release is already &lt;a href="https://lwn.net/Articles/1104186"&gt;in review&lt;/a&gt; as well.]
+&lt;/p&gt;</description>
+			<pubDate>Fri, 30 Oct 2026 14:22:39 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Friday</title>
+			<link>https://lwn.net/Articles/1104174/</link>
+			<guid>https://lwn.net/Articles/1104174/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (aspell, cjose, curl, gcc-toolset-15-gcc, httpd:2.4, ignition, java-21-openjdk, libX11, libXi, libXrender, libXtst, mariadb:10.11, nodejs:24, python-pillow, python3.12-urllib3, and webkit2gtk3), &lt;b&gt;Debian&lt;/b&gt; (imagemagick, libdatetime-timezone-perl, python-git, tor, tzdata, vlc, and wordpress), &lt;b&gt;Fedora&lt;/b&gt; (accessibility-inspector, akonadi-calendar, akonadi-calendar-tools, akonadi-contacts, akonadi-import-wizard, akonadi-mime, akonadi-search, akonadi-server, akonadiconsole, akregator, alligator, analitza, angelfish, applet-window-buttons, arianna, ark, artikulate, audex, audiocd-kio, audiotube, aurorae, baloo-widgets, blinken, bluedevil, bomber, bovo, breeze-gtk, brotli, bup, calendarsupport, calindori, calligra, cantor, colord-kde, cxx-rust-cssparser, dolphin, dolphin-plugins, dragon, elisa-player, eventviews, falkon, fcitx-configtool, ffmpegthumbs, filelight, firefox, flatpak-kcm, francis, ghostwriter, granatier, grantlee-editor, grantleetheme, grub2-breeze-theme, gwenview, incidenceeditor, isoimagewriter, itinerary, juk, k3b, kaccounts-integration, kaccounts-providers, kactivitymanagerd, kaddressbook, kajongg, kalarm, kalgebra, kalk, kalm, kalzium, kamera, kamoso, kanagram, kapman, kapptemplate, kasts, kate, katomic, kbackup, kblackbox, kblocks, kbounce, kbruch, kcachegrind, kcalc, kcalutils, kcharselect, kclock, kcolorchooser, kcron, kde-cli-tools, kde-connect, kde-dev-scripts, kde-dev-utils, kde-gtk-config, kde-inotify-survey, kde-partitionmanager, kdebugsettings, kdecoration, kdeedu-data, kdegraphics-mobipocket, kdegraphics-thumbnailers, kdenetwork-filesharing, kdenlive, kdepim-addons, kdepim-runtime, kdeplasma-addons, kdesdk-kioslaves, kdesdk-thumbnailers, kdevelop, kdevelop-php, kdevelop-python, kdf, kdialog, kdiamond, kdnssd, kdominate, keditbookmarks, keepsecret, keysmith, kf6-baloo, kfind, kfourinline, kgeography, kget, kglobalacceld, kgoldrunner, kgpg, kgraphviewer, khangman, khealthcertificate, khelpcenter, kidentitymanagement, kig, kigo, killbots, kimagemapeditor, kimap, kinfocenter, kio-admin, kio-extras, kio-gdrive, kirigami-gallery, kiriki, kiten, kitinerary, kjournald, kjumpingcube, kldap, kleopatra, klettres, klickety, klines, kmag, kmahjongg, kmail, kmail-account-wizard, kmailtransport, kmbox, kmenuedit, kmines, kmix, kmousetool, kmouth, kmplot, knavalbattle, knetwalk, knights, knighttime, knot, koko, kolf, kollision, kolourpaint, kompare, kongress, konqueror, konquest, konsole, kontact, kontactinterface, kontrast, konversation, kopeninghours, korganizer, kosmindoormap, kpat, kpimtextedit, kpipewire, kpkpass, kpmcore, kpublictransport, kqtquickcharts, krdc, krdp, krecorder, kreversi, krfb, kruler, ksanecore, kscreen, kscreenlocker, kshisen, ksirk, ksmtp, ksnakeduel, kspaceduel, ksquares, ksshaskpass, ksudoku, ksystemlog, ksystemstats, kteatime, ktimer, ktnef, ktorrent, ktouch, ktrip, ktuberling, kturtle, kubrick, kunifiedpush, kup-backup, kwalletmanager5, kwave, kwayland, kwayland-integration, kweather, kweathercore, kwin, kwin-zones, kwordquiz, kwrited, layer-shell-qt, libgravatar, libkcddb, libkdcraw, libkdegames, libkdepim, libkeduvocdocument, libkexiv2, libkgapi, libkleo, libkmahjongg, libkomparediff2, libksane, libkscreen, libksieve, libksysguard, libktorrent, libplasma, libquotient, lokalize, lskat, mailcommon, mailimporter, marble, markdownpart, massif-visualizer, mbox-importer, merkuro, messagelib, mimetreeparser, mingw-python-certifi, minuet, neochat, ocean-sound-theme, okular, oxygen-sounds, palapeli, pam-kwallet, parley, perl-Alien-Brotli, picmi, pim-data-exporter, pim-sieve-editor, pimcommon, plasma-activities, plasma-activities-stats, plasma-bigscreen, plasma-breeze, plasma-browser-integration, plasma-camera, plasma-desktop, plasma-dialer, plasma-discover, plasma-disks, plasma-drkonqi, plasma-firewall, plasma-integration, plasma-keyboard, plasma-login-manager, plasma-milou, plasma-mobile, plasma-nano, plasma-nm, plasma-oxygen, plasma-pa, plasma-phonebook, plasma-print-manager, plasma-sdk, plasma-settings, plasma-setup, plasma-systemmonitor, plasma-systemsettings, plasma-thunderbolt, plasma-union, plasma-vault, plasma-wayland-protocols, plasma-welcome, plasma-workspace, plasma-workspace-wallpapers, plasma5support, plasmatube, plymouth-kcm, plymouth-theme-breeze, polkit-kde, powerdevil, poxml, qmlkonsole, qqc2-breeze-style, qrca, rocs, sddm-kcm, signon-kwallet-extension, skanlite, skanpage, skladnik, spacebar, spectacle, step, svgpart, sweeper, tokodon, trafficserver, umbrello, xdg-desktop-portal-kde, yakuake, and zanshin), &lt;b&gt;Mageia&lt;/b&gt; (cfitsio, libsolv, tomcat, and xrdp), &lt;b&gt;Oracle&lt;/b&gt; (bind, cjose, curl, dogtag-pki, expat, gcc-toolset-15-gcc, ignition, kernel, libX11, libXrender, libXtst, php, python3.12-urllib3, and webkit2gtk3), &lt;b&gt;SUSE&lt;/b&gt; (389-ds, aws-nitro-enclaves-binaryblobs-upstream, brotli, chromium, firefox, flatpak, gnutls, google-osconfig-agent, haproxy, hawk2, kernel, libapr1, libtcnative-1-0, tomcat, liboath-devel, libpcre2-16-0, librecad, libXi-devel, libXtst-devel, python311, python313, python313-markdown2, python313-xhtml2pdf, rabbitmq-server, roundcubemail, rust-keylime, and xen), and &lt;b&gt;Ubuntu&lt;/b&gt; (dotnet8, dotnet10, dotnet11).
+</description>
+			<pubDate>Fri, 30 Oct 2026 13:37:12 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Thursday</title>
+			<link>https://lwn.net/Articles/1103666/</link>
+			<guid>https://lwn.net/Articles/1103666/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (cjose, emacs, expat, gcc-toolset-15-gcc, java-17-openjdk, java-25-openjdk, kernel, kernel-rt, libX11, libXi, libXrender, libXtst, mod_auth_openidc:2.3, pki-deps:10.6, thunderbird, webkit2gtk3, and yggdrasil), &lt;b&gt;Debian&lt;/b&gt; (chromium, firefox-esr, and openjdk-25), &lt;b&gt;Fedora&lt;/b&gt; (firefox, librabbitmq, libreswan, python-pillow, and unbound), &lt;b&gt;Mageia&lt;/b&gt; (fio and python3, python-pip), &lt;b&gt;Oracle&lt;/b&gt; (buildah, cjose, container-tools:ol8, emacs, flute, libbase, libfonts, libformula, liblayout, libloader, libreoffice, librepository, libserializer, pentaho-libxml, pentaho-reporting-flow-engine, and sac, kernel, libX11, libXi, libXrender, libXtst, podman, python-urllib3, thunderbird, and yggdrasil), &lt;b&gt;Red Hat&lt;/b&gt; (firefox, goose, kernel, kernel package, kernel-rt, librsvg2, multiple packages, php:7.4, sudo, thunderbird, and xorg-x11-server), and &lt;b&gt;SUSE&lt;/b&gt; (alsa, ca-certificates-mozilla, chromedriver, cifs-utils, coredns, coreutils, cpupower, curl, cyrus-sasl, docker, dpdk, haproxy, kernel, libpoppler-cpp3, libsndfile-devel, libzbar-devel, mozilla-nss, MozillaFirefox, nginx, openai-codex, and perl-Cpanel-JSON-XS).
+</description>
+			<pubDate>Thu, 29 Oct 2026 13:18:42 +0000</pubDate>
+		</item>
+		<item>
+			<title>LWN.net Weekly Edition for October 22, 2026</title>
+			<link>https://lwn.net/Articles/1100612/</link>
+			<guid>https://lwn.net/Articles/1100612/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Inside this week's LWN.net Weekly Edition:
+        &lt;p&gt;
+        &lt;ul&gt;
+&lt;li&gt; &lt;a href="https://lwn.net/Articles/1100612/"&gt;Front&lt;/a&gt;: Android vendor hooks; Reproducible builds and kernel integrity; Rust data structures; NFS server changes; Setting no_new_privs for PID 1; Rust XArray; Rust cross-crate declarations; 7.3 statistics; Nix flakes.
+            &lt;li&gt; &lt;a href="https://lwn.net/Articles/1100614/"&gt;Briefs&lt;/a&gt;: eMudhra CA compromise; PHP RCEs; Node.js and musl vulnerabilities; GNOME OS; OpenBSD 8.0; Ubuntu 26.10; TAB results; Quotes; ...
+            &lt;li&gt; &lt;a href="https://lwn.net/Articles/1100615/"&gt;Announcements&lt;/a&gt;: Newsletters, conferences, security updates, patches, and more.
+            &lt;/ul&gt;
+
+        </description>
+			<pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Discussing a rewrite of XArray</title>
+			<link>https://lwn.net/Articles/1100520/</link>
+			<guid>https://lwn.net/Articles/1100520/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>&lt;p&gt;
+The work to support block sizes larger than the page size on XFS has been
+difficult. Many users of XFS run stable kernels, which means that they aren't testing
+new XFS code as it is released. That has made Daniel Gomez wonder whether
+adopting Rust for some of the data structures underlying XFS, particularly
+&lt;a href="https://docs.kernel.org/core-api/xarray.html"&gt;
+XArrays&lt;/a&gt;, could reduce the number of bugs lurking in the code. At
+Kangrejos 2026, he led a discussion about the potential problems with converting
+XArray to Rust. The assembled kernel developers had a number of reasons to be
+cautious about replacing the XArray code, but Gomez was determined to experiment
+with the possibility, citing both security and performance improvements.
+&lt;/p&gt;
+</description>
+			<pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>SUSE's efforts to disable setuid system-wide</title>
+			<link>https://lwn.net/Articles/1100257/</link>
+			<guid>https://lwn.net/Articles/1100257/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Setuid (and setgid) binaries have long been a source of headaches, and security
+vulnerabilities, on Linux systems. They are largely seen as something to be
+avoided; SUSE's security team, for example, &lt;a
+href="https://en.opensuse.org/openSUSE:Package_security_guidelines#Setuid_Binaries"&gt;forbids
+the inclusion of setuid or setgid binaries in packages&lt;/a&gt; unless they have been
+reviewed and explicitly allowed. Thorsten Kukuk wants to go a step further and
+disallow them entirely. At the &lt;a
+href="https://all-systems-go.io/"&gt;2026&amp;#160;All&amp;#160;Systems&amp;#160;Go!&lt;/a&gt; conference, he spoke
+about his work to disable setuid system-wide, as well as some of the hurdles
+that remain.&lt;/p&gt;
+</description>
+			<pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Development statistics for the 7.3 kernel</title>
+			<link>https://lwn.net/Articles/1100241/</link>
+			<guid>https://lwn.net/Articles/1100241/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Linus Torvalds &lt;a
+href="https://lwn.net/ml/all/CAHk-=wgwnBm2zDdRM7u016NVHkv9KqbZW7AZ=8wZrqGyv_V+5A@mail.gmail.com/"&gt;released&lt;/a&gt;
+the 7.3 kernel, at the end of the usual nine-week development cycle, on
+October&amp;#160;18.  This cycle, abundantly fueled by LLM-assisted
+contributions, broke just about every record imaginable.  As usual, we have
+compiled some statistics showing how this release, which is expected to be
+the next long-term-support (LTS) kernel, came together.  Also included is
+an attempt to determine whether automated patch review is actually reducing
+the number of bugs introduced into the kernel.
+</description>
+			<pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Hash-based module integrity for reproducible distributions</title>
+			<link>https://lwn.net/Articles/1100026/</link>
+			<guid>https://lwn.net/Articles/1100026/</guid>
+			<dc:creator>jake</dc:creator>
+			<description>We last looked in on &lt;a href="https://lwn.net/Articles/1012946/"&gt;hash-based integrity
+checking for kernel modules&lt;/a&gt; just over a year and half ago.  Since that time,
+the &lt;a
+href="https://lwn.net/ml/all/20260505-module-hashes-v5-0-e174a5a49fce@weissschuh.net/"&gt;patch
+set&lt;/a&gt; has undergone multiple revisions.  At the 2026 &lt;a href="https://lpc.events/"&gt;Linux Plumbers Conference&lt;/a&gt;
+(LPC),  Thomas Wei√üschuh described the need for kernel-module integrity
+guarantees while still providing reproducible builds, how his patches implement that, and some ideas for possible
+further work.
+</description>
+			<pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Cross-crate forward declarations in Rust</title>
+			<link>https://lwn.net/Articles/1099596/</link>
+			<guid>https://lwn.net/Articles/1099596/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>&lt;p&gt;
+Rust has several ad-hoc mechanisms to allow user code to influence how the
+standard library executes. For example, custom panic handlers and custom
+allocators both involve registering functions that core standard library code
+needs to call. With more similar features planned,
+Jana Dönszelmann spotted the developing pattern and put together a
+general solution, introducing a safer, checked analogue of C's weak symbol
+linking. At Kangrejos 2026, she explained how this new language feature works,
+and proposed using it to clean up the kernel's handling of integer overflows in
+Rust code.
+&lt;/p&gt;
+</description>
+			<pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Safe self-referential data structures in kernel Rust</title>
+			<link>https://lwn.net/Articles/1099224/</link>
+			<guid>https://lwn.net/Articles/1099224/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>&lt;p&gt;
+Self-referential structures that can be used without unsafe code
+have posed a problem for Rust for years.
+There are many cases where a self-referential data structure is the elegant
+algorithmic choice, but implementing it in accordance with Rust's lifetime rules
+is all but impossible. At Kangrejos 2026, Gary Guo presented a clever solution
+to the problem in the context of the kernel's
+&lt;a href="https://rust.docs.kernel.org/pin_init/index.html"&gt;
+pin_init crate&lt;/a&gt;, which helps with the creation of immovable data structures,
+typically for interoperability with C. Guo's changes could help remove most of
+the unsafe code related to lifetimes in the
+&lt;a href="https://rust-for-linux.com/nova-gpu-driver"&gt;
+Nova driver&lt;/a&gt; and, eventually, other Rust components.
+&lt;/p&gt;
+</description>
+			<pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Recent and future changes to the Linux NFS server</title>
+			<link>https://lwn.net/Articles/1098611/</link>
+			<guid>https://lwn.net/Articles/1098611/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>The NFS network filesystem protocol has a long history on Unix-like
+operating systems (and beyond).  NFS is still evolving, though, and
+implementations need to keep up.  At the 2026 &lt;a
+href="https://lpc.events/"&gt;Linux Plumbers Conference&lt;/a&gt;, NFS developer
+Jeff Layton gave an overview of recent enhancements to the Linux
+implementation, along with some hints for what will be coming in the near
+future.
+</description>
+			<pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Vendor hooks in the Android kernel</title>
+			<link>https://lwn.net/Articles/1098493/</link>
+			<guid>https://lwn.net/Articles/1098493/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Since Android's inception, the kernels it has used have diverged
+significantly from the mainline.  While many of those differences have been
+resolved over time, and the move to the &lt;a
+href="https://source.android.com/docs/core/architecture/kernel/generic-kernel-image"&gt;generic
+kernel image&lt;/a&gt; has helped to bring Android closer, current devices still
+carry a lot of out-of-tree changes.  The preferred form for such changes is
+by way of &lt;a
+href="https://source.android.com/docs/core/architecture/kernel/kernel-code#vendor-hooks"&gt;vendor
+hooks&lt;/a&gt;.  At the &lt;a href="https://lpc.events/event/20/"&gt;2026 Linux
+Plumbers Conference&lt;/a&gt;, Todd Kjos ran a fast-paced session in the Android
+track to discuss vendor hooks and how they are used.
+</description>
+			<pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Understanding Nix flakes</title>
+			<link>https://lwn.net/Articles/1094226/</link>
+			<guid>https://lwn.net/Articles/1094226/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a href="https://wiki.nixos.org/wiki/Flakes"&gt;Nix flakes&lt;/a&gt; are an
+experimental feature of the &lt;a
+href="https://wiki.nixos.org/wiki/Nix_(package_manager)"&gt;Nix package-management
+tool&lt;/a&gt; designed to build projects in a more self-contained and reproducible
+way. Despite the feature's experimental status, it has become increasingly
+popular for open-source projects to publish &lt;tt&gt;flake.nix&lt;/tt&gt; files that offer
+predefined development environments and build automation even when those
+repositories may not offer an upstream package or module for the &lt;a
+href="https://wiki.nixos.org/wiki/NixOS"&gt;NixOS Linux distribution&lt;/a&gt;. Although
+Nix flakes have a complicated history, and the path for stabilization is
+uncertain, flakes can provide useful capabilities for projects that choose to
+include them.&lt;/p&gt;
+</description>
+			<pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>A report from the LPC sched_ext microconference</title>
+			<link>https://lwn.net/Articles/1103426/</link>
+			<guid>https://lwn.net/Articles/1103426/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>The Linux Plumbers Conference blog has &lt;a
+href="https://lpc.events/blog/current/index.php/2026/10/28/the-sched_exit-microconference/"&gt;a
+report&lt;/a&gt; from the sched_ext microconference held in Prague.
+&lt;p&gt;
+&lt;blockquote class="bq"&gt;
+	Three main topics dominated the discussions
+	&lt;ul class="spacylist"&gt;
+	&lt;li&gt; &lt;b&gt;Priority inversion and how to handle it in sched_ext&lt;/b&gt;: lock holder and
+  	     lock waiter preemption, time slice extension, and making proxy execution
+  	     work together with BPF schedulers.&lt;/li&gt;
+        &lt;li&gt; &lt;b&gt;Paravirtualized scheduling&lt;/b&gt;: letting the host and guest schedulers
+  	     cooperate across the VM boundary, with sched_ext as the policy engine on
+  	     the host.&lt;/li&gt;
+        &lt;li&gt; &lt;b&gt;Device and topology-aware scheduling&lt;/b&gt;: using hardware feedback (Intel
+  	     HFI), device/accelerator locality and cache topology to drive task
+  	     placement.&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/blockquote&gt;</description>
+			<pubDate>Wed, 28 Oct 2026 22:11:43 +0000</pubDate>
+		</item>
+		<item>
+			<title>Redox OS ring buffers project summary</title>
+			<link>https://lwn.net/Articles/1103359/</link>
+			<guid>https://lwn.net/Articles/1103359/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;The &lt;a href="https://redox-os.org/"&gt;Redox OS&lt;/a&gt; project, which is a
+Unix-like microkernel-based operating system written in Rust, has published a &lt;a
+href="https://www.redox-os.org/news/nlnet-rb-summary/"&gt;report&lt;/a&gt; on the work
+that it has done in the last year to &lt;a
+href="https://nlnet.nl/project/RedoxOS-ringbuffer/"&gt;implement io_uring-like
+&lt;span class="nobreak"&gt;I/O&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+&lt;p&gt;Last year, the Redox team received a grant to develop io_uring-like Ring
+Buffer support at the system task level, as a first step towards ring buffer
+communications between the application and the majority of system services. This
+phase of the work finished up in September, as the last pieces were put in
+place.&lt;/p&gt;
+
+&lt;p&gt;[...] In addition to implementing the Ring Buffer machinery for our system
+services and drivers that can support it, an &lt;tt&gt;io_uring&lt;/tt&gt; and
+&lt;tt&gt;liburing&lt;/tt&gt;-like API for applications was completed and
+demonstrated. There was also substantial work done on support crates, including
+an async executor for drivers.&lt;/p&gt;
+
+&lt;p&gt;And there was some very exciting work on various performance improvements, to
+allow much faster switching between applications and their system services. But
+I will let the team tell you all the technical details.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Wed, 28 Oct 2026 14:05:05 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Wednesday</title>
+			<link>https://lwn.net/Articles/1103357/</link>
+			<guid>https://lwn.net/Articles/1103357/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (emacs, thunderbird, and xdg-dbus-proxy), &lt;b&gt;Debian&lt;/b&gt; (bind9, openjdk-21, pdns, php-mongodb, and thunderbird), &lt;b&gt;Fedora&lt;/b&gt; (brotli, chromium, clevis, eog, flatpak, ghostscript, kernel, libinstpatch, libreswan, mingw-freetype, mingw-gstreamer1, mingw-gstreamer1-plugins-bad-free, mingw-gstreamer1-plugins-base, mingw-gstreamer1-plugins-good, openssh, perl-Alien-Brotli, perl-DBI, python3.12, rust-onefetch, stargz-snapshotter, util-linux, and webkitgtk), &lt;b&gt;Mageia&lt;/b&gt; (cifs-utils, libxml2, packages, perl-Cpanel-JSON-XS, perl-Text-CSV_XS, sogo, util-linux, and weechat), &lt;b&gt;Oracle&lt;/b&gt; (brotli, firefox, flatpak, gcc-toolset-15-gcc, kernel, libreswan, nodejs:22, nodejs:24, python-urllib3, skopeo, and xdg-dbus-proxy), &lt;b&gt;Slackware&lt;/b&gt; (proftpd), &lt;b&gt;SUSE&lt;/b&gt; (azure-storage-azcopy, containerd, corepack24, grok-build, ImageMagick, libsoup-2_4-1, matrix-synapse, podman, psqlODBC, python, python-M2Crypto-doc, python-Twisted-doc, and xen), and &lt;b&gt;Ubuntu&lt;/b&gt; (authd).
+</description>
+			<pubDate>Wed, 28 Oct 2026 13:10:19 +0000</pubDate>
+		</item>
+		<item>
+			<title>Robinson: Raspberry Pi 5 on Fedora</title>
+			<link>https://lwn.net/Articles/1103212/</link>
+			<guid>https://lwn.net/Articles/1103212/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Peter Robinson has written a &lt;a
+href="https://nullr0ute.com/2026/10/raspberry-pi-5-on-fedora/"&gt;blog post&lt;/a&gt; about
+the current state of Fedora support for Raspberry&amp;#160;Pi&amp;#160;5
+devices. According to Robinson, the upcoming Fedora&amp;#160;45 release will
+work&amp;mdash;with caveats&amp;mdash;on
+all variants of the Raspberry&amp;#160;Pi Model&amp;#160;5B; the
+Compute&amp;#160;Module&amp;#160;5 and Pi&amp;#160;500+ are still works in progress.
+
+&lt;blockquote class="bq"&gt;
+For Fedora 44 release you need to have a temporary workaround when booting. If
+you update to the latest kernel/firmware straight away this isn't then needed
+beyond the first boot. The workaround isn't needed for Fedora 45 so if you're
+going to try this out I suggest you go and grab your favourite flavour of Fedora
+from the Fedora 45 release candidates and jump straight in there! You will get
+an accelerated desktop with storage/network/USB. There's not currently any
+support for sound and a number of other things.
+&lt;/blockquote&gt;
+
+&lt;p&gt;See Robinson's post for instructions on creating an Fedora image to use with
+a Raspberry Pi&amp;#160;5.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Tue, 27 Oct 2026 18:11:48 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
