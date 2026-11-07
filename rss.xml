@@ -1,0 +1,338 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2005/Atom" version="2.0">
+	<channel>
+		<title>LWN.net</title>
+		<link>https://lwn.net</link>
+		<description> LWN.net is a comprehensive source of news and opinions from
+        and about the Linux community.  This is the main LWN.net feed,
+        listing all articles which are posted to the site front page.
+</description>
+		<language>en-us</language>
+		<pubDate>Sat, 07 Nov 2026 15:38:07 +0000</pubDate>
+		<lastBuildDate>Sat, 07 Nov 2026 15:38:07 +0000</lastBuildDate>
+		<docs>https://www.rssboard.org/rss-specification</docs>
+		<webMaster>lwn@lwn.net</webMaster>
+		<ns0:link href="https://zhangyoufu.github.io/lwn/rss.rdf" rel="self" type="application/rss+xml" />
+		<ns0:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
+		<item>
+			<title>Asahi Linux 7.3 progress report</title>
+			<link>https://lwn.net/Articles/1105936/</link>
+			<guid>https://lwn.net/Articles/1105936/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>The Asahi Linux developers have put out &lt;a
+href="https://asahilinux.org/2026/11/progress-report-7-3/"&gt;a new report&lt;/a&gt;
+on their progress toward a Linux distribution for Apple devices.
+&lt;p&gt;
+&lt;blockquote class="bq"&gt;
+	Some time ago, we were made aware of multiple attempts to exploit
+	our permissive licensing to hijack our work, with a direct view to
+	replacing the project and aggressively monetising Linux on Apple
+	Silicon. In some extreme cases, in-development feature code was
+	being lifted straight out of our personal forks and published
+	without attribution or lazily rewritten with LLM assistance to
+	obfuscate its origin. The MIT licence explicitly allows this, and
+	has no carveouts to protect against bad faith actors.
+&lt;p&gt;
+	As such, we made the difficult decision to begin the process of
+	transitioning all of our repositories to the GNU General Public
+	License version 2 or later. Going forward all Asahi Linux code will
+	be licenced under strong copyleft licences only. Those who do not
+	learn from history are doomed to repeat it.
+&lt;/blockquote&gt;</description>
+			<pubDate>Sat, 07 Nov 2026 09:49:38 +0000</pubDate>
+		</item>
+		<item>
+			<title>Amutable Foundations: A Technical Overview</title>
+			<link>https://lwn.net/Articles/1105934/</link>
+			<guid>https://lwn.net/Articles/1105934/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Lennart Poettering, Michael Vogt, and Joaquim Rocha have put together &lt;a
+href="https://amutable.com/blog/amutable-foundations-technical-overview"&gt;a
+detailed overview&lt;/a&gt; of what the Amutable Operating System (AOS) and
+associated infrastructure will look like.
+&lt;p&gt;
+&lt;blockquote class="bq"&gt;
+	The image-based OS approach enables us to enforce some very strict
+	but powerful security properties, which elevate the security
+	posture of the system substantially above traditional Linux
+	systems. Specifically, let's highlight seven major essential
+	security properties of AOS here:
+&lt;ol class="spacylist"&gt;
+&lt;li&gt; &lt;b&gt;No Shell + No SSH + No Language Interpreters&lt;/b&gt;. By default AOS
+     does not install a UNIX shell, nor makes remote access via SSH
+     available on the nodes. Moreover, we do not install any of the usual
+     language interpreters (Python, Perl, â€¦) by default. For most nodes a
+     shell or interpreted language support is not required and it removes a
+     whole class of attacks.
+&lt;li&gt; &lt;b&gt;Signed Images Only&lt;/b&gt;. On AOS only images that come with Verity
+     data signed by a signing key listed in the Verity keyring may be
+     activated.
+&lt;li&gt; [...]
+&lt;/ol&gt;
+&lt;/blockquote&gt;</description>
+			<pubDate>Sat, 07 Nov 2026 09:32:56 +0000</pubDate>
+		</item>
+		<item>
+			<title>Videos from XDC 2026 are available</title>
+			<link>https://lwn.net/Articles/1105913/</link>
+			<guid>https://lwn.net/Articles/1105913/</guid>
+			<dc:creator>jake</dc:creator>
+			<description>Videos from the &lt;a href="https://indico.freedesktop.org/event/12/"&gt;2026 X.Org Developers Conference&lt;/a&gt; (XDC) are now &lt;a href="https://www.youtube.com/@XOrgFoundation/videos"&gt;available on YouTube&lt;/a&gt;.  XDC was held in Toronto, Ontario, Canada September 28-30.</description>
+			<pubDate>Fri, 06 Nov 2026 20:25:22 +0000</pubDate>
+		</item>
+		<item>
+			<title>Seven stable kernels with fixes for three Xen vulnerabilities</title>
+			<link>https://lwn.net/Articles/1105902/</link>
+			<guid>https://lwn.net/Articles/1105902/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Hot on the heels of the &lt;a href="https://lwn.net/Articles/1105899/"&gt;previous
+two stable kernels&lt;/a&gt;, Greg Kroah-Hartman has announced the release of the &lt;a
+href="https://lwn.net/Articles/1105903/"&gt;7.3.3&lt;/a&gt;, &lt;a href="https://lwn.net/Articles/1105904/"&gt;6.18.62&lt;/a&gt;,
+&lt;a href="https://lwn.net/Articles/1105905/"&gt;6.12.116&lt;/a&gt;, &lt;a
+href="https://lwn.net/Articles/1105906/"&gt;6.6.162&lt;/a&gt;, &lt;a href="https://lwn.net/Articles/1105907/"&gt;6.1.192&lt;/a&gt;,
+&lt;a href="https://lwn.net/Articles/1105908/"&gt;5.15.225&lt;/a&gt;, and &lt;a
+href="https://lwn.net/Articles/1105909/"&gt;5.10.274&lt;/a&gt; stable kernels. Each one only contains
+fixes for three use-after-free vulnerabilities announced today by the Xen
+security team.&lt;/p&gt;
+
+&lt;p&gt;Two of the vulnerabilities could allow an attacker to cause a denial of service (DoS) for the
+entire Xen host machine with possible information leakage (&lt;a
+href="https://lwn.net/ml/all/E1xPLfb-0000000A5rj-1W0D%40xenbits.xenproject.org/"&gt;CVE-2026-100080&lt;/a&gt;,
+&lt;a
+href="https://lwn.net/ml/all/E1xPLfh-0000000A5vb-11J3%40xenbits.xenproject.org/"&gt;CVE-2026-100082&lt;/a&gt;),
+and one may allow privilege escalation as well as a DoS of the host machine (&lt;a
+href="https://lwn.net/ml/all/E1xPLfe-0000000A5tc-0wMP%40xenbits.xenproject.org/"&gt;CVE-2026-100081&lt;/a&gt;). Users
+should, of course, upgrade if they are using Xen.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Fri, 06 Nov 2026 18:48:34 +0000</pubDate>
+		</item>
+		<item>
+			<title>Two stable kernels for Friday</title>
+			<link>https://lwn.net/Articles/1105899/</link>
+			<guid>https://lwn.net/Articles/1105899/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Greg Kroah-Hartman has released the &lt;a href="https://lwn.net/Articles/1105900/"&gt;7.3.2&lt;/a&gt;
+and &lt;a href="https://lwn.net/Articles/1105901/"&gt;6.18.61&lt;/a&gt; stable kernels. Each contains quite
+a few changes throughout the tree; users are advised to upgrade.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Fri, 06 Nov 2026 18:09:16 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Friday</title>
+			<link>https://lwn.net/Articles/1105881/</link>
+			<guid>https://lwn.net/Articles/1105881/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (cockpit-files, container-tools:rhel8, delve, gcc-toolset-12-binutils, gimp:2.8, glibc, go-toolset:rhel8, kernel, libfastjson, mariadb:10.3, mod_auth_openidc:2.3, mysql:8.0, php:8.0, pki-core:10.6 and pki-deps:10.6, squid:4, tang, tesseract, thunderbird, and virt:rhel and virt-devel:rhel), &lt;b&gt;Debian&lt;/b&gt; (chromium, ntfs-3g, puppet-agent, and trapperkeeper-authorization-clojure), &lt;b&gt;Fedora&lt;/b&gt; (freerdp, goose, gpsd, hatch, perl-HTTP-Headers-ActionPack, perl-MIME-tools, perl-Plack, perl-Starman, proftpd, python-mistune, ruby-build, rust-crypto-bigint, rust-ctutils, rust-elliptic-curve, rust-num-bigint, rust-num-bigint0.4, rust-num-modular, rust-num-modular0.6, rust-num-prime, rust-zmij, rust-zstd, rust-zstd-safe, rust-zstd-safe7, rust-zstd-sys, rust-zstd0.13, scribus, sofia-sip, tailscale, tor, and wordpress), &lt;b&gt;Oracle&lt;/b&gt; (cockpit-files, delve, firefox, gimp:2.8, kernel, and osbuild-composer), &lt;b&gt;Red Hat&lt;/b&gt; (delve, git-lfs, go-toolset:rhel8, grafana, ignition, opentelemetry-collector, osbuild-composer, python-pillow, and yggdrasil), &lt;b&gt;Slackware&lt;/b&gt; (openssh), &lt;b&gt;SUSE&lt;/b&gt; (bind, brotli, cpupower, expat, fuse-overlayfs, go1.26, google-guest-agent, helm, ibus-typing-booster, kernel, kyverno, libmodplug-devel, librsvg, libX11, nvidia-open-driver-G06-signed, owntone, parted, perl-Cpanel-JSON-XS, perl-Text-CSV_XS, php8, python-Brotli, regclient, roundcubemail, rsyslog, and tomcat), and &lt;b&gt;Ubuntu&lt;/b&gt; (ca-certificates, frr, haproxy, linux-nvidia-7.0, linux-nvidia-bos, linux-nvidia-tegra, and nginx).
+</description>
+			<pubDate>Fri, 06 Nov 2026 14:04:54 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Thursday</title>
+			<link>https://lwn.net/Articles/1105639/</link>
+			<guid>https://lwn.net/Articles/1105639/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (dpdk, httpd:2.4, kernel, kernel-rt, mysql:8.0, php:7.4, php:8.0, qt5, ruby:2.7, ruby:3.0, tesseract, webkit2gtk3, and xorg-x11-server-Xwayland), &lt;b&gt;Debian&lt;/b&gt; (imagemagick, puppet-agent, symfony, trapperkeeper-authorization-clojure, and xen), &lt;b&gt;Fedora&lt;/b&gt; (3proxy, bind, bind-dyndb-ldap, curl, dhcpcd, erlang-jose, forgejo, freetype, laszip, libical, libmongocrypt, markdownlint-cli2, mongo-c-driver, openbao, pipx, python-boto3, python-botocore, python-crate-ingredients, python-lxml-html-clean, python3.11, python3.13, python3.14, python3.15, roundcubemail, rply, ruby-build, rust-app-store-connect, rust-qemu-rdp, rust-redlib, scribus, and valkey), &lt;b&gt;Mageia&lt;/b&gt; (minetest, python-pypdf, stunnel, znc, and zvbi), &lt;b&gt;Oracle&lt;/b&gt; (.NET 10.0, bind, brotli, cockpit, dpdk, fence-agents, freerdp, gimp, glibc, grafana, gvfs, host-metering, kernel, python-dns, qemu-kvm, raptor2, tesseract, webkit2gtk3, and xorg-x11-server-Xwayland), &lt;b&gt;Red Hat&lt;/b&gt; (grafana and pcs), &lt;b&gt;Slackware&lt;/b&gt; (rsync), &lt;b&gt;SUSE&lt;/b&gt; (amazon-cloudwatch-agent, apache2, aws-efs-utils, brotli, cephfs, coredns, cramfs-tools, firefox-esr, fuse-overlayfs, ghostscript, GraphicsMagick, libpolkit-agent-1-0-128, libsoup, nvidia-open-driver-G07-signed, perl-Dancer2, python-PyJWT, python313-joserfc, rsyslog, switcheroo, trivy, valkey, vexctl, and xdg-desktop-portal), and &lt;b&gt;Ubuntu&lt;/b&gt; (apt, libphp-adodb, net-snmp, pillow, squid, and twisted).
+</description>
+			<pubDate>Thu, 05 Nov 2026 14:11:50 +0000</pubDate>
+		</item>
+		<item>
+			<title>Critical security vulnerability affects OpenSSH on Alpine Linux systems</title>
+			<link>https://lwn.net/Articles/1105464/</link>
+			<guid>https://lwn.net/Articles/1105464/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a href="https://openssh.com/releasenotes.html#10.6p2"&gt;Version 10.6p2&lt;/a&gt; of
+OpenSSH has been released with a workaround for a critical vulnerability that
+affects Linux systems that use &lt;a href="https://musl.libc.org/"&gt;musl libc&lt;/a&gt;
+with PAM disabled, such as &lt;a href="https://www.alpinelinux.org/"&gt;Alpine
+Linux&lt;/a&gt;. OpenSSH developer Damien Miller &lt;a
+href="https://hachyderm.io/@damienmiller/117563026759098135"&gt;said&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+&lt;p&gt;If you operate a Linux system that uses musl libc without PAM (Alpine Linux
+is one example) then stop reading and set &lt;tt&gt;PasswordAuthentication=no&lt;/tt&gt; or disable
+SSH for these systems IMMEDIATELY.&lt;/p&gt;
+
+&lt;p&gt;This vulnerability does not exist on non-Linux systems, Linux/glibc systems
+and Linux systems that use PAM for password authentication.&lt;/p&gt;
+
+&lt;p&gt;We consider the root cause of this bug to be outside OpenSSH itself, but
+we're in a good position to deliver a mitigation quickly.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The Alpine Linux project has &lt;a
+href="https://fosstodon.org/@alpinelinux/117563196640515820"&gt;announced&lt;/a&gt; that
+it will be backporting the OpenSSH fix "&lt;q&gt;all the way back to Alpine 3.16&lt;/q&gt;",
+which was &lt;a
+href="https://alpinelinux.org/posts/alpine-3.16.0-released/"&gt;released&lt;/a&gt; in May
+2022.&lt;/p&gt;</description>
+			<pubDate>Thu, 05 Nov 2026 11:39:10 +0000</pubDate>
+		</item>
+		<item>
+			<title>The campaign to push Northstar into Linux distributions</title>
+			<link>https://lwn.net/Articles/1102738/</link>
+			<guid>https://lwn.net/Articles/1102738/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;There is not a broad selection of mature, open-source web-browser engines
+for Linux users. Most of the browsers available for Linux are based on one of
+just three projects: Chromium's &lt;a
+href="https://en.wikipedia.org/wiki/Blink_(browser_engine)"&gt;Blink&lt;/a&gt;, Firefox's
+&lt;a href="https://en.wikipedia.org/wiki/Gecko_(software)"&gt;Gecko&lt;/a&gt;, or &lt;a
+href="https://en.wikipedia.org/wiki/WebKit"&gt;WebKit&lt;/a&gt;. A new entrant would
+generally be seen as a welcome alternative, but the recent campaign to push one
+of the LLM-written &lt;a href="https://nordstjernen.org/"&gt;Nordstjernen&lt;/a&gt; browsers
+into &lt;a href="https://debian.org/"&gt;Debian&lt;/a&gt; and  &lt;a
+href="https://archlinux.org/"&gt;Arch Linux&lt;/a&gt; has raised some questions about
+the project's development and security processes.&lt;/p&gt;
+</description>
+			<pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>LWN.net Weekly Edition for October 29, 2026</title>
+			<link>https://lwn.net/Articles/1102136/</link>
+			<guid>https://lwn.net/Articles/1102136/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Inside this week's LWN.net Weekly Edition:
+        &lt;p&gt;
+        &lt;ul&gt;
+&lt;li&gt; &lt;a href="https://lwn.net/Articles/1102136/"&gt;Front&lt;/a&gt;: Python JIT; Kernel clean up; Rust panics; Future Rust features; Northstar browser; 7.4 merge window; Smaller kernel stacks.
+            &lt;li&gt; &lt;a href="https://lwn.net/Articles/1102138/"&gt;Briefs&lt;/a&gt;: KeePassXC 2.8.0; Redox ring buffers; Rust in systemd; Quotes; ...
+            &lt;li&gt; &lt;a href="https://lwn.net/Articles/1102139/"&gt;Announcements&lt;/a&gt;: Newsletters, conferences, security updates, patches, and more.
+            &lt;/ul&gt;
+
+        </description>
+			<pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Python's experimental JIT to be removed</title>
+			<link>https://lwn.net/Articles/1102102/</link>
+			<guid>https://lwn.net/Articles/1102102/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Python's &lt;a
+href="https://docs.python.org/3.13/whatsnew/3.13.html#an-experimental-just-in-time-jit-compiler"&gt;experimental
+just-in-time (JIT) compiler&lt;/a&gt;, which was added to CPython in 2024 for the &lt;a
+href="https://www.python.org/downloads/release/python-3130/"&gt;3.13&amp;#160;release&lt;/a&gt;,
+is on its way out. In June, the Python steering council &lt;a
+href="https://discuss.python.org/t/an-announcement-from-the-steering-council-regarding-the-jit-project/107638"&gt;announced&lt;/a&gt;
+that it was pausing work on the JIT in CPython's main branch until there was an
+accepted &lt;a href="https://peps.python.org/pep-0001"&gt;Python Enhancement
+Proposal&lt;/a&gt; (PEP) that addressed concerns about maintenance, compatibility, and
+set clear success metrics as well as a timeline for completion. After creating
+&lt;a href="https://peps.python.org/pep-0836/"&gt;PEP&amp;#160;836&lt;/a&gt; ("JIT Go Brrr: The
+Path to a Supported JIT Compiler for CPython")
+to try to meet the council's request, and after months of discussion, the
+JIT maintainers have withdrawn the PEP. For now, it appears that development on
+the once-promising project has come to an end.&lt;/p&gt;
+</description>
+			<pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>The end of __get_user() and __put_user()</title>
+			<link>https://lwn.net/Articles/1102061/</link>
+			<guid>https://lwn.net/Articles/1102061/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Linus Torvalds rarely writes significant amounts of kernel code these days, so
+the &lt;a
+href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=22a78a25438d"&gt;merging&lt;/a&gt;
+of a 48-part patch series from him is an unusual event.  This series,
+destined for the 7.4 kernel release, performs some long-delayed kernel
+cleanup by removing a couple of the primitives used to access user-space memory
+from the kernel.  What was once a best practice has long been superseded,
+but it can take time for such changes to work their way through a body of
+code this large.
+</description>
+			<pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>The first part of the 7.4 merge window</title>
+			<link>https://lwn.net/Articles/1101211/</link>
+			<guid>https://lwn.net/Articles/1101211/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>&lt;p&gt;
+Since the merge window for 7.4 opened, there have been 6,753 non-merge
+changesets pulled into the mainline repository. Many more are expected,
+especially given the possibility that this merge window will be extended to
+three weeks. Still, even this initial set brought in a number of new features,
+in addition to the continued general cleanups and security fixes that the kernel
+has seen recently.
+&lt;/p&gt;
+</description>
+			<pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Guidelines for panics in kernel code</title>
+			<link>https://lwn.net/Articles/1100873/</link>
+			<guid>https://lwn.net/Articles/1100873/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>&lt;p&gt;
+Alexandre Courbot spends most of his time working on the kernel doing code
+reviews. Recently, he's been wondering about what the standards should be for
+when Rust code is allowed to panic, and how it should do error handling more
+generally. Unlike many of the other talks at Kangrejos 2026, his talk was not
+presenting some existing work, but rather hoping to solicit opinions on the
+topic from the assembled Rust for Linux developers. He brought along a collection of tricky
+cases that he had run into recently to prompt discussion.
+&lt;/p&gt;
+</description>
+			<pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Seeking smaller kernel stacks</title>
+			<link>https://lwn.net/Articles/1100271/</link>
+			<guid>https://lwn.net/Articles/1100271/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Memory has always been a scarce resource in computing systems, but the
+problem seems to have worsened recently.  In particular, the worldwide
+shortage of memory chips has led to a renewed focus by systems developers
+on reducing memory usage.  During the memory-management microconference at
+the 2026 &lt;a href="https://lpc.events/"&gt;Linux Plumbers Conference&lt;/a&gt;, Will
+Deacon discussed one specific consumer of memory that is being
+re-examined: kernel stacks.
+</description>
+			<pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Rust features in the future</title>
+			<link>https://lwn.net/Articles/1099606/</link>
+			<guid>https://lwn.net/Articles/1099606/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>&lt;p&gt;
+There are several Rust features that kernel developers have been hoping to
+stabilize, but Josh Triplett wanted to describe all of the &lt;em&gt;other&lt;/em&gt;
+features that the Rust project is currently working on. He spoke about the topic
+at Kangrejos 2026, leaving the assembled kernel developers with several ideas
+about how to use these upcoming Rust features in the kernel.
+The features included refinements to the type system, small syntax improvements, and a
+smarter borrow checker.
+&lt;/p&gt;
+</description>
+			<pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Bazzite 45 released</title>
+			<link>https://lwn.net/Articles/1105395/</link>
+			<guid>https://lwn.net/Articles/1105395/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a
+href="https://universal-blue.discourse.group/t/bazzite-45-is-here/12702"&gt;Version
+45&lt;/a&gt; of &lt;a href="https://bazzite.gg/"&gt;Bazzite&lt;/a&gt;, the image-based gaming distribution based on
+Fedora&amp;#160;Linux, has been released. Notable changes in this release include a
+rebase to Fedora&amp;#160;45, updated &lt;a
+href="https://opengamingcollective.org/"&gt;Open Gaming Collective&lt;/a&gt; (OGC)
+kernels, support for Logitech TrueWheel devices, and more.&lt;/p&gt;
+
+&lt;p&gt;LWN &lt;a href="https://lwn.net/Articles/1046228/"&gt;covered&lt;/a&gt; Bazzite in
+December&amp;#160;2025.&lt;/p&gt;</description>
+			<pubDate>Wed, 04 Nov 2026 15:54:44 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Wednesday</title>
+			<link>https://lwn.net/Articles/1105378/</link>
+			<guid>https://lwn.net/Articles/1105378/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (cockpit, dpdk, fence-agents, firefox, freerdp, gimp, opentelemetry-collector, python-dns, qemu-kvm, and raptor2), &lt;b&gt;Debian&lt;/b&gt; (apt and squid), &lt;b&gt;Fedora&lt;/b&gt; (ags, apptainer, chromium, fractal, mingw-harfbuzz, mingw-qt5-qtwebkit, mingw-qt6-qt5compat, python-mistune, python3-docs, python3.14, python3.9, rubygem-gist, rust-app-store-connect, rust-qemu-rdp, rust-redlib, and selenium-manager), &lt;b&gt;Mageia&lt;/b&gt; (java-latest-openjdk, java-17-openjdk, java-21-openjdk, timezone), &lt;b&gt;Oracle&lt;/b&gt; (.NET 10.0, .NET 8.0, .NET 9.0, bind, bind9.16, cockpit, firefox, freerdp, gcc, ghostscript, glibc, grafana, java-17-openjdk, java-21-openjdk, kernel, kernel-uek, libXi, pipewire, pki-deps:10.6, podman, python-jwt, python-pillow, python-pyasn1, qt5-qtbase, thunderbird, tomcat, util-linux, and wireshark), &lt;b&gt;Red Hat&lt;/b&gt; (dnsmasq, fence-agents, freerdp, pki-core:10.6, and thunderbird), &lt;b&gt;SUSE&lt;/b&gt; (amazon-ssm-agent, aom-tools, apache2, brotli, cadvisor, chromium, cups, curl, distribution-registry, eog, gh, go-containerregistry, google-guest-agent, gvfs, haproxy, hauler, helm3, kernel, libBasicUsageEnvironment2, libcdio, libinstpatch-1_0-2, libosmocore, libreoffice, libX11, nodejs22, nvidia-open-driver-G06-signed, openssh, parted, perl-DBI, perl-mime-tools, python-pypdf, rootlesskit, rqlite, rsyslog, sssd, tomcat10, warewulf4, and xen), and &lt;b&gt;Ubuntu&lt;/b&gt; (apt-cacher, bind9, bitlbee, cakephp, deluge, dmitry, e17, feh, gnome-shell, golang-github-gin-contrib-cors, gvfs, haproxy, jabberd2, libmspack, libnet-easytcp-perl, libphp-swiftmailer, libsoup2.4, libsoup3, libuser, pcre2, rear, ruby-rack, ruby-sprockets, rxvt-unicode, shapelib, sogo, vips, and yaws).
+</description>
+			<pubDate>Wed, 04 Nov 2026 14:13:24 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
