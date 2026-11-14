@@ -1,0 +1,414 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2005/Atom" version="2.0">
+	<channel>
+		<title>LWN.net</title>
+		<link>https://lwn.net</link>
+		<description> LWN.net is a comprehensive source of news and opinions from
+        and about the Linux community.  This is the main LWN.net feed,
+        listing all articles which are posted to the site front page.
+</description>
+		<language>en-us</language>
+		<pubDate>Sat, 14 Nov 2026 15:09:38 +0000</pubDate>
+		<lastBuildDate>Sat, 14 Nov 2026 15:09:38 +0000</lastBuildDate>
+		<docs>https://www.rssboard.org/rss-specification</docs>
+		<webMaster>lwn@lwn.net</webMaster>
+		<ns0:link href="https://zhangyoufu.github.io/lwn/rss.rdf" rel="self" type="application/rss+xml" />
+		<ns0:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
+		<item>
+			<title>Announcing XRAID: declustered parity RAID for zoned XFS</title>
+			<link>https://lwn.net/Articles/1107473/</link>
+			<guid>https://lwn.net/Articles/1107473/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Christoph Hellwig has &lt;a
+href="https://lwn.net/ml/all/20261113112913.GA31748%40lst.de/"&gt;announced&lt;/a&gt; the
+initial public release of XRAID&amp;mdash;declustered parity RAID that is integrated
+into XFS.&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+&lt;p&gt;The two primary aims of XRAID are to support parity RAID on zoned devices
+like SMR hard drives, and to provide a fast RAID implementation without
+inherent data integrity problems.  XRAID, just like zoned XFS also works
+on conventional hard drives and SSDs.  Optimizing for SSD performance has
+not been a focus, but even without that, writes are up to 20 times faster
+than mdraid. [...]&lt;/p&gt;
+
+&lt;p&gt;Work on XRAID has been ongoing for a year and a half, and while we aren't
+anywhere near ready for an upstream submission, we are interested in
+feedback and testing from a wider audience now.  The current
+implementation supports zero to 2 parities.  We did experiments with the
+SnapRAID parity library to support 3 and more parities, and while that
+is not included in the current version, support for more parities is
+planned and the code is prepared for it.&lt;/p&gt;
+
+&lt;p&gt;The xfsprogs branch includes mkfs support and a new "xraid" utility for
+managing devices and inspecting an XRAID file-systems.  We have also
+extended Zonar (The zoned file-system visualisation tool) to show how
+each logical zone maps onto physical zones on devices.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Hellwig gave a &lt;a
+href="https://2026.fossy.ca/schedule/presentation/451/"&gt;presentation&lt;/a&gt; at
+FOSSY in August on this topic; video of the talk does not seem to be available
+yet, but his &lt;a href="https://verein.lst.de/~hch/raid-sucks.pdf"&gt;slides&lt;/a&gt; are
+available.&lt;/p&gt;</description>
+			<pubDate>Fri, 13 Nov 2026 14:39:47 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Friday</title>
+			<link>https://lwn.net/Articles/1107472/</link>
+			<guid>https://lwn.net/Articles/1107472/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (.NET 10.0, .NET 8.0, .NET 9.0, firefox, gcc, grafana, grafana-pcp, gstreamer1, gstreamer1-plugins-base, java-1.8.0-openjdk, kernel, kernel-rt, libimobiledevice, mingw-libpng, nginx:1.24, nodejs:22, nodejs:24, perl-CGI, perl-DBI, qt5-qtbase, tigervnc, vim, and xorg-x11-server), &lt;b&gt;Debian&lt;/b&gt; (apache2, c-ares, linux-6.12, node-shell-quote, nova, parted, postgresql-17, python-django, sympa, and tomcat10), &lt;b&gt;Fedora&lt;/b&gt; (cockpit, erlang-ssl_verify_fun, httpd, ignition, jackson-bom, jackson-core, jackson-databind, jackson-modules-base, libvirt, mod_http2, mongo-c-driver, poppler, prometheus, pylint, python-discovery, python-loguru, python-PyMuPDF, rabbitmq-server, rust-crypto-bigint, rust-ctutils, rust-elliptic-curve, rust-num-bigint, rust-num-bigint0.4, rust-num-modular, rust-num-modular0.6, rust-num-prime, rust-routinator, rust-zmij, strongswan, xen, xorg-x11-server, and zvbi), &lt;b&gt;Mageia&lt;/b&gt; (amule, peazip, and python-pytest), &lt;b&gt;Red Hat&lt;/b&gt; (buildah, fence-agents, go-fdo-server, grafana, grafana-pcp, oci-seccomp-bpf-hook, osbuild-composer, podman, and rhc), &lt;b&gt;SUSE&lt;/b&gt; (ansible-core, apr-util, aspell, brotli, cadvisor, civetweb, distribution-registry, elemental, elemental-register,, elemental-operator, elemental-system-agent, elemental- toolkit, ffmpeg, firefox, gimp, git-annex, go1.26, go1.27, golang-github-prometheus-prometheus, google-cloud-sap-agent, google-guest-agent, google-osconfig-agent, goose, gosec, graphicsmagick, haproxy, hauler, hawk-apiserver, hawk2, hcloud-cli, jhead, jsoup, kernel, librsvg, libXtst, libxtst, nodejs24, nvidia-open-driver-G07-signed, nvidia-open-driver-g07-signed, open-iscsi, perl-XS-Parse-Keyword, perl-xs-parse-keyword, python-asyncssh, python-Brotli, python-django, python-joserfc, python-M2Crypto, python-Pillow, python-pillow, python313-setuptools, rsyslog, speex, tiff, trivy, udisks2, vsftpd, xen, and xorg-x11-server), and &lt;b&gt;Ubuntu&lt;/b&gt; (apache2, charybdis, debian-lan-config, glibc, golang-github-seccomp-libseccomp-golang, hiredis, httpie, imapfilter, lhasa, libjgraphx-java, libjwt, libsolv, linux-fips, linux-hwe-6.8, linux-hwe-7.0, linux-nvidia-tegra, minissdpd, ncmpc, nfdump, node-tough-cookie, openconnect, pillow, pngquant, python-gevent, radicale, ruby-openid, sa-exim, signing-party, sudo, tigervnc, and x11vnc).
+</description>
+			<pubDate>Fri, 13 Nov 2026 14:25:42 +0000</pubDate>
+		</item>
+		<item>
+			<title>Rust 1.100.0 released</title>
+			<link>https://lwn.net/Articles/1107187/</link>
+			<guid>https://lwn.net/Articles/1107187/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a href="https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/"&gt;Version
+1.100.0&lt;/a&gt; of the Rust language has been released. Notable changes include the
+stabilization of the &lt;a href="https://lwn.net/Articles/1091015/"&gt;never type&lt;/a&gt;,
+core parts of the &lt;tt&gt;Allocator&lt;/tt&gt; API, reporting of unused dependencies in
+Cargo, and more.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Thu, 12 Nov 2026 19:09:19 +0000</pubDate>
+		</item>
+		<item>
+			<title>Glasswing overwhelms maintainers with underwhelming findings (VulnCheck)</title>
+			<link>https://lwn.net/Articles/1107173/</link>
+			<guid>https://lwn.net/Articles/1107173/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Patrick Garrity of VulnCheck has written a &lt;a
+href="https://www.vulncheck.com/blog/anthropic-glasswing-november-update"&gt;blog
+post&lt;/a&gt; that looks at vulnerabilities found by Anthropic's &lt;a
+href="https://www.anthropic.com/glasswing"&gt;Project Glasswing&lt;/a&gt; since it
+launched on April&amp;#160;7, and finds it wanting:&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+&lt;p&gt;Of the 37,966 findings Anthropic reports, only 7,349 (19.4%) have been made
+public. Just 217 of those have been marked fixed. The more glaring number is
+that 4.4% (1,654) of the project's findings have already been marked as
+duplicates, 7.5x more duplicates than fixes. On top of that, 419 findings have
+been withdrawn. It seems odd that the ledger now claims a 94.2% true positive
+rate, up from 90.8% at launch, when more findings have been withdrawn or marked
+as duplicates than fixed, likely a feedback loop missing to the triage rates
+listed as "True Positives".&lt;/p&gt;
+
+&lt;p&gt;[...] AI is a valuable tool for finding vulnerabilities, and I'm not
+discounting that. But seven months in, the evidence still doesn't match the
+launch narrative. The CVEs are a sliver of this year's total, almost none are
+being exploited, fixes have stalled while duplicates and withdrawals pile up,
+and the triage burden is shifting onto the open source maintainers Glasswing
+promised to help. The receipts keep coming in. They still don't reconcile.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+			<pubDate>Thu, 12 Nov 2026 16:26:09 +0000</pubDate>
+		</item>
+		<item>
+			<title>Introducing Polo: a Wayland MATE compositor</title>
+			<link>https://lwn.net/Articles/1107152/</link>
+			<guid>https://lwn.net/Articles/1107152/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Kerem Söke has &lt;a
+href="https://discourse.ubuntu.com/t/introducing-polo-a-mate-wayland-compositor/91698"&gt;announced&lt;/a&gt;
+the &lt;a href="https://github.com/KeremSoke/polo/releases/tag/v1.0.0"&gt;1.0
+release&lt;/a&gt; of &lt;a href="https://github.com/KeremSoke/polo#polo"&gt;Polo&lt;/a&gt;, a
+Wayland compositor for the &lt;a href="https://mate-desktop.org/"&gt;MATE Desktop
+Environment&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+&lt;p&gt;The idea is to keep MATE behaving as closely as possible to how it does on
+X11, rather than changing the desktop to fit a different compositor. [...]&lt;/p&gt;
+
+&lt;p&gt;Window management, metacity, workspaces, tiling, XWayland, clipboard and
+clipman support, multiple monitors, display scaling, hotplugging, screenshots,
+screen sharing, and session management are all working.&lt;/p&gt;
+
+&lt;p&gt;I've also added desktop effects: fade, zoom, zap, spin, squeemize, magic
+lamp, desktop cube, expo, and wobbly windows.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Söke is looking for people to test Polo, particularly on multi-monitor
+setups, and report back with problems.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Thu, 12 Nov 2026 14:32:49 +0000</pubDate>
+		</item>
+		<item>
+			<title>Stenberg: 30 years of Internet transfers with curl</title>
+			<link>https://lwn.net/Articles/1107151/</link>
+			<guid>https://lwn.net/Articles/1107151/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Daniel Stenberg &lt;a
+href="https://daniel.haxx.se/blog/2026/11/11/30-years-of-internet-transfers-with-curl/"&gt;reflects&lt;/a&gt;
+on the 30th anniversary of the curl project.
+&lt;p&gt;
+&lt;blockquote class="bq"&gt;
+	libcurl runs in an estimated thirty billion installations today. It
+	is a rough estimate since the majority of all libcurl users never
+	tell us they use it, but we need to find it mentioned in their
+	credit screens, open source license windows or their manuals. A
+	super popular app might use libcurl today and not tomorrow, or vice
+	versa, which can make the numbers shift by several billions
+	overnight. In reality of course, once the pulse raise has calmed
+	down and your ego is content, these numbers do not matter. In our
+	corner of the world, things don't change notably when we go from a
+	thousand installs to billions. We still work with similar people,
+	in similar ways, with similar challenges.
+&lt;/blockquote&gt;</description>
+			<pubDate>Thu, 12 Nov 2026 14:24:47 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Thursday</title>
+			<link>https://lwn.net/Articles/1107146/</link>
+			<guid>https://lwn.net/Articles/1107146/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;Debian&lt;/b&gt; (aodh, apache2, dnspython, firefox-esr, mutt, octavia, spip, thunderbird, and watcher), &lt;b&gt;Fedora&lt;/b&gt; (epiphany, firefox, freerdp, java-25-openjdk, java-latest-openjdk, libsoup3, perl-HTTP-Parser-XS, perl-libnet, php-getid3, pipx, python-crate-ingredients, python-pillow, python-robotframework, python3.9, rsync, rubygem-nokogiri, tpm2-tss, udns, and xorg-x11-server-Xwayland), &lt;b&gt;Gentoo&lt;/b&gt; (curl, ImageMagick, libheif, and PCRE2), &lt;b&gt;Mageia&lt;/b&gt; (nginx and python-django), &lt;b&gt;Oracle&lt;/b&gt; (go-toolset:rhel8, libimobiledevice, nodejs:22, util-linux, and vim), &lt;b&gt;Red Hat&lt;/b&gt; (.NET 10.0, .NET 8.0, .NET 9.0, cockpit, freerdp, gdb, go-fdo-client, grafana-pcp, ignition, kernel, kernel-rt, krb5, openssh, openssl, osbuild-composer, rpm, rsync, and webkit2gtk3), &lt;b&gt;Slackware&lt;/b&gt; (git, httpd, and tigervnc), &lt;b&gt;SUSE&lt;/b&gt; (aliyun-cli, alloy, apache-parent, aqute-bnd, google-gson, logback, maven, maven-artifact-transfer, maven-parent, maven-resolver, methanol, osgi-service- subsystem, slf4j, xmvn, bcel, benchdnn, containerd, distribution, dpdk, efivar, elemental, elemental-register, elemental-system-agent, elemental-toolkit, firefox, kernel, liblldpctl4, libonnxruntime1, openssl-1_0_0, openssl-1_1, openvpn, pcre2, perl-Net-DNS, perl-Plack, perl-Starman, psqlODBC, python-M2Crypto, python-Pillow, python-Twisted, python-urllib3_1, python313-djangorestframework, python313-fpdf2, python313-langgraph-sdk, python313-nltk, rust-keylime, skopeo, traefik, zchunk, and zvbi), and &lt;b&gt;Ubuntu&lt;/b&gt; (asyncpg, awl, btrbk, davical, dotnet8, dotnet10, dotnet11, libfcgi, linux-raspi, logback, mysql-8.0, mysql-8.4, mysql-9.7, network-manager-ssh, node-babel, php-pecl-http, prosody-modules, rkhunter, ruby-actionpack-page-caching, ruby-jwt, ruby-kramdown, shiro, snmptt, and yodl).
+</description>
+			<pubDate>Thu, 12 Nov 2026 14:13:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Plasma X11 session removal surprises some Fedora users</title>
+			<link>https://lwn.net/Articles/1105130/</link>
+			<guid>https://lwn.net/Articles/1105130/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;The KDE Project announced, in&amp;#160;2025, that &lt;a
+href="https://kde.org/announcements/plasma/6/6.7.0/"&gt;Plasma&amp;#160;6.7&lt;/a&gt; would
+be the last version of the desktop environment that would support X11
+sessions. Those who keep up with KDE's announcements no doubt expected it when
+&lt;a href="https://kde.org/announcements/plasma/6/6.8.0/"&gt;Plasma&amp;#160;6.8&lt;/a&gt;
+dropped X11 support as promised. What seems to have come as a surprise, at
+least to a number of &lt;a href="https://fedoraproject.org/kde/"&gt;Fedora KDE Plasma
+Desktop&lt;/a&gt; users, is that the Fedora&amp;#160;44 release&amp;mdash;which shipped in
+April with &lt;a
+href="https://kde.org/announcements/plasma/6/6.6.0/"&gt;Plasma&amp;#160;6.6&lt;/a&gt;&amp;mdash;received
+an update to Plasma&amp;#160;6.8 that swept away the X11 session without much warning.
+Despite the surprise, it is gone for good: the &lt;a
+href="https://docs.fedoraproject.org/en-US/fesco/"&gt;Fedora Engineering Steering
+Committee&lt;/a&gt; (FESCo) has &lt;a
+href="https://forge.fedoraproject.org/fesco/tickets/issues/3707#issuecomment-1371370"&gt;voted
+against&lt;/a&gt; a request to revert the update for Fedora 44 and the just-released
+Fedora 45.&lt;/p&gt;
+</description>
+			<pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Portable Python scripts with dependencies</title>
+			<link>https://lwn.net/Articles/1104646/</link>
+			<guid>https://lwn.net/Articles/1104646/</guid>
+			<dc:creator>jake</dc:creator>
+			<description>A basic Python script is portable: it can be copied between machines with little concern about compatibility.
+A script that depends on third-party packages requires quite a bit more
+care and consideration, however.
+In 2023, &lt;a href="https://peps.python.org/pep-0723/"&gt;PEP
+723&lt;/a&gt; ("Inline script metadata") introduced a standard for declaring a Python script's
+dependencies inside the script itself.
+Several third-party tools can now automatically install and manage those dependencies, but there is still little official support for this standard within Python itself.
+</description>
+			<pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>LLM reviews for Debian's new queue spark debate</title>
+			<link>https://lwn.net/Articles/1103674/</link>
+			<guid>https://lwn.net/Articles/1103674/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;The Debian project has wrestled with the topic of LLM usage for years, which
+culminated in a &lt;a href="https://lwn.net/Articles/1087134/"&gt;general-resolution
+vote&lt;/a&gt; this August. The project &lt;a
+href="https://lwn.net/Articles/1091231/"&gt;voted in favor&lt;/a&gt; of the fifth, out of
+eight, option: "&lt;a
+href="https://www.debian.org/vote/2026/vote_002#texte"&gt;Responsible Use of
+Generative AI&lt;/a&gt;". With the door open to LLM use, the &lt;a
+href="https://wiki.debian.org/Teams/DFSG"&gt;DFSG, Licensing &amp;amp; New Packages
+Team&lt;/a&gt; (usually shortened to "DFSG team"), which is &lt;a
+href="https://lwn.net/Articles/1043364/"&gt;relatively new&lt;/a&gt;, has started to employ LLMs in
+sending out reviews of packages entering Debian's &lt;a href="https://wiki.debian.org/NewQueue?pow_referer=https%3A%2F%2Fkagi.com%2F"&gt;new queue&lt;/a&gt;. The practice has
+raised a number of objections and questions about where lines should be drawn in
+the use of LLM-generated output.&lt;/p&gt;
+</description>
+			<pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>LWN.net Weekly Edition for November 5, 2026</title>
+			<link>https://lwn.net/Articles/1103480/</link>
+			<guid>https://lwn.net/Articles/1103480/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Inside this week's LWN.net Weekly Edition:
+        &lt;p&gt;
+        &lt;ul&gt;
+&lt;li&gt; &lt;a href="https://lwn.net/Articles/1103480/"&gt;Front&lt;/a&gt;: Kernel cells; Debian LLM reviews; glibc system-call wrappers; Binder in Rust; Kernel CVE flood; Fedora KDE and X11 removal; 7.4 merge window part two; Portable Python.
+            &lt;li&gt; &lt;a href="https://lwn.net/Articles/1103482/"&gt;Briefs&lt;/a&gt;: MTCP RCE; Bash security; XCPE botnet; Bazzite 45; Fedora 45; openSUSE Leap 16.1; Tor Browser 16.0; Quotes; ...
+            &lt;li&gt; &lt;a href="https://lwn.net/Articles/1103483/"&gt;Announcements&lt;/a&gt;: Newsletters, conferences, security updates, patches, and more.
+            &lt;/ul&gt;
+
+        </description>
+			<pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Removing binder.c</title>
+			<link>https://lwn.net/Articles/1102982/</link>
+			<guid>https://lwn.net/Articles/1102982/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>&lt;p&gt;
+The final talk at Kangrejos 2026 was about the removal of the C implementation
+of Android's
+&lt;a href="https://source.android.com/docs/core/architecture/ipc/binder-overview"&gt;
+Binder driver&lt;/a&gt;, the primary interprocess communication mechanism
+used on Android devices. Carlos Llamas announced that he had deleted the C
+code to general applause, and then shared some insights about what went into
+replacing the C implementation. Alice Ryhl, who has worked on the Rust
+implementation for some years, added her own thoughts about what the most
+difficult and interesting parts of the transition were.
+&lt;/p&gt;
+</description>
+			<pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>The second part of the 7.4 merge window</title>
+			<link>https://lwn.net/Articles/1102739/</link>
+			<guid>https://lwn.net/Articles/1102739/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>&lt;p&gt;
+The 7.4 merge window, which
+&lt;a href="https://lwn.net/Articles/1104653/"&gt;closed&lt;/a&gt; on November 1,
+included a record-breaking 18,591 non-merge changesets.
+That is almost as many as the entire 7.3 development cycle, which had 18,765, itself a record breaker. Of
+those, 11,838 landed after &lt;a href="https://lwn.net/Articles/1101211/"&gt;the article covering the
+first part of the merge window&lt;/a&gt;. Most of those were bug fixes of
+various forms; it seems as though bug fixes may be crowding out feature
+additions &lt;a href="https://lwn.net/Articles/1104210/"&gt;across the open-source ecosystem&lt;/a&gt; to
+some extent. Still, a good number of new features were included, and a handful
+removed, in the tail end of the merge window.
+&lt;/p&gt;
+</description>
+			<pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Containers as a recognized kernel object</title>
+			<link>https://lwn.net/Articles/1102593/</link>
+			<guid>https://lwn.net/Articles/1102593/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>The foundation of the design for containers in the kernel is that there
+isn't one; there is no container abstraction that the kernel recognizes.
+Instead, the kernel provides a long list of components — namespaces,
+control groups, sandboxing mechanisms, and more — along with a note that
+says, in effect, "some assembly required".  There have been &lt;a
+href="https://lwn.net/Articles/723477/"&gt;attempts&lt;/a&gt; (&lt;a
+href="https://lwn.net/Articles/780364/"&gt;repeatedly&lt;/a&gt;) over the years to turn containers
+into first-class objects with kernel support, but they have never gotten
+far.  Now Josef Bacik is &lt;a
+href="https://lwn.net/ml/all/20261026-cells-rfc-v2-b41d7e0c95a3@toxicpanda.com"&gt;making a
+try&lt;/a&gt; with a concept that he calls "cells".
+</description>
+			<pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>System-call wrappers for glibc</title>
+			<link>https://lwn.net/Articles/1101647/</link>
+			<guid>https://lwn.net/Articles/1101647/</guid>
+			<dc:creator>jake</dc:creator>
+			<description>In a followup to his 
+&lt;a href="https://lpc.events/event/19/contributions/2220/"&gt;session at the
+2025 Linux Plumbers Conference&lt;/a&gt; (LPC), Carlos O'Donell returned to the topic
+of &lt;a href="https://lpc.events/event/20/contributions/2397/"&gt;system-call
+wrappers for the GNU C library&lt;/a&gt; (glibc) at this year's event.  This time
+around, he was joined by Florian Weimer, who is another glibc maintainer.
+The idea was to give an update on what has happened over the last year with
+regard to Linux system calls that lack a glibc wrapper, thus are only
+accessible via
+&lt;a
+href="https://man7.org/linux/man-pages/man2/syscall.2.html"&gt;&lt;tt&gt;syscall()&lt;/tt&gt;&lt;/a&gt;.  In addition, they wanted to hear from attendees about their
+needs in this area.
+</description>
+			<pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Managing the kernel CVE flood</title>
+			<link>https://lwn.net/Articles/1100894/</link>
+			<guid>https://lwn.net/Articles/1100894/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>We recently &lt;a href="https://lwn.net/Articles/1096908/"&gt;looked&lt;/a&gt; at how the
+kernel community is dealing with the firehose of vulnerability reports, but
+said little about how users of the kernel are responding.  At the  2026 &lt;a
+href="https://lpc.events/"&gt;Linux Plumbers Conference&lt;/a&gt;, Amazon employees
+Dylan Johnson and Justinien Bouron discussed the problem from the point of
+view of engineers trying to keep AWS running and secure in the face of a
+storm of CVE disclosures.  The kernel community's longstanding advice is to
+run current kernels, and that turns out to work â€” sort of.
+</description>
+			<pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Zellij 0.46 released</title>
+			<link>https://lwn.net/Articles/1106903/</link>
+			<guid>https://lwn.net/Articles/1106903/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a href="https://github.com/zellij-org/zellij/releases/tag/v0.46.0"&gt;Version
+0.46&lt;/a&gt; of the &lt;a href="https://zellij.dev/"&gt;Zellij&lt;/a&gt; terminal workspace has
+been released.&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+&lt;p&gt;This release includes a major addition in Zellij: Zellij is now also a
+desktop terminal. To run it: &lt;tt&gt;zellij terminal&lt;/tt&gt;. It works on linux, mac and
+windows.&lt;/p&gt;
+
+&lt;p&gt;Nothing changes for the normal multiplexer - Zellij can still run inside
+another terminal. Both sessions are the same and can be shared.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Additional features in this release include a
+GUI settings screen, session previews, and right-click menu. See &lt;a
+href="https://zellij.dev/news/terminal-inbox-session-previews/"&gt;this walkthrough&lt;/a&gt;
+for more on the 0.46 release.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Wed, 11 Nov 2026 17:26:48 +0000</pubDate>
+		</item>
+		<item>
+			<title>In Memoriam: Tim Peters 1952–2026</title>
+			<link>https://lwn.net/Articles/1106901/</link>
+			<guid>https://lwn.net/Articles/1106901/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>Guido van Rossum &lt;a
+href="https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028"&gt;conveys
+the sad (and somewhat delayed) news&lt;/a&gt; of the passing of Tim Peters.
+&lt;p&gt;
+&lt;blockquote class="bq"&gt;
+	It's hard to overestimate Tim's influence on Python. He's probably
+	best known for writing the Zen of Python (&lt;a
+	href="https://peps.python.org/pep-0020/"&gt;PEP 20&lt;/a&gt;), but to me he
+	was a mentor and language co-designer long before that.
+&lt;p&gt;
+	Tim found Python not long after its initial release. His first deed
+	was to convince me that Python should support mixed arithmetic
+	between int and float, because most users would expect them to work
+	that way. And he never stopped contributing.
+&lt;/blockquote&gt;</description>
+			<pubDate>Wed, 11 Nov 2026 17:12:51 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Wednesday</title>
+			<link>https://lwn.net/Articles/1106876/</link>
+			<guid>https://lwn.net/Articles/1106876/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (edk2), &lt;b&gt;Debian&lt;/b&gt; (openexr, rsyslog, and srt), &lt;b&gt;Fedora&lt;/b&gt; (alertmanager, dotnet11.0, gdal, mstflint, nextcloud, python-crate-ingredients, rust-ingredients, rust-pore, rust-pulldown-cmark, rust-rbw, rust-sequoia-sq, rust-siguldry-fedora-autopen, tigervnc, unbound, and zchunk), &lt;b&gt;Gentoo&lt;/b&gt; (Brotli, git, and libde265), &lt;b&gt;Mageia&lt;/b&gt; (mopidy, python-dulwich, rust-similar3, rclone, and sofia-sip), &lt;b&gt;Oracle&lt;/b&gt; (dpdk, edk2, firefox, glibc, kernel, kernel-uek, nodejs-nodemon, nodejs22, nodejs:24, patch, ruby, ruby4.0, squid:4, and thunderbird), &lt;b&gt;Red Hat&lt;/b&gt; (.NET 10.0, .NET 11.0, .NET 8.0, .NET 9.0, bind, bind9.16, bind9.18, buildah, c-ares, containernetworking-plugins, delve, flatpak-builder, gcc, gcc-toolset-15-gcc, gcc-toolset-16-gcc, go-fdo-client, go-fdo-server, golang-github-openprinting-ipp-usb, grafana, grafana-pcp, gstreamer1-plugins-bad-free, gstreamer1-plugins-good, gvfs, gvisor-tap-vsock, nginx, nginx:1.24, nginx:1.26, oci-delta, podman, python-oauthlib, python3, python3.12, python3.9, qt5-qtbase, qt6-qtbase, rhc, runc, skopeo, squid, squid:4, tesseract, util-linux, xdg-dbus-proxy, and yggdrasil), &lt;b&gt;Slackware&lt;/b&gt; (xorg-server), &lt;b&gt;SUSE&lt;/b&gt; (aliyun-cli, amazon-cloudwatch-agent, ansible-core, aspell, azure-storage-azcopy, bind, cups, dlib-devel, docker, dolphin, dpdk, evolution, firefox, flannel, fuse-overlayfs, gnome-podcasts, google-cloud-sap-agent, GraphicsMagick, graphicsmagick, haproxy, istioctl, kernel, kubevirt, kured, libvips-devel, libXi, mozilla-nss, nvidia-open-driver-G06-signed-check, okteto, openssl-1_1, pcre2, poppler, poppler-qt, poppler-qt5, poppler, poppler-qt5, proftpd, psqlodbc, python-graphql-core, python-M2Crypto, python-pillow, python-soupsieve, python-urllib3_1, python313-wyoming, qt6-coap, rust-keylime, sbc, scribus, SDL2_image, tar, terraform-provider-susepubliccloud, the linux kernel (live patch 18 for suse linux, vsftpd, xen, xorg-x11-server, and zchunk), and &lt;b&gt;Ubuntu&lt;/b&gt; (ca-certificates-java, gst-plugins-good1.0, gst-plugins-base1.0, hplip, linux-azure-fde, linux-nvidia, linux-nvidia-7.0, linux-nvidia-bos, linux-nvidia-lowlatency, python-tornado, rust-coreutils, and unbound).
+</description>
+			<pubDate>Wed, 11 Nov 2026 14:15:31 +0000</pubDate>
+		</item>
+		<item>
+			<title>Three new stable kernels for Tuesday</title>
+			<link>https://lwn.net/Articles/1106569/</link>
+			<guid>https://lwn.net/Articles/1106569/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Greg Kroah-Hartman has released the &lt;a href="https://lwn.net/Articles/1106570/"&gt;7.3.4&lt;/a&gt;,
+&lt;a href="https://lwn.net/Articles/1106571/"&gt;6.18.63&lt;/a&gt;, and &lt;a
+href="https://lwn.net/Articles/1106572/"&gt;6.12.117&lt;/a&gt; stable kernels. The 7.3.4 kernel has more
+than 1,250 patches, 6.18.63 contains more than 860, and 6.12.117 includes more
+than 1,530 patches. Users of these kernels are, of course, encouraged to upgrade.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Tue, 10 Nov 2026 19:06:06 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
