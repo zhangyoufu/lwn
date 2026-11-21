@@ -1,0 +1,351 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2005/Atom" version="2.0">
+	<channel>
+		<title>LWN.net</title>
+		<link>https://lwn.net</link>
+		<description> LWN.net is a comprehensive source of news and opinions from
+        and about the Linux community.  This is the main LWN.net feed,
+        listing all articles which are posted to the site front page.
+</description>
+		<language>en-us</language>
+		<pubDate>Sat, 21 Nov 2026 06:59:16 +0000</pubDate>
+		<lastBuildDate>Sat, 21 Nov 2026 06:59:16 +0000</lastBuildDate>
+		<docs>https://www.rssboard.org/rss-specification</docs>
+		<webMaster>lwn@lwn.net</webMaster>
+		<ns0:link href="https://zhangyoufu.github.io/lwn/rss.rdf" rel="self" type="application/rss+xml" />
+		<ns0:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
+		<item>
+			<title>Beyls: Wrapping up LLVM's relicensing effort</title>
+			<link>https://lwn.net/Articles/1108818/</link>
+			<guid>https://lwn.net/Articles/1108818/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Kristof Beyls has &lt;a
+href="https://discourse.llvm.org/t/wrapping-up-llvms-relicensing-effort/92906"&gt;published
+a summary&lt;/a&gt; to the LLVM discussion forum to announce that the project is
+declaring success and bringing its &lt;a
+href="https://discourse.llvm.org/t/holiday-update-on-llvms-relicensing-effort/50649"&gt;relicensing
+effort&lt;/a&gt; to a close after eight years.&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+&lt;p&gt;We've been asking past contributors to relicense their work since 2018. New
+contributions have come in under Apache-2.0 WITH LLVM-exception since January
+19, 2019. Code contributed before that date was under LLVM's earlier licenses
+(UIUC/NCSA, plus MIT for some runtime libraries), so we needed permission from
+its authors to move it over. [...]&lt;/p&gt;
+
+&lt;p&gt;Today, more than 99.5% of all lines of code ever contributed to LLVM are
+either covered by the new license, too small for copyright to apply, or no
+longer in the repository.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Rather than trying to "&lt;q&gt;chase the last tiny fraction forever&lt;/q&gt;" LLVM is
+winding up the effort. Any contributors with code contributed before January 19,
+2019 who have not signed a relicensing agreement and do not want their
+contributions made available under Apache-2.0 with the LLVM-exception can still
+reach out to the project to ensure their code has the appropriate SPDX license
+identifier.&lt;/p&gt;</description>
+			<pubDate>Fri, 20 Nov 2026 14:35:24 +0000</pubDate>
+		</item>
+		<item>
+			<title>Vim Classic 8.3.1 released</title>
+			<link>https://lwn.net/Articles/1108817/</link>
+			<guid>https://lwn.net/Articles/1108817/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a href="https://vim-classic.org/news/vim-8.3.1-released.html"&gt;Version
+8.3.1&lt;/a&gt; of &lt;a href="https://vim-classic.org/"&gt;Vim Classic&lt;/a&gt;&amp;mdash;a
+long-term support fork of Vim maintained without LLM assistance&amp;mdash;has been
+released.&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+This release includes applicable Vim patches up to Vim 8.2.3237, including
+numerous bug fixes, minor features, and compatibility improvements for Vim
+plugins. This release also removes Python 2 support from Vim Classic.
+&lt;/blockquote&gt;
+
+&lt;p&gt;The &lt;a href="https://git.sr.ht/~sircmpwn/vim-classic/refs/v8.3.1"&gt;full list
+of changes&lt;/a&gt; in this release is available on sourcehut.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Fri, 20 Nov 2026 14:17:33 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Friday</title>
+			<link>https://lwn.net/Articles/1108811/</link>
+			<guid>https://lwn.net/Articles/1108811/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (bind9.18, bubblewrap, fence-agents, freerdp, grafana, grafana-pcp, gstreamer1-plugins-bad-free, jackson-core, jackson-databind, java-17-openjdk, java-21-openjdk, java-25-openjdk, kernel, kernel-rt, mysql8.4, mysql:8.4, qt5-qtbase, qt5-qtdeclarative, raptor2, resteasy, and sos), &lt;b&gt;Debian&lt;/b&gt; (electrum, nginx, openjdk-17, pam-mysql, php8.2, and php8.4), &lt;b&gt;Fedora&lt;/b&gt; (aws, bind9-next, blender, c-ares, composer, dr_libs, et, gh, incron, libaec, libfontenc, libXfont2, mtools, nebula, perl-Imager, perl-Text-JSCalendar, perl-Text-JSContact, php, python-loguru, python3.6, qpid-proton, roundcubemail, runc, and xen), &lt;b&gt;Gentoo&lt;/b&gt; (nginx, PHP, and Ruby), &lt;b&gt;Mageia&lt;/b&gt; (hplip), &lt;b&gt;Oracle&lt;/b&gt; (.NET 10.0, .NET 11.0, .NET 8.0, .NET 9.0, bubblewrap, emacs, firefox, flatpak-builder, gcc, gimp, glibc, grafana, grafana-pcp, gstreamer1, gvfs, java-1.8.0-openjdk, java-17-openjdk, java-21-openjdk, java-25-openjdk, libssh2, mod_http2, perl-CGI, perl-DBI, perl-DBI:1.641, python3.9, rpm, squid, tesseract, thunderbird, tigervnc, util-linux, webkit2gtk3, and xdg-dbus-proxy), &lt;b&gt;Red Hat&lt;/b&gt; (compat-openssl10, kernel, nginx, nginx:1.24, nginx:1.26, nodejs22, nodejs:22, openssl, python-urllib3, python3.12-urllib3, qt5-qtbase, and qt6-qtbase), &lt;b&gt;Slackware&lt;/b&gt; (gnutls, perl, and php), &lt;b&gt;SUSE&lt;/b&gt; (cifs-utils, elemental-operator, elemental-system-agent, elemental- toolkit, haproxy, java-11-openjdk, kernel, libXi, python-M2Crypto, python-oauthlib, rekor, and xen), and &lt;b&gt;Ubuntu&lt;/b&gt; (kernel, linux, linux-aws, linux-aws-5.4, linux-azure, linux-bluefield, linux-fips, linux-gcp, linux-gcp-5.4, linux-gcp-fips, linux-hwe-5.4, linux-ibm, linux-ibm-5.4, linux-iot, linux-kvm, linux-oracle, linux-raspi, linux-raspi-5.4, linux-xilinx-zynqmp, linux, linux-aws, linux-aws-fips, linux-aws-hwe, linux-azure, linux-azure-4.15, linux-azure-fips, linux-fips, linux-gcp, linux-gcp-4.15, linux-gcp-fips, linux-hwe, linux-kvm, linux-oracle, linux, linux-aws, linux-aws-fips, linux-gcp, linux-gcp-6.8, linux-gke, linux-gkeop, linux-ibm, linux-ibm-6.8, linux-oracle-6.8, linux-vmware, linux, linux-aws, linux-fips, linux-kvm, linux-lts-xenial, linux, linux-aws, linux-gcp, linux-gcp-5.15, linux-gke, linux-gkeop, linux-ibm, linux-ibm-5.15, linux-oracle, linux, linux-aws, linux-gcp, linux-gcp-7.0, linux-gke, linux-ibm, linux-oem-7.0, linux-vmware, linux-aws-5.15, linux-aws-fips, linux-aws-fips, linux-kvm, linux-fips, linux-gcp-fips, linux-gcp-fips, linux-oracle, nginx, openjdk-17-crac, openjdk-21-crac, openjdk-25-crac, openjdk-8, pyjwt, and ruby3.3, ruby3.2, ruby3.0).
+</description>
+			<pubDate>Fri, 20 Nov 2026 13:52:40 +0000</pubDate>
+		</item>
+		<item>
+			<title>PostgreSQL 19 released</title>
+			<link>https://lwn.net/Articles/1108561/</link>
+			<guid>https://lwn.net/Articles/1108561/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;The PostgreSQL Global Development Group has &lt;a
+href="https://www.postgresql.org/about/news/postgresql-19-released-3449/"&gt;announced&lt;/a&gt;
+the release of PostgreSQL&amp;#160;19. Notable features in this release include the
+introduction of the &lt;tt&gt;REPACK (CONCURRENTLY)&lt;/tt&gt; command to optimize tables
+without disruption to ongoing operations, better control over plan stability and
+query performance with the new &lt;tt&gt;pg_plan_advice&lt;/tt&gt; extension, and a number
+of performance improvements.&lt;/p&gt;
+
+&lt;p&gt;In September, LWN &lt;a href="https://lwn.net/Articles/1092003/"&gt;covered&lt;/a&gt; the
+removal of several features initially slated for this release. See the &lt;a
+href="https://www.postgresql.org/docs/19/release-19.html"&gt;release notes&lt;/a&gt; for
+a full list of new features and changes.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Thu, 19 Nov 2026 16:39:16 +0000</pubDate>
+		</item>
+		<item>
+			<title>PHP 8.6.0 released</title>
+			<link>https://lwn.net/Articles/1108555/</link>
+			<guid>https://lwn.net/Articles/1108555/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a
+href="https://www.php.net/archive/2026.php#2026-11-19-4"&gt;Version 8.6.0&lt;/a&gt; of
+PHP has been released. Notable changes in this release include a polling API, a
+new &lt;tt&gt;clamp()&lt;/tt&gt; function, a &lt;tt&gt;SortDirection&lt;/tt&gt; enum, and a
+&lt;tt&gt;\Time\Duration&lt;/tt&gt; class. See "&lt;a
+href="https://www.php.net/releases/8.6/en.php#features"&gt;What's new in 8.6&lt;/a&gt;"
+for more on new features, and the &lt;a
+href="https://www.php.net/ChangeLog-8.php#8.6.0"&gt;changelog&lt;/a&gt; for a full list
+of changes.&lt;/p&gt;</description>
+			<pubDate>Thu, 19 Nov 2026 14:43:09 +0000</pubDate>
+		</item>
+		<item>
+			<title>Four PHP security releases including fixes for critical vulnerabilities</title>
+			<link>https://lwn.net/Articles/1108552/</link>
+			<guid>https://lwn.net/Articles/1108552/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;The PHP Project has announced the release of PHP &lt;a
+href="https://www.php.net/ChangeLog-8.php#8.5.13"&gt;8.5.13&lt;/a&gt;, &lt;a
+href="https://www.php.net/ChangeLog-8.php#8.4.28"&gt;8.4.28&lt;/a&gt;, &lt;a
+href="https://www.php.net/ChangeLog-8.php#8.3.37"&gt;8.3.37&lt;/a&gt;, and &lt;a
+href="https://www.php.net/ChangeLog-8.php#8.2.36"&gt;8.2.36&lt;/a&gt;. Each contains a
+number of security and bug fixes, including several fixes for critical
+vulnerabilities that could allow remote-code execution. According to the
+project's &lt;a
+href="https://www.php.net/archive/2026.php#2026-11-18-1"&gt;pre-release
+announcement&lt;/a&gt; on November&amp;#160;18, all of the vulnerabilities of critical
+severity "&lt;q&gt;require either non-default configuration or uncommon
+setups&lt;/q&gt;". See the release notes for details; Linux vendors and projects
+should be releasing updated packages soon.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Thu, 19 Nov 2026 14:29:04 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Thursday</title>
+			<link>https://lwn.net/Articles/1108551/</link>
+			<guid>https://lwn.net/Articles/1108551/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (cockpit, cockpit-files, cockpit-machines, gimp, glib-networking, krb5, libpcap, nginx, nodejs26, perl-CGI, php8.4, skopeo, tigervnc, and xorg-x11-server), &lt;b&gt;Debian&lt;/b&gt; (haproxy, libreoffice, libvisio, needrestart, openjdk-21, and openjdk-25), &lt;b&gt;Fedora&lt;/b&gt; (asterisk, erlang, ffmpeg, ignition, libosmocore, luksmeta, msedit, openapv, passwordsafe, rabbitmq-server, sngrep, and vyper), &lt;b&gt;Mageia&lt;/b&gt; (firefox, nss, rootcerts, rsync, and thunderbird), &lt;b&gt;Slackware&lt;/b&gt; (libfontenc and libXfont2), &lt;b&gt;SUSE&lt;/b&gt; (389-ds, apache2, aspell, bind, brotli, busybox, civetweb, containerd, cosign, docker, gleam, glibc, graphicsmagick, helm, ignition, ImageMagick, java-17-openjdk, java-21-openjdk, java-25-openjdk, jhead, kernel, kubernetes, libsofia-sip-ua-glib3, mcphost, perl-HTTP-Body, perl-MIME-tools, phodav, python-asyncssh, python-django, python-joserfc, python315, qemu, rootlesskit, roundcubemail, rsyslog, runc, tempo-cli, trivy, and xorg-x11-server), and &lt;b&gt;Ubuntu&lt;/b&gt; (cloud-init, gstreamer1.0, hplip, libcpanel-json-xs-perl, linux, linux-aws, linux-aws-5.4, linux-aws-fips, linux-azure-5.4, linux-azure-fips, linux-bluefield, linux-fips, linux-gcp, linux-gcp-5.4, linux-gcp-fips, linux-hwe-5.4, linux-ibm, linux-ibm-5.4, linux-iot, linux-kvm, linux-oracle-5.4, linux-raspi, linux-raspi-5.4, linux-xilinx-zynqmp, linux, linux-aws, linux-kvm, linux-lts-xenial, linux-azure, linux-oracle, linux-azure-7.0, linux-fips, nginx, openjdk-17, openjdk-21, openjdk-25, openjdk-27, and openjdk-lts).
+</description>
+			<pubDate>Thu, 19 Nov 2026 14:05:42 +0000</pubDate>
+		</item>
+		<item>
+			<title>LWN.net Weekly Edition for November 12, 2026</title>
+			<link>https://lwn.net/Articles/1105460/</link>
+			<guid>https://lwn.net/Articles/1105460/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Inside this week's LWN.net Weekly Edition:
+        &lt;p&gt;
+        &lt;ul&gt;
+&lt;li&gt; &lt;a href="https://lwn.net/Articles/1105460/"&gt;Front&lt;/a&gt;: Synaptics patent claims; Git LLM policy; Hibernation and lockdown; User namespaces; glibc tunables.
+            &lt;li&gt; &lt;a href="https://lwn.net/Articles/1105462/"&gt;Briefs&lt;/a&gt;: *sshole; Amutable foundations; Asahi Linux 7.3; OpenIndiana 2026.10; Firefox 160; Quotes; ... 
+            &lt;li&gt; &lt;a href="https://lwn.net/Articles/1105463/"&gt;Announcements&lt;/a&gt;: Newsletters, conferences, security updates, patches, and more.
+            &lt;/ul&gt;
+
+        </description>
+			<pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Additional hardening for the glibc dynamic linker</title>
+			<link>https://lwn.net/Articles/1105134/</link>
+			<guid>https://lwn.net/Articles/1105134/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>&lt;p&gt;
+The
+&lt;a href="https://nodejs.org/en"&gt;
+Node.js project&lt;/a&gt; recently had a
+&lt;a href="https://nodejs.org/en/blog/vulnerability/october-2026-security-releases#nodejs-brotli-decoder-out-of-bounds-write-permits-remote-code-execution-cve-2026-111497---high"&gt;
+security vulnerability&lt;/a&gt; that
+affected its
+&lt;a href="https://brotli.org/"&gt;
+Brotli&lt;/a&gt; decoder. The bug
+&lt;a href="https://project-zero.issues.chromium.org/issues/565308158"&gt;
+was a buffer overflow&lt;/a&gt;,
+but the particular way that official Node.js binaries are built for Linux meant that one of the
+main protections against turning a buffer overflow into remote code execution,
+&lt;a href="https://en.wikipedia.org/wiki/Address_space_layout_randomization"&gt;
+address space layout randomization&lt;/a&gt; (ASLR) could not be turned on. If ASLR had been
+enabled, the bug would still be exploitable in theory, but much more difficult
+to exploit in practice. In response, the GNU C Library (glibc) is
+&lt;a href="https://lwn.net/ml/all/20261028175613.3779425-1-adhemerval.zanella@linaro.org/"&gt;
+considering&lt;/a&gt; a new set of
+&lt;a href="https://sourceware.org/glibc/manual/latest/html_node/Tunables.html"&gt;
+tunable settings&lt;/a&gt; to allow administrators to forbid programs that do not
+support ASLR. The new settings, while a welcome hardening measure, may not
+address the root problem.
+&lt;/p&gt;
+</description>
+			<pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Git considers voting to determine its LLM policy</title>
+			<link>https://lwn.net/Articles/1104195/</link>
+			<guid>https://lwn.net/Articles/1104195/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>One of the dominant themes of 2026 has been the debate within development
+projects about the terms under which LLM-written contributions should be
+accepted — if, indeed, they should be accepted at all.  The &lt;a
+href="https://git-scm.com/"&gt;Git project&lt;/a&gt; has not been immune to this
+trend; the topic was &lt;a
+href="https://lwn.net/ml/all/summit-2026.94e33e9ddf234334.06@ttaylorr.com"&gt;discussed&lt;/a&gt;
+at the recent Git Contributor's Summit.  In this case, the path to a
+resolution may be somewhat circuitous; the project, which has never been
+governed as a democracy, is considering adopting a voting process as a way
+of bringing the discussion to an acceptable conclusion.
+</description>
+			<pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>User namespaces + file capabilities = trouble</title>
+			<link>https://lwn.net/Articles/1103429/</link>
+			<guid>https://lwn.net/Articles/1103429/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>&lt;a href="https://lwn.net/Articles/532593/"&gt;User namespaces&lt;/a&gt; are a key part of the
+kernel's toolkit for assembling containers; processes within a user
+namespace can appear to have full root access to the system while gaining
+no extra privileges in the wider system.  At least, that is the intent.  In
+practice, keeping privilege contained within a user namespace has often
+turned out to be difficult.  As an example, consider &lt;a
+href="https://lwn.net/ml/all/20261027-b4-setfcap-userns-v8-0-2674adc63f3c@toxicpanda.com"&gt;this
+small patch series&lt;/a&gt; from Josef Bacik, which is intended to address some
+situations where a process within a user namespace can elevate the
+privileges of processes outside of it.
+</description>
+			<pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Locking down hibernation for the winter</title>
+			<link>https://lwn.net/Articles/1103190/</link>
+			<guid>https://lwn.net/Articles/1103190/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>&lt;p&gt;
+When a computer hibernates, the kernel writes the contents of memory to disk and
+then shuts the system down. Resuming from hibernation involves reading that data
+back into memory, and then having the kernel pick up where it left off.
+Unfortunately, the kernel does not have
+any way to know that the data it is reading back has not been tampered with,
+which is why &lt;a href="https://lwn.net/Articles/791863/"&gt;lockdown&lt;/a&gt;, an optional kernel
+feature that attempts to prevent modifications to the running kernel, disables hibernation.
+Matthew Garrett, who has been working on lockdown for many years, has shared
+&lt;a href="https://lwn.net/ml/linux-pm/20261008132532.1155166-1-matthewg@nvidia.com/"&gt;
+a patch set&lt;/a&gt; that aims to fix this problem. His solution must also protect
+against downgrade attacks (where an attacker reboots the computer with an older
+kernel version to bypass new protections), which complicates the implementation.
+&lt;/p&gt;
+</description>
+			<pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Synaptics patent claims stop work on DisplayLink drivers</title>
+			<link>https://lwn.net/Articles/1102549/</link>
+			<guid>https://lwn.net/Articles/1102549/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Mike Lothian owns a docking station (or dock) that uses a &lt;a
+href="https://en.wikipedia.org/wiki/DisplayLink"&gt;DisplayLink&lt;/a&gt; chipset
+that had, at least in his opinion, subpar performance on Linux. He
+decided to try improving the Linux driver, with LLM assistance, but ran into one
+problem that he could not solve&amp;mdash;so he asked for help, hoping that
+Synaptics's developers would lend a hand. (DisplayLink was &lt;a
+href="https://www.synaptics.com/company/news/displaylink"&gt;acquired by
+Synaptics&lt;/a&gt; in 2022.) Rather than help him in improving the
+driver, however, the Synaptics legal team responded with patent infringement
+claims, a &lt;a
+href="https://lists.freedesktop.org/archives/dri-devel/attachments/20261006/d690bb16/attachment-0001.pdf"&gt;demand&lt;/a&gt;
+that he cease unauthorized implementation of DisplayLink technology, and threats
+of expensive legal penalties. For now, it appears that Linux users of the
+company's docks will have to continue to live without feature parity with other
+platforms.&lt;/p&gt;
+</description>
+			<pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>NGINX2Root: Remote Code Execution vulnerabilities in nginx</title>
+			<link>https://lwn.net/Articles/1108362/</link>
+			<guid>https://lwn.net/Articles/1108362/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Xint is &lt;a
+href="https://xint.io/blog/nginx2root-remote-code-execution"&gt;reporting&lt;/a&gt; that
+it has discovered a collection of &lt;a
+href="https://xint.io/blog/nginx2root-remote-code-execution#5-technical-analysis-of-the-nginx-vulnerabilities-16"&gt;five
+critical vulnerabilities&lt;/a&gt; in the &lt;a href="https://nginx.org/"&gt;NGINX&lt;/a&gt; web
+server. The worst flaw, it says, would &lt;a
+href="https://xint.io/blog/nginx2root-remote-code-execution#what-an-attacker-can-do-2"&gt;allow
+an unauthenticated attacker to execute commands on an affected nginx server with
+HTTP/2 enabled&lt;/a&gt;. The company also reports a local-privilege escalation (LPE) &lt;a
+href="https://xint.io/blog/nginx2root-remote-code-execution#6-analysis-of-the-linux-kernel-lpe-vulnerability-22"&gt;kernel
+vulnerability&lt;/a&gt;, which was introduced in the 4.15 kernel, in the &lt;a
+href="https://docs.kernel.org/networking/sctp.html"&gt;Stream Control Transmission
+Protocol (SCTP)&lt;/a&gt; subsystem. If chained with the NGINX vulnerability,
+it would allow an attacker to gain root privileges on the host. A kernel patch for this
+is not yet available.&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+We also obtained a root shell on the host in a setup where nginx was running in
+a Docker container. On many Linux distributions, the SCTP module is installed by
+default and the kernel loads it automatically the first time a program opens an
+SCTP socket. Whether SCTP is reachable on a given host still depends on the
+kernel, the available modules, and the container's restrictions. Where it is
+reachable, the attacker can take over the host kernel. Since all containers on
+the host share that kernel, this gives the attacker control of the host and
+every container on it.
+&lt;/blockquote&gt;
+
+&lt;p&gt;Xint recommends updating to &lt;a
+href="https://github.com/nginx/nginx/releases/tag/release-1.31.9"&gt;NGINX
+1.31.9&lt;/a&gt;, which was just released, and to
+block the SCTP module on hosts that do not need it until a kernel fix is
+available. See the &lt;a
+href="https://xint.io/blog/nginx2root-remote-code-execution#33-emergency-mitigations-before-patching-14"&gt;mitigations&lt;/a&gt;
+section of their report for more information.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Wed, 18 Nov 2026 16:13:34 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Wednesday</title>
+			<link>https://lwn.net/Articles/1108354/</link>
+			<guid>https://lwn.net/Articles/1108354/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (.NET 11.0, .NET 8.0, .NET 9.0, bind, buildah, cockpit, containernetworking-plugins, delve, firefox, freerdp, gcc, gcc-toolset-15-gcc, gcc-toolset-16-gcc, go-fdo-client, go-fdo-server, gstreamer1-plugins-base, kernel, oci-seccomp-bpf-hook, podman, sssd, webkit2gtk3, and yggdrasil), &lt;b&gt;Debian&lt;/b&gt; (ghostscript, librest, openexr, and roundcube), &lt;b&gt;Fedora&lt;/b&gt; (dash, gpsd, java-25-openjdk, java-latest-openjdk, mingw-gstreamer1, mingw-gstreamer1-plugins-bad-free, mingw-gstreamer1-plugins-base, mingw-gstreamer1-plugins-good, p11-kit, and sgx-pccs), &lt;b&gt;Mageia&lt;/b&gt; (apache, drakx-installer-images, kernel, kmod-xtables-addons, kmod-virtualbox, kmod-nvidia-current-wopengpu, roundcubemail, and zbar), &lt;b&gt;Red Hat&lt;/b&gt; (yggdrasil), &lt;b&gt;SUSE&lt;/b&gt; (amazon-cloudwatch-agent, buildah, ctdb, dpdk, govulncheck-vulndb, ignition, keylime-ima-policy, kubevirt1.8, libsolv-demo, libspeex1, libxi, open-iscsi, parted, perl-DBI, phodav, python-dulwich, python-m2crypto, skupper, sssd, tcpreplay, thrift, thunderbird, watchexec, and xen), and &lt;b&gt;Ubuntu&lt;/b&gt; (apng2gif, astropy, binwalk, codemirror-js, elog, flightgear, fontforge, fop, freedombox, iwd, jackrabbit, jekyll, joblib, ldm, libapache-session-browseable-perl, libjackson-json-java, libkf5ksieve, libmojolicious-perl, libxml-security-java, lighttpd, lilypond, minetest, mumble, mxml, needrestart, ngircd, node-sqlite3, oar, openjdk-25, privoxy, pysha3, python-mechanize, pywps, renderdoc, ruby-mechanize, ruby-mini-magick, ssvnc, swupdate, tmpreaper, and urwid).
+</description>
+			<pubDate>Wed, 18 Nov 2026 14:17:35 +0000</pubDate>
+		</item>
+		<item>
+			<title>Redict deprecated in favor of Valkey</title>
+			<link>https://lwn.net/Articles/1108155/</link>
+			<guid>https://lwn.net/Articles/1108155/</guid>
+			<dc:creator>daroc</dc:creator>
+			<description>&lt;p&gt;
+Drew DeVault has
+&lt;a href="https://redict.io/posts/2026-11-17-redict-deprecated/"&gt;announced&lt;/a&gt; that
+&lt;a href="https://redict.io"&gt;Redict&lt;/a&gt;, a fork of &lt;a href="https://redis.io/"&gt;Redis&lt;/a&gt; that was created in response to
+&lt;a href="https://lwn.net/Articles/966631/"&gt;Redis's 2024 license change&lt;/a&gt;, has been deprecated. He recommends switching to &lt;a href="https://valkey.io/"&gt;Valkey&lt;/a&gt;, the permissively licensed Redis fork supported by the Linux Foundation. The two projects are mutually compatible, so switching should be as simple as changing which package is installed and renaming the configuration file.
+&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+&lt;p&gt;
+I had hoped to rally the Redis diaspora around a copyleft initiative, to protect ourselves from future rug-pulls, and made Redict to serve this purpose. However, with the valkey project's success, and Redis's return to a copyleft license, Redict was not able to build a sustainable community.
+&lt;/p&gt;
+&lt;p&gt;
+We recommend that Redict users switch to valkey, which uses a permissive license but has better long-term prospects. We advise against switching back to Redis; though it is once again open source, and copyleft, it uses a contributor license agreement which will facilitate another rug-pull when Redis has a bad financial quarter.
+&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+			<pubDate>Tue, 17 Nov 2026 16:20:44 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
