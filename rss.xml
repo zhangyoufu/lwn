@@ -1,0 +1,229 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2005/Atom" version="2.0">
+	<channel>
+		<title>LWN.net</title>
+		<link>https://lwn.net</link>
+		<description> LWN.net is a comprehensive source of news and opinions from
+        and about the Linux community.  This is the main LWN.net feed,
+        listing all articles which are posted to the site front page.
+</description>
+		<language>en-us</language>
+		<pubDate>Sat, 28 Nov 2026 10:05:17 +0000</pubDate>
+		<lastBuildDate>Sat, 28 Nov 2026 10:05:17 +0000</lastBuildDate>
+		<docs>https://www.rssboard.org/rss-specification</docs>
+		<webMaster>lwn@lwn.net</webMaster>
+		<ns0:link href="https://zhangyoufu.github.io/lwn/rss.rdf" rel="self" type="application/rss+xml" />
+		<ns0:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
+		<item>
+			<title>Security updates for Friday</title>
+			<link>https://lwn.net/Articles/1110189/</link>
+			<guid>https://lwn.net/Articles/1110189/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (gdm, ghostscript, gnome-remote-desktop, grafana, kernel, kernel-rt, mariadb10.11, and virt:rhel and virt-devel:rhel), &lt;b&gt;Debian&lt;/b&gt; (exim4, kernel, node-dompurify, and pam), &lt;b&gt;Fedora&lt;/b&gt; (chromium, cockpit, forgejo, haveged, jupyterlab, kernel, mariadb10.11, mariadb11.8, mkvtoolnix, mosquitto, mozilla-ublock-origin, nodejs24, python-notebook, ruby, ruby-build, tpm2-tss, valkey, varnish, wordpress, xen, xq, and zstd), &lt;b&gt;Gentoo&lt;/b&gt; (FreeType and ImageMagick), &lt;b&gt;Mageia&lt;/b&gt; (flatpak, php8.4-mongodb, php8.5-mongodb, and unrtf), &lt;b&gt;Oracle&lt;/b&gt; (cockpit-machines, flatpak-builder, grafana-pcp, httpd, mutter, nginx:1.24, openssl, and webkit2gtk3), &lt;b&gt;Red Hat&lt;/b&gt; (container-tools:rhel8, grafana, grafana-pcp, java-17-openjdk, java-21-openjdk, java-25-openjdk, kernel, kernel-rt, mysql8.4, ruby, ruby4.0, ruby:2.5, ruby:3.3, and ruby:4.0), &lt;b&gt;SUSE&lt;/b&gt; (afflib-devel, AppStream, aws-iam-authenticator, bugwarden, diffutils, epiphany, expat, firefox, haproxy, heimdall, hostapd, java-21-openjdk, java-25-openjdk, keepassxc, krb5, krb5-mini, kubevirt1.8, libeot, libjpeg-turbo, libnfs-devel, libXtst, libzvbi-chains0, mariadb-java-client, mtools, nginx, nvidia-modprobe.cuda, nvidia-open-driver-G06-signed, nvidia-persistenced.cuda, nvidia-open-driver-G06-signed, perl-dbi, php8, pi-coding-agent, python-mistune, python-pymongo, python-urwid, python313-pylint, ruby3.4, ruby4.0-rubygem-rack, rustup, sequoia-sq, speex, tomcat11, util-linux, and webkit2gtk3), and &lt;b&gt;Ubuntu&lt;/b&gt; (apache2, binutils, guava-libraries, libaacs, libjwt, libxi, plexus-utils2, pyjwt, and tiff).
+</description>
+			<pubDate>Fri, 27 Nov 2026 14:22:47 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Thursday</title>
+			<link>https://lwn.net/Articles/1109990/</link>
+			<guid>https://lwn.net/Articles/1109990/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (cifs-utils, cjose, cockpit-machines, containernetworking-plugins, dhcp, edk2, firewalld, fltk, freerdp, gdm, ghostscript, grafana, kernel, librabbitmq, netpbm, nginx:1.24, nginx:1.26, openscap, openssl, php, python-botocore, qt6-qt3d, resource-agents, rsync, ruby, ruby:2.5, ruby:3.3, ruby:4.0, skopeo, spice, thunderbird, and webkit2gtk3), &lt;b&gt;Debian&lt;/b&gt; (exim4, firefox-esr, librsvg, lrzsz, roundcube, shadow, and thunderbird), &lt;b&gt;Fedora&lt;/b&gt; (chromium, cri-o1.35, cri-o1.36, dotnet10.0, dotnet11.0, dotnet8.0, dotnet9.0, firefox, fluidsynth, kernel, libreswan, mingw-dbus, perl-Config-General, perl-HTTP-Body, perl-libnet, perl-SQL-Abstract, poppler, radicale, sbsigntools, webkitgtk, and xorg-x11-server-Xwayland), &lt;b&gt;Mageia&lt;/b&gt; (php), &lt;b&gt;Oracle&lt;/b&gt; (dpdk, gcc-toolset-15-gcc, grafana, gstreamer1-plugins-bad-free, librabbitmq, mod_http2, nginx, php:7.4, php:8.3, python-oauthlib, python3.12, sqlite, tftp, xfsprogs, and xorg-x11-server-Xwayland), &lt;b&gt;Red Hat&lt;/b&gt; (brotli, cjose, containernetworking-plugins, expat, firefox, kernel, mod_auth_openidc:2.3, nodejs:24, podman, ruby, ruby4.0, ruby:2.5, ruby:3.3, ruby:4.0, and thunderbird), &lt;b&gt;Slackware&lt;/b&gt; (seamonkey), &lt;b&gt;SUSE&lt;/b&gt; (389-ds, amazon-ssm-agent, apache2, aws-nitro-enclaves-cli, bouncycastle, bugwarden, diffutils, docker, glibc, go1.26, go1.27, google-guest-agent, google-osconfig-agent, gssproxy, gvfs, haproxy, helm, jackson-annotations, jackson-core, jackson-databind, java-17-openjdk, java-21-openjdk, java-25-openjdk, kubernetes-old, libosmocodec-devel, libQt63DAnimation6, libQt6Concurrent6, librsvg, libXfont2, libXi, mozilla-nss, MozillaFirefox, mutt, nginx, nodejs24, opensc, pcre2, perl-HTTP-Parser-XS, php8, python-CairoSVG, python-filelock, python-PyJWT, python-pymongo, python-sqlparse, python-urllib3, python-virtualenv, python313-Authlib, python313-GitPython, python313-sqlparse, qemu, ruby3.4, util-linux, webkit2gtk3, and zbar), and &lt;b&gt;Ubuntu&lt;/b&gt; (alsa-lib, authd, bcel, dav1d, elfutils, expat, krb5, libhttp-tiny-perl, libpcap, network-manager, php8.5, php8.3, php8.1, php7.4, php7.2, php7.0, php5, and speex).
+</description>
+			<pubDate>Thu, 26 Nov 2026 14:06:22 +0000</pubDate>
+		</item>
+		<item>
+			<title>Dave Täht given the Jonathan B. Postel Service Award</title>
+			<link>https://lwn.net/Articles/1109691/</link>
+			<guid>https://lwn.net/Articles/1109691/</guid>
+			<dc:creator>corbet</dc:creator>
+			<description>The Internet Society has &lt;a
+href="https://www.internetsociety.org/blog/2026/11/postel-awardee-dave-taht-made-every-millisecond-count/"&gt;announced&lt;/a&gt;
+that the Jonathan B. Postel Service Award has been awarded to Dave Täht for
+his many efforts to improve the Internet.
+&lt;p&gt;
+&lt;blockquote class="bq"&gt;
+	Täht's legacy can be found in community hubs in Nicaragua, where he
+	worked to expand connectivity, and first discovered the urgency of
+	solving bufferbloat. It can be found in every lag-free video call
+	with a loved one. It can be found in outer space—Täht helped
+	Starlink solve its latency challenges. And it can be found in the
+	countless people he mentored and befriended over the years, who
+	will not stop until bufferbloat stops getting in the way of band
+	practice. 
+&lt;/blockquote&gt;
+&lt;p&gt;
+Dave is still deeply missed by those of us who knew him; this is an award
+he richly deserved.</description>
+			<pubDate>Wed, 25 Nov 2026 18:16:51 +0000</pubDate>
+		</item>
+		<item>
+			<title>Pop!_OS 26.04 LTS released</title>
+			<link>https://lwn.net/Articles/1109662/</link>
+			<guid>https://lwn.net/Articles/1109662/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;System76 has &lt;a
+href="https://system76.com/blog/post/pop_os-26-04-lts-has-landed"&gt;announced&lt;/a&gt;
+the release of Pop!_OS&amp;#160;26.04&amp;#160;LTS, which is based on
+Ubuntu&amp;#160;26.04&amp;#160;LTS. Notable features in this release include drawing
+tablet support, automatic updates, a number of new COSMIC applications, and
+more. Updates for users on Pop!_OS&amp;#160;24.04&amp;#160;LTS will be enabled in
+December.&lt;/p&gt;
+
+&lt;p&gt;LWN &lt;a href="https://lwn.net/Articles/984638/"&gt;last covered&lt;/a&gt; Pop!_OS and
+an early version of its COSMIC desktop in August 2024.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Wed, 25 Nov 2026 14:34:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Wednesday</title>
+			<link>https://lwn.net/Articles/1109650/</link>
+			<guid>https://lwn.net/Articles/1109650/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (emacs, go-toolset:rhel8, xorg-x11-server-Xwayland, and yggdrasil-worker-package-manager), &lt;b&gt;Debian&lt;/b&gt; (flatpak, libeot, libzstd, mapserver, rails, request-tracker5, and runc), &lt;b&gt;Fedora&lt;/b&gt; (age, chromium, cri-o1.35, cri-o1.36, cri-o1.37, fluxbox, git-annex, libreswan, mariadb-connector-c, mimedefang, mycli, nextcloud, openssh, perl-Data-Dump, php-smarty4, python-pydantic, python-pydantic-core, sbsigntools, and sqlite), &lt;b&gt;Mageia&lt;/b&gt; (awslc, haproxy, java-11-openjdk, java-1.8.0-openjdk, miniupnpc, perl-Imager, python3-loguru, and scapy), &lt;b&gt;Oracle&lt;/b&gt; (.NET 10.0, .NET 8.0, .NET 9.0, aspell, bind, buildah, cockpit, dogtag-pki, dovecot, emacs, fence-agents, fetchmail, flatpak, freerdp, gcc-toolset-15-gcc, glib2, go-fdo-server, grafana, gstreamer1-plugins-base, gstreamer1-plugins-good, guava, ipa, librsvg2, libXi, libXrender, mysql8.4, NetworkManager, openexr, openssh, perl-CGI, python-oauthlib, rsync, ruby, tesseract, tomcat9, util-linux, xdg-dbus-proxy, and xorg-x11-server), &lt;b&gt;Slackware&lt;/b&gt; (mozilla-firefox and mozilla-thunderbird), &lt;b&gt;SUSE&lt;/b&gt; (alsa, aws-nitro-enclaves-cli, bson-devel, busybox, chromedriver, chromium, efivar-39, epiphany, gegl, golang-github-prometheus-prometheus, grafana, system-user-grafana, grub2, gssproxy, haproxy, hugo, java-21-openjdk, java-25-openjdk, keepassxc, libeot, libwebp, webkit2gtk3, mutt, openCryptoki, openssl-1_0_0, python-cairosvg, python-Twisted-doc, python-urllib3, python313-virtualenv, ruby3.4, screen, warewulf4, and xorg-x11-server), and &lt;b&gt;Ubuntu&lt;/b&gt; (libheif, libxrender, and pcre3).
+</description>
+			<pubDate>Wed, 25 Nov 2026 14:06:22 +0000</pubDate>
+		</item>
+		<item>
+			<title>Firefox 161.0 released</title>
+			<link>https://lwn.net/Articles/1109478/</link>
+			<guid>https://lwn.net/Articles/1109478/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a href="https://www.firefox.com/en-US/firefox/161.0/releasenotes/"&gt;Version
+161.0&lt;/a&gt; of the Firefox web browser has been released. Notable changes in this
+release include the &lt;a
+href="https://support.mozilla.org/en-US/kb/customize-keyboard-shortcuts-firefox"&gt;ability
+to assign a shortcut&lt;/a&gt; to copy the current tab's URL, addition of a menu item
+for &lt;a href="https://www.firefox.com/en-US/features/tab-groups/"&gt;Tab Groups&lt;/a&gt;,
+and the &lt;a
+href="https://connect.mozilla.org/t5/discussions/coming-in-firefox-161-choose-which-websites-always-use-the-built/td-p/147674#M60589"&gt;built-in
+VPN can be turned off or on for specific sites&lt;/a&gt;. There are also a &lt;a
+href="https://www.mozilla.org/en-US/security/advisories/mfsa2026-131/"&gt;number of
+security fixes&lt;/a&gt; in this release.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Tue, 24 Nov 2026 16:18:02 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Tuesday</title>
+			<link>https://lwn.net/Articles/1109472/</link>
+			<guid>https://lwn.net/Articles/1109472/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (aspell, curl, fence-agents, flatpak, flatpak-builder, freerdp, git-lfs, golang, grafana, grafana-pcp, gstreamer1-plugins-good, kernel, kernel-rt, libgsf, liblerc, mutter, netpbm, nodejs26, openssh, patch, perl-CGI, php, php:8.2, php:8.3, php:8.4, podman, python-oauthlib, python36:3.6, qt6-qtbase, rsync, ruby, ruby4.0, skopeo, sqlite, virt:rhel and virt-devel:rhel, wayland, webkit2gtk3, and xdg-desktop-portal), &lt;b&gt;Debian&lt;/b&gt; (chromium, mediawiki, pymongo, and radsecproxy), &lt;b&gt;Fedora&lt;/b&gt; (c-ares, clamav, libmodulemd, mimedefang, mycli, poppler, sqlite, tpm2-tss, xfsprogs, and xorg-x11-server-Xwayland), &lt;b&gt;Gentoo&lt;/b&gt; (GPGME and GPL Ghostscript), &lt;b&gt;Oracle&lt;/b&gt; (bind, bind9.18, cifs-utils, cockpit-files, cockpit-machines, curl, dovecot, edk2, expat, fence-agents, firefox, freerdp, gfs2-utils, grafana-pcp, java-1.8.0-openjdk, kernel, libgsf, librabbitmq, mingw-expat, netpbm, nginx, nodejs:26, openssh, perl-URI, php8.4, python-oauthlib, python3.9, qt5-qtbase, skopeo, sos, thunderbird, and xdg-desktop-portal), &lt;b&gt;Red Hat&lt;/b&gt; (curl, libevent, libvirt, mariadb-connector-c, php8.4, php:8.2, python, python3, python3.11, python3.9, sssd, and thunderbird), &lt;b&gt;SUSE&lt;/b&gt; (bind, cockpit, dpdk, helm, libXi, mozilla-nss, MozillaFirefox, mtools, nginx, parted, pcre2, python-M2Crypto, python-maturin, python-tornado, ruby2.5, ruby3.4, sbc, and shadow), and &lt;b&gt;Ubuntu&lt;/b&gt; (libssh, linux-aws, linux-azure, linux-azure-fde, linux-gcp, linux-oracle, linux-azure, linux-azure-5.15, linux-azure-fde-5.15, linux-raspi, linux-azure, linux-azure-6.8, linux-azure-fde, linux-azure-fde-6.8, linux-azure-fips, linux-azure-5.4, linux-azure-fips, linux-azure-fde, linux-azure-fips, linux-azure-fde, linux-oracle, linux-oracle-7.0, linux-raspi, linux-realtime, linux-nvidia, linux-nvidia-6.8, linux-nvidia-lowlatency, python-oauthlib, qt6-5compat, ruby2.7, ruby2.5, ruby2.3, and tomcat10, tomcat11).
+</description>
+			<pubDate>Tue, 24 Nov 2026 14:03:12 +0000</pubDate>
+		</item>
+		<item>
+			<title>CachyOS November 2026 release</title>
+			<link>https://lwn.net/Articles/1109269/</link>
+			<guid>https://lwn.net/Articles/1109269/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a href="https://cachyos.org/"&gt;CachyOS&lt;/a&gt;, a performance-focused
+distribution based on &lt;a href="https://archlinux.org/"&gt;Arch Linux&lt;/a&gt;, has
+announced its &lt;a
+href="https://cachyos.org/blog/2611-november-release/"&gt;November&amp;#160;2026&lt;/a&gt;
+release. Notable changes in this release include a new recovery environment
+("cachyos-recovery") for rolling back broken systems, Easy Anti-Cheat (EAC) v2
+support for games that require EAC to run, version 2.0.0 of the CachyOS Package
+Installer, and more.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Mon, 23 Nov 2026 14:21:41 +0000</pubDate>
+		</item>
+		<item>
+			<title>Security updates for Monday</title>
+			<link>https://lwn.net/Articles/1109268/</link>
+			<guid>https://lwn.net/Articles/1109268/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>Security updates have been issued by &lt;b&gt;AlmaLinux&lt;/b&gt; (buildah, cifs-utils, cockpit-files, cockpit-machines, container-tools:rhel8, curl, expat, fence-agents, flatpak, fltk, gfs2-utils, gimp:2.8, gnome-remote-desktop, grafana, gstreamer1-plugins-bad-free, java-1.8.0-openjdk, kernel, libgsf, libpcap, librabbitmq, libreoffice, mingw-expat, nginx, nginx:1.24, nginx:1.26, openssh, php8.4, php:7.4, php:8.2, podman, python-oauthlib, qt5-qt3d, rpm, rsync, skopeo, thunderbird, unbound, vim, xdg-desktop-portal, xfsprogs, and xorg-x11-server-Xwayland), &lt;b&gt;Debian&lt;/b&gt; (anope, gpgme1.0, kernel, kitty, krb5, libeot, libgd2, linux-6.12, needrestart, network-manager-iodine, postfixadmin, python-django, ruby3.1, ruby3.3, sympa, and webkit2gtk), &lt;b&gt;Fedora&lt;/b&gt; (aws, clamav, dash, fontconfig, fzf, mariadb-connector-c, maturin, mingw-expat, mingw-poppler, mingw-SDL2_image, mingw-speex, nginx, nginx-mod-brotli, nginx-mod-fancyindex, nginx-mod-headers-more, nginx-mod-js-challenge, nginx-mod-modsecurity, nginx-mod-naxsi, nginx-mod-vts, python-jiter, python-pydantic-settings, python3.14, python3.16, radsecproxy, ruff, runc, rust-afterburn, rust-astral_async_zip, rust-clearscreen, rust-coreos-installer, rust-coreutils, rust-jiter, rust-lzma-rust2, rust-mailparse, rust-pyo3-introspection, rust-python-pkginfo, rust-serde_json, rust-zip, selenium-manager, sqlite, ty, and wireshark), &lt;b&gt;Mageia&lt;/b&gt; (nginx, patch, pylint, and sympa), &lt;b&gt;Oracle&lt;/b&gt; (.NET 11.0, bind, bind9.18, buildah, cockpit, containernetworking-plugins, curl, dpdk, edk2, environment-modules, expat, fence-agents, fetchmail, flatpak, fltk, freerdp, gcc-toolset-15-gcc, gimp, gimp:2.8, glib-networking, glib2, gnome-remote-desktop, grafana, gstreamer1-plugins-bad-free, gstreamer1-plugins-base, gvisor-tap-vsock, ignition, ipa, jackson-core, jackson-databind, java-21-openjdk, java-25-openjdk, jq, kernel, kernel-uek, krb5, libpcap, librabbitmq, libreoffice, librsvg2, libsoup, libX11, libXi, libxml2, libXrender, libXtst, lrzsz, mysql:8.4, nginx, nginx:1.24, nginx:1.26, nodejs:22, nodejs:24, openexr, openssl, pam, php:8.4, podman, python-tornado, qt5-qt3d, qt5-qtbase, qt5-qtdeclarative, raptor2, resteasy, rpm, rsync, rsyslog, runc, skopeo, tftp, thunderbird, tomcat, unbound, vim, xfsprogs, xorg-x11-server, xorg-x11-server-Xwayland, and xz), &lt;b&gt;Red Hat&lt;/b&gt; (dogtag-pki, guava, jackson-core, jackson-databind, librabbitmq, libXrender, multiple packages, and pki-deps:10.6), &lt;b&gt;SUSE&lt;/b&gt; (amazon-ssm-agent, apache2, aws-c-mqtt-bin, azure-storage-azcopy, bouncycastle, buildah, busybox, chezdav, chromedriver, dcmtk, diun, epiphany, fltk-devel, ggml-devel, glib-networking, go1.26, go1.27, gvfs, helm, ImageMagick, jackson-annotations, jackson-core, jackson-databind, java-17-openjdk, java-21-openjdk, java-25-openjdk, librsvg-2-2, libsoup-3_0-0, libxfont2, libxi, mozilla-nss, mozillafirefox, mtools, nodejs24, pcre2, perl-data-dump-streamer, perl-http-body, perl-Spreadsheet-XLSX, perl-spreadsheet-xlsx, perl-YAML, php7, php8, podman, postfixadmin, python-dulwich, python-pyjwt, python-virtualenv, python313-filelock, re2c, speex, terragrunt, thunderbird, tiff, trufflehog, util-linux, valkey, versitygw, xen, zbar, and zed), and &lt;b&gt;Ubuntu&lt;/b&gt; (linux-aws-6.8, linux-realtime, linux-realtime-6.8, linux-fips, linux-hwe-5.15, linux-lowlatency-hwe-5.15, linux-nvidia-tegra-5.15, linux-intel-iot-realtime, linux-nvidia-tegra, linux-oracle-5.15, linux-lowlatency, linux-nvidia, linux-realtime, linux-nvidia-tegra-igx, and linux-oracle-5.4).
+</description>
+			<pubDate>Mon, 23 Nov 2026 14:10:48 +0000</pubDate>
+		</item>
+		<item>
+			<title>Seven stable kernels for Monday</title>
+			<link>https://lwn.net/Articles/1108909/</link>
+			<guid>https://lwn.net/Articles/1108909/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Greg Kroah-Hartman has announced the &lt;a href="https://lwn.net/Articles/1108910/"&gt;7.3.6&lt;/a&gt;,
+&lt;a href="https://lwn.net/Articles/1108911/"&gt;6.18.65&lt;/a&gt;,
+&lt;a href="https://lwn.net/Articles/1108912/"&gt;6.12.119&lt;/a&gt;,
+&lt;a href="https://lwn.net/Articles/1108913/"&gt;6.6.163&lt;/a&gt;,
+&lt;a href="https://lwn.net/Articles/1108914/"&gt;6.1.193&lt;/a&gt;,
+&lt;a href="https://lwn.net/Articles/1109274/"&gt;5.15.226&lt;/a&gt;, and
+&lt;a href="https://lwn.net/Articles/1108915/"&gt;5.10.275&lt;/a&gt; stable kernels. Each of these contains
+quite a few patches throughout the tree&amp;mdash;6.12.119 has the fewest with more
+than 1,700 patches, while 6.6.163 has more than 3,300. Users are advised to
+upgrade.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Mon, 23 Nov 2026 13:23:43 +0000</pubDate>
+		</item>
+		<item>
+			<title>Kernel prepatch 7.4-rc4</title>
+			<link>https://lwn.net/Articles/1108900/</link>
+			<guid>https://lwn.net/Articles/1108900/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;The &lt;a href="https://lwn.net/Articles/1108899/"&gt;7.4-rc4&lt;/a&gt; kernel is out for testing. Linus
+said: "&lt;q&gt;It's huge. What a surprise. Lots of little fixes all over, with
+drivers being pretty exactly half of it (gpu and networking showing up
+as usual, but there's usb, iio, nvme, sound.. you name it).&lt;/q&gt;"&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Mon, 23 Nov 2026 00:32:07 +0000</pubDate>
+		</item>
+		<item>
+			<title>Beyls: Wrapping up LLVM's relicensing effort</title>
+			<link>https://lwn.net/Articles/1108818/</link>
+			<guid>https://lwn.net/Articles/1108818/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;Kristof Beyls has &lt;a
+href="https://discourse.llvm.org/t/wrapping-up-llvms-relicensing-effort/92906"&gt;published
+a summary&lt;/a&gt; to the LLVM discussion forum to announce that the project is
+declaring success and bringing its &lt;a
+href="https://discourse.llvm.org/t/holiday-update-on-llvms-relicensing-effort/50649"&gt;relicensing
+effort&lt;/a&gt; to a close after eight years.&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+&lt;p&gt;We've been asking past contributors to relicense their work since 2018. New
+contributions have come in under Apache-2.0 WITH LLVM-exception since January
+19, 2019. Code contributed before that date was under LLVM's earlier licenses
+(UIUC/NCSA, plus MIT for some runtime libraries), so we needed permission from
+its authors to move it over. [...]&lt;/p&gt;
+
+&lt;p&gt;Today, more than 99.5% of all lines of code ever contributed to LLVM are
+either covered by the new license, too small for copyright to apply, or no
+longer in the repository.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Rather than trying to "&lt;q&gt;chase the last tiny fraction forever&lt;/q&gt;" LLVM is
+winding up the effort. Any contributors with code contributed before January 19,
+2019 who have not signed a relicensing agreement and do not want their
+contributions made available under Apache-2.0 with the LLVM-exception can still
+reach out to the project to ensure their code has the appropriate SPDX license
+identifier.&lt;/p&gt;</description>
+			<pubDate>Fri, 20 Nov 2026 14:35:24 +0000</pubDate>
+		</item>
+		<item>
+			<title>Vim Classic 8.3.1 released</title>
+			<link>https://lwn.net/Articles/1108817/</link>
+			<guid>https://lwn.net/Articles/1108817/</guid>
+			<dc:creator>jzb</dc:creator>
+			<description>&lt;p&gt;&lt;a href="https://vim-classic.org/news/vim-8.3.1-released.html"&gt;Version
+8.3.1&lt;/a&gt; of &lt;a href="https://vim-classic.org/"&gt;Vim Classic&lt;/a&gt;&amp;mdash;a
+long-term support fork of Vim maintained without LLM assistance&amp;mdash;has been
+released.&lt;/p&gt;
+
+&lt;blockquote class="bq"&gt;
+This release includes applicable Vim patches up to Vim 8.2.3237, including
+numerous bug fixes, minor features, and compatibility improvements for Vim
+plugins. This release also removes Python 2 support from Vim Classic.
+&lt;/blockquote&gt;
+
+&lt;p&gt;The &lt;a href="https://git.sr.ht/~sircmpwn/vim-classic/refs/v8.3.1"&gt;full list
+of changes&lt;/a&gt; in this release is available on sourcehut.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+			<pubDate>Fri, 20 Nov 2026 14:17:33 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
